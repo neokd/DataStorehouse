@@ -37,8 +37,6 @@ function Sidebar() {
   };
 
   const toggleDropDown = (id) => {
-    const active = []
-    active.push(id)
     if (activeDropDown === id) {
       setActiveDropDown(null);
     } else {
