@@ -10,6 +10,9 @@ export default {
       colors: {
         'customGray': '#1a1b22',
       },
+      margin: {
+        '84': '22rem',
+      },
     },
   },
   plugins: [],
