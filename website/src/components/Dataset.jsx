@@ -20,27 +20,26 @@ function Dataset() {
         datasetCard.scrollIntoView({ behavior: 'smooth', block: 'start' });
         datasetCard.style.scrollMarginTop = '8rem';
       }
-      
     }
   }, [location]);
 
   return (
-    <div className=''>
+    <div >
       <div className='dark:bg-customGray min-h-screen pb-24 overflow-x-hidden'>
         <Navbar />
-        <div className='container mx-24 relative ml-84'>
+        <div className='container lg:mx-24 relative lg:ml-84 mx-4'>
           <Sidebar />
-          <div className='dark:text-white pt-36 nunito w-[56rem] '>
+          <div className='dark:text-white lg:pt-36 nunito lg:w-[56rem] '>
             {data.map((domain) => (
               <div key={domain.domain}>
                 <h2 className='text-2xl font-semibold my-4'>{domain.domain}</h2>
                 {domain.datasets.map((item) => (
-                  <div key={item.id} id={item.id} className=''>
+                  <div key={item.id} id={item.id}>
                     <div
                       className={`bg-gray-300/80 dark:bg-black/25 my-4  hover:border-amber-200 rounded-2xl p-8 leading-10 ${location.hash.substr(1) === item.id ? 'shadow-md dark:shadow-amber-500' : ''
                         }`}
                     >
-                      <Link to={`${item.path}`} target='_blank'>
+                      <Link to={`${item.githubPath}`} target='_blank'>
                         <h1 className='dark:text-white/90 text-3xl  font-semibold'>{item.title}</h1>
                       </Link>
                       <p className='pb-2'>Contributor: {item.contributor}</p>
@@ -51,13 +50,13 @@ function Dataset() {
                           {item.tag.map((tag) => (
                             <span
                               key={tag}
-                              className='text-sm font-semibold rounded-lg bg-amber-500 text-white/90 px-2 py-1 mr-2'
+                              className='text-sm font-semibold bg-amber-500 rounded-full  text-white/90 px-2 py-1 mr-2'
                             >
                               {tag}
                             </span>
                           ))}
                         </span>
-                        <button className='bg-amber-500 p-2 rounded-full hover:scale-105'>
+                        <button className='bg-amber-500 p-2 lg:visible hidden rounded-full hover:scale-105'>
                           <Link to={`${item.path}`} target='_blank' className='justify-end'>
                             <svg
                               xmlns='http://www.w3.org/2000/svg'

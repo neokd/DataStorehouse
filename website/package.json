@@ -11,7 +11,6 @@
   },
   "dependencies": {
     "@popperjs/core": "^2.11.8",
-    "framer-motion": "^10.12.16",
     "fuse.js": "^6.6.2",
     "octokit": "^2.0.19",
     "prop-types": "^15.8.1",

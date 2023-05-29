@@ -1,19 +1,30 @@
 import { Link, useLocation } from "react-router-dom";
 import useTheme from "../hooks/useTheme";
+import { useState,useEffect } from "react";
 
 function Navbar() {
     const location = useLocation();
-
     const isActiveRoute = (route) => {
         return location.pathname === route;
     };
+
+    const [forkCount, setForkCount] = useState(0);
+    useEffect(() => {
+        fetch('https://api.github.com/repos/neokd/DataBucket')
+
+            .then((response) => response.json())
+            .then((data) => {
+                setForkCount(data.forks_count);
+            });
+    }, []);
+
     const [nextTheme, setTheme] = useTheme()
 
     return (
         <div>
-            <nav className="flex items-center justify-between flex-wrap fixed top-0 h-24 z-40 w-full backdrop-blur flex-none transition-colors duration-500 bg-blur bg-customGray text-white border-b border-gray-700  ">
-                <div className="mx-8 flex flex-rows">
-                    <div className={`p-3  border-amber-500 hover:scale-105  duration-100 mx-2 rounded-lg ${isActiveRoute('/') ? 'bg-amber-500    duration-100 ' : 'hover:shadow-lg hover:shadow-amber-500'}`}>
+            <nav className="flex items-center justify-between flex-wrap fixed top-0 lg:h-24 z-40 w-full backdrop-blur flex-none transition-colors duration-500 bg-blur bg-customGray text-white border-b border-gray-700  ">
+                <div className="mx-8 flex flex-rows ">
+                    <div className={`lg:p-3 p-2 border-amber-500 hover:scale-105  duration-100 mx-2 rounded-lg ${isActiveRoute('/') ? 'bg-amber-500    duration-100 ' : 'hover:shadow-lg hover:shadow-amber-500'}`}>
                         <Link to="/">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 stroke-2 " >
                                 <path
@@ -23,7 +34,7 @@ function Navbar() {
                             </svg>
                         </Link>
                     </div>
-                    <div className={`p-3  border-amber-500 hover:scale-105  duration-100 mx-2 rounded-lg ${isActiveRoute('/datasets') ? 'bg-amber-500    duration-100 ' : 'hover:shadow-lg hover:shadow-amber-500'}`}>
+                    <div className={`lg:p-3 p-2  border-amber-500 hover:scale-105  duration-100 mx-2 rounded-lg ${isActiveRoute('/datasets') ? 'bg-amber-500    duration-100 ' : 'hover:shadow-lg hover:shadow-amber-500'}`}>
                         <Link to="/datasets">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 stroke-2">
                                 <path strokeLinecap="round" strokeLinejoin="round" d="M14.25 9.75L16.5 12l-2.25 2.25m-4.5 0L7.5 12l2.25-2.25M6 20.25h12A2.25 2.25 0 0020.25 18V6A2.25 2.25 0 0018 3.75H6A2.25 2.25 0 003.75 6v12A2.25 2.25 0 006 20.25z" />
@@ -31,7 +42,7 @@ function Navbar() {
 
                         </Link>
                     </div>
-                    <div className={`p-3 border-amber-500 hover:scale-105 duration-100 mx-2 rounded-lg ${isActiveRoute('/docs') ? 'bg-amber-500 duration-100' : 'hover:shadow-lg hover:shadow-amber-500'}`}>
+                    <div className={`lg:p-3 p-2 border-amber-500 hover:scale-105 duration-100 mx-2 rounded-lg ${isActiveRoute('/docs') ? 'bg-amber-500 duration-100' : 'hover:shadow-lg hover:shadow-amber-500'}`}>
                         <div className="group">
                             <Link to="/docs" onClick={(e) => e.preventDefault()} className="pointer-events-none hover:">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 stroke-2">
@@ -51,9 +62,9 @@ function Navbar() {
                         </Link>
                     </div>
                     <div className="border border-r border-white mx-2 my-1" />
-                    <div className='p-3  border-gray-500  duration-100 mx-2 rounded-lg border  flex '>
+                    <div className='lg:p-3 p-2  border-gray-500  duration-100 mx-2 rounded-lg border  flex '>
 
-                        <button onClick={nextTheme === 'light' ? () => setTheme(nextTheme) : null} className={`${nextTheme === 'dark' ? 'text-yellow-400' : ''}`}>
+                        <button onClick={nextTheme === 'light' ? () => setTheme(nextTheme) : null} className={`${nextTheme === 'dark' ? 'text-amber-400' : ''}`}>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-7 h-7 ">
                                 <path strokeLinecap="round" strokeLinejoin="round" d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" />
                             </svg>
@@ -65,12 +76,11 @@ function Navbar() {
                             </svg>
                         </button>
                     </div>
-
                 </div>
 
                 <div className="border-amber-500 flex-rows mx-8 duration-100 rounded-lg hover:shadow-lg hover:shadow-amber-500 hover:scale-105">
                     <button className="border border-gray-600 rounded-lg p-3">
-                        Fork Count: 0
+                        Fork Count: 1
                     </button>
                 </div>
 
