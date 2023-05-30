@@ -1,4 +1,4 @@
-import { useState,useEffect, useRef } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import Fuse from 'fuse.js';
 import { Link, useNavigate } from 'react-router-dom';
 
@@ -8,7 +8,8 @@ function Searchbar({ visible, onClose }) {
     const [recentSearches, setRecentSearches] = useState([]);
     const [recommendations, setRecommendations] = useState([]);
     const [showErrorMessage, setShowErrorMessage] = useState(false);
-    const [datasets,setDatasets] = useState([]);
+    const [datasets, setDatasets] = useState([]);
+    const [selectedResultIndex, setSelectedResultIndex] = useState(0);
     const navigateTo = useNavigate();
 
     // let storedSearches = localStorage.getItem('recentSearches');
@@ -19,7 +20,7 @@ function Searchbar({ visible, onClose }) {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await fetch('/src/utils/datasets.json');
+                const response = await fetch('/datasets.json');
                 if (!response.ok) {
                     throw new Error('Failed to fetch data');
                 }
@@ -79,30 +80,30 @@ function Searchbar({ visible, onClose }) {
 
     const handleSearch = () => {
         if (!recentSearches.includes(searchQuery)) {
-          const updatedRecentSearches = [
-            searchQuery,
-            ...recentSearches.filter((s) => s !== searchQuery).slice(0, 4),
-          ];
-          setRecentSearches(updatedRecentSearches);
-          const updatedRecommendations = getRecommendations(
-            updatedRecentSearches,
-            searchQuery
-          );
-          setRecommendations(updatedRecommendations);
-          localStorage.setItem('recentSearches', JSON.stringify(updatedRecentSearches));
+            const updatedRecentSearches = [
+                searchQuery,
+                ...recentSearches.filter((s) => s !== searchQuery).slice(0, 4),
+            ];
+            setRecentSearches(updatedRecentSearches);
+            const updatedRecommendations = getRecommendations(
+                updatedRecentSearches,
+                searchQuery
+            );
+            setRecommendations(updatedRecommendations);
+            localStorage.setItem('recentSearches', JSON.stringify(updatedRecentSearches));
         }
-      
+
         if (searchResults.length > 0) {
-          const dataset = datasets
-            .flatMap((domain) => domain.datasets)
-            .find((data) => data.title === searchResults[0]);
-          if (dataset && dataset.id) {
-            redirectToDataset(dataset.id);
-            onClose();
-          }
+            const dataset = datasets
+                .flatMap((domain) => domain.datasets)
+                .find((data) => data.title === searchResults[0]);
+            if (dataset && dataset.id) {
+                redirectToDataset(dataset.id);
+                onClose();
+            }
         }
-      };
-      
+    };
+
     const searchTopics = (query) => {
         if (!query) return [];
         const fullForm = abbreviationMapping[query.toUpperCase()];
@@ -165,6 +166,16 @@ function Searchbar({ visible, onClose }) {
     const handleKeyDown = (event) => {
         if (event.key === 'Enter') {
             handleSearch();
+        } else if (event.key === 'ArrowUp') {
+            event.preventDefault();
+            setSelectedResultIndex((prevIndex) =>
+                prevIndex > 0 ? prevIndex - 1 : searchResults.length - 1
+            );
+        } else if (event.key === 'ArrowDown') {
+            event.preventDefault();
+            setSelectedResultIndex((prevIndex) =>
+                prevIndex < searchResults.length - 1 ? prevIndex + 1 : 0
+            );
         }
     };
 
@@ -207,9 +218,11 @@ function Searchbar({ visible, onClose }) {
                 </button>
 
                 <div className='absolute mt-12 w-[42rem]'>
-                    { searchResults.length>0 ? (
-                        searchResults.map((result) => {
-                            
+                    {searchResults.length > 0 ? (
+                        searchResults.map((result, index) => {
+                            // Apply different background color to the selected result
+                            const isSelected = index === selectedResultIndex;
+
                             const dataset = datasets
                                 .flatMap((domain) => domain.datasets)
                                 .find((data) => data.title === result);
@@ -217,14 +230,14 @@ function Searchbar({ visible, onClose }) {
                                 return (
                                     <li
                                         key={dataset.id}
-                                        className='first:mt-2 list-none bg-gray-200 dark:bg-gray-800 dark:text-gray-100 divide-y divide-gray-300 px-4 py-2 rounded-lg hover:bg-gray-300 cursor-pointer'
+                                        className={`first:mt-2 list-none bg-gray-200 dark:bg-gray-800 dark:text-gray-100 divide-y divide-gray-300 px-4 py-2 rounded-lg cursor-pointer ${isSelected ? 'bg-amber-200 dark:bg-amber-600' : ''
+                                            }`}
                                         onClick={() => redirectToDataset(dataset.id)}
                                     >
                                         {result}
                                     </li>
                                 );
                             }
-
                             return null;
                         })
                     ) : showErrorMessage ? (

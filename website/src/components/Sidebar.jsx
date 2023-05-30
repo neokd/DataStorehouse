@@ -16,7 +16,7 @@ function Sidebar() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch('/src/utils/datasets.json');
+        const response = await fetch('/datasets.json');
         if (!response.ok) {
           throw new Error('Failed to fetch data');
         }
