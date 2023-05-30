@@ -1,6 +1,5 @@
-import { useState, useEffect, useRef } from 'react';
+import { useState,useEffect, useRef } from 'react';
 import Fuse from 'fuse.js';
-import { DataSetsData } from './DataSetData';
 import { Link, useNavigate } from 'react-router-dom';
 
 function Searchbar({ visible, onClose }) {
@@ -9,14 +8,30 @@ function Searchbar({ visible, onClose }) {
     const [recentSearches, setRecentSearches] = useState([]);
     const [recommendations, setRecommendations] = useState([]);
     const [showErrorMessage, setShowErrorMessage] = useState(false);
-
-    const datasets = DataSetsData();
+    const [datasets,setDatasets] = useState([]);
     const navigateTo = useNavigate();
 
     // let storedSearches = localStorage.getItem('recentSearches');
     // if (storedSearches === null) {
     //     storedSearches = '[]';
     // }
+
+    useEffect(() => {
+        const fetchData = async () => {
+            try {
+                const response = await fetch('/src/utils/datasets.json');
+                if (!response.ok) {
+                    throw new Error('Failed to fetch data');
+                }
+                const jsonData = await response.json();
+                setDatasets(jsonData);
+            } catch (error) {
+                console.error(error);
+            }
+        };
+
+        fetchData();
+    }, []);
 
     const topics = datasets.flatMap((dataset) =>
         dataset.datasets.map((data) => data.title)
