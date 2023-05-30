@@ -1,22 +1,11 @@
 import { Link, useLocation } from "react-router-dom";
 import useTheme from "../hooks/useTheme";
-import { useState,useEffect } from "react";
 
 function Navbar() {
     const location = useLocation();
     const isActiveRoute = (route) => {
         return location.pathname === route;
     };
-
-    const [forkCount, setForkCount] = useState(0);
-    useEffect(() => {
-        fetch('https://api.github.com/repos/neokd/DataBucket')
-
-            .then((response) => response.json())
-            .then((data) => {
-                setForkCount(data.forks_count);
-            });
-    }, []);
 
     const [nextTheme, setTheme] = useTheme()
 
@@ -79,7 +68,7 @@ function Navbar() {
                 </div>
 
                 <div className="border-amber-500 flex-rows mx-8 duration-100 rounded-lg hover:shadow-lg hover:shadow-amber-500 hover:scale-105">
-                    <button className="border border-gray-600 rounded-lg p-3">
+                    <button disabled className="border border-gray-600 rounded-lg p-3">
                         Fork Count: 1
                     </button>
                 </div>

@@ -1,15 +1,27 @@
 import { useEffect, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import Sidebar from './Sidebar';
 import Navbar from './Navbar';
-import { DataSetsData } from './DataSetData';
+import Sidebar from './Sidebar';
 
 function Dataset() {
   const location = useLocation();
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    setData(DataSetsData());
+    const fetchData = async () => {
+      try {
+        const response = await fetch('/src/utils/datasets.json');
+        if (!response.ok) {
+          throw new Error('Failed to fetch data');
+        }
+        const jsonData = await response.json();
+        setData(jsonData);
+      } catch (error) {
+        console.error(error);
+      }
+    };
+
+    fetchData();
   }, []);
 
   useEffect(() => {

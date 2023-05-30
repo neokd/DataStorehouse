@@ -10,7 +10,6 @@ function Docs() {
         <div className="container mx-96 mt-28 fixed ">
           <Sidebar />
           <div className='dark:text-white'>
-
             Hello World
           </div>
 

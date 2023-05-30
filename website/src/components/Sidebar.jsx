@@ -1,16 +1,34 @@
-import { useState, useEffect } from 'react';
+import { useState,useEffect } from 'react';
 import Searchbar from './Searchbar';
-import { DataSetsData } from './DataSetData';
 import { useNavigate } from 'react-router-dom';
 
 function Sidebar() {
   const [showModal, setShowModal] = useState(false);
   const [activeDropDown, setActiveDropDown] = useState([]);
-  const datasets = DataSetsData();
+  const [datasets, setDatasets] = useState([]);
   const navigateTo = useNavigate();
+  const [sidebarElement, setSidebarElement] = useState(0);
+
   const handleOnClose = () => {
     setShowModal(false);
   };
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await fetch('/src/utils/datasets.json');
+        if (!response.ok) {
+          throw new Error('Failed to fetch data');
+        }
+        const jsonData = await response.json();
+        setDatasets(jsonData);
+      } catch (error) {
+        console.error(error);
+      }
+    };
+
+    fetchData();
+  }, []);
 
   useEffect(() => {
     const handleKeyPress = (event) => {
@@ -26,7 +44,6 @@ function Sidebar() {
         setShowModal(false);
       }
     };
-
     window.addEventListener('keydown', handleKeyPress);
     return () => {
       window.removeEventListener('keydown', handleKeyPress);
@@ -38,15 +55,18 @@ function Sidebar() {
   };
 
   const toggleDropDown = (id) => {
+    setTimeout(() => {
     if (activeDropDown.includes(id)) {
       setActiveDropDown(activeDropDown.filter((dropDownId) => dropDownId !== id));
     } else {
       setActiveDropDown([...activeDropDown, id]);
     }
+  },150);
   };
 
   const redirectToCard = (id) => {
     navigateTo(`/datasets#${id}`);
+    setSidebarElement(id)
     setShowModal(false);
   }
 
@@ -60,7 +80,7 @@ function Sidebar() {
 
   return (
     <div>
-      <aside id="logo-sidebar" className="fixed top-20 left-0 shadow-lg lg:shadow-amber-600  w-72 h-screen  transition-transform -translate-x-full  md:translate-x-0 border-r border-r-gray-600">
+      <aside id="logo-sidebar" className="fixed top-20 left-0 shadow-lg  lg:shadow-amber-600  w-72 h-screen transition-transform -translate-x-full  lg:translate-x-0 border-r border-r-gray-600">
         <div className="h-full px-3 pt-4 inset-0 bg-customGray">
           <button className="mt-4 w-64" onClick={handleInputClick}>
             <div className="relative">
@@ -76,21 +96,31 @@ function Sidebar() {
             </div>
           </button>
 
-          <div className="mt-4 text-white/80 ml-2" >
+          <div className="mt-4 text-white/70 ml-2 " >
             {datasets.map((domain) => (
-              <div key={domain.domain} >
-                <div className="border-l-2 text-white border-amber-500/75 " >
-                  <button className="" onClick={() => toggleDropDown(domain.domain)}>
+              <div className='' key={domain.domain} >
+                <div className={`border-l-2 text-white my-1  ${activeDropDown.includes(domain.domain) && domain.datasets.map((dataset) => {
+                  dataset.id === sidebarElement
+                }) ? 'font-semibold border-l-2 border-amber-500' : 'border-gray-500/75'}`}>
+                  <button className='mx-2 py-1 w-full text-left rounded-lg hover:text-amber-500 inline-flex justify-between transistion duration-200' onClick={() => toggleDropDown(domain.domain)}>
                     <span className="mx-4">{domain.domain}</span>
+                    {
+                      activeDropDown.includes(domain.domain) && domain.datasets.map((dataset) => {
+                        dataset.id === sidebarElement
+                      }) ? <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-4 mr-6">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                      </svg> : <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-4 mr-6">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                      </svg>
+                    }
                   </button>
                 </div>
                 {
                   activeDropDown.includes(domain.domain) && (
-                    <div className="mx-4 my-2">
+                    <div className="mx-4 my-2 ">
                       {domain.datasets.map((dataset) => (
                         <div key={dataset.id}>
-                          {console.log(dataset.id)}
-                          <button className="text-white/80 text-start truncate w-52" onClick={() => redirectToCard(dataset.id)}>
+                          <button className={`border-l-2  hover:text-white my-1 text-start truncate w-52 ${dataset.id === sidebarElement ? ' text-white border-l-2 border-amber-500 font-semibold py-2 ' : 'border-gray-500/75'}`} onClick={() => redirectToCard(dataset.id)}>
                             <span className="mx-4">{truncateText(dataset.title, 52)}</span>
                           </button>
                         </div>
@@ -100,9 +130,9 @@ function Sidebar() {
               </div>
             ))}
           </div>
+          
         </div>
       </aside>
-
       {showModal && <Searchbar onClose={handleOnClose} visible={showModal} />}
     </div>
   );
