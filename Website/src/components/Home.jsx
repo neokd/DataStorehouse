@@ -1,6 +1,6 @@
 import Navbar from './Navbar';
 import { useState, useEffect } from 'react';
-import Searchbar from './Sidebar';
+import Searchbar from './Searchbar';
 
 function Home() {
     const [showModal, setShowModal] = useState(false);

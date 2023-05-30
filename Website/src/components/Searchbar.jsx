@@ -230,7 +230,7 @@ function Searchbar({ visible, onClose }) {
                                 return (
                                     <li
                                         key={dataset.id}
-                                        className={`first:mt-2 list-none bg-gray-200 dark:bg-gray-800 dark:text-gray-100 divide-y divide-gray-300 px-4 py-2 rounded-lg cursor-pointer ${isSelected ? 'bg-amber-200 dark:bg-amber-600' : ''
+                                        className={`first:mt-2 list-none dark:text-gray-100 divide-y divide-gray-300 px-4 py-2 rounded-lg cursor-pointer ${isSelected ? 'bg-amber-500 dark:bg-amber-500/80' : 'bg-gray-200 dark:bg-gray-800 '
                                             }`}
                                         onClick={() => redirectToDataset(dataset.id)}
                                     >
@@ -238,6 +238,7 @@ function Searchbar({ visible, onClose }) {
                                     </li>
                                 );
                             }
+
                             return null;
                         })
                     ) : showErrorMessage ? (
