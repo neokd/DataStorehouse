@@ -77,33 +77,44 @@ function Searchbar({ visible, onClose }) {
             handleSearch();
         }
     };
-
     const handleSearch = () => {
         if (!recentSearches.includes(searchQuery)) {
-            const updatedRecentSearches = [
-                searchQuery,
-                ...recentSearches.filter((s) => s !== searchQuery).slice(0, 4),
-            ];
-            setRecentSearches(updatedRecentSearches);
-            const updatedRecommendations = getRecommendations(
-                updatedRecentSearches,
-                searchQuery
-            );
-            setRecommendations(updatedRecommendations);
-            localStorage.setItem('recentSearches', JSON.stringify(updatedRecentSearches));
+          const updatedRecentSearches = [
+            searchQuery,
+            ...recentSearches.filter((s) => s !== searchQuery).slice(0, 4),
+          ];
+          setRecentSearches(updatedRecentSearches);
+          const updatedRecommendations = getRecommendations(
+            updatedRecentSearches,
+            searchQuery
+          );
+          setRecommendations(updatedRecommendations);
+          localStorage.setItem('recentSearches', JSON.stringify(updatedRecentSearches));
         }
-
+      
         if (searchResults.length > 0) {
-            const dataset = datasets
-                .flatMap((domain) => domain.datasets)
-                .find((data) => data.title === searchResults[0]);
-            if (dataset && dataset.id) {
-                redirectToDataset(dataset.id);
-                onClose();
-            }
+          const dataset = datasets
+            .flatMap((domain) => domain.datasets)
+            .find((data) => data.title === searchResults[0]);
+          if (dataset && dataset.id) {
+            console.log(dataset)
+            redirectToDataset(dataset.domain, dataset.id);
+            onClose();
+          }
         }
-    };
-
+      };
+      
+      const redirectToDataset = (domain, datasetId) => {
+        const dataset = datasets.find((data) =>
+          data.datasets.some((dataset) => dataset.id === datasetId)
+        );
+      
+        if (dataset) {
+          navigateTo(`/datasets/${dataset.domain}/${datasetId}`);
+        } else {
+          console.error('Dataset not found');
+        }
+      };
     const searchTopics = (query) => {
         if (!query) return [];
         const fullForm = abbreviationMapping[query.toUpperCase()];
@@ -159,10 +170,6 @@ function Searchbar({ visible, onClose }) {
         return mapping;
     }
 
-    const redirectToDataset = (dataset) => {
-        navigateTo(`/datasets#${dataset}`);
-    };
-
     const handleKeyDown = (event) => {
         if (event.key === 'Enter') {
             handleSearch();
@@ -180,7 +187,7 @@ function Searchbar({ visible, onClose }) {
     };
 
     return (
-        <div className='fixed inset-0 -top-[32rem] bg-opacity-10 backdrop-blur-md flex justify-center items-center'>
+        <div className='fixed inset-0 -top-[32rem] z-10 bg-opacity-10 backdrop-blur-md flex justify-center items-center'>
             <div className='flex flex-row fixed'>
                 <div className='relative w-[42rem] '>
                     <div className='absolute  dark:text-white inset-y-0 left-0 flex items-center pl-3 pointer-events-none'>
@@ -220,7 +227,6 @@ function Searchbar({ visible, onClose }) {
                 <div className='absolute mt-12 w-[42rem]'>
                     {searchResults.length > 0 ? (
                         searchResults.map((result, index) => {
-                            // Apply different background color to the selected result
                             const isSelected = index === selectedResultIndex;
 
                             const dataset = datasets
@@ -230,7 +236,7 @@ function Searchbar({ visible, onClose }) {
                                 return (
                                     <li
                                         key={dataset.id}
-                                        className={`first:mt-2 list-none dark:text-gray-100 divide-y divide-gray-300 px-4 py-2 rounded-lg cursor-pointer ${isSelected ? 'bg-amber-500 dark:bg-amber-500/80' : 'bg-gray-200 dark:bg-gray-800 '
+                                        className={`first:mt-2 list-none dark:text-gray-100 divide-y divide-gray-300 px-4 py-2 rounded-lg cursor-pointer ${isSelected ? 'bg-amber-500 dark:bg-amber-500' : 'bg-gray-200 dark:bg-gray-800 '
                                             }`}
                                         onClick={() => redirectToDataset(dataset.id)}
                                     >
@@ -242,11 +248,10 @@ function Searchbar({ visible, onClose }) {
                             return null;
                         })
                     ) : showErrorMessage ? (
-                        <div className='mt-2 list-none bg-gray-200 dark:bg-gray-800 dark:text-gray-100 divide-y divide-gray-300 px-4 py-2 rounded-lg hover:bg-gray-300 cursor-pointer'>
+                        <div className='mt-2 list-none bg-amber-200 dark:bg-amber-500 dark:text-gray-100 divide-y divide-gray-300 px-4 py-2 rounded-lg hover:bg-gray-300 cursor-pointer'>
                             <Link
                                 to='https://github.com/neokd/DataBucket'
                                 target='_blank'
-                                rel='noopener noreferrer'
                             >
                                 Oops! Dataset not found, would you like to contribute? ❤️
                             </Link>

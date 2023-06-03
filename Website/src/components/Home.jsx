@@ -1,6 +1,7 @@
 import Navbar from './Navbar';
 import { useState, useEffect } from 'react';
 import Searchbar from './Searchbar';
+import Footer from './Footer';
 
 function Home() {
     const [showModal, setShowModal] = useState(false);
@@ -34,11 +35,15 @@ function Home() {
     };
 
     return (
-        <div className='scroll-smooth'>
+        <div className='scroll-smooth min-h-screen  dark:bg-customGray'>
             <Navbar />
-            <div className="h-screen dark:bg-customGray bg-slate-100 flex flex-col justify-center items-center">
-                <h1 className="dark:text-white text-7xl cursive-nunito ">
-                    Data<span className="text-amber-600">Bucket</span>
+            <div className="h-screen flex flex-col justify-center items-center">
+                <div className="w-16 h-16 blur rounded-full animate-blob transition delay-500 absolute top-36 bg-amber-500 left-56"></div>
+                <div className="w-16 h-16 blur rounded-full animate-blob transition delay-500 absolute top-36 bg-white left-48"></div>
+                <div className="w-16 h-16 blur rounded-full animate-blob transition delay-500 absolute bottom-28 bg-amber-500 right-28"></div>
+                <div className="w-16 h-16 blur rounded-full animate-blob transition delay-500 absolute bottom-24 bg-white right-24"></div>
+                <h1 className="dark:text-white text-7xl font-bold roboto ">
+                   <span className=''>Data</span><span className="text-amber-500">Bucket</span>
                 </h1>
                 <button className='mt-4' onClick={handleInputClick}>
                     <div className="relative w-[23rem] ">
@@ -57,6 +62,7 @@ function Home() {
                     A open-source project that aims to create a collaborative platform for gathering and sharing a wide variety of datasets.
                 </span>
             </div>
+            <Footer/>
             {showModal && <Searchbar onClose={handleOnClose} visible={showModal} />}
         </div>
     );

@@ -1,17 +1,24 @@
-import { useState,useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import Searchbar from './Searchbar';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useLocation } from 'react-router-dom';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 function Sidebar() {
   const [showModal, setShowModal] = useState(false);
   const [activeDropDown, setActiveDropDown] = useState([]);
+  const [activeDomain, setActiveDomain] = useState('');
   const [datasets, setDatasets] = useState([]);
   const navigateTo = useNavigate();
   const [sidebarElement, setSidebarElement] = useState(0);
-
+  const activeId = useLocation().hash.substr(1);
   const handleOnClose = () => {
     setShowModal(false);
   };
+
+  useEffect(() => {
+    AOS.init();
+  }, []);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -50,25 +57,46 @@ function Sidebar() {
     };
   }, [showModal]);
 
+  useEffect(() => {
+    if (activeId) {
+      const domain = datasets.find((domain) =>
+        domain.datasets.some((dataset) => dataset.id === activeId)
+      );
+      if (domain) {
+        setActiveDropDown((activeDropDown) => [...activeDropDown, domain.domain]);
+      }
+    }
+  }, [activeId, datasets]);
+
+  useEffect(() => {
+    if (activeDomain && !sidebarElement) {
+      navigateTo(`/datasets/${activeDomain}`);
+    }
+  }, [activeDomain, sidebarElement, navigateTo]);
+  
+  const toggleDomain = (domain, id) => {
+    if (id !== null) {
+      navigateTo(`/datasets/${domain}#${id}`);
+      setSidebarElement(id);
+      setShowModal(false);
+    } else {
+      navigateTo(`/datasets/${domain}`);
+      setShowModal(false);
+    }
+  };  
+
   const handleInputClick = () => {
     setShowModal(true);
   };
 
   const toggleDropDown = (id) => {
-    setTimeout(() => {
     if (activeDropDown.includes(id)) {
       setActiveDropDown(activeDropDown.filter((dropDownId) => dropDownId !== id));
     } else {
       setActiveDropDown([...activeDropDown, id]);
     }
-  },150);
+    setActiveDomain();
   };
-
-  const redirectToCard = (id) => {
-    navigateTo(`/datasets#${id}`);
-    setSidebarElement(id)
-    setShowModal(false);
-  }
 
   function truncateText(text, maxLength) {
     if (text.length <= maxLength) {
@@ -80,8 +108,8 @@ function Sidebar() {
 
   return (
     <div>
-      <aside id="logo-sidebar" className="fixed top-20 left-0 shadow-lg  lg:shadow-amber-600  w-72 h-screen transition-transform -translate-x-full  lg:translate-x-0 border-r border-r-gray-600">
-        <div className="h-full px-3 pt-4 inset-0 bg-customGray">
+      <aside id="logo-sidebar" className="fixed inset-0 top-20 left-0 shadow-lg lg:shadow-amber-500 w-72 h-screen transition-transform -translate-x-full  lg:translate-x-0 border-r border-r-gray-600">
+        <div className="h-full px-3 pt-4 inset-0 bg-customGray/60 dark:bg-customGray/80">
           <button className="mt-4 w-64" onClick={handleInputClick}>
             <div className="relative">
               <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
@@ -95,42 +123,73 @@ function Sidebar() {
               </div>
             </div>
           </button>
-
-          <div className="mt-4 text-white/70 ml-2 " >
+    
+          <div className="mt-4 text-white/70 ">
             {datasets.map((domain) => (
-              <div className='' key={domain.domain} >
-                <div className={`border-l-2 text-white my-1  ${activeDropDown.includes(domain.domain) && domain.datasets.map((dataset) => {
-                  dataset.id === sidebarElement
-                }) ? 'font-semibold border-l-2 border-amber-500' : 'border-gray-500/75'}`}>
-                  <button className='mx-2 py-1 w-full text-left rounded-lg hover:text-amber-500 inline-flex justify-between transistion duration-200' onClick={() => toggleDropDown(domain.domain)}>
+              <div className="" key={domain.domain}>
+                <div className={`text-left text-white my-1 text-lg`}>
+                  <button
+                    className="mx-2 py-1 w-full text-left rounded-lg hover:text-amber-500 inline-flex justify-between transistion duration-200"
+                    onClick={() => {
+                      toggleDropDown(domain.domain);
+                      toggleDomain(domain.domain,null);
+                    }}
+                  >
                     <span className="mx-4">{domain.domain}</span>
-                    {
-                      activeDropDown.includes(domain.domain) && domain.datasets.map((dataset) => {
-                        dataset.id === sidebarElement
-                      }) ? <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-4 mr-6">
+                    {activeDropDown.includes(domain.domain) &&
+                    (sidebarElement || activeId) ? (
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        strokeWidth={1.5}
+                        stroke="currentColor"
+                        className="w-6 h-4 mr-6"
+                      >
                         <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-                      </svg> : <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-4 mr-6">
+                      </svg>
+                    ) : (
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        strokeWidth={1.5}
+                        stroke="currentColor"
+                        className="w-6 h-4 mr-6"
+                      >
                         <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
                       </svg>
-                    }
+                    )}
                   </button>
                 </div>
-                {
-                  activeDropDown.includes(domain.domain) && (
-                    <div className="mx-4 my-2 ">
-                      {domain.datasets.map((dataset) => (
-                        <div key={dataset.id}>
-                          <button className={`border-l-2  hover:text-white my-1 text-start truncate w-52 ${dataset.id === sidebarElement ? ' text-white border-l-2 border-amber-500 font-semibold py-2 ' : 'border-gray-500/75'}`} onClick={() => redirectToCard(dataset.id)}>
-                            <span className="mx-4">{truncateText(dataset.title, 52)}</span>
-                          </button>
-                        </div>
-                      ))}
-                    </div>
-                  )}
+                {activeDropDown.includes(domain.domain) && (
+                  <div
+                    className="mx-4 my-2 text-lg "
+                    data-aos="fade"
+                    data-aos-easing="linear"
+                    data-aos-duration="400"
+                  >
+                    {domain.datasets.map((dataset) => (
+                      <div key={dataset.id}>
+                        <button
+                          className={`border-l-2  hover:text-white my-1 text-start truncate w-52 ${
+                            dataset.id === sidebarElement || dataset.id === activeId
+                              ? ' text-white border-l-2 border-amber-500  py-2 '
+                              : 'border-gray-500/75'
+                          }`}
+                          onClick={() => {
+                            toggleDomain(domain.domain,dataset.id);
+                           }}
+                        >
+                          <span className="mx-4">{truncateText(dataset.title, 52)}</span>
+                        </button>
+                      </div>
+                    ))}
+                  </div>
+                )}
               </div>
             ))}
           </div>
-          
         </div>
       </aside>
       {showModal && <Searchbar onClose={handleOnClose} visible={showModal} />}
