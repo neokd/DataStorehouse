@@ -1,97 +1,100 @@
-import { useEffect, useState } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import Footer from './Footer';
 import Navbar from './Navbar';
 import Sidebar from './Sidebar';
+import { Link } from 'react-router-dom';
 
 function Dataset() {
-  const location = useLocation();
-  const [data, setData] = useState([]);
+  const data = [
+    {
+      feature: "Contributing",
+      icon: "✅",
+      description: "Easily contribute your own datasets to the DataBucket repository.",
+    },
+    {
+      feature: "Discover",
+      icon: "🔍🌐",
+      description: "Explore a wide range of datasets across different domains.",
+    },
+    {
+      feature: "Collaborate",
+      icon: "🤝💡",
+      description: "Connect with other users and collaborate on dataset projects.",
+    },
+    {
+      feature: "Search",
+      icon: "🔎",
+      description: "Quickly find datasets using the powerful search functionality.",
+    },
+    {
+      feature: "Tagging",
+      icon: "🏷️",
+      description: "Categorize and organize datasets using tags.",
+    },
+  ];
 
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await fetch('/datasets.json');
-        if (!response.ok) {
-          throw new Error('Failed to fetch data');
-        }
-        const jsonData = await response.json();
-        setData(jsonData);
-      } catch (error) {
-        console.error(error);
-      }
-    };
-
-    fetchData();
-  }, []);
-
-  useEffect(() => {
-    const datasetId = location.hash.substr(1);
-    if (datasetId) {
-      const datasetCard = document.getElementById(datasetId);
-      if (datasetCard) {
-        datasetCard.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        datasetCard.style.scrollMarginTop = '8rem';
-      }
-    }
-  }, [location]);
 
   return (
-    <div >
-      <div className='dark:bg-customGray min-h-screen pb-24 overflow-x-hidden'>
+    <div>
+      <div className="dark:bg-customGray flex flex-col min-h-screen overflow-x-clip">
         <Navbar />
-        <div className='container lg:mx-24 relative lg:ml-84 mx-4'>
-          <Sidebar />
-          <div className='dark:text-white lg:pt-36 nunito lg:w-[56rem] '>
-            {data.map((domain) => (
-              <div key={domain.domain}>
-                <h2 className='text-2xl font-semibold my-4'>{domain.domain}</h2>
-                {domain.datasets.map((item) => (
-                  <div key={item.id} id={item.id}>
-                    <div
-                      className={`bg-gray-300/80 dark:bg-black/25 my-4  hover:border-amber-200 rounded-2xl p-8 leading-10 ${location.hash.substr(1) === item.id ? 'shadow-md dark:shadow-amber-500' : ''
-                        }`}
-                    >
-                      <Link to={`${item.githubPath}`} target='_blank'>
-                        <h1 className='dark:text-white/90 text-3xl  font-semibold'>{item.title}</h1>
-                      </Link>
-                      <p className='pb-2'>Contributor: {item.contributor}</p>
-                      <p className='text-lg'>{item.description}</p>
-                      <p className='text-md'>Size: {item.size}</p>
-                      <span className='flex justify-between'>
-                        <span className='justify-start'>
-                          {item.tag.map((tag) => (
-                            <span
-                              key={tag}
-                              className='text-sm font-semibold bg-amber-500 rounded-full  text-white/90 px-2 py-1 mr-2'
-                            >
-                              {tag}
-                            </span>
-                          ))}
-                        </span>
-                        <button className='bg-amber-500 p-2 lg:visible hidden rounded-full hover:scale-105'>
-                          <Link to={`${item.path}`} target='_blank' className='justify-end'>
-                            <svg
-                              xmlns='http://www.w3.org/2000/svg'
-                              viewBox='0 0 24 24'
-                              fill='none'
-                              stroke='currentColor'
-                              strokeWidth='2'
-                              strokeLinecap='round'
-                              strokeLinejoin='round'
-                              className='w-6 h-6 '
-                            >
-                              <path d='M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4'></path>
-                              <path d='M9 18c-4.51 2-5-2-7-2'></path>
-                            </svg>
-                          </Link>
-                        </button>
-                      </span>
-                    </div>
-                  </div>
-                ))}
+        <Sidebar />
+        <div className="container dark:text-white lg:mx-24 relative  md:pt-28 lg:pt-36 nunito w-fit mx-4 lg:w-[64rem] lg:ml-84">
+          <div className='mx-4'>
+            <h2 className="text-4xl lg:text-5xl font-bold my-6">
+              Getting <span className="text-amber-500">Started</span> 🚀
+            </h2>
+            <div className="h-[1px] mb-8 bg-white"></div>
+            <p className="text-2xl">
+              DataBucket is an open-source project that aims to create a collaborative platform for gathering and sharing a wide variety of datasets. It provides a centralized repository where individuals and organizations can contribute, discover, and collaborate on diverse datasets for various domains.
+            </p>
+            <h2 className="text-4xl font-bold my-6">Features</h2>
+            <ul className="text-xl ml-4">
+              {data.map((item) => (
+                <li className="py-2 flex items-center" key={item.feature}>
+                  <span className="text-xl pr-4">{item.icon}</span>
+                  <span className="text-2xl">
+                    <span className="dark:text-white font-bold border-b-2 border-amber-500">{item.feature}</span> : {item.description}
+                  </span>
+                </li>
+              ))}
+            </ul>
+            <div className="mt-8">
+              <h2 className="text-4xl font-bold my-6">Want to Contribute?</h2>
+              <div className="flex items-start justify-start">
+                <div className="flex flex-cols">
+                  <a
+                    href="https://github.com/neokd/DataBucket/blob/main/CONTRIBUTING.md"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bg-amber-500 text-white font-bold py-3 px-6 rounded-full shadow-lg"
+                  >
+                    Go to Github
+                  </a>
+                </div>
               </div>
-            ))}
+            </div>
+            <div className="mt-8">
+              <h2 className="text-4xl font-bold my-6">License</h2>
+              <p className="text-2xl">
+                DataBucket is released under the <Link target='_blank' to="https://github.com/neokd/DataBucket/blob/Website/LICENSE.md">MIT license.</Link>
+              </p>
+            </div>
+            <div>
+              <div className="flex items-end justify-end mr-8">
+                <div className="flex lg:flex-cols flex-row">
+
+                  <Link
+                    to='/datasets/Population'
+                    rel="noopener noreferrer"
+                    className="bg-amber-500 text-white font-bold py-3 px-6 rounded-full shadow-lg"
+                  >
+                    Explore
+                  </Link>
+                </div>
+              </div>
+            </div>
           </div>
+          <Footer />
         </div>
       </div>
     </div>

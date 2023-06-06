@@ -1,0 +1,502 @@
+[
+    {
+        "id": 0,
+        "short": "LOL",
+        "full": "laughing out loud"
+    },
+    {
+        "id": 1,
+        "short": "OMG",
+        "full": "oh my god (or oh my gosh)"
+    },
+    {
+        "id": 2,
+        "short": "IMO",
+        "full": "in my opinion"
+    },
+    {
+        "id": 3,
+        "short": "IMHO",
+        "full": "in my humble opinion (or in my honest opinion)"
+    },
+    {
+        "id": 4,
+        "short": "BTW",
+        "full": "by the way"
+    },
+    {
+        "id": 5,
+        "short": "IDK",
+        "full": "I don't know"
+    },
+    {
+        "id": 6,
+        "short": "LMK",
+        "full": "let me know"
+    },
+    {
+        "id": 7,
+        "short": "TBH",
+        "full": "to be honest"
+    },
+    {
+        "id": 8,
+        "short": "TGIF",
+        "full": "thank goodness it's Friday"
+    },
+    {
+        "id": 9,
+        "short": "ROFL",
+        "full": "rolling on floor laughing"
+    },
+    {
+        "id": 10,
+        "short": "BRB",
+        "full": "be right back"
+    },
+    {
+        "id": 11,
+        "short": "BBL",
+        "full": "be back later"
+    },
+    {
+        "id": 12,
+        "short": "TTYL",
+        "full": "talk to you later"
+    },
+    {
+        "id": 13,
+        "short": "THX",
+        "full": "thanks"
+    },
+    {
+        "id": 14,
+        "short": "TY",
+        "full": "thank you"
+    },
+    {
+        "id": 15,
+        "short": "YW",
+        "full": "you're welcome"
+    },
+    {
+        "id": 16,
+        "short": "ASAP",
+        "full": "as soon as possible"
+    },
+    {
+        "id": 17,
+        "short": "POV",
+        "full": "point of view"
+    },
+    {
+        "id": 18,
+        "short": "NBD",
+        "full": "no big deal"
+    },
+    {
+        "id": 19,
+        "short": "OMW",
+        "full": "on my way"
+    },
+    {
+        "id": 20,
+        "short": "DIY",
+        "full": "do it yourself"
+    },
+    {
+        "id": 21,
+        "short": "AKA",
+        "full": "also known as"
+    },
+    {
+        "id": 22,
+        "short": "SMS",
+        "full": "short message service"
+    },
+    {
+        "id": 23,
+        "short": "OATUS",
+        "full": "on a totally unrelated subject"
+    },
+    {
+        "id": 24,
+        "short": "ICYMI",
+        "full": "in case you missed it"
+    },
+    {
+        "id": 25,
+        "short": "STFU",
+        "full": "shut the **** up"
+    },
+    {
+        "id": 26,
+        "short": "BF",
+        "full": "boyfriend"
+    },
+    {
+        "id": 27,
+        "short": "GF",
+        "full": "girlfriend"
+    },
+    {
+        "id": 28,
+        "short": "SO",
+        "full": "significant other"
+    },
+    {
+        "id": 29,
+        "short": "ILY",
+        "full": "I love you"
+    },
+    {
+        "id": 30,
+        "short": "YOLO",
+        "full": "you only live once"
+    },
+    {
+        "id": 31,
+        "short": "B4",
+        "full": "before"
+    },
+    {
+        "id": 32,
+        "short": "IRL",
+        "full": "in real life"
+    },
+    {
+        "id": 33,
+        "short": "TMI",
+        "full": "too much information"
+    },
+    {
+        "id": 34,
+        "short": "ATM",
+        "full": "at the moment"
+    },
+    {
+        "id": 35,
+        "short": "BFF",
+        "full": "best friends forever"
+    },
+    {
+        "id": 36,
+        "short": "BYOB",
+        "full": "bring your own beer"
+    },
+    {
+        "id": 37,
+        "short": "CU",
+        "full": "see you"
+    },
+    {
+        "id": 38,
+        "short": "UR",
+        "full": "you are"
+    },
+    {
+        "id": 39,
+        "short": "FYI",
+        "full": "for your information"
+    },
+    {
+        "id": 40,
+        "short": "FOMO",
+        "full": "fear of missing out"
+    },
+    {
+        "id": 41,
+        "short": "GR8",
+        "full": "great"
+    },
+    {
+        "id": 42,
+        "short": "SMH",
+        "full": "shaking my head"
+    },
+    {
+        "id": 43,
+        "short": "L8R",
+        "full": "later"
+    },
+    {
+        "id": 44,
+        "short": "JMO",
+        "full": "just my opinion"
+    },
+    {
+        "id": 45,
+        "short": "NVM",
+        "full": "never mind"
+    },
+    {
+        "id": 46,
+        "short": "GL",
+        "full": "good luck"
+    },
+    {
+        "id": 47,
+        "short": "FWIW",
+        "full": "for what it's worth"
+    },
+    {
+        "id": 48,
+        "short": "GBU",
+        "full": "god bless you"
+    },
+    {
+        "id": 49,
+        "short": "IMNSHO",
+        "full": "in my not so humble opinion"
+    },
+    {
+        "id": 50,
+        "short": "RN",
+        "full": "right now"
+    },
+    {
+        "id": 51,
+        "short": "TLDR",
+        "full": "too long, didn't read"
+    },
+    {
+        "id": 52,
+        "short": "QOTD",
+        "full": "quote of the day"
+    },
+    {
+        "id": 53,
+        "short": "TBF",
+        "full": "to be frank"
+    },
+    {
+        "id": 54,
+        "short": "DKDC",
+        "full": "don't know, don't care"
+    },
+    {
+        "id": 55,
+        "short": "IDC",
+        "full": "I don't care"
+    },
+    {
+        "id": 56,
+        "short": "K",
+        "full": "okay"
+    },
+    {
+        "id": 57,
+        "short": "2NITE",
+        "full": "tonight"
+    },
+    {
+        "id": 58,
+        "short": "CWOT",
+        "full": "complete waste of time"
+    },
+    {
+        "id": 59,
+        "short": "LMAO",
+        "full": "laughing my a** off"
+    },
+    {
+        "id": 60,
+        "short": "MU",
+        "full": "miss you"
+    },
+    {
+        "id": 61,
+        "short": "SSDD",
+        "full": "same stuff, different day"
+    },
+    {
+        "id": 62,
+        "short": "XOXO",
+        "full": "hugs and kisses"
+    },
+    {
+        "id": 63,
+        "short": "NE1",
+        "full": "anyone"
+    },
+    {
+        "id": 64,
+        "short": "OTT",
+        "full": "over the top"
+    },
+    {
+        "id": 65,
+        "short": "PLZ",
+        "full": "please"
+    },
+    {
+        "id": 66,
+        "short": "DM",
+        "full": "direct message"
+    },
+    {
+        "id": 67,
+        "short": "RUOK",
+        "full": "are you okay?"
+    },
+    {
+        "id": 68,
+        "short": "SPK",
+        "full": "speak"
+    },
+    {
+        "id": 69,
+        "short": "SRY",
+        "full": "sorry"
+    },
+    {
+        "id": 70,
+        "short": "SUP",
+        "full": "what's up?"
+    },
+    {
+        "id": 71,
+        "short": "TTFN",
+        "full": "ta ta for now"
+    },
+    {
+        "id": 72,
+        "short": "VN",
+        "full": "very nice"
+    },
+    {
+        "id": 73,
+        "short": "WTF",
+        "full": "what the ****"
+    },
+    {
+        "id": 74,
+        "short": "Y?",
+        "full": "why?"
+    },
+    {
+        "id": 75,
+        "short": "JK",
+        "full": "just kidding"
+    },
+    {
+        "id": 76,
+        "short": "BC",
+        "full": "because"
+    },
+    {
+        "id": 77,
+        "short": "TBC",
+        "full": "to be confirmed"
+    },
+    {
+        "id": 78,
+        "short": "TBA",
+        "full": "to be announced"
+    },
+    {
+        "id": 79,
+        "short": "TBD",
+        "full": "to be determined"
+    },
+    {
+        "id": 80,
+        "short": "FAQ",
+        "full": "frequently asked questions"
+    },
+    {
+        "id": 81,
+        "short": "N/A",
+        "full": "not applicable"
+    },
+    {
+        "id": 82,
+        "short": "TIA",
+        "full": "thanks in advance"
+    },
+    {
+        "id": 83,
+        "short": "OOO",
+        "full": "out of office"
+    },
+    {
+        "id": 84,
+        "short": "T&C",
+        "full": "terms and conditions"
+    },
+    {
+        "id": 85,
+        "short": "NP",
+        "full": "no problem"
+    },
+    {
+        "id": 86,
+        "short": "EOD",
+        "full": "end of day"
+    },
+    {
+        "id": 87,
+        "short": "ETA",
+        "full": "estimated time of arrival"
+    },
+    {
+        "id": 88,
+        "short": "EMBM",
+        "full": "early morning business meeting"
+    },
+    {
+        "id": 89,
+        "short": "CTA",
+        "full": "call to action"
+    },
+    {
+        "id": 90,
+        "short": "ROI",
+        "full": "return on investment"
+    },
+    {
+        "id": 91,
+        "short": "VFM",
+        "full": "value for money"
+    },
+    {
+        "id": 92,
+        "short": "CTR",
+        "full": "click-through rate"
+    },
+    {
+        "id": 93,
+        "short": "B2B",
+        "full": "business to business"
+    },
+    {
+        "id": 94,
+        "short": "B2C",
+        "full": "business to consumer"
+    },
+    {
+        "id": 95,
+        "short": "BOGOF",
+        "full": "buy one get one free"
+    },
+    {
+        "id": 96,
+        "short": "FF",
+        "full": "follow Friday"
+    },
+    {
+        "id": 97,
+        "short": "OTP",
+        "full": "one time password"
+    },
+    {
+        "id": 98,
+        "short": "HTH",
+        "full": "hope this helps"
+    },
+    {
+        "id": 99,
+        "short": "WFH",
+        "full": "work from home"
+    }
+]

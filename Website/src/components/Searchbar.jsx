@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 import Fuse from 'fuse.js';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useNavigate, useLocation } from 'react-router-dom';
 
 function Searchbar({ visible, onClose }) {
     const [searchQuery, setSearchQuery] = useState('');
@@ -42,13 +42,18 @@ function Searchbar({ visible, onClose }) {
     const fuseOptions = {
         includeScore: true,
         threshold: 0.4,
-        keys: ['title'],
-    };
-
-    const fuse = new Fuse(
-        datasets.flatMap((dataset) => dataset.datasets),
+        keys: ['title', 'tag', 'description', 'contributor', 'domain'],
+      };
+      
+      const fuse = new Fuse(
+        datasets.flatMap((dataset) =>
+          dataset.datasets.map((data) => ({
+            title: data.title,
+            domain: dataset.domain,
+          }))
+        ),
         fuseOptions
-    );
+      );
 
     const searchInputRef = useRef(null);
 
@@ -77,7 +82,6 @@ function Searchbar({ visible, onClose }) {
             handleSearch();
         }
     };
-
     const handleSearch = () => {
         if (!recentSearches.includes(searchQuery)) {
             const updatedRecentSearches = [
@@ -98,23 +102,37 @@ function Searchbar({ visible, onClose }) {
                 .flatMap((domain) => domain.datasets)
                 .find((data) => data.title === searchResults[0]);
             if (dataset && dataset.id) {
-                redirectToDataset(dataset.id);
+                redirectToDataset(dataset.domain, dataset.id);
                 onClose();
             }
         }
     };
 
+    const redirectToDataset = (domain, datasetId) => {
+        const dataset = datasets.find((data) =>
+            data.datasets.some((dataset) => dataset.id === datasetId)
+        );
+
+        if (dataset) {
+            navigateTo(`/datasets/${dataset.domain}/#${datasetId}`);
+        } else {
+            console.error('Dataset not found');
+        }
+    };
+
+
     const searchTopics = (query) => {
         if (!query) return [];
         const fullForm = abbreviationMapping[query.toUpperCase()];
         if (fullForm) {
-            return [fullForm];
+          return [fullForm];
         }
         const searchResults = fuse.search(query);
         const filteredTopics = searchResults.map((result) => result.item.title);
         setShowErrorMessage(filteredTopics.length === 0 && query.length !== 0);
         return filteredTopics.slice(0, 10);
-    };
+      };
+      
 
     const getRecentSearches = () => {
         const storedSearches = localStorage.getItem('recentSearches');
@@ -159,10 +177,6 @@ function Searchbar({ visible, onClose }) {
         return mapping;
     }
 
-    const redirectToDataset = (dataset) => {
-        navigateTo(`/datasets#${dataset}`);
-    };
-
     const handleKeyDown = (event) => {
         if (event.key === 'Enter') {
             handleSearch();
@@ -180,9 +194,9 @@ function Searchbar({ visible, onClose }) {
     };
 
     return (
-        <div className='fixed inset-0 -top-[32rem] bg-opacity-10 backdrop-blur-md flex justify-center items-center'>
+        <div className='fixed inset-0 -top-[32rem] z-10 dark:bg-opacity-10 bg-opacity-30 backdrop-blur-md flex justify-center items-center'>
             <div className='flex flex-row fixed'>
-                <div className='relative w-[42rem] '>
+                <div className='relative  lg:w-[42rem] '>
                     <div className='absolute  dark:text-white inset-y-0 left-0 flex items-center pl-3 pointer-events-none'>
                         <svg
                             xmlns='http://www.w3.org/2000/svg'
@@ -201,7 +215,7 @@ function Searchbar({ visible, onClose }) {
                     </div>
                     <input
                         type='text'
-                        className='w-full h-12 px-10 py-2 text-lg text-gray-900 placeholder-gray-500 bg-gray-200 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-amber-500 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-100 dark:placeholder-gray-400 dark:focus:ring-blue-500 dark:focus:border-amber-500'
+                        className='md:w-full h-12 px-12 py-2 text-lg text-gray-900 placeholder-gray-500 bg-gray-200 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-amber-500 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-100 dark:placeholder-gray-400 dark:focus:ring-blue-500 dark:focus:border-amber-500'
                         placeholder='Search Dataset'
                         value={searchQuery}
                         ref={searchInputRef}
@@ -217,10 +231,9 @@ function Searchbar({ visible, onClose }) {
                     esc
                 </button>
 
-                <div className='absolute mt-12 w-[42rem]'>
+                <div className='absolute mt-12 lg:w-[42rem]'>
                     {searchResults.length > 0 ? (
                         searchResults.map((result, index) => {
-                            // Apply different background color to the selected result
                             const isSelected = index === selectedResultIndex;
 
                             const dataset = datasets
@@ -230,7 +243,7 @@ function Searchbar({ visible, onClose }) {
                                 return (
                                     <li
                                         key={dataset.id}
-                                        className={`first:mt-2 list-none dark:text-gray-100 divide-y divide-gray-300 px-4 py-2 rounded-lg cursor-pointer ${isSelected ? 'bg-amber-500 dark:bg-amber-500/80' : 'bg-gray-200 dark:bg-gray-800 '
+                                        className={`first:mt-2 list-none dark:text-gray-100 divide-y divide-gray-300 px-4 py-2 rounded-lg cursor-pointer ${isSelected ? 'bg-amber-500 dark:bg-amber-500' : 'bg-gray-200 dark:bg-gray-800 '
                                             }`}
                                         onClick={() => redirectToDataset(dataset.id)}
                                     >
@@ -242,11 +255,10 @@ function Searchbar({ visible, onClose }) {
                             return null;
                         })
                     ) : showErrorMessage ? (
-                        <div className='mt-2 list-none bg-gray-200 dark:bg-gray-800 dark:text-gray-100 divide-y divide-gray-300 px-4 py-2 rounded-lg hover:bg-gray-300 cursor-pointer'>
+                        <div className='mt-2 list-none bg-amber-500 dark:text-gray-100 divide-y divide-gray-300 px-4 py-2 rounded-lg hover:bg-gray-300 cursor-pointer'>
                             <Link
                                 to='https://github.com/neokd/DataBucket'
                                 target='_blank'
-                                rel='noopener noreferrer'
                             >
                                 Oops! Dataset not found, would you like to contribute? ❤️
                             </Link>
