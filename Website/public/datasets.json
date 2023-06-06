@@ -1,5 +1,10 @@
 [
     {
+        "domain":"Getting Started 🚀",
+        "datasets":[]
+
+    },
+    {
         "domain": "Population",
         "datasets": [
             {
@@ -42,7 +47,49 @@
                 "size": "3.41 KB",
                 "tag": ["computer science", "abbreviations"],
                 "fileType": "JSON"
+            },
+            {
+                "id": "dd7d0a4e-9faa-492c-bad3-43b54fbdff4e",
+                "title": "Chat Abbreviations",
+                "description": "This dataset consist of top 100 abbreviations used in day to day chat. The dataset can be used to create chatbots and other NLP projects. The dataset is in JSON format.",
+                "githubPath": "https://github.com/neokd/DataBucket/blob/Website/Bucket/Abbreviations/Chat_ABBV.json",
+                "contributor": "neokd",
+                "added": "2023/06/04",
+                "updated": "2023/06/05",
+                "size": "8.67 KB",
+                "tag": ["chat", "abbreviations", "NLP", "chatbots"],
+                "fileType": "JSON"
+            }
+        ]
+    },
+    {
+        "domain": "Finance",
+        "datasets": [
+            {
+                "id": "5f101410-4ac8-4c41-bb68-78a6a2b3ede3",
+                "title": "BSE Companies Data",
+                "description": "This dataset contains a list of all BSE companies along with their stock price, market cap, P/E ratio, etc. The dataset is in JSON format.",
+                "githubPath": "https://github.com/neokd/DataBucket/blob/Website/Bucket/BSE%20Companies%20Data/BSE%20Companies%20data.json",
+                "contributor": "Gladwin001",
+                "added": "2023/06/03",
+                "updated": "2023/06/03",
+                "size": "1.97 MB",
+                "tag": ["BSE", "companies", "stock price", "market cap", "P/E ratio"],
+                "fileType": "JSON"
+            },
+            {
+                "id": "880d3e5e-3624-47f3-9b52-cbf00a7f4a84",
+                "title": "BSE Companies Data (CSV)",
+                "description": "This dataset contains a list of all BSE companies along with their stock price, market cap, P/E ratio, etc.It includes the same data as the JSON file but in CSV format.",
+                "githubPath": "https://github.com/neokd/DataBucket/blob/Website/Bucket/BSE%20Companies%20Data/BSE_Companies.csv",
+                "contributor": "Gladwin001",
+                "added": "2023/06/03",
+                "updated": "2023/06/03",
+                "size": "812.66 KB",
+                "tag": ["BSE", "companies", "stock price", "market cap", "P/E ratio","CSV"],
+                "fileType": "CSV"
             }
         ]
     }
+
 ]

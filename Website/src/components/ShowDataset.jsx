@@ -6,14 +6,25 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import ScrollToTopButton from './ScrollToTopButton';
 import Footer from './Footer';
+import PageNavigation from './PageNavigation';
 
 function ShowDataset() {
   const location = useLocation();
   const [data, setData] = useState([]);
+  const [copySuccess, setCopySuccess] = useState(false);
 
   useEffect(() => {
     AOS.init();
   }, []);
+
+  useEffect(() => {
+    if (location.hash.startsWith('#')) {
+      const element = document.getElementById(location.hash.substr(1));
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth', block: 'center'});
+      }
+    }
+  })
 
   useEffect(() => {
     const fetchData = async () => {
@@ -31,43 +42,78 @@ function ShowDataset() {
     fetchData();
   }, []);
 
+  const handleCopyURL = () => {
+    const currentURL = window.location.href;
+    navigator.clipboard.writeText(currentURL);
+    setCopySuccess(true);
+    setTimeout(() => {
+      setCopySuccess(false);
+    }, 2000);
+  };
+
   const getCurrentDomain = () => {
     const currentPath = location.pathname;
     const pathSegments = currentPath.split('/');
     const domain = pathSegments.length >= 3 ? pathSegments[2].replace(/-/g, ' ') : '';
-
     return domain;
   };
+
   const pathSegments = location.pathname.split('/').filter(segment => segment !== '');
+  const getIdFromUrl = location.hash.startsWith('#') ? location.hash.substring(1) : '';
   const filteredData = data.filter(
     (domain) => domain.domain.toLowerCase() === getCurrentDomain().toLowerCase()
   );
 
+
+
   return (
     <div>
-      <div className='dark:bg-customGray flex flex-col min-h-screen lg:overflow-x-clip '>
+      <div className='bg-gray-100 dark:bg-customGray flex flex-col min-h-screen overflow-x-clip '>
         <Navbar />
         <div className='container lg:mx-24 relative lg:ml-84'>
           <Sidebar />
-          <div className='dark:text-white pt-28 lg:pt-36 nunito w-full mx-4 lg:w-[56rem]  '>
-
+          <div className='dark:text-white pt-8 md:pt-28 lg:pt-36 nunito mx-6  w-fit lg:w-[56rem] '>
             <nav>
-              <ol className="inline-flex items-center text-lg ">
+              <ol className="inline-flex items-center text-xl font-semibold">
                 {pathSegments.map((segment, index) => (
                   <li key={index}>
-                    <span className=" ">
+                    <Link to={`/${pathSegments.slice(0, index + 1).join('/')}`} className="">
                       {segment.charAt(0).toUpperCase() + segment.slice(1)}
-                      {index !== pathSegments.length - 1 && <span className="mx-1">/</span>}
-                    </span>
+                    </Link>
+                    {index !== pathSegments.length - 1 && <span className="mx-1">/</span>}
                   </li>
                 ))}
+                {filteredData.length > 0 && (
+                  <li className='line-clamp-1'>
+                    <span className="mx-1">/</span>
+                    <span className=''>
+                      {filteredData[0].datasets.find((item) => item.id === location.hash.substr(1))?.title}
+                    </span>
+                  </li>
+                )}
               </ol>
             </nav>
-
             {filteredData.map((domain) => (
               <div key={domain.domain}>
                 <div>
-                  <h2 className='text-4xl font-semibold my-6'>{domain.domain}</h2>
+
+                  <button
+                    className=" text-black dark:hover:text-gray-500 inline-flex "
+                    onClick={handleCopyURL}
+                    onMouseEnter={() => setCopySuccess(false)}
+                  >
+                    <h2 className='text-4xl font-semibold my-6 dark:text-white lg:mr-2'>{domain.domain}</h2>
+                    {copySuccess ? (
+                      <span className="relative inline-flex">
+                        <span className="absolute z-10 transform -translate-x-1/2 -bottom-4 left-1/2 inline-flex items-center px-2 py-1 text-sm font-semibold leading-none bg-gray-500/25 backdrop-blur dark:text-white rounded-md shadow-lg">
+                          URL Copied!
+                        </span>
+                        <span className='text-4xl font-semibold my-6'>#</span>
+                      </span>
+                    ) : (
+                      <span className='text-4xl text font-semibold my-6'>#</span>
+                    )}
+                  </button>
                   {domain.datasets.map((item) => (
                     <div
                       key={item.id}
@@ -76,10 +122,11 @@ function ShowDataset() {
                       data-aos-easing='linear'
                       data-aos-duration='400'
                     >
+
                       <div
-                        className={`bg-gray-300/80 dark:bg-white/10 my-4 hover:border-amber-200 rounded-2xl p-8 leading-10 ${location.hash.substr(1) === item.id ? 'shadow-sm dark:shadow-amber-500' : ''
-                          }`}
+                        className={`drop-shadow-lg dark:drop-shadow-none shadow-md dark:bg-white/10   my-4 hover:border-amber-200 rounded-2xl p-8 leading-10 ${getIdFromUrl === item.id ? 'shdaow-2xl  shadow-amber-500' : ''}`}
                       >
+
                         <Link to={`${item.githubPath}`} target='_blank'>
                           <h1 className='dark:text-white/90 text-3xl font-semibold'>{item.title}</h1>
                         </Link>
@@ -87,12 +134,12 @@ function ShowDataset() {
                         <p className='text-lg line-clamp-2'>{item.description}</p>
                         <p className='text-md'>File Type: {Array.isArray(item.fileType) ? item.fileType.join(', ') : item.fileType}</p>
                         <p className='text-md'>Size: {item.size}</p>
-                        <span className='flex justify-between'>
-                          <span className='justify-start'>
+                        <span className='flex justify-end lg:justify-between'>
+                          <span className='justify-start hidden lg:block'>
                             {item.tag.map((tag) => (
                               <span
                                 key={tag}
-                                className='text-sm font-semibold bg-amber-500 rounded-full text-white/90 px-2 py-1 mr-2'
+                                className='text-md font-semibold bg-amber-500 rounded-full text-white/90 px-2 py-1 lg:mr-2'
                               >
                                 {tag}
                               </span>
@@ -125,11 +172,13 @@ function ShowDataset() {
               </div>
             ))}
             <ScrollToTopButton />
+            <div>
+              <PageNavigation />
+            </div>
           </div>
         </div>
         <Footer />
       </div>
-
     </div>
   );
 }
