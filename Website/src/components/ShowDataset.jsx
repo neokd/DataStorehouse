@@ -71,7 +71,7 @@ function ShowDataset() {
         <div className='container lg:mx-24 relative lg:ml-84'>
           <Sidebar />
           <div className='dark:text-white pt-8 md:pt-28 lg:pt-36 nunito mx-4  max-w-full lg:w-[56rem] '>
-            <nav>
+            <nav className='hidden md:block'>
               <ol className="inline-flex items-center text-xl font-semibold">
                 {pathSegments.map((segment, index) => (
                   <li key={index}>
