@@ -25,7 +25,7 @@ function Sidebar() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch('/datasets.json');
+        const response = await fetch('/database/datasets.json');
         if (!response.ok) {
           throw new Error('Failed to fetch data');
         }
@@ -92,15 +92,14 @@ function Sidebar() {
   }, [activeId, datasets, getIdFromUrl]);
 
   const toggleDomain = (domain, id) => {
-    if (id === null && domain) {
-      navigateTo(`/datasets/${domain}`);
+    const domainUrl = domain.replace(/\s+/g, ' ').toLowerCase();
+    if (id === null && domainUrl) {
+      navigateTo(`/datasets/${domainUrl}`);
+    } else if (id !== undefined) {
+      navigateTo(`/datasets/${domainUrl}#${id}`);
       if (window.innerWidth < 768) {
         setSidebarVisible(false);
       }
-    }
-    else if (id !== undefined) {
-      navigateTo(`/datasets/${domain}#${id}`);
-      // setSidebarVisible(false);
     }
     setSidebarElement(id);
     setShowModal(false);
@@ -108,7 +107,9 @@ function Sidebar() {
 
   const handleInputClick = () => {
     setShowModal(true);
-    setSidebarVisible(false);
+    if (window.innerHeight < 768) {
+      setSidebarVisible(false);
+    }
   };
 
   const toggleDropDown = (id) => {
@@ -136,18 +137,18 @@ function Sidebar() {
   }, []);
 
   return (
-    <div>
+    <div className='flex'>
       {
         sidebarVisible && (
           <aside
             id="logo-sidebar"
-            className="fixed inset-0 top-20 left-0 transition-all duration-300 lg:translate-x-0 dark:bg-opacity-10 bg-opacity-30 backdrop-blur-md z-10 bg-white/30 dark:bg-customGray/80 drop-shadow-lg dark:shadow-lg dark:lg:shadow-amber-500 lg:w-72 md:min-w-fit h-screen border-r border-r-gray-600 overflow-y-auto p-4"
+            className="fixed inset-0 top-20 left-0  transition-all duration-300 lg:translate-x-0 dark:bg-opacity-10 bg-opacity-30 backdrop-blur-md z-10 bg-white/30 dark:bg-customGray/80 drop-shadow-lg dark:shadow-lg dark:lg:shadow-amber-500 lg:w-72 md:min-w-fit max-h-screen border-r border-r-gray-600 "
           >
 
-            <div className="h-full px-3 pt-4 inset-0 dark:bg-customGray/80">
+            <div className="h-full px-3 pt-4 inset-0 dark:bg-customGray/80 overflow-y-auto">
               <div className='flex flex-row'>
 
-                <button className="lg:mt-4 w-full  lg:w-64" onClick={handleInputClick}>
+                <button className="lg:mt-4 w-full lg:w-64" onClick={handleInputClick}>
                   <div className="relative">
                     <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
                       <svg
@@ -203,7 +204,7 @@ function Sidebar() {
                             toggleDomain(domain.domain, null);
                           }}
                         >
-                          <span className="mx-4 text-xl my-1">{domain.domain}</span>
+                          <span className="mx-4 text-xl my-1 w-36 truncate">{domain.domain}</span>
                           {activeDropDown.includes(domain.domain) ||
                             (sidebarElement || activeId) ? (
                             <svg
@@ -234,9 +235,9 @@ function Sidebar() {
                     {activeDropDown.includes(domain.domain) && (
                       <div
                         className="mx-4 my-2 text-lg "
-                        data-aos="fade"
-                        data-aos-easing="linear"
-                        data-aos-duration="400"
+                      // data-aos="fade"
+                      // data-aos-easing="linear"
+                      // data-aos-duration="400"
                       >
                         {domain.datasets.map((dataset) => (
                           <div key={dataset.id} >
@@ -266,18 +267,26 @@ function Sidebar() {
 
       <div className='block md:hidden'>
         {!sidebarVisible && (
-          <button className="fixed md:hidden block top-24 bg-transparent backdrop-blur-lg rounded-lg p-2 lg:top-28 md:left-[18.5rem] z-10" onClick={() => setSidebarVisible(true)}>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth={1.5}
-              stroke="currentColor"
-              className="w-6 h-6 stroke-2 dark:stroke-white"
-            >
-              <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25H12" />
-            </svg>
-          </button>
+          <div className='fixed md:hidden flex flex-col  top-[5.1rem] bg-transparent backdrop-blur-lg rounded-lg lg:top-28 md:left-[18.5rem] z-10'>
+            <button className="p-1" onClick={() => setSidebarVisible(true)}>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={1.5}
+                stroke="currentColor"
+                className="w-6 h-6 stroke-2 dark:stroke-white"
+              >
+                <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25H12" />
+              </svg>
+            </button>
+            <button className="p-1" onClick={handleInputClick}>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 dark:text-white stroke-2 mt-2">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+              </svg>
+
+            </button>
+          </div>
         )}
       </div>
       {showModal && <Searchbar onClose={handleOnClose} visible={showModal} />}

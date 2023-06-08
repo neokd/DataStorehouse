@@ -12,6 +12,7 @@
   "dependencies": {
     "@popperjs/core": "^2.11.8",
     "@react-spring/web": "^9.7.2",
+    "@supabase/supabase-js": "^2.24.0",
     "aos": "^2.3.4",
     "fuse.js": "^6.6.2",
     "octokit": "^2.0.19",

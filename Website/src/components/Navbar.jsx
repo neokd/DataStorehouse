@@ -30,7 +30,7 @@ function Navbar() {
 
     return (
         <div>
-            <nav className="flex items-center md:justify-between flex-wrap lg:fixed top-0 lg:h-24 z-40 w-full backdrop-blur flex-none transition-colors duration-500 bg-blur py-4 drop-shadow-lg dark:bg-customGray/80 dark:text-white border-b border-gray-700 text-black ">
+            <nav className="flex items-center md:justify-between flex-wrap lg:fixed top-0 lg:h-24 z-40 w-full backdrop-blur flex-none bg-blur py-4 drop-shadow-lg dark:bg-customGray/80 dark:text-white border-b border-gray-700 text-black ">
                 <div className="lg:mx-8 mx-4 flex flex-rows">
                     <div className={`lg:p-3 p-2 border-amber-500 hover:scale-105  duration-100 mx-2 rounded-lg ${isActiveRoute('/') ? 'bg-amber-500    duration-100 ' : 'hover:shadow-lg hover:shadow-amber-500'}`}>
                         <Link to="/">

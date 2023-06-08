@@ -46,13 +46,13 @@ function Home() {
                    <span className=''>Data</span><span className="text-amber-500">Bucket</span>
                 </h1>
                 <button className='mt-4' onClick={handleInputClick}>
-                    <div className="relative w-72 lg:w-[23rem] ">
+                    <div className="relative w-80 drop-shadow lg:w-[24rem] ">
                         <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
                                 <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
                             </svg>
                         </div>
-                        <input type="text"  className="bg-gray-50   h-12 w-full border border-black-300 text-gray-900 text-lg rounded-lg focus:ring-amber-500 focus:border-amber-500 block  pl-10 p-2.5  dark:bg-gray-700 dark:border-amber-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-amber-500" placeholder="Quick Search..." disabled />
+                        <input type="text"  className="bg-gray-50 ring-1 ring-amber-500 h-12 w-full border border-black-300 text-gray-900 text-lg rounded-lg focus:ring-amber-500 focus:border-amber-500 block  pl-10 p-2.5  dark:bg-gray-700 dark:border-amber-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-amber-500" placeholder="Quick Search..." disabled />
                         <div className="absolute inset-y-0 right-3 flex dark:text-white/70 items-center pl-3 pointer-events-none">
                             &#8984; K
                         </div>

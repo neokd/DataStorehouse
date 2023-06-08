@@ -1,7 +1,7 @@
 import os
 import json
 import datetime
-import uuid
+from nanoid import generate
 
 def file_size(filename):
     file_size = os.path.getsize(filename)
@@ -35,11 +35,12 @@ def get_dataset_info(directory):
             else:
                 filenames[file] = [file_type]
             
+            github_path = "https://github.com/neokd/DataBucket/blob/Website" + directory + "/" + file
             dataset = {
-                "id": str(uuid.uuid4()),
+                "id": generate(size=10),
                 "title": os.path.splitext(file)[0],
                 "description": "",
-                "githubPath": "",
+                "githubPath": github_path,
                 "contributor": "",
                 "added": creation_time,
                 "updated": modified_time,
@@ -66,5 +67,6 @@ if __name__ == '__main__':
     directory = "./Bucket"  # Replace with the actual directory path
     dataset_json = generate_dataset_json(directory)
     json_output = json.dumps(dataset_json, indent=4)
+    print(json_output)
     with open('Website/public/datasets.json', 'w') as f:   
         f.write(json_output)
