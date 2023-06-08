@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 import Fuse from 'fuse.js';
-import { Link, useNavigate, useLocation } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 function Searchbar({ visible, onClose }) {
     const [searchQuery, setSearchQuery] = useState('');
@@ -20,7 +20,7 @@ function Searchbar({ visible, onClose }) {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await fetch('/datasets.json');
+                const response = await fetch('/database/datasets.json');
                 if (!response.ok) {
                     throw new Error('Failed to fetch data');
                 }
@@ -112,9 +112,9 @@ function Searchbar({ visible, onClose }) {
         const dataset = datasets.find((data) =>
             data.datasets.some((dataset) => dataset.id === datasetId)
         );
-
         if (dataset) {
-            navigateTo(`/datasets/${dataset.domain}/#${datasetId}`);
+            navigateTo(`/datasets/${dataset.domain}#${datasetId}`);
+            onClose()
         } else {
             console.error('Dataset not found');
         }
@@ -245,7 +245,7 @@ function Searchbar({ visible, onClose }) {
                                         key={dataset.id}
                                         className={`first:mt-2 list-none dark:text-gray-100 divide-y divide-gray-300 px-4 py-2 rounded-lg cursor-pointer ${isSelected ? 'bg-amber-500 dark:bg-amber-500' : 'bg-gray-200 dark:bg-gray-800 '
                                             }`}
-                                        onClick={() => redirectToDataset(dataset.id)}
+                                        onClick={() => redirectToDataset(result,dataset.id)}
                                     >
                                         {result}
                                     </li>
@@ -283,7 +283,7 @@ function Searchbar({ visible, onClose }) {
                             </ul>
                         </div>
                     )}
-                    {recommendations.length > 0 && (
+                    {recommendations.length >= 0 && (
                         <div className='mt-4 mx-2'>
                             <h3 className='text-lg dark:text-gray-100 font-bold mb-2'>
                                 Recommendations

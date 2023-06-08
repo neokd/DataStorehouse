@@ -21,7 +21,7 @@ function ShowDataset() {
     if (location.hash.startsWith('#')) {
       const element = document.getElementById(location.hash.substr(1));
       if (element) {
-        element.scrollIntoView({ behavior: 'smooth', block: 'center'});
+        element.scrollIntoView({ behavior: 'smooth', block: 'center' });
       }
     }
   })
@@ -29,7 +29,7 @@ function ShowDataset() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch('/datasets.json');
+        const response = await fetch('/database/datasets.json');
         if (!response.ok) {
           throw new Error('Failed to fetch data');
         }
@@ -54,7 +54,7 @@ function ShowDataset() {
   const getCurrentDomain = () => {
     const currentPath = location.pathname;
     const pathSegments = currentPath.split('/');
-    const domain = pathSegments.length >= 3 ? pathSegments[2].replace(/-/g, ' ') : '';
+    const domain = pathSegments.length >= 3 ? pathSegments[2].replace(/%20/g, ' ') : '';
     return domain;
   };
 
@@ -64,21 +64,19 @@ function ShowDataset() {
     (domain) => domain.domain.toLowerCase() === getCurrentDomain().toLowerCase()
   );
 
-
-
   return (
     <div>
       <div className='bg-gray-100 dark:bg-customGray flex flex-col min-h-screen overflow-x-clip '>
         <Navbar />
         <div className='container lg:mx-24 relative lg:ml-84'>
           <Sidebar />
-          <div className='dark:text-white pt-8 md:pt-28 lg:pt-36 nunito mx-6  w-fit lg:w-[56rem] '>
+          <div className='dark:text-white pt-8 md:pt-28 lg:pt-36 nunito mx-4  max-w-full lg:w-[56rem] '>
             <nav>
               <ol className="inline-flex items-center text-xl font-semibold">
                 {pathSegments.map((segment, index) => (
                   <li key={index}>
                     <Link to={`/${pathSegments.slice(0, index + 1).join('/')}`} className="">
-                      {segment.charAt(0).toUpperCase() + segment.slice(1)}
+                      {segment.charAt(0).toUpperCase() + segment.slice(1).replace(/%20/g, ' ')}
                     </Link>
                     {index !== pathSegments.length - 1 && <span className="mx-1">/</span>}
                   </li>
@@ -87,7 +85,9 @@ function ShowDataset() {
                   <li className='line-clamp-1'>
                     <span className="mx-1">/</span>
                     <span className=''>
-                      {filteredData[0].datasets.find((item) => item.id === location.hash.substr(1))?.title}
+                      {filteredData[0].datasets.find((item) =>
+                        decodeURIComponent(item.id) === decodeURIComponent(location.hash.substr(1)).replace(/%20/g, ' ')
+                      )?.title}
                     </span>
                   </li>
                 )}
@@ -122,15 +122,15 @@ function ShowDataset() {
                       data-aos-easing='linear'
                       data-aos-duration='400'
                     >
-
                       <div
-                        className={`drop-shadow-lg dark:drop-shadow-none shadow-md dark:bg-white/10   my-4 hover:border-amber-200 rounded-2xl p-8 leading-10 ${getIdFromUrl === item.id ? 'shdaow-2xl  shadow-amber-500' : ''}`}
+                        className={`drop-shadow-lg bg-white/75 dark:drop-shadow-none shadow-md dark:bg-white/10   my-4 hover:border-amber-200 rounded-2xl p-8 leading-10 ${getIdFromUrl === item.id ? 'shdaow-2xl  shadow-amber-500' : ''}`}
                       >
-
                         <Link to={`${item.githubPath}`} target='_blank'>
                           <h1 className='dark:text-white/90 text-3xl font-semibold'>{item.title}</h1>
                         </Link>
-                        <p className='pb-2'>Contributor: {item.contributor}</p>
+                        <Link target='_blank' to={"https://www.github.com/" + item.contributor}>
+                          <p className='pb-2'>Contributor: {item.contributor}</p>
+                        </Link>
                         <p className='text-lg line-clamp-2'>{item.description}</p>
                         <p className='text-md'>File Type: {Array.isArray(item.fileType) ? item.fileType.join(', ') : item.fileType}</p>
                         <p className='text-md'>Size: {item.size}</p>
@@ -173,7 +173,7 @@ function ShowDataset() {
             ))}
             <ScrollToTopButton />
             <div>
-              <PageNavigation />
+            <PageNavigation />
             </div>
           </div>
         </div>

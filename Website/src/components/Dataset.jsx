@@ -1,5 +1,6 @@
 import Footer from './Footer';
 import Navbar from './Navbar';
+import PageNavigation from './PageNavigation';
 import Sidebar from './Sidebar';
 import { Link } from 'react-router-dom';
 
@@ -76,22 +77,23 @@ function Dataset() {
             <div className="mt-8">
               <h2 className="text-4xl font-bold my-6">License</h2>
               <p className="text-2xl">
-                DataBucket is released under the <Link target='_blank' to="https://github.com/neokd/DataBucket/blob/Website/LICENSE.md">MIT license.</Link>
+                DataBucket is released under the <Link className='border-b-2 border-amber-500' target='_blank' to="https://github.com/neokd/DataBucket/blob/Website/LICENSE.md">MIT license.</Link>
               </p>
             </div>
             <div>
-              <div className="flex items-end justify-end mr-8">
+              {/* <div className="flex items-end justify-end mr-8">
                 <div className="flex lg:flex-cols flex-row">
 
                   <Link
-                    to='/datasets/Population'
+                    to='/datasets/marketing%20and%20customer%20analytics'
                     rel="noopener noreferrer"
                     className="bg-amber-500 text-white font-bold py-3 px-6 rounded-full shadow-lg"
                   >
                     Explore
                   </Link>
                 </div>
-              </div>
+              </div> */}
+              <PageNavigation/>
             </div>
           </div>
           <Footer />
