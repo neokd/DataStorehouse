@@ -236,7 +236,7 @@
         "datasets": [
             {
                 "id": "43WzWnzuNi",
-                "title": "CSE_ABBV",
+                "title": "CSE Abbreviations",
                 "description": "This dataset contains a collection of abbreviations commonly used in the field of Computer Science and Engineering (CSE). It provides the full forms or meanings of these abbreviations, helping users understand and decode technical terms in the CSE domain.",
                 "githubPath": "https://github.com/neokd/DataBucket/blob/Website/Bucket/Abbreviations/CSE_ABBV.json",
                 "contributor": "neokd",
@@ -330,7 +330,7 @@
             },
             {
                 "id": "5TQ2IFFoCd",
-                "title": "flavors",
+                "title": "flavors (CSV)",
                 "description": "This dataset contains a collection of flavors. Each entry represents a unique flavor along with its associated information, such as description, ingredients, or any other relevant details. The dataset is stored in CSV format.",
                 "githubPath": "https://github.com/neokd/DataBucket/blob/Website/Bucket/FlavoursData/flavors.csv",
                 "contributor": "Priyamakeshwari",

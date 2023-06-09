@@ -43,17 +43,20 @@ function Searchbar({ visible, onClose }) {
         includeScore: true,
         threshold: 0.4,
         keys: ['title', 'tag', 'description', 'contributor', 'domain'],
-      };
-      
-      const fuse = new Fuse(
+    };
+
+    const fuse = new Fuse(
         datasets.flatMap((dataset) =>
-          dataset.datasets.map((data) => ({
-            title: data.title,
-            domain: dataset.domain,
-          }))
+            dataset.datasets.map((data) => ({
+                title: data.title,
+                tag: data.tag,
+                description: data.description,
+                contributor: data.contributor,
+                domain: dataset.domain,
+            }))
         ),
         fuseOptions
-      );
+    );
 
     const searchInputRef = useRef(null);
 
@@ -82,6 +85,7 @@ function Searchbar({ visible, onClose }) {
             handleSearch();
         }
     };
+
     const handleSearch = () => {
         if (!recentSearches.includes(searchQuery)) {
             const updatedRecentSearches = [
@@ -94,19 +98,24 @@ function Searchbar({ visible, onClose }) {
                 searchQuery
             );
             setRecommendations(updatedRecommendations);
-            localStorage.setItem('recentSearches', JSON.stringify(updatedRecentSearches));
+            localStorage.setItem(
+                'recentSearches',
+                JSON.stringify(updatedRecentSearches)
+            );
         }
 
         if (searchResults.length > 0) {
+            const selectedResult = searchResults[selectedResultIndex];
             const dataset = datasets
                 .flatMap((domain) => domain.datasets)
-                .find((data) => data.title === searchResults[0]);
+                .find((data) => data.title === selectedResult);
             if (dataset && dataset.id) {
                 redirectToDataset(dataset.domain, dataset.id);
                 onClose();
             }
         }
     };
+
 
     const redirectToDataset = (domain, datasetId) => {
         const dataset = datasets.find((data) =>
@@ -125,14 +134,14 @@ function Searchbar({ visible, onClose }) {
         if (!query) return [];
         const fullForm = abbreviationMapping[query.toUpperCase()];
         if (fullForm) {
-          return [fullForm];
+            return [fullForm];
         }
         const searchResults = fuse.search(query);
         const filteredTopics = searchResults.map((result) => result.item.title);
         setShowErrorMessage(filteredTopics.length === 0 && query.length !== 0);
         return filteredTopics.slice(0, 10);
-      };
-      
+    };
+
 
     const getRecentSearches = () => {
         const storedSearches = localStorage.getItem('recentSearches');
@@ -245,7 +254,8 @@ function Searchbar({ visible, onClose }) {
                                         key={dataset.id}
                                         className={`first:mt-2 list-none dark:text-gray-100 divide-y divide-gray-300 px-4 py-2 rounded-lg cursor-pointer ${isSelected ? 'bg-amber-500 dark:bg-amber-500' : 'bg-gray-200 dark:bg-gray-800 '
                                             }`}
-                                        onClick={() => redirectToDataset(result,dataset.id)}
+                                        onClick={() => redirectToDataset(result, dataset.id)}
+                                        onKeyDown={() => redirectToDataset(result, dataset.id)}
                                     >
                                         {result}
                                     </li>
