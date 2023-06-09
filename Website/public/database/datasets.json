@@ -34,6 +34,23 @@
         ]
     },
     {
+        "domain": "Hindi Stories",
+        "datasets": [
+            {
+                "id": "nv3b_MikH6",
+                "title": "Hindi Stories Corpus",
+                "description": "This dataset is from Hindi Aesthetics Corpus.This corpus consists of novels and short stories written in Hindi language.Raw data is also available in the corpus.",
+                "githubPath": "https://github.com/neokd/DataBucket/blob/Website/Bucket/Hindi%20Stories",
+                "contributor": "neokd",
+                "added": "2023/06/09",
+                "updated": "2023/06/09",
+                "size": "99.5 MB",
+                "tag": ["hindi", "stories", "corpus", "novels", "short", "raw", "data"],
+                "fileType": "JSON"
+            }
+        ]
+    },
+    {
         "domain": "Natural Language Processing (NLP)",
         "datasets": [
             {
