@@ -139,9 +139,9 @@ function ShowDataset() {
                     >
                       <div
                         className={`drop-shadow-lg bg-white/75 dark:drop-shadow-none shadow-md dark:bg-white/10   my-4 hover:border-amber-200 rounded-2xl p-8 leading-10 ${getIdFromUrl === item.id ? 'shdaow-2xl  shadow-amber-500' : ''}`}>
-                        <div className='inline-flex'>
-                          <Link to={`${item.githubPath}`} target='_blank' className='mr-2'>
-                            <h1 className='dark:text-white/90 text-3xl font-semibold'>{item.title}</h1>
+                        <div className='flex justify-between'>
+                          <Link to={`${item.githubPath}`} target='_blank' className='inline-flex'>
+                            <h1 className='dark:text-white/90 text-3xl font-semibold mr-2'>{item.title}</h1>
                           </Link>
                           <button className='' onClick={() => handleCopyTitle(item.id)}>
                             {
