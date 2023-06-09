@@ -81,19 +81,7 @@ function Dataset() {
               </p>
             </div>
             <div>
-              {/* <div className="flex items-end justify-end mr-8">
-                <div className="flex lg:flex-cols flex-row">
-
-                  <Link
-                    to='/datasets/marketing%20and%20customer%20analytics'
-                    rel="noopener noreferrer"
-                    className="bg-amber-500 text-white font-bold py-3 px-6 rounded-full shadow-lg"
-                  >
-                    Explore
-                  </Link>
-                </div>
-              </div> */}
-              <PageNavigation/>
+              <PageNavigation />
             </div>
           </div>
           <Footer />

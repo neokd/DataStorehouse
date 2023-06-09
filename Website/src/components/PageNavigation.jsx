@@ -33,7 +33,7 @@ function PageNavigation() {
           <Link
             to={currentDomainIndex === 1 ? '/datasets' : `/datasets/${previousDomain}`}
             rel="noopener noreferrer"
-            className="bg-amber-500 text-white font-bold py-3 px-6 rounded-full hover:scale-105 duration-300 shadow-lg inline-flex">
+            className="bg-amber-500 text-white font-bold py-3 px-6 mr-4 lg:mr-0 rounded-full hover:scale-105 duration-300 shadow-lg inline-flex">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 stroke-2">
               <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
             </svg>
