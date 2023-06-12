@@ -34,6 +34,23 @@
         ]
     },
     {
+        "domain": "Wikipedia",
+        "datasets": [
+            {
+                "id": "WO9SQHIMLQ",
+                "title": "Hindi Wikipedia Corpus",
+                "description": "This dataset is collection of 300000 hindi pages on wikipedia and their corresponding titles. The dataset is extracted from the wikipedia dump and  ",
+                "githubPath": "https://github.com/neokd/DataBucket/tree/Website/Bucket/Wikipedia/Hindi%20Wiki",
+                "contributor": "neokd",
+                "added": "2023/06/12",
+                "updated": "2023/06/12",
+                "size": "1.1 GB",
+                "tag": ["raw", "data","wikipedia","hindi","corpus","dump","extracted"],
+                "fileType": "JSON"
+            }
+        ]
+    },
+    {
         "domain": "Hindi Stories",
         "datasets": [
             {
