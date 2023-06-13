@@ -35,7 +35,7 @@ def get_dataset_info(directory):
             else:
                 filenames[file] = [file_type]
             
-            github_path = "https://github.com/neokd/DataBucket/blob/Website" + directory + "/" + file
+            github_path = "https://github.com/neokd/DataBucket/blob/Website" + directory.strip('.') + "/" + file
             dataset = {
                 "id": generate(size=10),
                 "title": os.path.splitext(file)[0],
@@ -68,5 +68,3 @@ if __name__ == '__main__':
     dataset_json = generate_dataset_json(directory)
     json_output = json.dumps(dataset_json, indent=4)
     print(json_output)
-    with open('Website/public/datasets.json', 'w') as f:   
-        f.write(json_output)

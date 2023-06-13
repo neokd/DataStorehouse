@@ -142,7 +142,7 @@ function Sidebar() {
         sidebarVisible && (
           <aside
             id="logo-sidebar"
-            className="fixed inset-0 top-20 left-0  transition-all duration-300 lg:translate-x-0 dark:bg-opacity-10 bg-opacity-30 backdrop-blur-md z-10 bg-white/30 dark:bg-customGray/80 drop-shadow-lg dark:shadow-lg dark:lg:shadow-amber-500 lg:w-72 md:min-w-fit max-h-screen border-r border-r-gray-600 "
+            className="fixed inset-0 top-20 left-0 pb-8  transition-all duration-300 lg:translate-x-0 dark:bg-opacity-10 bg-opacity-30 backdrop-blur-md z-10 bg-white/30 dark:bg-customGray/80 drop-shadow-lg dark:shadow-lg dark:lg:shadow-amber-500 lg:w-72 md:min-w-fit max-h-screen border-r border-r-gray-600 "
           >
 
             <div className="h-full px-3 pt-4 inset-0 dark:bg-customGray/80 overflow-y-auto">
