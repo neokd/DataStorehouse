@@ -34,6 +34,105 @@
         ]
     },
     {
+        "domain": "AI Tools",
+        "datasets": [
+            {
+                "id": "WO9SQHABCD",
+                "title": "List of AI Tools",
+                "description": "This dataset is collection of all the AI tools that can be used in your ML projects.It consist of all the AI tools launched till june 2023 and will be updated every month.",
+                "githubPath": "https://github.com/neokd/DataBucket/blob/Website/Bucket/AI%20Tools/data.json",
+                "contributor": "neokd",
+                "added": "2023/06/13",
+                "updated": "2023/06/13",
+                "size": "1.3 MB",
+                "tag": ["AI", "tools", "list", "ML", "projects"],
+                "fileType": "JSON"
+            }
+        ]
+    },
+    {
+        "domain": "Wikipedia",
+        "datasets": [
+            {
+                "id": "WO9SQHIMLQ",
+                "title": "Hindi Wikipedia Corpus (June 2023)",
+                "description": "This dataset is collection of 3,00,000 hindi pages on wikipedia and their corresponding titles. The dataset is extracted from the wikipedia dump from xml and split into 2 files of 500MB each and is in JSON format. ",
+                "githubPath": "https://github.com/neokd/DataBucket/tree/Website/Bucket/Wikipedia/Hindi%20Wiki",
+                "contributor": "neokd",
+                "added": "2023/06/12",
+                "updated": "2023/06/12",
+                "size": "1.1 GB",
+                "tag": ["raw", "data","wikipedia","hindi","corpus","dump","extracted"],
+                "fileType": "JSON"
+            }
+        ]
+    },
+    {
+        "domain": "Stop Words",
+        "datasets": [
+            {
+                "id": "fbonlmn7QU",
+                "title": "Bengali Stop Words",
+                "description": "This dataset is collection of all the stop words in bengali That can be used to remove stop words from the text in your ML projects.",
+                "githubPath": "https://github.com/neokd/DataBucket/blob/Website/Bucket/StopWords/Bengali_stopwords.txt",
+                "contributor": "neokd",
+                "added": "2023/06/12",
+                "updated": "2023/06/12",
+                "size": "32 KB",
+                "tag": ["stop words", "hindi", "remove", "text", "ml", "projects"],
+                "fileType": "TXT"
+            },
+            {
+                "id": "gzDGq_Op8a",
+                "title": "Hindi Stop Words",
+                "description": "This dataset is collection of all the stop words in hindi That can be used to remove stop words from the text in your ML projects.",
+                "githubPath": "https://github.com/neokd/DataBucket/blob/Website/Bucket/StopWords/Hindi_stopwords.txt",
+                "contributor": "neokd",
+                "added": "2023/06/12",
+                "updated": "2023/06/12",
+                "size": "32 KB",
+                "tag": ["stop words", "hindi", "remove", "text", "ml", "projects"],
+                "fileType": "TXT"
+            },
+            {
+                "id": "iIYue8zeCF",
+                "title": "Gujrati Stop Words",
+                "description": "This dataset is collection of all the stop words in gujrati That can be used to remove stop words from the text in your ML projects.",
+                "githubPath": "https://github.com/neokd/DataBucket/blob/Website/Bucket/StopWords/Gujarati_stopwords.txt",
+                "contributor": "neokd",
+                "added": "2023/06/12",
+                "updated": "2023/06/12",
+                "size": "32 KB",
+                "tag": ["stop words", "gujrati", "text", "ml", "projects"],
+                "fileType": "TXT"
+            },
+            {
+                "id": "lJIHIop_ea",
+                "title": "Marathi Stop Words",
+                "description": "This dataset is collection of all the stop words in marathi That can be used to remove stop words from the text in your ML projects.",
+                "githubPath": "https://github.com/neokd/DataBucket/blob/Website/Bucket/StopWords/Gujarati_stopwords.txt",
+                "contributor": "neokd",
+                "added": "2023/06/12",
+                "updated": "2023/06/12",
+                "size": "32 KB",
+                "tag": ["stop words", "marathi", "text", "ml", "projects"],
+                "fileType": "TXT"
+            },
+            {
+                "id": "HJu2ZK7MvP",
+                "title": "Urdu Stop Words",
+                "description": "This dataset is collection of all the stop words in urdu That can be used to remove stop words from the text in your ML projects.",
+                "githubPath": "https://github.com/neokd/DataBucket/blob/Website/Bucket/StopWords/Urdu_stopwords.txt",
+                "contributor": "neokd",
+                "added": "2023/06/12",
+                "updated": "2023/06/12",
+                "size": "32 KB",
+                "tag": ["stop words", "urdu", "text", "ml", "projects"],
+                "fileType": "TXT"
+            }
+        ]
+    },
+    {
         "domain": "Hindi Stories",
         "datasets": [
             {
@@ -358,5 +457,35 @@
                 "fileType": "CSV"
             }
         ]
+    },
+    {
+        "domain": "Tamil Movies",
+        "datasets": [
+            {
+                "id": "4Q4Q4Q4Q4Q",
+                "title": "Tamil Movies (CSV)",
+                "description": "This datasets is currated from year 2011 to 2023 and contains information about Tamil movies. Each entry represents a unique movie along with its associated information, such as title,year. The dataset is stored in CSV format.",
+                "githubPath": "https://github.com/neokd/DataBucket/blob/Bucket/Tamil%20Movie%20years/Tamilmovie_data.csv",
+                "contributor": "Priyamakeshwari",
+                "added": "2023/06/13",
+                "updated": "2023/06/13",
+                "size": "18 KB",
+                "tag": ["Tamil", "Movies", "Analysis", "Data","CSV"],
+                "fileType": "CSV"
+            },
+            {
+                "id": "1Q1Q1Q1Q2Q",
+                "title": "Tamil Movies",
+                "description": "This datasets is currated from year 2011 to 2023 and contains information about Tamil movies. Each entry represents a unique movie along with its associated information, such as title,year. The dataset is stored in JSON format.",
+                "githubPath": "https://github.com/neokd/DataBucket/blob/Bucket/Tamil%20Movie%20years/Tamilmovie_data.json",
+                "contributor": "Priyamakeshwari",
+                "added": "2023/06/13",
+                "updated": "2023/06/14",
+                "size": "67 KB",
+                "tag": ["Github", "Repository", "Analysis", "Data"],
+                "fileType": "JSON"
+            }
+        ]
     }
+   
 ]
