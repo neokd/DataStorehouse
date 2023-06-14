@@ -13,6 +13,7 @@ if __name__ == '__main__':
     with open('keyboard_combination.txt','w') as f:
         for i in range(10000000):
             f.write(generate_password(8)+'\n')
+
     end = time.time()
     print('Took {} seconds to generate 1 million passwords'.format(end-start))
     
