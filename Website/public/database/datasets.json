@@ -64,6 +64,18 @@
                 "size": "4.5 MB",
                 "tag": ["javascript", "vulnerabilities", "security", "code", "dataset"],
                 "fileType": "CSV"
+            },
+            {
+                "id": "asdk2312",
+                "title": "1 million password combinations",
+                "description": "This dataset contains 1 million 10 character + digit password combinations that can be used to test your password strength. It includes all the password combinations and meta data about them.",
+                "githubPath": "https://github.com/neokd/DataBucket/blob/Website/Bucket/Cyber%20Security/passwords/10_char_passwd.txt.7z",
+                "contributor": "neokd",
+                "added": "2023/06/14",
+                "updated": "2023/06/14",
+                "size": "83 MB",
+                "tag": ["passwords", "security", "dataset"],
+                "fileType": "TXT"
             }
         ]
     },
