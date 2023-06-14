@@ -50,10 +50,19 @@ def txtToCSV(textFilePath, csvFilePath):
 
     print("TXT to CSV conversion completed successfully.")
 
+def tsvToCSV(tsvFilePath,csvFilePath):
+    with open(tsvFilePath,'r+' ) as tsvFile , open(csvFilePath,'w+') as csvFile:
+        tsvreader = csv.reader(tsvFile, delimiter='\t')
+        csvwriter = csv.writer(csvFile, delimiter=',')
+        for line in tsvreader:
+            csvwriter.writerow(line)
+    print("TSV to CSV conversion completed successfully.")
+
+
 # Driver Code
 if __name__ == '__main__':
-    txtFilePath = '/Users/kuldeep/Downloads/archive (10)/Futurepedia_Ai_Tools_Dataset.csv'
-    csvFilePath = 'Bucket/StopWords/Bengali_stopwords.csv'
+    txtFilePath = ''
+    csvFilePath = ''
     csvToJSON(txtFilePath,'data.json')
     
 

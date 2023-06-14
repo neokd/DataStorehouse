@@ -51,6 +51,23 @@
         ]
     },
     {
+        "domain": "Cyber Security",
+        "datasets": [
+            {
+                "id": "WO9SQ17686",
+                "title": "JavaScript Vulnerabilities",
+                "description": "This dataset contains vulnerabilites in javascript till 2019 and can be used to find vulnerabilities in your javascript code. It includes all the vulnerabilites and meta data about them.",
+                "githubPath": "https://github.com/neokd/DataBucket/blob/Website/Bucket/Cyber%20Security/JSVulnerabilityDataSet-1.0.csv",
+                "contributor": "neokd",
+                "added": "2023/06/14",
+                "updated": "2023/06/14",
+                "size": "4.5 MB",
+                "tag": ["javascript", "vulnerabilities", "security", "code", "dataset"],
+                "fileType": "CSV"
+            }
+        ]
+    },
+    {
         "domain": "Wikipedia",
         "datasets": [
             {
