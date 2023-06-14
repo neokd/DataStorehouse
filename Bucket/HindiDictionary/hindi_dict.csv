@@ -1,0 +1,901 @@
+Word,Meaning 
+सक्रिय,Active
+आकर्षक,Attractive
+गंजा,Bald
+सुंदर,Beautiful
+बड़ा,Big
+बोरिंग,Boring
+बहादुर,Brave
+चालाक,Clever
+ठंडा,Cold
+कायर,Coward
+अंधेरा,Dark
+सुस्त,Dull
+बड़ा,Elder
+निष्पक्ष,Fair (Just)
+मोटा,Fat
+कमजोर,Feeble
+दुरुस्त,Fit
+मजाकिया,Funny
+सुंदर,Handsome
+उच्च,High
+गरम,Hot
+आंतरिक,Inner
+बुद्धिमान,Intelligent
+जोरदार,Loud
+निम्न,Low
+मध्यम,Medium
+नया,New
+पुराना,Old
+बाहरी,Outer
+सुंदर,Pretty
+नाटा,Short
+छरहरा,Slim
+छोटा,Small
+स्मार्ट,Smart
+मज़बूत,Strong
+मीठा,Sweet
+लंबा,Tall
+गाढ़ा,Thick
+पतला,Thin
+छोटा,Younger
+रास्ता,Aisle
+आगमन,Arrival
+सामान,Baggage
+बैगेज क्लेम,Baggage Claim
+बोर्डिंग पास,Boarding Pass
+कक्ष,Cabin
+कैर्री ओन,Carry-On Bag
+नागरिक,Citizen
+कन्वेयर बेल्ट,Conveyor Belt
+सीमाशुल्क,Customs
+प्रस्थान,Departure
+उड़ान,Flight
+उड़ान सहायक	,Flight Attendant
+गेट	,Gate
+अप्रवास,Immigration
+लाउन्ज,Lounge
+पासपोर्ट,Passport
+विमानचालक,Pilot
+कुली,Porter
+झुकना,Recline
+सीट	,Seat
+सुरक्षा गार्ड	,Security Guard
+सूटकेस,Suitcase
+टिकट,Ticket
+ट्रे टेबल,Tray Table
+ट्राली,Trolley
+वीज़ा,Visa
+प्रतीक्षालय	,Waiting Area
+स्नानघर	,Bathroom
+गलियारा	,Corridor
+भोजन - कक्ष	,Dining-Room
+दरवाजा,Door
+रसोईघर,Kitchen
+बैठक का कमरा,Living Room
+लॉबी,Lobby
+कमरा,Room
+सीढ़ियाँ,Stairs
+खिड़की,Window
+बार	,Bar
+बीच	,Beach
+कॉफ़ी,Coffee
+डेट	,Date (Wrt Dating)
+डेटिंग,Dating
+पीना,Drink
+सुंदर,Handsome
+गले लगाना,Hug
+मैं तुमसे प्यार करता हूँ,I Love You
+चुंबन,Kiss
+नहीं धन्यवाद,No Thanks
+सुंदर,Pretty
+रेस्टोरेंट,Restaurant
+जल्द ही मिलते हैं!,See You Soon!
+अकेला,Single
+ज़रूर,Sure!
+धन्यवाद	,Thank You
+आज रात	,Tonight
+दुर्घटना,Accident
+एलर्जी,Allergy
+खून,Blood
+चिकित्सक,Doctor
+दिल का दौरा,Heart Attack
+अस्पताल	,Hospital
+चोट	,Hurt
+मुझे चोट लगी है	,I Am Hurt
+मैं बीमार हूँ,I Am Sick
+दवा,Medicine
+नर्स,Nurse
+आपरेशन,Operation
+दर्द,Pain
+दवा की दुकान,Pharmacy
+नुस्खा,Prescription
+सर्जरी,Surgery
+शराब,Alcohol
+बार	,Bar
+शौचालय,Bathroom
+बियर,Beer
+बॉटम्स उप!,Bottoms Up!
+कुर्सी,Chair
+चियर्स!,Cheers!
+ठंडा,Chilled
+कॉकटेल,Cocktail
+ठंडा,Cold
+क्रेडिट कार्ड,Credit Card
+जिन	,Gin
+ग्लास	,Glass (To Hold The Drink)
+कितने का?	,How Much?
+बर्फ,Ice
+पहचान कार्ड	,Identity Card
+रस	,Juice
+नींबू,Lemon
+स्थानीय ड्रिंक,Local Drink
+जोरदार,Loud
+मार्गरिटा,Margarita
+मेनू,Menu
+मिनरल वॉटर,Mineral Water
+मौकटेल,Mocktail
+संगीत,Music
+नैपकिन,Napkin
+थाली,Plate
+कीमत,Price
+रेड वाइन,Red Wine
+दोहराना	,Repeat
+रम,Rum
+सांग्रिया,Sangria
+शॉट	,Shots
+सिंगल माल्ट	,Single Malt
+नाश्ता,Snacks
+सोडा,Soda
+मिलाना,Stir
+स्टूल,Stool
+स्ट्रॉ,Straw
+टेबल,Table
+टकीला,Tequila
+टिप	,Tip
+टॉनिक,Tonic
+वोडका,Vodka
+वेटर,Waiter
+पानी,Water
+व्हिस्की,Whisky
+व्हाइट वाइन	,White Wine
+वाइन,Wine
+पीठ	,Back
+छाती,Chest
+कान	,Ear
+कोहनी,Elbow
+आंखें,Eyes
+चेहरा,Face
+पैर	,Feet
+उँगलियाँ,Fingers
+पांव,Foot
+हाथ	,Hands
+नितंब,Hip
+घुटना,Knee
+पैर	,Legs
+मुंह,Mouth
+नाक	,Nose
+पेट	,Stomach
+विज्ञापन,Advertising
+नियुक्ति,Appointment
+सहायक,Assistant
+निदेशक बोर्ड,Board Of Directors
+मालिक,Boss
+ब्रोशर,Brochure
+कक्ष,Cabin
+कैलेंडर,Calendar
+सीईओ,Ceo
+कांफ्रेंस कॉल,Conference Call
+कॉन्ट्रैक्ट	,Contract
+खाते में जमा रकम,Credit
+सौदा,Deal
+देरी,Delay
+विभाग,Department
+डेस्क,Desk
+निर्देशक,Director
+छूट	,Discount
+ई मेल,E-Mail
+विनिमय दर,Exchange Rate
+वित्त,Finance
+किस्त,Installment
+ब्याज दर,Interest Rate
+चालान,Invoice
+लैपटॉप,Laptop
+मैनेजर,Manager
+मार्केटिंग,Marketing
+मीटिंग,Meeting
+मोबाइल फ़ोन	,MobilePhone
+बातचीत,Negotiation
+कार्यालय,Office
+आदेश,Order
+भुगतान,Payment
+प्रेजेंटेशन	,Presentation
+प्रस्ताव,Proposal
+रिसेप्शन,Reception
+रिसेप्शनिस्ट,Receptionist
+नमूना,Sample
+सेक्रेटरी,Secretary
+शेयरहोल्डर,Shareholder
+हस्ताक्षर,Signature
+पर्यवेक्षक,Supervisor
+टेलीफोन नंबर,Telephone Number
+शर्तें	,Terms
+समय	,Time
+काला,Black
+नील,Blue
+भूरा,Brown
+सुनहरा,Golden
+स्लेटी,Gray
+हरा,Green
+नारंगी,Orange
+गुलाबी,Pink
+बैंगनी,Purple
+लाल,Red
+केसर,Saffron
+चांदी,Silver
+बैंगनी,Violet
+सफ़ेद,White
+पीला,Yellow
+सोमवार,Monday
+मंगलवार	,Tuesday
+बुधवार	,Wednesday
+बृहस्पतिवार	,Thursday
+शुक्रवार,Friday
+शनिवार,Saturday
+रविवार,Sunday
+पूर्व,East
+पश्चिम,West
+उत्तर,North
+दक्षिण,South
+यहां,Here
+वहाँ,There
+दाएँ,Right
+बाएं,Left
+चारों ओर,Around
+मोड़,Turn
+दुर्घटना,Accident
+एलर्जी,Allergy
+खून,Blood
+कांसुलेट,Consulate
+चिकित्सक,Doctor
+दूतावास	,Embassy
+आग,Fire
+फायर अलार्म	,Fire Alarm
+फायर स्टेशन	,Fire Station
+मदद करो!,Help!
+अस्पताल,Hospital
+खोया,Lost
+फार्मेसी,Pharmacy
+पुलिस स्टेशन,Police Station
+डकैती,Robbery
+क्या तुम मुझसे प्यार करते हो?,Do You Love Me?
+मैं प्यार में हूं,I Am In Love
+मैं तुमसे प्यार करता हूँ,I Love You
+मुझे आपकी याद आती है,I Miss You
+तुम मुझसे शादी करोगी?,Will You Marry Me?
+आप सुंदर हैं,You Are Beautiful
+समय,Time
+सेकंड,Second
+मिनट,Minute
+घंटा,Hour
+दिन,Day
+तारीख,Date
+माह,Month
+वर्ष,Year
+आज,Today
+कल,Tomorrow
+कल,Yesterday
+परसों,Day After Tomorrow
+कल के पहले दिन,Day Before Yesterday
+सुबह,Morning
+बारह बजे,Noon
+दोपहर,Afternoon
+शाम,Evening
+रात,Night
+अए. एम.,A.M.
+पी. एम.	,P.M.
+शीघ्र	,Early
+देर से	,Late
+मिड - डे,Mid-Day
+आधी रात	,Midnight
+अब,Now
+जल्दी,Soon
+बाद में,Later
+पिछला,Previous
+अगला,Next
+मां	,Mother
+पिता,Father
+बेटी,Daughter
+बेटा,Son
+पत्नी,Wife
+पति	,Husband
+दीदी ( बड़ी ),Sister (Elder)
+बहन	,Sister (Younger)
+भैया,Brother (Elder)
+छोटा भाई,Brother (Younger)
+दादी,Grandmother (Father'S Mother)
+दादा,Grandfather (Father'S Father)
+दादा - दादी,Grandparents (Father'S Side)
+नाना-नानी,Grandparents (Mother'S Side)
+नानी,Grandmother (Mother'S Mother)
+नाना,Grandfather (Mother'S Father)
+पोती,Granddaughter (Son'S Daughter)
+पोता,Grandson (Son'S Son)
+पोते - पोतियों,Grandchildren
+दोहती,Granddaughter (Daughter'S Daughter)
+दोहता,Grandson (Daughter'S Son)
+सास	,Mother-In-Law (Husband'S Mother)
+ससुर,Father-In-Law (Husband'S Father)
+सास	,Mother-In-Law (Wife'S Mother)
+ससुर,Father-In-Law (Wife'S Father)
+भाभी,Sister-In-Law
+जेठ,Brother-In-Law
+कज़िन भाई,Cousin (Male)
+कज़िन बहन,Cousin (Female)
+चाची,Aunt
+चाचा,Uncle
+भतीजा,Nephew
+भतीजी,Niece
+मित्र,Friend (Male)
+मित्र,Friend (Female)
+प्रेमिका,Girlfriend
+प्रेमी,Boyfriend
+क्रोध,Anger
+क्रोधित,Angry
+डर,Fear
+ख़ुशी,Happiness
+खुश	,Happy
+नफरत,Hate
+पसंद करना,Like
+प्यार,Love
+दर्द,Pain
+सम्मान,Respect
+दुखी,Sad
+भयभीत,Scared
+झटका,Shock
+शर्मीला,Shy
+आश्चर्य,Surprise
+परेशान,Upset
+फलियां,Beans
+रोटी,Bread
+मक्खन,Butter
+अनाज,Cereal
+पनीर,Cheese
+चिकन,Chicken
+तीखा,Chilly
+चिप्स,Chips
+कॉफ़ी,Coffee
+मिठाई,Dessert
+अंडे,Eggs
+लहसुन,Garlic
+हैमबर्गर,Hamburger
+आइसक्रीम,Ice Cream
+रस,Juice
+सलाद पत्ता,Lettuce
+मांस,Meat
+दूध	,Milk
+मिनरल वॉटर,Mineral Water
+मांसाहरी,Non Vegetarian
+नूडल्स	,Noodles
+नट्स,Nuts
+जैतून,Olives
+आमलेट,Omelette
+प्याज,Onion
+काली मिर्च,Pepper (Spice)
+सूअर का मांस,Pork
+आलू	,Potatoes
+लाल मिर्च,Red Pepper
+चावल,Rice
+सलाद,Salad
+नमक	,Salt
+सीफ़ूड,Sea Food
+झींगा,Shrimp
+सूप	,Soup
+मसाला,Spice
+चाय	,Tea
+सब्जियां,Vegetables
+शाकाहारी,Vegetarian
+पानी,Water
+दही	,Yoghurt
+सेब,Apple
+केला,Banana
+चेरी,Cherry
+नारियल,Coconut
+अंगूर,Grapes
+अमरूद,Guava
+कीवी,Kiwi
+आम,Mango
+तरबूज,Melon
+आड़ू,Peach
+नाशपाती,Pear
+आलूबुख़ारे,Plum
+तरबूज,Water Melon
+बंहदार कुरसी,Armchair
+बिस्तर,Bed
+कुर्सी,Chair
+डेस्क,Desk
+फर्नीचर,Furniture
+ओवन,Oven
+सोफ़ा,Sofa
+स्टोव,Stove
+टेबल,Table
+अलविदा,Bye
+बधाई हो!,Congratulations!
+नमस्कार	,Good Evening
+गुड लक	,Good Luck
+सुप्रभात	,Good Morning
+शुभ रात्रि	,Good Night
+नमस्ते	,Hello
+हाय	,Hi
+आप कैसे हैं?,How Are You?
+आपसे मिलकर अच्छा लगा,Nice To Meet You
+कृपया,Please
+बाद में मिलते हैं,See You Later
+जल्दी मिलते हैं!,See You Soon!
+कल फिर मिलेंगे,	See You Tomorrow
+क्षमा करें,Sorry
+ध्यान रखना,Take Care
+धन्यवाद,Thank You
+क्या हो रहा है?	,What’S Up?
+पकाना,Baking
+बास्केटबॉल,Basketball
+खाना पकाना,Cooking
+साइकल चलाना	,Cycling
+नृत्य,Dancing
+चित्रकारी,Drawing
+फुटबॉल,Football
+गोल्फ़,Golf
+शिकार,Hunting
+बुनना,Knitting
+चित्रकारी,Painting
+फ़ोटोग्राफ़ी,Photography
+पढ़ना,Reading
+मूर्तिकला,Sculpting
+सिलाई,Sewing
+गाना,Singing
+तैराकी,Swimming
+वीडियो गेमिंग,Video Gaming
+बुनाई,Weaving
+लेखन,Writing
+एक डबल कमरा	,A Double Room
+एक जने का कमरा	,A Single Room
+वातानुकूलित	,Air Conditioning
+छज्जा,Balcony
+स्नानघर	,Bathroom
+बीच	,Beach
+नाश्ता	,Breakfast
+कैश	,Cash
+स्वच्छ	,Clean
+गलियारा	,Corridor
+क्रेडिट कार्ड,Credit Card
+मुद्रा	,Currency
+जमा	,Deposit
+डिनर,Dinner
+डबल बेड,Double Bed
+लिफ़्ट,Elevator
+एस्केलेटर,Escalator
+एक्सचेंज रेट,Exchange Rate
+अतिरिक्त बिस्तर	,Extra Bed
+विदेशी मुद्रा,Foreign Exchange
+स्वागत कक्ष,Front Desk
+जिम	,Gym
+सफाई कर्मचारी,House Keeping
+लॉबी,Lobby
+लाकर,Locker
+आदेश,Order
+पार्किंग,Parking
+रसीद,Receipt
+रिसेप्शन,Reception
+आरक्षण,Reservation
+कमरा,Room
+कक्ष सेवा,Room Service
+सुरक्षित,Safe
+सिंगल बेड,Single Bed
+सीढ़ी,Stairway
+स्विमिंग पूल,Swimming Pool
+छत,Terrace
+टिप,Tip
+जगाने के लिए कॉल,Wake Up Call
+बाथरूम के साथ,With A Bathroom
+अरबी,Arabic
+चीनी,Chinese
+अंग्रेज़ी,English
+फ्रेंच,French
+जर्मन,German
+हिंदी,Hindi
+इतालवी,Italian
+जापानी,Japanese
+कोरियाई	,Korean
+स्पेनिश	,Spanish
+बेल्ट,Belt
+जैकेट,Jacket
+जीन्स,Jeans
+शर्ट,Shirt
+जूते,Shoes
+मोज़े,Socks
+टाई	,Tie
+बटुआ,Wallet
+जनवरी,January
+फरवरी,February
+मार्च,March
+अप्रैल,April
+मई,May
+जून	,June
+जुलाई,July
+अगस्त,August
+सितंबर,September
+अक्टूबर	,October
+नवंबर,November
+दिसंबर,December
+एक,One
+दो,Two
+तीन	,Three
+चार,Four
+पांच,Five
+छह,Six
+सात,Seven
+आठ,Eight
+नौ,Nine
+दस,Ten
+ग्यारह,Eleven
+बारह,Twelve
+तेरह,Thirteen
+चौदह,Fourteen
+पंद्रह,Fifteen
+सोलह,Sixteen
+सत्रह,Seventeen
+अठारह,Eighteen
+उन्नीस,Nineteen
+बीस,Twenty
+सालगिरह	,Anniversary
+जन्मदिन	,Birthday
+मोमबत्ती,Candle
+उत्सव,Celebration
+नृत्य,Dance
+पेय	,Drinks
+परिवार,Family
+भोजन,Food
+मित्र,Friends
+मजाक,Fun
+उपहार,Gift
+ग्रिल,Grill
+गिटार,Guitar
+निमंत्रण,Invitation
+जैज़,Jazz
+जोरदार,Loud
+संगीत,Music
+अवसर,Occasion
+पक्षी,Bird
+भैंस,Buffalo
+ऊंट	,Camel
+बिल्ली,Cat
+गाय	,Cow
+कुत्ता	,Dog
+बतख	,Duck
+मछली,Fish
+बकरी,Goat
+मुर्गी	,Hen
+घोड़ा,Horse
+खरगोश,Rabbit
+चूहा,Rat
+भेड़,Sheep
+कछुआ,Tortoise
+कछुआ,Turtle
+ऊपर	,Above
+के बाद,After
+आगे	,Ahead
+चारों ओर,Around
+में	,At
+से पहले	,Before
+पीछे,Behind
+नीचे,Below
+बगल में	,Beside
+के बीच	,Between
+से	,From
+यहां,Here
+में	,In
+अंदर,Inside
+पर	,On
+बाहर,Out
+बाहर,Outside
+वहाँ,There
+से,To
+एक साथ	,Together
+नीचे,Under
+साथ,With
+अंदर,Within
+बिना,Without
+अभिनेता,Actor
+कलाकार,Artist
+व्यवसायी,Business Man
+सॆ.ई.ओ.,Ceo
+शैफ़	,Chef
+सलाहकार	,Consultant
+नर्तक,Dancer
+दंत चिकित्सक,Dentist
+डॉक्टर,Doctor
+ड्राइवर	,Driver
+इंजीनियर,Engineer
+गृहिणी,Housewife
+मैनेजर,Manager
+नर्स,Nurse
+प्राध्यापक,Professor
+गायक,Singer
+छात्र,Student
+शिक्षक,Teacher
+मैं	,I
+मुझे,Me
+मेरे,My
+वह,He
+वह,She
+यह,It
+उसे	,Him
+उसे	,Her
+उसके,His
+उसके,Hers
+हमारे,Our
+उनके,Their
+उन,Them
+वे,They
+हमें,Us
+हम,We
+आपलोग,You (Plural)
+आप,You (Singular)
+आपलोगों के,Your (Plural)
+आपके,Your (Singular)
+कितने?,How Many?
+कितने का?,How Much?
+कैसे ?,How?
+किसे?,To Whom?
+क्या?,What?
+कब?,When?
+कहां ?,Where?
+कौन सा?	,Which?
+कौन?,Who?
+किसका?,Whose?
+क्यों?,Why?
+शराब,Alcohol
+एलर्जी,Allergic
+स्टार्टर,Appetizer
+स्नानघर,Bathroom
+पेय	,Beverage
+बिल	,Bill
+बोतल,Bottle
+कटोरा,Bowl
+रोटी,Bread
+नाश्ता,Breakfast
+क्रेडिट कार्ड,Credit Card
+कप,Cup
+खास पकवान,Delicacy
+मिठाई,Dessert
+डिनर,Dinner
+कांटा,Fork
+चाकू,Knife
+लंच	,Lunch
+मेनू,Menu
+मिनरल वॉटर,Mineral Water
+नैपकिन,Napkin
+काली मिर्च,Pepper (Spice)
+थाली,Plate
+नमक,Salt
+नाश्ता,Snack
+स्पेशलिटी,Speciality
+मसालेदार,Spicy
+चम्मच,Spoon
+टेबल,Table
+टिप	,Tip
+वेटर,Waiter
+वेट्रेस	,Waitress
+पानी,Water
+शराब,Wine
+प्रशासन	,Administration
+असाइनमेंट,Assignment
+टॉयलेट,Bathroom
+किताब,Book
+कैंटीन,Canteen
+वर्ग,Class
+कक्षा,Classroom
+पाठ्यक्रम,Courses
+डेस्क,Desk
+परीक्षा,Exam
+समूह,Group
+छात्रावास,Hostel
+पुस्तकालय,Library
+लाकर,Locker
+लंच,Lunch
+नोटबुक,Notebook
+नोट्स,Notes
+कार्यालय,Office
+अवधि,Period
+प्रदर्शन,Presentation
+प्राचार्य,Principal
+परिणाम,Result
+शिड्यूल	,Schedule
+खेल	,Sports
+छात्र,Student
+पाठ्यक्रम,Syllabus
+शिक्षक,Teacher
+परीक्षा,Test
+समय	,Time
+वसंत,Spring
+गर्मी,Summer
+शरद ऋतु,Autumn
+सर्दी,Winter
+बेकरी,Bakery
+टोकरी,Basket
+चेंज,Change
+सस्ता,Cheap
+बंद	,Closed
+कपड़े की दुकान,Clothes Shop
+लागत,Cost
+मुद्रा,Currency
+खराब,Defective
+हीरा,Diamond
+छूट	,Discount
+डॉलर,Dollar
+प्रवेश,Entrance
+यूरो,Euros
+एक्सचेंज रेट,Exchange Rate
+निकास,Exit
+महंगा,Expensive
+विदेशी मुद्रा,Foreign Exchange
+उपहारGift
+अच्छी गुणवत्ता,Good Quality
+कितने का?,How Much?
+आभूषण,Jewelry
+खुला,Open
+वेतन,Pay
+खराब क्वालिटी,Poor Quality
+कीमत,Price
+गुणवत्ता,Quality
+रसीद,Receipt
+डिस्काउंट,Sale (Reduction)
+बेचना,Sell
+शौपिंग कार्ट,Shopping Cart
+अखाड़ा,Arena
+अत्हेलेटिक्स,Atheletics
+आक्रमण,Attack
+बैडमिंटन,Badminton
+बास्केटबॉल,Basketball
+बॉक्सिंग,Boxing
+कप्तान,Captain
+उत्सव,Celebration
+चैंपियनशिप,Championship
+कोच,Coach
+क्रिकेट,Cricket
+साइकल चलाना,Cycling
+एक्स्ट्रा	,Extra
+फुटबॉल,Football
+फ़ाउल,Foul
+सामने की पंक्ति,Front-Row
+खेल	,Game
+लक्ष्य	,Goal
+गॉल कीपर,Goal Keeper
+जिमनास्टिक्स,Gymnastics
+घुड दौड़,Horse-Racing
+वाह!,Hurrah!
+हारना,Lose
+मैराथन,Marathon
+मैच	,Match
+खिलाड़ी	,Players
+दौड़,Race
+रेफ़री,Referee
+स्कोर,Score
+सीट	,Seat
+स्टेडियम,Stadium
+तैराकी,Swimming
+टेबल - टेनिस,Table-Tennis
+टीम	,Team
+टेनिस,Tennis
+टिकट,Ticket
+जीत	,Victory
+वॉली बॉल,Volley-Ball
+जीतना,Win
+रेस्लिंग,Wrestling
+डाउनटाउन,Downtown
+ड्राइवर,Driver
+पेट्रोल पंप	Gas,Station
+हाइवे,Highway
+मीटर,Meter
+प्रवेश निषेध,No Entry
+नो पार्किंग	,No Parking
+रसीद,Receipt
+सड़क,Road
+सिग्नल,Signal
+गति सीमा,Speed Limit
+रुकिए,Stop
+यहाँ रुकिए,Stop Here
+गली	,Street
+टैक्सी	,Taxi
+टैक्सी स्टैंड,Taxi Stop
+ट्रैफ़िक लाइट,Traffic Lights
+यहाँ ठेहेरिये,Wait Here
+एसी	,Air Conditioner
+हवाई जहाज,Airplane
+नाव	,Boat
+बस	,Bus
+बस स्टैंड,Bus Stop
+कार	,Car
+क्रूज,Cruise
+साइकिल,Cycle
+नौका,Ferry
+मेट्रो,Metro
+एक तरफा रास्ता,One Way
+झुकना,Recline
+दो तरफा सफ़र	,Round Trip
+सीट	,Seat
+जहाज,Ship
+टैक्सी	,Taxi
+रेलगाड़ी,Train
+रेलवे स्टेशन,Train Station
+कला	,Art
+मार्ग,Avenue
+बैंक,Bank
+बीच	,Beach
+सिनेमा,Cinema
+शहर के बीच	,City Center
+बंद	,Closed
+पोशाक,Costume
+संस्कृति,Culture
+नृत्य,Dance
+डाउनटाउन,Downtown
+गैलरी,Gallery
+हाइवे,Highway
+पुस्तकालय,Library
+शॉपिंग सेंटर,Mall
+बाजार	,Market
+स्मारक	,Monument
+संग्रहालय	,Museum
+संगीत,Music
+खुला,Open
+पार्क,Park
+पास	,Pass
+रसीद,Receipt
+धर्म,Religion
+ग्रामीण	,Rural
+कहानियां,Stories
+रोड साइड बाज़ार,Street Market
+छात्र डिस्काउंट	,Student Discount
+धूप के चश्मे,Sun Glasses
+सन स्क्रीन,Sun Screen
+थिएटर,Theater
+टिकट,Ticket
+परंपरा,Tradition
+शहरी,Urban
+बैंगन,Aubergine
+शिमला मिर्च,Bell Peppers
+बैंगन,Brinjal
+गाजर,Carrot
+मिर्च,Chili
+मकई,Corn
+बैंगन,Eggplant
+कुकुरमुत्ता,Mushroom
+आलू	,Potato
+टमाटर,Tomato
+बादल छाना,C,loudy
+उदास,Gloomy
+नम,Humid
+ठंड है,It'S Cold
+गर्मी है,It'S Hot
+तूफानी है,It'S Windy
+बिजली कड़कना	,Lightening
+सुखद,Pleasant
+बरसाती ,Rainy
+गरज	,Thunder
+तूफानी,Windy
+शादी की सालगिरह मुबारक हो,Happy Anniversary!
+जन्मदिन मुबारक,Happy Birthday!
+नया साल मुबारक हो,Happy New Year!
+मेरी क्रिसमस,Merry Christmas!
+एक्सेसरी,Accessory
+बिकिनी,Bikini
+ब्लाउज,Blouse
+कान की बाली,Earrings
+जैकेट,Jacket
+जीन्स,Jeans
+आभूषण,Jewelry
+हार,Necklace
+पर्स,Purse
+जूते,Shoes
+स्कर्ट,Skirt
+चप्पलें,Slippers
