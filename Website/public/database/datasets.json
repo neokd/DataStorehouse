@@ -54,6 +54,18 @@
         "domain": "Cyber Security",
         "datasets": [
             {
+                "id": "8KGYbPL7KV",
+                "title": "JWT Secrets",
+                "description": "This dataset contains JWT secrets that can be used. These hashes are scraped from github and are commonly used. ",
+                "githubPath": "https://github.com/neokd/DataBucket/blob/Website/Bucket/Cyber%20Security/passwords/jwt-secrets.txt",
+                "contributor": "neokd",
+                "added": "2023/06/14",
+                "updated": "2023/06/14",
+                "size": "1.1 MB",
+                "tag": ["password", "list", "jwt", "security", "dataset"],
+                "fileType": "TXT"
+            },
+            {
                 "id": "WO9SQ17686",
                 "title": "JavaScript Vulnerabilities",
                 "description": "This dataset contains vulnerabilites in javascript till 2019 and can be used to find vulnerabilities in your javascript code. It includes all the vulnerabilites and meta data about them.",
