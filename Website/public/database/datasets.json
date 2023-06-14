@@ -76,6 +76,30 @@
                 "size": "90 MB",
                 "tag": ["password", "list", "security", "strength", "dataset"],
                 "fileType": "TXT"
+            },
+            {
+                "id": "WO9SBGDAC",
+                "title": "Top 500 Worst Passwords",
+                "description": "This dataset contains top 500 worst common passwords that are used by people. These passwords are common and are not recommended to use.Check if yours is there in it!",
+                "githubPath": "https://github.com/neokd/DataBucket/blob/Website/Bucket/Cyber%20Security/passwords/500-worst-passwords.txt",
+                "contributor": "neokd",
+                "added": "2023/06/14",
+                "updated": "2023/06/14",
+                "size": "3 KB",
+                "tag": ["password", "list", "500","top500", "security"],
+                "fileType": "TXT"
+            },
+            {
+                "id": "W90BSGDAC",
+                "title": "List of all 4 digit PINs",
+                "description": "This dataset contains all the possible 4 digit PINs that can be used to test your PIN strength. It contains 10000 PINs.",
+                "githubPath": "https://github.com/neokd/DataBucket/blob/Website/Bucket/Cyber%20Security/passwords/4_digit_pin.txt",
+                "contributor": "neokd",
+                "added": "2023/06/14",
+                "updated": "2023/06/14",
+                "size": "54 KB",
+                "tag": ["password", "list", "4 digit", "security", "dataset"],
+                "fileType": "TXT"
             }
         ]
     },
