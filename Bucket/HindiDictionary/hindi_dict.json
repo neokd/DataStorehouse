@@ -1,0 +1,3602 @@
+[
+ {
+   "Word": "सक्रिय",
+   "Meaning": "Active"
+ },
+ {
+   "Word": "आकर्षक",
+   "Meaning": "Attractive"
+ },
+ {
+   "Word": "गंजा",
+   "Meaning": "Bald"
+ },
+ {
+   "Word": "सुंदर",
+   "Meaning": "Beautiful"
+ },
+ {
+   "Word": "बड़ा",
+   "Meaning": "Big"
+ },
+ {
+   "Word": "बोरिंग",
+   "Meaning": "Boring"
+ },
+ {
+   "Word": "बहादुर",
+   "Meaning": "Brave"
+ },
+ {
+   "Word": "चालाक",
+   "Meaning": "Clever"
+ },
+ {
+   "Word": "ठंडा",
+   "Meaning": "Cold"
+ },
+ {
+   "Word": "कायर",
+   "Meaning": "Coward"
+ },
+ {
+   "Word": "अंधेरा",
+   "Meaning": "Dark"
+ },
+ {
+   "Word": "सुस्त",
+   "Meaning": "Dull"
+ },
+ {
+   "Word": "बड़ा",
+   "Meaning": "Elder"
+ },
+ {
+   "Word": "निष्पक्ष",
+   "Meaning": "Fair (Just)"
+ },
+ {
+   "Word": "मोटा",
+   "Meaning": "Fat"
+ },
+ {
+   "Word": "कमजोर",
+   "Meaning": "Feeble"
+ },
+ {
+   "Word": "दुरुस्त",
+   "Meaning": "Fit"
+ },
+ {
+   "Word": "मजाकिया",
+   "Meaning": "Funny"
+ },
+ {
+   "Word": "सुंदर",
+   "Meaning": "Handsome"
+ },
+ {
+   "Word": "उच्च",
+   "Meaning": "High"
+ },
+ {
+   "Word": "गरम",
+   "Meaning": "Hot"
+ },
+ {
+   "Word": "आंतरिक",
+   "Meaning": "Inner"
+ },
+ {
+   "Word": "बुद्धिमान",
+   "Meaning": "Intelligent"
+ },
+ {
+   "Word": "जोरदार",
+   "Meaning": "Loud"
+ },
+ {
+   "Word": "निम्न",
+   "Meaning": "Low"
+ },
+ {
+   "Word": "मध्यम",
+   "Meaning": "Medium"
+ },
+ {
+   "Word": "नया",
+   "Meaning": "New"
+ },
+ {
+   "Word": "पुराना",
+   "Meaning": "Old"
+ },
+ {
+   "Word": "बाहरी",
+   "Meaning": "Outer"
+ },
+ {
+   "Word": "सुंदर",
+   "Meaning": "Pretty"
+ },
+ {
+   "Word": "नाटा",
+   "Meaning": "Short"
+ },
+ {
+   "Word": "छरहरा",
+   "Meaning": "Slim"
+ },
+ {
+   "Word": "छोटा",
+   "Meaning": "Small"
+ },
+ {
+   "Word": "स्मार्ट",
+   "Meaning": "Smart"
+ },
+ {
+   "Word": "मज़बूत",
+   "Meaning": "Strong"
+ },
+ {
+   "Word": "मीठा",
+   "Meaning": "Sweet"
+ },
+ {
+   "Word": "लंबा",
+   "Meaning": "Tall"
+ },
+ {
+   "Word": "गाढ़ा",
+   "Meaning": "Thick"
+ },
+ {
+   "Word": "पतला",
+   "Meaning": "Thin"
+ },
+ {
+   "Word": "छोटा",
+   "Meaning": "Younger"
+ },
+ {
+   "Word": "रास्ता",
+   "Meaning": "Aisle"
+ },
+ {
+   "Word": "आगमन",
+   "Meaning": "Arrival"
+ },
+ {
+   "Word": "सामान",
+   "Meaning": "Baggage"
+ },
+ {
+   "Word": "बैगेज क्लेम",
+   "Meaning": "Baggage Claim"
+ },
+ {
+   "Word": "बोर्डिंग पास",
+   "Meaning": "Boarding Pass"
+ },
+ {
+   "Word": "कक्ष",
+   "Meaning": "Cabin"
+ },
+ {
+   "Word": "कैर्री ओन",
+   "Meaning": "Carry-On Bag"
+ },
+ {
+   "Word": "नागरिक",
+   "Meaning": "Citizen"
+ },
+ {
+   "Word": "कन्वेयर बेल्ट",
+   "Meaning": "Conveyor Belt"
+ },
+ {
+   "Word": "सीमाशुल्क",
+   "Meaning": "Customs"
+ },
+ {
+   "Word": "प्रस्थान",
+   "Meaning": "Departure"
+ },
+ {
+   "Word": "उड़ान",
+   "Meaning": "Flight"
+ },
+ {
+   "Word": "उड़ान सहायक\t",
+   "Meaning": "Flight Attendant"
+ },
+ {
+   "Word": "गेट\t",
+   "Meaning": "Gate"
+ },
+ {
+   "Word": "अप्रवास",
+   "Meaning": "Immigration"
+ },
+ {
+   "Word": "लाउन्ज",
+   "Meaning": "Lounge"
+ },
+ {
+   "Word": "पासपोर्ट",
+   "Meaning": "Passport"
+ },
+ {
+   "Word": "विमानचालक",
+   "Meaning": "Pilot"
+ },
+ {
+   "Word": "कुली",
+   "Meaning": "Porter"
+ },
+ {
+   "Word": "झुकना",
+   "Meaning": "Recline"
+ },
+ {
+   "Word": "सीट\t",
+   "Meaning": "Seat"
+ },
+ {
+   "Word": "सुरक्षा गार्ड\t",
+   "Meaning": "Security Guard"
+ },
+ {
+   "Word": "सूटकेस",
+   "Meaning": "Suitcase"
+ },
+ {
+   "Word": "टिकट",
+   "Meaning": "Ticket"
+ },
+ {
+   "Word": "ट्रे टेबल",
+   "Meaning": "Tray Table"
+ },
+ {
+   "Word": "ट्राली",
+   "Meaning": "Trolley"
+ },
+ {
+   "Word": "वीज़ा",
+   "Meaning": "Visa"
+ },
+ {
+   "Word": "प्रतीक्षालय\t",
+   "Meaning": "Waiting Area"
+ },
+ {
+   "Word": "स्नानघर\t",
+   "Meaning": "Bathroom"
+ },
+ {
+   "Word": "गलियारा\t",
+   "Meaning": "Corridor"
+ },
+ {
+   "Word": "भोजन - कक्ष\t",
+   "Meaning": "Dining-Room"
+ },
+ {
+   "Word": "दरवाजा",
+   "Meaning": "Door"
+ },
+ {
+   "Word": "रसोईघर",
+   "Meaning": "Kitchen"
+ },
+ {
+   "Word": "बैठक का कमरा",
+   "Meaning": "Living Room"
+ },
+ {
+   "Word": "लॉबी",
+   "Meaning": "Lobby"
+ },
+ {
+   "Word": "कमरा",
+   "Meaning": "Room"
+ },
+ {
+   "Word": "सीढ़ियाँ",
+   "Meaning": "Stairs"
+ },
+ {
+   "Word": "खिड़की",
+   "Meaning": "Window"
+ },
+ {
+   "Word": "बार\t",
+   "Meaning": "Bar"
+ },
+ {
+   "Word": "बीच\t",
+   "Meaning": "Beach"
+ },
+ {
+   "Word": "कॉफ़ी",
+   "Meaning": "Coffee"
+ },
+ {
+   "Word": "डेट\t",
+   "Meaning": "Date (Wrt Dating)"
+ },
+ {
+   "Word": "डेटिंग",
+   "Meaning": "Dating"
+ },
+ {
+   "Word": "पीना",
+   "Meaning": "Drink"
+ },
+ {
+   "Word": "सुंदर",
+   "Meaning": "Handsome"
+ },
+ {
+   "Word": "गले लगाना",
+   "Meaning": "Hug"
+ },
+ {
+   "Word": "मैं तुमसे प्यार करता हूँ",
+   "Meaning": "I Love You"
+ },
+ {
+   "Word": "चुंबन",
+   "Meaning": "Kiss"
+ },
+ {
+   "Word": "नहीं धन्यवाद",
+   "Meaning": "No Thanks"
+ },
+ {
+   "Word": "सुंदर",
+   "Meaning": "Pretty"
+ },
+ {
+   "Word": "रेस्टोरेंट",
+   "Meaning": "Restaurant"
+ },
+ {
+   "Word": "जल्द ही मिलते हैं!",
+   "Meaning": "See You Soon!"
+ },
+ {
+   "Word": "अकेला",
+   "Meaning": "Single"
+ },
+ {
+   "Word": "ज़रूर",
+   "Meaning": "Sure!"
+ },
+ {
+   "Word": "धन्यवाद\t",
+   "Meaning": "Thank You"
+ },
+ {
+   "Word": "आज रात\t",
+   "Meaning": "Tonight"
+ },
+ {
+   "Word": "दुर्घटना",
+   "Meaning": "Accident"
+ },
+ {
+   "Word": "एलर्जी",
+   "Meaning": "Allergy"
+ },
+ {
+   "Word": "खून",
+   "Meaning": "Blood"
+ },
+ {
+   "Word": "चिकित्सक",
+   "Meaning": "Doctor"
+ },
+ {
+   "Word": "दिल का दौरा",
+   "Meaning": "Heart Attack"
+ },
+ {
+   "Word": "अस्पताल\t",
+   "Meaning": "Hospital"
+ },
+ {
+   "Word": "चोट\t",
+   "Meaning": "Hurt"
+ },
+ {
+   "Word": "मुझे चोट लगी है\t",
+   "Meaning": "I Am Hurt"
+ },
+ {
+   "Word": "मैं बीमार हूँ",
+   "Meaning": "I Am Sick"
+ },
+ {
+   "Word": "दवा",
+   "Meaning": "Medicine"
+ },
+ {
+   "Word": "नर्स",
+   "Meaning": "Nurse"
+ },
+ {
+   "Word": "आपरेशन",
+   "Meaning": "Operation"
+ },
+ {
+   "Word": "दर्द",
+   "Meaning": "Pain"
+ },
+ {
+   "Word": "दवा की दुकान",
+   "Meaning": "Pharmacy"
+ },
+ {
+   "Word": "नुस्खा",
+   "Meaning": "Prescription"
+ },
+ {
+   "Word": "सर्जरी",
+   "Meaning": "Surgery"
+ },
+ {
+   "Word": "शराब",
+   "Meaning": "Alcohol"
+ },
+ {
+   "Word": "बार\t",
+   "Meaning": "Bar"
+ },
+ {
+   "Word": "शौचालय",
+   "Meaning": "Bathroom"
+ },
+ {
+   "Word": "बियर",
+   "Meaning": "Beer"
+ },
+ {
+   "Word": "बॉटम्स उप!",
+   "Meaning": "Bottoms Up!"
+ },
+ {
+   "Word": "कुर्सी",
+   "Meaning": "Chair"
+ },
+ {
+   "Word": "चियर्स!",
+   "Meaning": "Cheers!"
+ },
+ {
+   "Word": "ठंडा",
+   "Meaning": "Chilled"
+ },
+ {
+   "Word": "कॉकटेल",
+   "Meaning": "Cocktail"
+ },
+ {
+   "Word": "ठंडा",
+   "Meaning": "Cold"
+ },
+ {
+   "Word": "क्रेडिट कार्ड",
+   "Meaning": "Credit Card"
+ },
+ {
+   "Word": "जिन\t",
+   "Meaning": "Gin"
+ },
+ {
+   "Word": "ग्लास\t",
+   "Meaning": "Glass (To Hold The Drink)"
+ },
+ {
+   "Word": "कितने का?\t",
+   "Meaning": "How Much?"
+ },
+ {
+   "Word": "बर्फ",
+   "Meaning": "Ice"
+ },
+ {
+   "Word": "पहचान कार्ड\t",
+   "Meaning": "Identity Card"
+ },
+ {
+   "Word": "रस\t",
+   "Meaning": "Juice"
+ },
+ {
+   "Word": "नींबू",
+   "Meaning": "Lemon"
+ },
+ {
+   "Word": "स्थानीय ड्रिंक",
+   "Meaning": "Local Drink"
+ },
+ {
+   "Word": "जोरदार",
+   "Meaning": "Loud"
+ },
+ {
+   "Word": "मार्गरिटा",
+   "Meaning": "Margarita"
+ },
+ {
+   "Word": "मेनू",
+   "Meaning": "Menu"
+ },
+ {
+   "Word": "मिनरल वॉटर",
+   "Meaning": "Mineral Water"
+ },
+ {
+   "Word": "मौकटेल",
+   "Meaning": "Mocktail"
+ },
+ {
+   "Word": "संगीत",
+   "Meaning": "Music"
+ },
+ {
+   "Word": "नैपकिन",
+   "Meaning": "Napkin"
+ },
+ {
+   "Word": "थाली",
+   "Meaning": "Plate"
+ },
+ {
+   "Word": "कीमत",
+   "Meaning": "Price"
+ },
+ {
+   "Word": "रेड वाइन",
+   "Meaning": "Red Wine"
+ },
+ {
+   "Word": "दोहराना\t",
+   "Meaning": "Repeat"
+ },
+ {
+   "Word": "रम",
+   "Meaning": "Rum"
+ },
+ {
+   "Word": "सांग्रिया",
+   "Meaning": "Sangria"
+ },
+ {
+   "Word": "शॉट\t",
+   "Meaning": "Shots"
+ },
+ {
+   "Word": "सिंगल माल्ट\t",
+   "Meaning": "Single Malt"
+ },
+ {
+   "Word": "नाश्ता",
+   "Meaning": "Snacks"
+ },
+ {
+   "Word": "सोडा",
+   "Meaning": "Soda"
+ },
+ {
+   "Word": "मिलाना",
+   "Meaning": "Stir"
+ },
+ {
+   "Word": "स्टूल",
+   "Meaning": "Stool"
+ },
+ {
+   "Word": "स्ट्रॉ",
+   "Meaning": "Straw"
+ },
+ {
+   "Word": "टेबल",
+   "Meaning": "Table"
+ },
+ {
+   "Word": "टकीला",
+   "Meaning": "Tequila"
+ },
+ {
+   "Word": "टिप\t",
+   "Meaning": "Tip"
+ },
+ {
+   "Word": "टॉनिक",
+   "Meaning": "Tonic"
+ },
+ {
+   "Word": "वोडका",
+   "Meaning": "Vodka"
+ },
+ {
+   "Word": "वेटर",
+   "Meaning": "Waiter"
+ },
+ {
+   "Word": "पानी",
+   "Meaning": "Water"
+ },
+ {
+   "Word": "व्हिस्की",
+   "Meaning": "Whisky"
+ },
+ {
+   "Word": "व्हाइट वाइन\t",
+   "Meaning": "White Wine"
+ },
+ {
+   "Word": "वाइन",
+   "Meaning": "Wine"
+ },
+ {
+   "Word": "पीठ\t",
+   "Meaning": "Back"
+ },
+ {
+   "Word": "छाती",
+   "Meaning": "Chest"
+ },
+ {
+   "Word": "कान\t",
+   "Meaning": "Ear"
+ },
+ {
+   "Word": "कोहनी",
+   "Meaning": "Elbow"
+ },
+ {
+   "Word": "आंखें",
+   "Meaning": "Eyes"
+ },
+ {
+   "Word": "चेहरा",
+   "Meaning": "Face"
+ },
+ {
+   "Word": "पैर\t",
+   "Meaning": "Feet"
+ },
+ {
+   "Word": "उँगलियाँ",
+   "Meaning": "Fingers"
+ },
+ {
+   "Word": "पांव",
+   "Meaning": "Foot"
+ },
+ {
+   "Word": "हाथ\t",
+   "Meaning": "Hands"
+ },
+ {
+   "Word": "नितंब",
+   "Meaning": "Hip"
+ },
+ {
+   "Word": "घुटना",
+   "Meaning": "Knee"
+ },
+ {
+   "Word": "पैर\t",
+   "Meaning": "Legs"
+ },
+ {
+   "Word": "मुंह",
+   "Meaning": "Mouth"
+ },
+ {
+   "Word": "नाक\t",
+   "Meaning": "Nose"
+ },
+ {
+   "Word": "पेट\t",
+   "Meaning": "Stomach"
+ },
+ {
+   "Word": "विज्ञापन",
+   "Meaning": "Advertising"
+ },
+ {
+   "Word": "नियुक्ति",
+   "Meaning": "Appointment"
+ },
+ {
+   "Word": "सहायक",
+   "Meaning": "Assistant"
+ },
+ {
+   "Word": "निदेशक बोर्ड",
+   "Meaning": "Board Of Directors"
+ },
+ {
+   "Word": "मालिक",
+   "Meaning": "Boss"
+ },
+ {
+   "Word": "ब्रोशर",
+   "Meaning": "Brochure"
+ },
+ {
+   "Word": "कक्ष",
+   "Meaning": "Cabin"
+ },
+ {
+   "Word": "कैलेंडर",
+   "Meaning": "Calendar"
+ },
+ {
+   "Word": "सीईओ",
+   "Meaning": "Ceo"
+ },
+ {
+   "Word": "कांफ्रेंस कॉल",
+   "Meaning": "Conference Call"
+ },
+ {
+   "Word": "कॉन्ट्रैक्ट\t",
+   "Meaning": "Contract"
+ },
+ {
+   "Word": "खाते में जमा रकम",
+   "Meaning": "Credit"
+ },
+ {
+   "Word": "सौदा",
+   "Meaning": "Deal"
+ },
+ {
+   "Word": "देरी",
+   "Meaning": "Delay"
+ },
+ {
+   "Word": "विभाग",
+   "Meaning": "Department"
+ },
+ {
+   "Word": "डेस्क",
+   "Meaning": "Desk"
+ },
+ {
+   "Word": "निर्देशक",
+   "Meaning": "Director"
+ },
+ {
+   "Word": "छूट\t",
+   "Meaning": "Discount"
+ },
+ {
+   "Word": "ई मेल",
+   "Meaning": "E-Mail"
+ },
+ {
+   "Word": "विनिमय दर",
+   "Meaning": "Exchange Rate"
+ },
+ {
+   "Word": "वित्त",
+   "Meaning": "Finance"
+ },
+ {
+   "Word": "किस्त",
+   "Meaning": "Installment"
+ },
+ {
+   "Word": "ब्याज दर",
+   "Meaning": "Interest Rate"
+ },
+ {
+   "Word": "चालान",
+   "Meaning": "Invoice"
+ },
+ {
+   "Word": "लैपटॉप",
+   "Meaning": "Laptop"
+ },
+ {
+   "Word": "मैनेजर",
+   "Meaning": "Manager"
+ },
+ {
+   "Word": "मार्केटिंग",
+   "Meaning": "Marketing"
+ },
+ {
+   "Word": "मीटिंग",
+   "Meaning": "Meeting"
+ },
+ {
+   "Word": "मोबाइल फ़ोन\t",
+   "Meaning": "MobilePhone"
+ },
+ {
+   "Word": "बातचीत",
+   "Meaning": "Negotiation"
+ },
+ {
+   "Word": "कार्यालय",
+   "Meaning": "Office"
+ },
+ {
+   "Word": "आदेश",
+   "Meaning": "Order"
+ },
+ {
+   "Word": "भुगतान",
+   "Meaning": "Payment"
+ },
+ {
+   "Word": "प्रेजेंटेशन\t",
+   "Meaning": "Presentation"
+ },
+ {
+   "Word": "प्रस्ताव",
+   "Meaning": "Proposal"
+ },
+ {
+   "Word": "रिसेप्शन",
+   "Meaning": "Reception"
+ },
+ {
+   "Word": "रिसेप्शनिस्ट",
+   "Meaning": "Receptionist"
+ },
+ {
+   "Word": "नमूना",
+   "Meaning": "Sample"
+ },
+ {
+   "Word": "सेक्रेटरी",
+   "Meaning": "Secretary"
+ },
+ {
+   "Word": "शेयरहोल्डर",
+   "Meaning": "Shareholder"
+ },
+ {
+   "Word": "हस्ताक्षर",
+   "Meaning": "Signature"
+ },
+ {
+   "Word": "पर्यवेक्षक",
+   "Meaning": "Supervisor"
+ },
+ {
+   "Word": "टेलीफोन नंबर",
+   "Meaning": "Telephone Number"
+ },
+ {
+   "Word": "शर्तें\t",
+   "Meaning": "Terms"
+ },
+ {
+   "Word": "समय\t",
+   "Meaning": "Time"
+ },
+ {
+   "Word": "काला",
+   "Meaning": "Black"
+ },
+ {
+   "Word": "नील",
+   "Meaning": "Blue"
+ },
+ {
+   "Word": "भूरा",
+   "Meaning": "Brown"
+ },
+ {
+   "Word": "सुनहरा",
+   "Meaning": "Golden"
+ },
+ {
+   "Word": "स्लेटी",
+   "Meaning": "Gray"
+ },
+ {
+   "Word": "हरा",
+   "Meaning": "Green"
+ },
+ {
+   "Word": "नारंगी",
+   "Meaning": "Orange"
+ },
+ {
+   "Word": "गुलाबी",
+   "Meaning": "Pink"
+ },
+ {
+   "Word": "बैंगनी",
+   "Meaning": "Purple"
+ },
+ {
+   "Word": "लाल",
+   "Meaning": "Red"
+ },
+ {
+   "Word": "केसर",
+   "Meaning": "Saffron"
+ },
+ {
+   "Word": "चांदी",
+   "Meaning": "Silver"
+ },
+ {
+   "Word": "बैंगनी",
+   "Meaning": "Violet"
+ },
+ {
+   "Word": "सफ़ेद",
+   "Meaning": "White"
+ },
+ {
+   "Word": "पीला",
+   "Meaning": "Yellow"
+ },
+ {
+   "Word": "सोमवार",
+   "Meaning": "Monday"
+ },
+ {
+   "Word": "मंगलवार\t",
+   "Meaning": "Tuesday"
+ },
+ {
+   "Word": "बुधवार\t",
+   "Meaning": "Wednesday"
+ },
+ {
+   "Word": "बृहस्पतिवार\t",
+   "Meaning": "Thursday"
+ },
+ {
+   "Word": "शुक्रवार",
+   "Meaning": "Friday"
+ },
+ {
+   "Word": "शनिवार",
+   "Meaning": "Saturday"
+ },
+ {
+   "Word": "रविवार",
+   "Meaning": "Sunday"
+ },
+ {
+   "Word": "पूर्व",
+   "Meaning": "East"
+ },
+ {
+   "Word": "पश्चिम",
+   "Meaning": "West"
+ },
+ {
+   "Word": "उत्तर",
+   "Meaning": "North"
+ },
+ {
+   "Word": "दक्षिण",
+   "Meaning": "South"
+ },
+ {
+   "Word": "यहां",
+   "Meaning": "Here"
+ },
+ {
+   "Word": "वहाँ",
+   "Meaning": "There"
+ },
+ {
+   "Word": "दाएँ",
+   "Meaning": "Right"
+ },
+ {
+   "Word": "बाएं",
+   "Meaning": "Left"
+ },
+ {
+   "Word": "चारों ओर",
+   "Meaning": "Around"
+ },
+ {
+   "Word": "मोड़",
+   "Meaning": "Turn"
+ },
+ {
+   "Word": "दुर्घटना",
+   "Meaning": "Accident"
+ },
+ {
+   "Word": "एलर्जी",
+   "Meaning": "Allergy"
+ },
+ {
+   "Word": "खून",
+   "Meaning": "Blood"
+ },
+ {
+   "Word": "कांसुलेट",
+   "Meaning": "Consulate"
+ },
+ {
+   "Word": "चिकित्सक",
+   "Meaning": "Doctor"
+ },
+ {
+   "Word": "दूतावास\t",
+   "Meaning": "Embassy"
+ },
+ {
+   "Word": "आग",
+   "Meaning": "Fire"
+ },
+ {
+   "Word": "फायर अलार्म\t",
+   "Meaning": "Fire Alarm"
+ },
+ {
+   "Word": "फायर स्टेशन\t",
+   "Meaning": "Fire Station"
+ },
+ {
+   "Word": "मदद करो!",
+   "Meaning": "Help!"
+ },
+ {
+   "Word": "अस्पताल",
+   "Meaning": "Hospital"
+ },
+ {
+   "Word": "खोया",
+   "Meaning": "Lost"
+ },
+ {
+   "Word": "फार्मेसी",
+   "Meaning": "Pharmacy"
+ },
+ {
+   "Word": "पुलिस स्टेशन",
+   "Meaning": "Police Station"
+ },
+ {
+   "Word": "डकैती",
+   "Meaning": "Robbery"
+ },
+ {
+   "Word": "क्या तुम मुझसे प्यार करते हो?",
+   "Meaning": "Do You Love Me?"
+ },
+ {
+   "Word": "मैं प्यार में हूं",
+   "Meaning": "I Am In Love"
+ },
+ {
+   "Word": "मैं तुमसे प्यार करता हूँ",
+   "Meaning": "I Love You"
+ },
+ {
+   "Word": "मुझे आपकी याद आती है",
+   "Meaning": "I Miss You"
+ },
+ {
+   "Word": "तुम मुझसे शादी करोगी?",
+   "Meaning": "Will You Marry Me?"
+ },
+ {
+   "Word": "आप सुंदर हैं",
+   "Meaning": "You Are Beautiful"
+ },
+ {
+   "Word": "समय",
+   "Meaning": "Time"
+ },
+ {
+   "Word": "सेकंड",
+   "Meaning": "Second"
+ },
+ {
+   "Word": "मिनट",
+   "Meaning": "Minute"
+ },
+ {
+   "Word": "घंटा",
+   "Meaning": "Hour"
+ },
+ {
+   "Word": "दिन",
+   "Meaning": "Day"
+ },
+ {
+   "Word": "तारीख",
+   "Meaning": "Date"
+ },
+ {
+   "Word": "माह",
+   "Meaning": "Month"
+ },
+ {
+   "Word": "वर्ष",
+   "Meaning": "Year"
+ },
+ {
+   "Word": "आज",
+   "Meaning": "Today"
+ },
+ {
+   "Word": "कल",
+   "Meaning": "Tomorrow"
+ },
+ {
+   "Word": "कल",
+   "Meaning": "Yesterday"
+ },
+ {
+   "Word": "परसों",
+   "Meaning": "Day After Tomorrow"
+ },
+ {
+   "Word": "कल के पहले दिन",
+   "Meaning": "Day Before Yesterday"
+ },
+ {
+   "Word": "सुबह",
+   "Meaning": "Morning"
+ },
+ {
+   "Word": "बारह बजे",
+   "Meaning": "Noon"
+ },
+ {
+   "Word": "दोपहर",
+   "Meaning": "Afternoon"
+ },
+ {
+   "Word": "शाम",
+   "Meaning": "Evening"
+ },
+ {
+   "Word": "रात",
+   "Meaning": "Night"
+ },
+ {
+   "Word": "अए. एम.",
+   "Meaning": "A.M."
+ },
+ {
+   "Word": "पी. एम.\t",
+   "Meaning": "P.M."
+ },
+ {
+   "Word": "शीघ्र\t",
+   "Meaning": "Early"
+ },
+ {
+   "Word": "देर से\t",
+   "Meaning": "Late"
+ },
+ {
+   "Word": "मिड - डे",
+   "Meaning": "Mid-Day"
+ },
+ {
+   "Word": "आधी रात\t",
+   "Meaning": "Midnight"
+ },
+ {
+   "Word": "अब",
+   "Meaning": "Now"
+ },
+ {
+   "Word": "जल्दी",
+   "Meaning": "Soon"
+ },
+ {
+   "Word": "बाद में",
+   "Meaning": "Later"
+ },
+ {
+   "Word": "पिछला",
+   "Meaning": "Previous"
+ },
+ {
+   "Word": "अगला",
+   "Meaning": "Next"
+ },
+ {
+   "Word": "मां\t",
+   "Meaning": "Mother"
+ },
+ {
+   "Word": "पिता",
+   "Meaning": "Father"
+ },
+ {
+   "Word": "बेटी",
+   "Meaning": "Daughter"
+ },
+ {
+   "Word": "बेटा",
+   "Meaning": "Son"
+ },
+ {
+   "Word": "पत्नी",
+   "Meaning": "Wife"
+ },
+ {
+   "Word": "पति\t",
+   "Meaning": "Husband"
+ },
+ {
+   "Word": "दीदी ( बड़ी )",
+   "Meaning": "Sister (Elder)"
+ },
+ {
+   "Word": "बहन\t",
+   "Meaning": "Sister (Younger)"
+ },
+ {
+   "Word": "भैया",
+   "Meaning": "Brother (Elder)"
+ },
+ {
+   "Word": "छोटा भाई",
+   "Meaning": "Brother (Younger)"
+ },
+ {
+   "Word": "दादी",
+   "Meaning": "Grandmother (Father'S Mother)"
+ },
+ {
+   "Word": "दादा",
+   "Meaning": "Grandfather (Father'S Father)"
+ },
+ {
+   "Word": "दादा - दादी",
+   "Meaning": "Grandparents (Father'S Side)"
+ },
+ {
+   "Word": "नाना-नानी",
+   "Meaning": "Grandparents (Mother'S Side)"
+ },
+ {
+   "Word": "नानी",
+   "Meaning": "Grandmother (Mother'S Mother)"
+ },
+ {
+   "Word": "नाना",
+   "Meaning": "Grandfather (Mother'S Father)"
+ },
+ {
+   "Word": "पोती",
+   "Meaning": "Granddaughter (Son'S Daughter)"
+ },
+ {
+   "Word": "पोता",
+   "Meaning": "Grandson (Son'S Son)"
+ },
+ {
+   "Word": "पोते - पोतियों",
+   "Meaning": "Grandchildren"
+ },
+ {
+   "Word": "दोहती",
+   "Meaning": "Granddaughter (Daughter'S Daughter)"
+ },
+ {
+   "Word": "दोहता",
+   "Meaning": "Grandson (Daughter'S Son)"
+ },
+ {
+   "Word": "सास\t",
+   "Meaning": "Mother-In-Law (Husband'S Mother)"
+ },
+ {
+   "Word": "ससुर",
+   "Meaning": "Father-In-Law (Husband'S Father)"
+ },
+ {
+   "Word": "सास\t",
+   "Meaning": "Mother-In-Law (Wife'S Mother)"
+ },
+ {
+   "Word": "ससुर",
+   "Meaning": "Father-In-Law (Wife'S Father)"
+ },
+ {
+   "Word": "भाभी",
+   "Meaning": "Sister-In-Law"
+ },
+ {
+   "Word": "जेठ",
+   "Meaning": "Brother-In-Law"
+ },
+ {
+   "Word": "कज़िन भाई",
+   "Meaning": "Cousin (Male)"
+ },
+ {
+   "Word": "कज़िन बहन",
+   "Meaning": "Cousin (Female)"
+ },
+ {
+   "Word": "चाची",
+   "Meaning": "Aunt"
+ },
+ {
+   "Word": "चाचा",
+   "Meaning": "Uncle"
+ },
+ {
+   "Word": "भतीजा",
+   "Meaning": "Nephew"
+ },
+ {
+   "Word": "भतीजी",
+   "Meaning": "Niece"
+ },
+ {
+   "Word": "मित्र",
+   "Meaning": "Friend (Male)"
+ },
+ {
+   "Word": "मित्र",
+   "Meaning": "Friend (Female)"
+ },
+ {
+   "Word": "प्रेमिका",
+   "Meaning": "Girlfriend"
+ },
+ {
+   "Word": "प्रेमी",
+   "Meaning": "Boyfriend"
+ },
+ {
+   "Word": "क्रोध",
+   "Meaning": "Anger"
+ },
+ {
+   "Word": "क्रोधित",
+   "Meaning": "Angry"
+ },
+ {
+   "Word": "डर",
+   "Meaning": "Fear"
+ },
+ {
+   "Word": "ख़ुशी",
+   "Meaning": "Happiness"
+ },
+ {
+   "Word": "खुश\t",
+   "Meaning": "Happy"
+ },
+ {
+   "Word": "नफरत",
+   "Meaning": "Hate"
+ },
+ {
+   "Word": "पसंद करना",
+   "Meaning": "Like"
+ },
+ {
+   "Word": "प्यार",
+   "Meaning": "Love"
+ },
+ {
+   "Word": "दर्द",
+   "Meaning": "Pain"
+ },
+ {
+   "Word": "सम्मान",
+   "Meaning": "Respect"
+ },
+ {
+   "Word": "दुखी",
+   "Meaning": "Sad"
+ },
+ {
+   "Word": "भयभीत",
+   "Meaning": "Scared"
+ },
+ {
+   "Word": "झटका",
+   "Meaning": "Shock"
+ },
+ {
+   "Word": "शर्मीला",
+   "Meaning": "Shy"
+ },
+ {
+   "Word": "आश्चर्य",
+   "Meaning": "Surprise"
+ },
+ {
+   "Word": "परेशान",
+   "Meaning": "Upset"
+ },
+ {
+   "Word": "फलियां",
+   "Meaning": "Beans"
+ },
+ {
+   "Word": "रोटी",
+   "Meaning": "Bread"
+ },
+ {
+   "Word": "मक्खन",
+   "Meaning": "Butter"
+ },
+ {
+   "Word": "अनाज",
+   "Meaning": "Cereal"
+ },
+ {
+   "Word": "पनीर",
+   "Meaning": "Cheese"
+ },
+ {
+   "Word": "चिकन",
+   "Meaning": "Chicken"
+ },
+ {
+   "Word": "तीखा",
+   "Meaning": "Chilly"
+ },
+ {
+   "Word": "चिप्स",
+   "Meaning": "Chips"
+ },
+ {
+   "Word": "कॉफ़ी",
+   "Meaning": "Coffee"
+ },
+ {
+   "Word": "मिठाई",
+   "Meaning": "Dessert"
+ },
+ {
+   "Word": "अंडे",
+   "Meaning": "Eggs"
+ },
+ {
+   "Word": "लहसुन",
+   "Meaning": "Garlic"
+ },
+ {
+   "Word": "हैमबर्गर",
+   "Meaning": "Hamburger"
+ },
+ {
+   "Word": "आइसक्रीम",
+   "Meaning": "Ice Cream"
+ },
+ {
+   "Word": "रस",
+   "Meaning": "Juice"
+ },
+ {
+   "Word": "सलाद पत्ता",
+   "Meaning": "Lettuce"
+ },
+ {
+   "Word": "मांस",
+   "Meaning": "Meat"
+ },
+ {
+   "Word": "दूध\t",
+   "Meaning": "Milk"
+ },
+ {
+   "Word": "मिनरल वॉटर",
+   "Meaning": "Mineral Water"
+ },
+ {
+   "Word": "मांसाहरी",
+   "Meaning": "Non Vegetarian"
+ },
+ {
+   "Word": "नूडल्स\t",
+   "Meaning": "Noodles"
+ },
+ {
+   "Word": "नट्स",
+   "Meaning": "Nuts"
+ },
+ {
+   "Word": "जैतून",
+   "Meaning": "Olives"
+ },
+ {
+   "Word": "आमलेट",
+   "Meaning": "Omelette"
+ },
+ {
+   "Word": "प्याज",
+   "Meaning": "Onion"
+ },
+ {
+   "Word": "काली मिर्च",
+   "Meaning": "Pepper (Spice)"
+ },
+ {
+   "Word": "सूअर का मांस",
+   "Meaning": "Pork"
+ },
+ {
+   "Word": "आलू\t",
+   "Meaning": "Potatoes"
+ },
+ {
+   "Word": "लाल मिर्च",
+   "Meaning": "Red Pepper"
+ },
+ {
+   "Word": "चावल",
+   "Meaning": "Rice"
+ },
+ {
+   "Word": "सलाद",
+   "Meaning": "Salad"
+ },
+ {
+   "Word": "नमक\t",
+   "Meaning": "Salt"
+ },
+ {
+   "Word": "सीफ़ूड",
+   "Meaning": "Sea Food"
+ },
+ {
+   "Word": "झींगा",
+   "Meaning": "Shrimp"
+ },
+ {
+   "Word": "सूप\t",
+   "Meaning": "Soup"
+ },
+ {
+   "Word": "मसाला",
+   "Meaning": "Spice"
+ },
+ {
+   "Word": "चाय\t",
+   "Meaning": "Tea"
+ },
+ {
+   "Word": "सब्जियां",
+   "Meaning": "Vegetables"
+ },
+ {
+   "Word": "शाकाहारी",
+   "Meaning": "Vegetarian"
+ },
+ {
+   "Word": "पानी",
+   "Meaning": "Water"
+ },
+ {
+   "Word": "दही\t",
+   "Meaning": "Yoghurt"
+ },
+ {
+   "Word": "सेब",
+   "Meaning": "Apple"
+ },
+ {
+   "Word": "केला",
+   "Meaning": "Banana"
+ },
+ {
+   "Word": "चेरी",
+   "Meaning": "Cherry"
+ },
+ {
+   "Word": "नारियल",
+   "Meaning": "Coconut"
+ },
+ {
+   "Word": "अंगूर",
+   "Meaning": "Grapes"
+ },
+ {
+   "Word": "अमरूद",
+   "Meaning": "Guava"
+ },
+ {
+   "Word": "कीवी",
+   "Meaning": "Kiwi"
+ },
+ {
+   "Word": "आम",
+   "Meaning": "Mango"
+ },
+ {
+   "Word": "तरबूज",
+   "Meaning": "Melon"
+ },
+ {
+   "Word": "आड़ू",
+   "Meaning": "Peach"
+ },
+ {
+   "Word": "नाशपाती",
+   "Meaning": "Pear"
+ },
+ {
+   "Word": "आलूबुख़ारे",
+   "Meaning": "Plum"
+ },
+ {
+   "Word": "तरबूज",
+   "Meaning": "Water Melon"
+ },
+ {
+   "Word": "बंहदार कुरसी",
+   "Meaning": "Armchair"
+ },
+ {
+   "Word": "बिस्तर",
+   "Meaning": "Bed"
+ },
+ {
+   "Word": "कुर्सी",
+   "Meaning": "Chair"
+ },
+ {
+   "Word": "डेस्क",
+   "Meaning": "Desk"
+ },
+ {
+   "Word": "फर्नीचर",
+   "Meaning": "Furniture"
+ },
+ {
+   "Word": "ओवन",
+   "Meaning": "Oven"
+ },
+ {
+   "Word": "सोफ़ा",
+   "Meaning": "Sofa"
+ },
+ {
+   "Word": "स्टोव",
+   "Meaning": "Stove"
+ },
+ {
+   "Word": "टेबल",
+   "Meaning": "Table"
+ },
+ {
+   "Word": "अलविदा",
+   "Meaning": "Bye"
+ },
+ {
+   "Word": "बधाई हो!",
+   "Meaning": "Congratulations!"
+ },
+ {
+   "Word": "नमस्कार\t",
+   "Meaning": "Good Evening"
+ },
+ {
+   "Word": "गुड लक\t",
+   "Meaning": "Good Luck"
+ },
+ {
+   "Word": "सुप्रभात\t",
+   "Meaning": "Good Morning"
+ },
+ {
+   "Word": "शुभ रात्रि\t",
+   "Meaning": "Good Night"
+ },
+ {
+   "Word": "नमस्ते\t",
+   "Meaning": "Hello"
+ },
+ {
+   "Word": "हाय\t",
+   "Meaning": "Hi"
+ },
+ {
+   "Word": "आप कैसे हैं?",
+   "Meaning": "How Are You?"
+ },
+ {
+   "Word": "आपसे मिलकर अच्छा लगा",
+   "Meaning": "Nice To Meet You"
+ },
+ {
+   "Word": "कृपया",
+   "Meaning": "Please"
+ },
+ {
+   "Word": "बाद में मिलते हैं",
+   "Meaning": "See You Later"
+ },
+ {
+   "Word": "जल्दी मिलते हैं!",
+   "Meaning": "See You Soon!"
+ },
+ {
+   "Word": "कल फिर मिलेंगे",
+   "Meaning": "\tSee You Tomorrow"
+ },
+ {
+   "Word": "क्षमा करें",
+   "Meaning": "Sorry"
+ },
+ {
+   "Word": "ध्यान रखना",
+   "Meaning": "Take Care"
+ },
+ {
+   "Word": "धन्यवाद",
+   "Meaning": "Thank You"
+ },
+ {
+   "Word": "क्या हो रहा है?\t",
+   "Meaning": "What’S Up?"
+ },
+ {
+   "Word": "पकाना",
+   "Meaning": "Baking"
+ },
+ {
+   "Word": "बास्केटबॉल",
+   "Meaning": "Basketball"
+ },
+ {
+   "Word": "खाना पकाना",
+   "Meaning": "Cooking"
+ },
+ {
+   "Word": "साइकल चलाना\t",
+   "Meaning": "Cycling"
+ },
+ {
+   "Word": "नृत्य",
+   "Meaning": "Dancing"
+ },
+ {
+   "Word": "चित्रकारी",
+   "Meaning": "Drawing"
+ },
+ {
+   "Word": "फुटबॉल",
+   "Meaning": "Football"
+ },
+ {
+   "Word": "गोल्फ़",
+   "Meaning": "Golf"
+ },
+ {
+   "Word": "शिकार",
+   "Meaning": "Hunting"
+ },
+ {
+   "Word": "बुनना",
+   "Meaning": "Knitting"
+ },
+ {
+   "Word": "चित्रकारी",
+   "Meaning": "Painting"
+ },
+ {
+   "Word": "फ़ोटोग्राफ़ी",
+   "Meaning": "Photography"
+ },
+ {
+   "Word": "पढ़ना",
+   "Meaning": "Reading"
+ },
+ {
+   "Word": "मूर्तिकला",
+   "Meaning": "Sculpting"
+ },
+ {
+   "Word": "सिलाई",
+   "Meaning": "Sewing"
+ },
+ {
+   "Word": "गाना",
+   "Meaning": "Singing"
+ },
+ {
+   "Word": "तैराकी",
+   "Meaning": "Swimming"
+ },
+ {
+   "Word": "वीडियो गेमिंग",
+   "Meaning": "Video Gaming"
+ },
+ {
+   "Word": "बुनाई",
+   "Meaning": "Weaving"
+ },
+ {
+   "Word": "लेखन",
+   "Meaning": "Writing"
+ },
+ {
+   "Word": "एक डबल कमरा\t",
+   "Meaning": "A Double Room"
+ },
+ {
+   "Word": "एक जने का कमरा\t",
+   "Meaning": "A Single Room"
+ },
+ {
+   "Word": "वातानुकूलित\t",
+   "Meaning": "Air Conditioning"
+ },
+ {
+   "Word": "छज्जा",
+   "Meaning": "Balcony"
+ },
+ {
+   "Word": "स्नानघर\t",
+   "Meaning": "Bathroom"
+ },
+ {
+   "Word": "बीच\t",
+   "Meaning": "Beach"
+ },
+ {
+   "Word": "नाश्ता\t",
+   "Meaning": "Breakfast"
+ },
+ {
+   "Word": "कैश\t",
+   "Meaning": "Cash"
+ },
+ {
+   "Word": "स्वच्छ\t",
+   "Meaning": "Clean"
+ },
+ {
+   "Word": "गलियारा\t",
+   "Meaning": "Corridor"
+ },
+ {
+   "Word": "क्रेडिट कार्ड",
+   "Meaning": "Credit Card"
+ },
+ {
+   "Word": "मुद्रा\t",
+   "Meaning": "Currency"
+ },
+ {
+   "Word": "जमा\t",
+   "Meaning": "Deposit"
+ },
+ {
+   "Word": "डिनर",
+   "Meaning": "Dinner"
+ },
+ {
+   "Word": "डबल बेड",
+   "Meaning": "Double Bed"
+ },
+ {
+   "Word": "लिफ़्ट",
+   "Meaning": "Elevator"
+ },
+ {
+   "Word": "एस्केलेटर",
+   "Meaning": "Escalator"
+ },
+ {
+   "Word": "एक्सचेंज रेट",
+   "Meaning": "Exchange Rate"
+ },
+ {
+   "Word": "अतिरिक्त बिस्तर\t",
+   "Meaning": "Extra Bed"
+ },
+ {
+   "Word": "विदेशी मुद्रा",
+   "Meaning": "Foreign Exchange"
+ },
+ {
+   "Word": "स्वागत कक्ष",
+   "Meaning": "Front Desk"
+ },
+ {
+   "Word": "जिम\t",
+   "Meaning": "Gym"
+ },
+ {
+   "Word": "सफाई कर्मचारी",
+   "Meaning": "House Keeping"
+ },
+ {
+   "Word": "लॉबी",
+   "Meaning": "Lobby"
+ },
+ {
+   "Word": "लाकर",
+   "Meaning": "Locker"
+ },
+ {
+   "Word": "आदेश",
+   "Meaning": "Order"
+ },
+ {
+   "Word": "पार्किंग",
+   "Meaning": "Parking"
+ },
+ {
+   "Word": "रसीद",
+   "Meaning": "Receipt"
+ },
+ {
+   "Word": "रिसेप्शन",
+   "Meaning": "Reception"
+ },
+ {
+   "Word": "आरक्षण",
+   "Meaning": "Reservation"
+ },
+ {
+   "Word": "कमरा",
+   "Meaning": "Room"
+ },
+ {
+   "Word": "कक्ष सेवा",
+   "Meaning": "Room Service"
+ },
+ {
+   "Word": "सुरक्षित",
+   "Meaning": "Safe"
+ },
+ {
+   "Word": "सिंगल बेड",
+   "Meaning": "Single Bed"
+ },
+ {
+   "Word": "सीढ़ी",
+   "Meaning": "Stairway"
+ },
+ {
+   "Word": "स्विमिंग पूल",
+   "Meaning": "Swimming Pool"
+ },
+ {
+   "Word": "छत",
+   "Meaning": "Terrace"
+ },
+ {
+   "Word": "टिप",
+   "Meaning": "Tip"
+ },
+ {
+   "Word": "जगाने के लिए कॉल",
+   "Meaning": "Wake Up Call"
+ },
+ {
+   "Word": "बाथरूम के साथ",
+   "Meaning": "With A Bathroom"
+ },
+ {
+   "Word": "अरबी",
+   "Meaning": "Arabic"
+ },
+ {
+   "Word": "चीनी",
+   "Meaning": "Chinese"
+ },
+ {
+   "Word": "अंग्रेज़ी",
+   "Meaning": "English"
+ },
+ {
+   "Word": "फ्रेंच",
+   "Meaning": "French"
+ },
+ {
+   "Word": "जर्मन",
+   "Meaning": "German"
+ },
+ {
+   "Word": "हिंदी",
+   "Meaning": "Hindi"
+ },
+ {
+   "Word": "इतालवी",
+   "Meaning": "Italian"
+ },
+ {
+   "Word": "जापानी",
+   "Meaning": "Japanese"
+ },
+ {
+   "Word": "कोरियाई\t",
+   "Meaning": "Korean"
+ },
+ {
+   "Word": "स्पेनिश\t",
+   "Meaning": "Spanish"
+ },
+ {
+   "Word": "बेल्ट",
+   "Meaning": "Belt"
+ },
+ {
+   "Word": "जैकेट",
+   "Meaning": "Jacket"
+ },
+ {
+   "Word": "जीन्स",
+   "Meaning": "Jeans"
+ },
+ {
+   "Word": "शर्ट",
+   "Meaning": "Shirt"
+ },
+ {
+   "Word": "जूते",
+   "Meaning": "Shoes"
+ },
+ {
+   "Word": "मोज़े",
+   "Meaning": "Socks"
+ },
+ {
+   "Word": "टाई\t",
+   "Meaning": "Tie"
+ },
+ {
+   "Word": "बटुआ",
+   "Meaning": "Wallet"
+ },
+ {
+   "Word": "जनवरी",
+   "Meaning": "January"
+ },
+ {
+   "Word": "फरवरी",
+   "Meaning": "February"
+ },
+ {
+   "Word": "मार्च",
+   "Meaning": "March"
+ },
+ {
+   "Word": "अप्रैल",
+   "Meaning": "April"
+ },
+ {
+   "Word": "मई",
+   "Meaning": "May"
+ },
+ {
+   "Word": "जून\t",
+   "Meaning": "June"
+ },
+ {
+   "Word": "जुलाई",
+   "Meaning": "July"
+ },
+ {
+   "Word": "अगस्त",
+   "Meaning": "August"
+ },
+ {
+   "Word": "सितंबर",
+   "Meaning": "September"
+ },
+ {
+   "Word": "अक्टूबर\t",
+   "Meaning": "October"
+ },
+ {
+   "Word": "नवंबर",
+   "Meaning": "November"
+ },
+ {
+   "Word": "दिसंबर",
+   "Meaning": "December"
+ },
+ {
+   "Word": "एक",
+   "Meaning": "One"
+ },
+ {
+   "Word": "दो",
+   "Meaning": "Two"
+ },
+ {
+   "Word": "तीन\t",
+   "Meaning": "Three"
+ },
+ {
+   "Word": "चार",
+   "Meaning": "Four"
+ },
+ {
+   "Word": "पांच",
+   "Meaning": "Five"
+ },
+ {
+   "Word": "छह",
+   "Meaning": "Six"
+ },
+ {
+   "Word": "सात",
+   "Meaning": "Seven"
+ },
+ {
+   "Word": "आठ",
+   "Meaning": "Eight"
+ },
+ {
+   "Word": "नौ",
+   "Meaning": "Nine"
+ },
+ {
+   "Word": "दस",
+   "Meaning": "Ten"
+ },
+ {
+   "Word": "ग्यारह",
+   "Meaning": "Eleven"
+ },
+ {
+   "Word": "बारह",
+   "Meaning": "Twelve"
+ },
+ {
+   "Word": "तेरह",
+   "Meaning": "Thirteen"
+ },
+ {
+   "Word": "चौदह",
+   "Meaning": "Fourteen"
+ },
+ {
+   "Word": "पंद्रह",
+   "Meaning": "Fifteen"
+ },
+ {
+   "Word": "सोलह",
+   "Meaning": "Sixteen"
+ },
+ {
+   "Word": "सत्रह",
+   "Meaning": "Seventeen"
+ },
+ {
+   "Word": "अठारह",
+   "Meaning": "Eighteen"
+ },
+ {
+   "Word": "उन्नीस",
+   "Meaning": "Nineteen"
+ },
+ {
+   "Word": "बीस",
+   "Meaning": "Twenty"
+ },
+ {
+   "Word": "सालगिरह\t",
+   "Meaning": "Anniversary"
+ },
+ {
+   "Word": "जन्मदिन\t",
+   "Meaning": "Birthday"
+ },
+ {
+   "Word": "मोमबत्ती",
+   "Meaning": "Candle"
+ },
+ {
+   "Word": "उत्सव",
+   "Meaning": "Celebration"
+ },
+ {
+   "Word": "नृत्य",
+   "Meaning": "Dance"
+ },
+ {
+   "Word": "पेय\t",
+   "Meaning": "Drinks"
+ },
+ {
+   "Word": "परिवार",
+   "Meaning": "Family"
+ },
+ {
+   "Word": "भोजन",
+   "Meaning": "Food"
+ },
+ {
+   "Word": "मित्र",
+   "Meaning": "Friends"
+ },
+ {
+   "Word": "मजाक",
+   "Meaning": "Fun"
+ },
+ {
+   "Word": "उपहार",
+   "Meaning": "Gift"
+ },
+ {
+   "Word": "ग्रिल",
+   "Meaning": "Grill"
+ },
+ {
+   "Word": "गिटार",
+   "Meaning": "Guitar"
+ },
+ {
+   "Word": "निमंत्रण",
+   "Meaning": "Invitation"
+ },
+ {
+   "Word": "जैज़",
+   "Meaning": "Jazz"
+ },
+ {
+   "Word": "जोरदार",
+   "Meaning": "Loud"
+ },
+ {
+   "Word": "संगीत",
+   "Meaning": "Music"
+ },
+ {
+   "Word": "अवसर",
+   "Meaning": "Occasion"
+ },
+ {
+   "Word": "पक्षी",
+   "Meaning": "Bird"
+ },
+ {
+   "Word": "भैंस",
+   "Meaning": "Buffalo"
+ },
+ {
+   "Word": "ऊंट\t",
+   "Meaning": "Camel"
+ },
+ {
+   "Word": "बिल्ली",
+   "Meaning": "Cat"
+ },
+ {
+   "Word": "गाय\t",
+   "Meaning": "Cow"
+ },
+ {
+   "Word": "कुत्ता\t",
+   "Meaning": "Dog"
+ },
+ {
+   "Word": "बतख\t",
+   "Meaning": "Duck"
+ },
+ {
+   "Word": "मछली",
+   "Meaning": "Fish"
+ },
+ {
+   "Word": "बकरी",
+   "Meaning": "Goat"
+ },
+ {
+   "Word": "मुर्गी\t",
+   "Meaning": "Hen"
+ },
+ {
+   "Word": "घोड़ा",
+   "Meaning": "Horse"
+ },
+ {
+   "Word": "खरगोश",
+   "Meaning": "Rabbit"
+ },
+ {
+   "Word": "चूहा",
+   "Meaning": "Rat"
+ },
+ {
+   "Word": "भेड़",
+   "Meaning": "Sheep"
+ },
+ {
+   "Word": "कछुआ",
+   "Meaning": "Tortoise"
+ },
+ {
+   "Word": "कछुआ",
+   "Meaning": "Turtle"
+ },
+ {
+   "Word": "ऊपर\t",
+   "Meaning": "Above"
+ },
+ {
+   "Word": "के बाद",
+   "Meaning": "After"
+ },
+ {
+   "Word": "आगे\t",
+   "Meaning": "Ahead"
+ },
+ {
+   "Word": "चारों ओर",
+   "Meaning": "Around"
+ },
+ {
+   "Word": "में\t",
+   "Meaning": "At"
+ },
+ {
+   "Word": "से पहले\t",
+   "Meaning": "Before"
+ },
+ {
+   "Word": "पीछे",
+   "Meaning": "Behind"
+ },
+ {
+   "Word": "नीचे",
+   "Meaning": "Below"
+ },
+ {
+   "Word": "बगल में\t",
+   "Meaning": "Beside"
+ },
+ {
+   "Word": "के बीच\t",
+   "Meaning": "Between"
+ },
+ {
+   "Word": "से\t",
+   "Meaning": "From"
+ },
+ {
+   "Word": "यहां",
+   "Meaning": "Here"
+ },
+ {
+   "Word": "में\t",
+   "Meaning": "In"
+ },
+ {
+   "Word": "अंदर",
+   "Meaning": "Inside"
+ },
+ {
+   "Word": "पर\t",
+   "Meaning": "On"
+ },
+ {
+   "Word": "बाहर",
+   "Meaning": "Out"
+ },
+ {
+   "Word": "बाहर",
+   "Meaning": "Outside"
+ },
+ {
+   "Word": "वहाँ",
+   "Meaning": "There"
+ },
+ {
+   "Word": "से",
+   "Meaning": "To"
+ },
+ {
+   "Word": "एक साथ\t",
+   "Meaning": "Together"
+ },
+ {
+   "Word": "नीचे",
+   "Meaning": "Under"
+ },
+ {
+   "Word": "साथ",
+   "Meaning": "With"
+ },
+ {
+   "Word": "अंदर",
+   "Meaning": "Within"
+ },
+ {
+   "Word": "बिना",
+   "Meaning": "Without"
+ },
+ {
+   "Word": "अभिनेता",
+   "Meaning": "Actor"
+ },
+ {
+   "Word": "कलाकार",
+   "Meaning": "Artist"
+ },
+ {
+   "Word": "व्यवसायी",
+   "Meaning": "Business Man"
+ },
+ {
+   "Word": "सॆ.ई.ओ.",
+   "Meaning": "Ceo"
+ },
+ {
+   "Word": "शैफ़\t",
+   "Meaning": "Chef"
+ },
+ {
+   "Word": "सलाहकार\t",
+   "Meaning": "Consultant"
+ },
+ {
+   "Word": "नर्तक",
+   "Meaning": "Dancer"
+ },
+ {
+   "Word": "दंत चिकित्सक",
+   "Meaning": "Dentist"
+ },
+ {
+   "Word": "डॉक्टर",
+   "Meaning": "Doctor"
+ },
+ {
+   "Word": "ड्राइवर\t",
+   "Meaning": "Driver"
+ },
+ {
+   "Word": "इंजीनियर",
+   "Meaning": "Engineer"
+ },
+ {
+   "Word": "गृहिणी",
+   "Meaning": "Housewife"
+ },
+ {
+   "Word": "मैनेजर",
+   "Meaning": "Manager"
+ },
+ {
+   "Word": "नर्स",
+   "Meaning": "Nurse"
+ },
+ {
+   "Word": "प्राध्यापक",
+   "Meaning": "Professor"
+ },
+ {
+   "Word": "गायक",
+   "Meaning": "Singer"
+ },
+ {
+   "Word": "छात्र",
+   "Meaning": "Student"
+ },
+ {
+   "Word": "शिक्षक",
+   "Meaning": "Teacher"
+ },
+ {
+   "Word": "मैं\t",
+   "Meaning": "I"
+ },
+ {
+   "Word": "मुझे",
+   "Meaning": "Me"
+ },
+ {
+   "Word": "मेरे",
+   "Meaning": "My"
+ },
+ {
+   "Word": "वह",
+   "Meaning": "He"
+ },
+ {
+   "Word": "वह",
+   "Meaning": "She"
+ },
+ {
+   "Word": "यह",
+   "Meaning": "It"
+ },
+ {
+   "Word": "उसे\t",
+   "Meaning": "Him"
+ },
+ {
+   "Word": "उसे\t",
+   "Meaning": "Her"
+ },
+ {
+   "Word": "उसके",
+   "Meaning": "His"
+ },
+ {
+   "Word": "उसके",
+   "Meaning": "Hers"
+ },
+ {
+   "Word": "हमारे",
+   "Meaning": "Our"
+ },
+ {
+   "Word": "उनके",
+   "Meaning": "Their"
+ },
+ {
+   "Word": "उन",
+   "Meaning": "Them"
+ },
+ {
+   "Word": "वे",
+   "Meaning": "They"
+ },
+ {
+   "Word": "हमें",
+   "Meaning": "Us"
+ },
+ {
+   "Word": "हम",
+   "Meaning": "We"
+ },
+ {
+   "Word": "आपलोग",
+   "Meaning": "You (Plural)"
+ },
+ {
+   "Word": "आप",
+   "Meaning": "You (Singular)"
+ },
+ {
+   "Word": "आपलोगों के",
+   "Meaning": "Your (Plural)"
+ },
+ {
+   "Word": "आपके",
+   "Meaning": "Your (Singular)"
+ },
+ {
+   "Word": "कितने?",
+   "Meaning": "How Many?"
+ },
+ {
+   "Word": "कितने का?",
+   "Meaning": "How Much?"
+ },
+ {
+   "Word": "कैसे ?",
+   "Meaning": "How?"
+ },
+ {
+   "Word": "किसे?",
+   "Meaning": "To Whom?"
+ },
+ {
+   "Word": "क्या?",
+   "Meaning": "What?"
+ },
+ {
+   "Word": "कब?",
+   "Meaning": "When?"
+ },
+ {
+   "Word": "कहां ?",
+   "Meaning": "Where?"
+ },
+ {
+   "Word": "कौन सा?\t",
+   "Meaning": "Which?"
+ },
+ {
+   "Word": "कौन?",
+   "Meaning": "Who?"
+ },
+ {
+   "Word": "किसका?",
+   "Meaning": "Whose?"
+ },
+ {
+   "Word": "क्यों?",
+   "Meaning": "Why?"
+ },
+ {
+   "Word": "शराब",
+   "Meaning": "Alcohol"
+ },
+ {
+   "Word": "एलर्जी",
+   "Meaning": "Allergic"
+ },
+ {
+   "Word": "स्टार्टर",
+   "Meaning": "Appetizer"
+ },
+ {
+   "Word": "स्नानघर",
+   "Meaning": "Bathroom"
+ },
+ {
+   "Word": "पेय\t",
+   "Meaning": "Beverage"
+ },
+ {
+   "Word": "बिल\t",
+   "Meaning": "Bill"
+ },
+ {
+   "Word": "बोतल",
+   "Meaning": "Bottle"
+ },
+ {
+   "Word": "कटोरा",
+   "Meaning": "Bowl"
+ },
+ {
+   "Word": "रोटी",
+   "Meaning": "Bread"
+ },
+ {
+   "Word": "नाश्ता",
+   "Meaning": "Breakfast"
+ },
+ {
+   "Word": "क्रेडिट कार्ड",
+   "Meaning": "Credit Card"
+ },
+ {
+   "Word": "कप",
+   "Meaning": "Cup"
+ },
+ {
+   "Word": "खास पकवान",
+   "Meaning": "Delicacy"
+ },
+ {
+   "Word": "मिठाई",
+   "Meaning": "Dessert"
+ },
+ {
+   "Word": "डिनर",
+   "Meaning": "Dinner"
+ },
+ {
+   "Word": "कांटा",
+   "Meaning": "Fork"
+ },
+ {
+   "Word": "चाकू",
+   "Meaning": "Knife"
+ },
+ {
+   "Word": "लंच\t",
+   "Meaning": "Lunch"
+ },
+ {
+   "Word": "मेनू",
+   "Meaning": "Menu"
+ },
+ {
+   "Word": "मिनरल वॉटर",
+   "Meaning": "Mineral Water"
+ },
+ {
+   "Word": "नैपकिन",
+   "Meaning": "Napkin"
+ },
+ {
+   "Word": "काली मिर्च",
+   "Meaning": "Pepper (Spice)"
+ },
+ {
+   "Word": "थाली",
+   "Meaning": "Plate"
+ },
+ {
+   "Word": "नमक",
+   "Meaning": "Salt"
+ },
+ {
+   "Word": "नाश्ता",
+   "Meaning": "Snack"
+ },
+ {
+   "Word": "स्पेशलिटी",
+   "Meaning": "Speciality"
+ },
+ {
+   "Word": "मसालेदार",
+   "Meaning": "Spicy"
+ },
+ {
+   "Word": "चम्मच",
+   "Meaning": "Spoon"
+ },
+ {
+   "Word": "टेबल",
+   "Meaning": "Table"
+ },
+ {
+   "Word": "टिप\t",
+   "Meaning": "Tip"
+ },
+ {
+   "Word": "वेटर",
+   "Meaning": "Waiter"
+ },
+ {
+   "Word": "वेट्रेस\t",
+   "Meaning": "Waitress"
+ },
+ {
+   "Word": "पानी",
+   "Meaning": "Water"
+ },
+ {
+   "Word": "शराब",
+   "Meaning": "Wine"
+ },
+ {
+   "Word": "प्रशासन\t",
+   "Meaning": "Administration"
+ },
+ {
+   "Word": "असाइनमेंट",
+   "Meaning": "Assignment"
+ },
+ {
+   "Word": "टॉयलेट",
+   "Meaning": "Bathroom"
+ },
+ {
+   "Word": "किताब",
+   "Meaning": "Book"
+ },
+ {
+   "Word": "कैंटीन",
+   "Meaning": "Canteen"
+ },
+ {
+   "Word": "वर्ग",
+   "Meaning": "Class"
+ },
+ {
+   "Word": "कक्षा",
+   "Meaning": "Classroom"
+ },
+ {
+   "Word": "पाठ्यक्रम",
+   "Meaning": "Courses"
+ },
+ {
+   "Word": "डेस्क",
+   "Meaning": "Desk"
+ },
+ {
+   "Word": "परीक्षा",
+   "Meaning": "Exam"
+ },
+ {
+   "Word": "समूह",
+   "Meaning": "Group"
+ },
+ {
+   "Word": "छात्रावास",
+   "Meaning": "Hostel"
+ },
+ {
+   "Word": "पुस्तकालय",
+   "Meaning": "Library"
+ },
+ {
+   "Word": "लाकर",
+   "Meaning": "Locker"
+ },
+ {
+   "Word": "लंच",
+   "Meaning": "Lunch"
+ },
+ {
+   "Word": "नोटबुक",
+   "Meaning": "Notebook"
+ },
+ {
+   "Word": "नोट्स",
+   "Meaning": "Notes"
+ },
+ {
+   "Word": "कार्यालय",
+   "Meaning": "Office"
+ },
+ {
+   "Word": "अवधि",
+   "Meaning": "Period"
+ },
+ {
+   "Word": "प्रदर्शन",
+   "Meaning": "Presentation"
+ },
+ {
+   "Word": "प्राचार्य",
+   "Meaning": "Principal"
+ },
+ {
+   "Word": "परिणाम",
+   "Meaning": "Result"
+ },
+ {
+   "Word": "शिड्यूल\t",
+   "Meaning": "Schedule"
+ },
+ {
+   "Word": "खेल\t",
+   "Meaning": "Sports"
+ },
+ {
+   "Word": "छात्र",
+   "Meaning": "Student"
+ },
+ {
+   "Word": "पाठ्यक्रम",
+   "Meaning": "Syllabus"
+ },
+ {
+   "Word": "शिक्षक",
+   "Meaning": "Teacher"
+ },
+ {
+   "Word": "परीक्षा",
+   "Meaning": "Test"
+ },
+ {
+   "Word": "समय\t",
+   "Meaning": "Time"
+ },
+ {
+   "Word": "वसंत",
+   "Meaning": "Spring"
+ },
+ {
+   "Word": "गर्मी",
+   "Meaning": "Summer"
+ },
+ {
+   "Word": "शरद ऋतु",
+   "Meaning": "Autumn"
+ },
+ {
+   "Word": "सर्दी",
+   "Meaning": "Winter"
+ },
+ {
+   "Word": "बेकरी",
+   "Meaning": "Bakery"
+ },
+ {
+   "Word": "टोकरी",
+   "Meaning": "Basket"
+ },
+ {
+   "Word": "चेंज",
+   "Meaning": "Change"
+ },
+ {
+   "Word": "सस्ता",
+   "Meaning": "Cheap"
+ },
+ {
+   "Word": "बंद\t",
+   "Meaning": "Closed"
+ },
+ {
+   "Word": "कपड़े की दुकान",
+   "Meaning": "Clothes Shop"
+ },
+ {
+   "Word": "लागत",
+   "Meaning": "Cost"
+ },
+ {
+   "Word": "मुद्रा",
+   "Meaning": "Currency"
+ },
+ {
+   "Word": "खराब",
+   "Meaning": "Defective"
+ },
+ {
+   "Word": "हीरा",
+   "Meaning": "Diamond"
+ },
+ {
+   "Word": "छूट\t",
+   "Meaning": "Discount"
+ },
+ {
+   "Word": "डॉलर",
+   "Meaning": "Dollar"
+ },
+ {
+   "Word": "प्रवेश",
+   "Meaning": "Entrance"
+ },
+ {
+   "Word": "यूरो",
+   "Meaning": "Euros"
+ },
+ {
+   "Word": "एक्सचेंज रेट",
+   "Meaning": "Exchange Rate"
+ },
+ {
+   "Word": "निकास",
+   "Meaning": "Exit"
+ },
+ {
+   "Word": "महंगा",
+   "Meaning": "Expensive"
+ },
+ {
+   "Word": "विदेशी मुद्रा",
+   "Meaning": "Foreign Exchange"
+ },
+ {
+   "Word": "उपहारGift",
+   "Meaning": ""
+ },
+ {
+   "Word": "अच्छी गुणवत्ता",
+   "Meaning": "Good Quality"
+ },
+ {
+   "Word": "कितने का?",
+   "Meaning": "How Much?"
+ },
+ {
+   "Word": "आभूषण",
+   "Meaning": "Jewelry"
+ },
+ {
+   "Word": "खुला",
+   "Meaning": "Open"
+ },
+ {
+   "Word": "वेतन",
+   "Meaning": "Pay"
+ },
+ {
+   "Word": "खराब क्वालिटी",
+   "Meaning": "Poor Quality"
+ },
+ {
+   "Word": "कीमत",
+   "Meaning": "Price"
+ },
+ {
+   "Word": "गुणवत्ता",
+   "Meaning": "Quality"
+ },
+ {
+   "Word": "रसीद",
+   "Meaning": "Receipt"
+ },
+ {
+   "Word": "डिस्काउंट",
+   "Meaning": "Sale (Reduction)"
+ },
+ {
+   "Word": "बेचना",
+   "Meaning": "Sell"
+ },
+ {
+   "Word": "शौपिंग कार्ट",
+   "Meaning": "Shopping Cart"
+ },
+ {
+   "Word": "अखाड़ा",
+   "Meaning": "Arena"
+ },
+ {
+   "Word": "अत्हेलेटिक्स",
+   "Meaning": "Atheletics"
+ },
+ {
+   "Word": "आक्रमण",
+   "Meaning": "Attack"
+ },
+ {
+   "Word": "बैडमिंटन",
+   "Meaning": "Badminton"
+ },
+ {
+   "Word": "बास्केटबॉल",
+   "Meaning": "Basketball"
+ },
+ {
+   "Word": "बॉक्सिंग",
+   "Meaning": "Boxing"
+ },
+ {
+   "Word": "कप्तान",
+   "Meaning": "Captain"
+ },
+ {
+   "Word": "उत्सव",
+   "Meaning": "Celebration"
+ },
+ {
+   "Word": "चैंपियनशिप",
+   "Meaning": "Championship"
+ },
+ {
+   "Word": "कोच",
+   "Meaning": "Coach"
+ },
+ {
+   "Word": "क्रिकेट",
+   "Meaning": "Cricket"
+ },
+ {
+   "Word": "साइकल चलाना",
+   "Meaning": "Cycling"
+ },
+ {
+   "Word": "एक्स्ट्रा\t",
+   "Meaning": "Extra"
+ },
+ {
+   "Word": "फुटबॉल",
+   "Meaning": "Football"
+ },
+ {
+   "Word": "फ़ाउल",
+   "Meaning": "Foul"
+ },
+ {
+   "Word": "सामने की पंक्ति",
+   "Meaning": "Front-Row"
+ },
+ {
+   "Word": "खेल\t",
+   "Meaning": "Game"
+ },
+ {
+   "Word": "लक्ष्य\t",
+   "Meaning": "Goal"
+ },
+ {
+   "Word": "गॉल कीपर",
+   "Meaning": "Goal Keeper"
+ },
+ {
+   "Word": "जिमनास्टिक्स",
+   "Meaning": "Gymnastics"
+ },
+ {
+   "Word": "घुड दौड़",
+   "Meaning": "Horse-Racing"
+ },
+ {
+   "Word": "वाह!",
+   "Meaning": "Hurrah!"
+ },
+ {
+   "Word": "हारना",
+   "Meaning": "Lose"
+ },
+ {
+   "Word": "मैराथन",
+   "Meaning": "Marathon"
+ },
+ {
+   "Word": "मैच\t",
+   "Meaning": "Match"
+ },
+ {
+   "Word": "खिलाड़ी\t",
+   "Meaning": "Players"
+ },
+ {
+   "Word": "दौड़",
+   "Meaning": "Race"
+ },
+ {
+   "Word": "रेफ़री",
+   "Meaning": "Referee"
+ },
+ {
+   "Word": "स्कोर",
+   "Meaning": "Score"
+ },
+ {
+   "Word": "सीट\t",
+   "Meaning": "Seat"
+ },
+ {
+   "Word": "स्टेडियम",
+   "Meaning": "Stadium"
+ },
+ {
+   "Word": "तैराकी",
+   "Meaning": "Swimming"
+ },
+ {
+   "Word": "टेबल - टेनिस",
+   "Meaning": "Table-Tennis"
+ },
+ {
+   "Word": "टीम\t",
+   "Meaning": "Team"
+ },
+ {
+   "Word": "टेनिस",
+   "Meaning": "Tennis"
+ },
+ {
+   "Word": "टिकट",
+   "Meaning": "Ticket"
+ },
+ {
+   "Word": "जीत\t",
+   "Meaning": "Victory"
+ },
+ {
+   "Word": "वॉली बॉल",
+   "Meaning": "Volley-Ball"
+ },
+ {
+   "Word": "जीतना",
+   "Meaning": "Win"
+ },
+ {
+   "Word": "रेस्लिंग",
+   "Meaning": "Wrestling"
+ },
+ {
+   "Word": "डाउनटाउन",
+   "Meaning": "Downtown"
+ },
+ {
+   "Word": "ड्राइवर",
+   "Meaning": "Driver"
+ },
+ {
+   "Word": "पेट्रोल पंप\tGas",
+   "Meaning": "Station"
+ },
+ {
+   "Word": "हाइवे",
+   "Meaning": "Highway"
+ },
+ {
+   "Word": "मीटर",
+   "Meaning": "Meter"
+ },
+ {
+   "Word": "प्रवेश निषेध",
+   "Meaning": "No Entry"
+ },
+ {
+   "Word": "नो पार्किंग\t",
+   "Meaning": "No Parking"
+ },
+ {
+   "Word": "रसीद",
+   "Meaning": "Receipt"
+ },
+ {
+   "Word": "सड़क",
+   "Meaning": "Road"
+ },
+ {
+   "Word": "सिग्नल",
+   "Meaning": "Signal"
+ },
+ {
+   "Word": "गति सीमा",
+   "Meaning": "Speed Limit"
+ },
+ {
+   "Word": "रुकिए",
+   "Meaning": "Stop"
+ },
+ {
+   "Word": "यहाँ रुकिए",
+   "Meaning": "Stop Here"
+ },
+ {
+   "Word": "गली\t",
+   "Meaning": "Street"
+ },
+ {
+   "Word": "टैक्सी\t",
+   "Meaning": "Taxi"
+ },
+ {
+   "Word": "टैक्सी स्टैंड",
+   "Meaning": "Taxi Stop"
+ },
+ {
+   "Word": "ट्रैफ़िक लाइट",
+   "Meaning": "Traffic Lights"
+ },
+ {
+   "Word": "यहाँ ठेहेरिये",
+   "Meaning": "Wait Here"
+ },
+ {
+   "Word": "एसी\t",
+   "Meaning": "Air Conditioner"
+ },
+ {
+   "Word": "हवाई जहाज",
+   "Meaning": "Airplane"
+ },
+ {
+   "Word": "नाव\t",
+   "Meaning": "Boat"
+ },
+ {
+   "Word": "बस\t",
+   "Meaning": "Bus"
+ },
+ {
+   "Word": "बस स्टैंड",
+   "Meaning": "Bus Stop"
+ },
+ {
+   "Word": "कार\t",
+   "Meaning": "Car"
+ },
+ {
+   "Word": "क्रूज",
+   "Meaning": "Cruise"
+ },
+ {
+   "Word": "साइकिल",
+   "Meaning": "Cycle"
+ },
+ {
+   "Word": "नौका",
+   "Meaning": "Ferry"
+ },
+ {
+   "Word": "मेट्रो",
+   "Meaning": "Metro"
+ },
+ {
+   "Word": "एक तरफा रास्ता",
+   "Meaning": "One Way"
+ },
+ {
+   "Word": "झुकना",
+   "Meaning": "Recline"
+ },
+ {
+   "Word": "दो तरफा सफ़र\t",
+   "Meaning": "Round Trip"
+ },
+ {
+   "Word": "सीट\t",
+   "Meaning": "Seat"
+ },
+ {
+   "Word": "जहाज",
+   "Meaning": "Ship"
+ },
+ {
+   "Word": "टैक्सी\t",
+   "Meaning": "Taxi"
+ },
+ {
+   "Word": "रेलगाड़ी",
+   "Meaning": "Train"
+ },
+ {
+   "Word": "रेलवे स्टेशन",
+   "Meaning": "Train Station"
+ },
+ {
+   "Word": "कला\t",
+   "Meaning": "Art"
+ },
+ {
+   "Word": "मार्ग",
+   "Meaning": "Avenue"
+ },
+ {
+   "Word": "बैंक",
+   "Meaning": "Bank"
+ },
+ {
+   "Word": "बीच\t",
+   "Meaning": "Beach"
+ },
+ {
+   "Word": "सिनेमा",
+   "Meaning": "Cinema"
+ },
+ {
+   "Word": "शहर के बीच\t",
+   "Meaning": "City Center"
+ },
+ {
+   "Word": "बंद\t",
+   "Meaning": "Closed"
+ },
+ {
+   "Word": "पोशाक",
+   "Meaning": "Costume"
+ },
+ {
+   "Word": "संस्कृति",
+   "Meaning": "Culture"
+ },
+ {
+   "Word": "नृत्य",
+   "Meaning": "Dance"
+ },
+ {
+   "Word": "डाउनटाउन",
+   "Meaning": "Downtown"
+ },
+ {
+   "Word": "गैलरी",
+   "Meaning": "Gallery"
+ },
+ {
+   "Word": "हाइवे",
+   "Meaning": "Highway"
+ },
+ {
+   "Word": "पुस्तकालय",
+   "Meaning": "Library"
+ },
+ {
+   "Word": "शॉपिंग सेंटर",
+   "Meaning": "Mall"
+ },
+ {
+   "Word": "बाजार\t",
+   "Meaning": "Market"
+ },
+ {
+   "Word": "स्मारक\t",
+   "Meaning": "Monument"
+ },
+ {
+   "Word": "संग्रहालय\t",
+   "Meaning": "Museum"
+ },
+ {
+   "Word": "संगीत",
+   "Meaning": "Music"
+ },
+ {
+   "Word": "खुला",
+   "Meaning": "Open"
+ },
+ {
+   "Word": "पार्क",
+   "Meaning": "Park"
+ },
+ {
+   "Word": "पास\t",
+   "Meaning": "Pass"
+ },
+ {
+   "Word": "रसीद",
+   "Meaning": "Receipt"
+ },
+ {
+   "Word": "धर्म",
+   "Meaning": "Religion"
+ },
+ {
+   "Word": "ग्रामीण\t",
+   "Meaning": "Rural"
+ },
+ {
+   "Word": "कहानियां",
+   "Meaning": "Stories"
+ },
+ {
+   "Word": "रोड साइड बाज़ार",
+   "Meaning": "Street Market"
+ },
+ {
+   "Word": "छात्र डिस्काउंट\t",
+   "Meaning": "Student Discount"
+ },
+ {
+   "Word": "धूप के चश्मे",
+   "Meaning": "Sun Glasses"
+ },
+ {
+   "Word": "सन स्क्रीन",
+   "Meaning": "Sun Screen"
+ },
+ {
+   "Word": "थिएटर",
+   "Meaning": "Theater"
+ },
+ {
+   "Word": "टिकट",
+   "Meaning": "Ticket"
+ },
+ {
+   "Word": "परंपरा",
+   "Meaning": "Tradition"
+ },
+ {
+   "Word": "शहरी",
+   "Meaning": "Urban"
+ },
+ {
+   "Word": "बैंगन",
+   "Meaning": "Aubergine"
+ },
+ {
+   "Word": "शिमला मिर्च",
+   "Meaning": "Bell Peppers"
+ },
+ {
+   "Word": "बैंगन",
+   "Meaning": "Brinjal"
+ },
+ {
+   "Word": "गाजर",
+   "Meaning": "Carrot"
+ },
+ {
+   "Word": "मिर्च",
+   "Meaning": "Chili"
+ },
+ {
+   "Word": "मकई",
+   "Meaning": "Corn"
+ },
+ {
+   "Word": "बैंगन",
+   "Meaning": "Eggplant"
+ },
+ {
+   "Word": "कुकुरमुत्ता",
+   "Meaning": "Mushroom"
+ },
+ {
+   "Word": "आलू\t",
+   "Meaning": "Potato"
+ },
+ {
+   "Word": "टमाटर",
+   "Meaning": "Tomato"
+ },
+ {
+   "Word": "बादल छाना",
+   "Meaning": "C"
+ },
+ {
+   "Word": "उदास",
+   "Meaning": "Gloomy"
+ },
+ {
+   "Word": "नम",
+   "Meaning": "Humid"
+ },
+ {
+   "Word": "ठंड है",
+   "Meaning": "It'S Cold"
+ },
+ {
+   "Word": "गर्मी है",
+   "Meaning": "It'S Hot"
+ },
+ {
+   "Word": "तूफानी है",
+   "Meaning": "It'S Windy"
+ },
+ {
+   "Word": "बिजली कड़कना\t",
+   "Meaning": "Lightening"
+ },
+ {
+   "Word": "सुखद",
+   "Meaning": "Pleasant"
+ },
+ {
+   "Word": "बरसाती ",
+   "Meaning": "Rainy"
+ },
+ {
+   "Word": "गरज\t",
+   "Meaning": "Thunder"
+ },
+ {
+   "Word": "तूफानी",
+   "Meaning": "Windy"
+ },
+ {
+   "Word": "शादी की सालगिरह मुबारक हो",
+   "Meaning": "Happy Anniversary!"
+ },
+ {
+   "Word": "जन्मदिन मुबारक",
+   "Meaning": "Happy Birthday!"
+ },
+ {
+   "Word": "नया साल मुबारक हो",
+   "Meaning": "Happy New Year!"
+ },
+ {
+   "Word": "मेरी क्रिसमस",
+   "Meaning": "Merry Christmas!"
+ },
+ {
+   "Word": "एक्सेसरी",
+   "Meaning": "Accessory"
+ },
+ {
+   "Word": "बिकिनी",
+   "Meaning": "Bikini"
+ },
+ {
+   "Word": "ब्लाउज",
+   "Meaning": "Blouse"
+ },
+ {
+   "Word": "कान की बाली",
+   "Meaning": "Earrings"
+ },
+ {
+   "Word": "जैकेट",
+   "Meaning": "Jacket"
+ },
+ {
+   "Word": "जीन्स",
+   "Meaning": "Jeans"
+ },
+ {
+   "Word": "आभूषण",
+   "Meaning": "Jewelry"
+ },
+ {
+   "Word": "हार",
+   "Meaning": "Necklace"
+ },
+ {
+   "Word": "पर्स",
+   "Meaning": "Purse"
+ },
+ {
+   "Word": "जूते",
+   "Meaning": "Shoes"
+ },
+ {
+   "Word": "स्कर्ट",
+   "Meaning": "Skirt"
+ },
+ {
+   "Word": "चप्पलें",
+   "Meaning": "Slippers"
+ }
+]
