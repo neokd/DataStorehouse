@@ -187,7 +187,7 @@ function Sidebar() {
               <div className="mt-4 text-gray-500 dark:text-white/70 ">
                 {datasets.map((domain, index) => (
                   <div className="" key={domain.domain}>
-                    <div className={`text-left text-gray-700 dark:text-white my-1 text-lg`}>
+                    <div className={`text-left text-gray-700 dark:text-white/80 my-1 text-lg`}>
                       {
                         index === 0 && (
                           <Link to='/datasets'>

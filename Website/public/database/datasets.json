@@ -81,7 +81,7 @@
                 "id": "WO9SBCADG",
                 "title": "Password List (8 Char)",
                 "description": "This dataset contains 8 character long passwords that can be used to test your password strength. It contains 10000000 passwords.",
-                "githubPath": "https://github.com/neokd/DataBucket/blob/Website/Bucket/Cyber%20Security/keyboard_combination.txt",
+                "githubPath": "https://github.com/neokd/DataBucket/blob/Website/Bucket/Cyber%20Security/passwords/keyboard_combination.txt",
                 "contributor": "neokd",
                 "added": "2023/06/14",
                 "updated": "2023/06/14",
