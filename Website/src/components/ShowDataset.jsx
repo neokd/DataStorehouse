@@ -138,7 +138,7 @@ function ShowDataset() {
                         id={item.id}
                         data-aos='fade-up'
                         data-aos-easing='linear'
-                        data-aos-duration='400'
+                        data-aos-duration='250'
                          className="scrollspy-section"
                       >
                         <div

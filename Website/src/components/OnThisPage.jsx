@@ -29,7 +29,7 @@ function OnThisPage({ filteredData }) {
         if (location.hash.startsWith("#")) {
             const element = document.getElementById(location.hash.substr(1));
             if (element) {
-                element.scrollIntoView({ behavior: "auto", block: "center" });
+                element.scrollIntoView({ behavior: "smooth", block: "center" });
                 setActiveSection(element.id);
             }
         }
@@ -37,7 +37,7 @@ function OnThisPage({ filteredData }) {
         return () => {
             observer.disconnect();
         };
-    }, [pathSegments]);
+    }, [location]);
 
     const toggleDomain = (domain, id) => {
         const domainUrl = domain.replace(/\s+/g, " ").toLowerCase();
@@ -51,12 +51,9 @@ function OnThisPage({ filteredData }) {
         }
     };
     
-
-
-
     return (
         <div className="hidden lg:block">
-            <div className="border-l border-amber-500/80 p-4  rounded-lg shadow-amber-500/10 drop-shadow-lg shadow-lg flex fixed justify-end items-end mt-36 ml-8">
+            <div className="border-l border-amber-500/80 p-4  rounded-lg shadow-amber-500/10 drop-shadow-lg shadow-lg flex fixed justify-end items-end mt-36 max-w-fit ml-8">
                 <div className=" flex flex-col justify-start container ">
                     <div className="dark:text-white text-xl font-semibold">
                         On this page
@@ -67,7 +64,7 @@ function OnThisPage({ filteredData }) {
                                 <ul key={item.domain} >
                                     {
                                         item.datasets.map((subitem) => (
-                                            <li key={subitem.id} className="py-2 flex items-cente ">
+                                            <li key={subitem.id} className="py-2 flex justify-start truncate">
                                                 <button onClick={() => toggleDomain(item.domain, subitem.id)} className={`text-lg ${(activeSection === subitem.id) ? 'text-amber-500 font-semibold' : 'dark:text-white/80 dark:hover:text-white/90'}`}>
                                                     {subitem.title}
                                                 </button>

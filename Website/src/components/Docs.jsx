@@ -12,7 +12,6 @@ function Docs() {
           <div className='dark:text-white'>
             Hello World
           </div>
-
         </div>
       </div>
     </div>

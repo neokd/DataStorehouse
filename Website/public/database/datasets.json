@@ -140,6 +140,30 @@
                 "updated": "2023/06/15",
                 "size": "25 KB",
                 "tag": ["hindi", "dictionary", "words", "dataset","CSV"],
+                "fileType": "CSV"
+            },
+            {
+                "id": "5TadpWkukr",
+                "title": "Tamil Dictionary (CSV)",
+                "description": "This dataset contains all the tamil words and their meanings. It contains 1,000 words and their meanings.",
+                "githubPath": "https://github.com/neokd/DataBucket/blob/Website/Bucket/Dictionary/Tamil/tamil_dict.csv",
+                "contributor": "Priyamakeshwari",
+                "added": "2023/06/16",
+                "updated": "2023/06/16",
+                "size": "27 KB",
+                "tag": ["tamil", "dictionary", "words", "dataset","CSV"],
+                "fileType": "CSV"
+            },
+            {
+                "id": "hNfVPZFPPE",
+                "title": "Tamil Dictionary",
+                "description": "This dataset contains all the tamil words and their meanings. It contains 1,000 words and their meanings.",
+                "githubPath": "https://github.com/neokd/DataBucket/blob/Website/Bucket/Dictionary/Tamil/tamil_dict.json",
+                "contributor": "Priyamakeshwari",
+                "added": "2023/06/16",
+                "updated": "2023/06/16",
+                "size": "67 KB",
+                "tag": ["tamil", "dictionary", "words", "dataset","JSON"],
                 "fileType": "JSON"
             }
         ]
