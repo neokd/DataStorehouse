@@ -293,7 +293,7 @@ function Searchbar({ visible, onClose }) {
                             </ul>
                         </div>
                     )}
-                    {recommendations.length >= 0 && (
+                    {recommendations.length > 0 && (
                         <div className='mt-4 mx-2'>
                             <h3 className='text-lg dark:text-gray-100 font-bold mb-2'>
                                 Recommendations

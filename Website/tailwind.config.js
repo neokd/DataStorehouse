@@ -49,3 +49,8 @@ export default {
     require('tailwind-scrollbar'),
   ],
 }
+// 'text': '#041008',
+// 'background': '#f7fdf9',
+// 'primary-button': '#9de7d9',
+// 'secondary-button': '#ffffff',
+// 'accent': '#9dcfe7',

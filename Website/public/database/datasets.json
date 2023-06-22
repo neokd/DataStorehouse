@@ -51,6 +51,124 @@
         ]
     },
     {
+        "domain": "Cyber Security",
+        "datasets": [
+            {
+                "id": "8KGYbPL7KV",
+                "title": "JWT Secrets",
+                "description": "This dataset contains JWT secrets that can be used. These hashes are scraped from github and are commonly used. ",
+                "githubPath": "https://github.com/neokd/DataBucket/blob/Website/Bucket/Cyber%20Security/passwords/jwt-secrets.txt",
+                "contributor": "neokd",
+                "added": "2023/06/14",
+                "updated": "2023/06/14",
+                "size": "1.1 MB",
+                "tag": ["password", "list", "jwt", "security", "dataset"],
+                "fileType": "TXT"
+            },
+            {
+                "id": "WO9SQ17686",
+                "title": "JavaScript Vulnerabilities",
+                "description": "This dataset contains vulnerabilites in javascript till 2019 and can be used to find vulnerabilities in your javascript code. It includes all the vulnerabilites and meta data about them.",
+                "githubPath": "https://github.com/neokd/DataBucket/blob/Website/Bucket/Cyber%20Security/JSVulnerabilityDataSet-1.0.csv",
+                "contributor": "neokd",
+                "added": "2023/06/14",
+                "updated": "2023/06/14",
+                "size": "4.5 MB",
+                "tag": ["javascript", "vulnerabilities", "security", "code", "dataset"],
+                "fileType": "CSV"
+            },
+            {
+                "id": "WO9SBCADG",
+                "title": "Password List (8 Char)",
+                "description": "This dataset contains 8 character long passwords that can be used to test your password strength. It contains 10000000 passwords.",
+                "githubPath": "https://github.com/neokd/DataBucket/blob/Website/Bucket/Cyber%20Security/passwords/keyboard_combination.txt",
+                "contributor": "neokd",
+                "added": "2023/06/14",
+                "updated": "2023/06/14",
+                "size": "90 MB",
+                "tag": ["password", "list", "security", "strength", "dataset"],
+                "fileType": "TXT"
+            },
+            {
+                "id": "WO9SBGDAC",
+                "title": "Top 500 Worst Passwords",
+                "description": "This dataset contains top 500 worst common passwords that are used by people. These passwords are common and are not recommended to use.Check if yours is there in it!",
+                "githubPath": "https://github.com/neokd/DataBucket/blob/Website/Bucket/Cyber%20Security/passwords/500-worst-passwords.txt",
+                "contributor": "neokd",
+                "added": "2023/06/14",
+                "updated": "2023/06/14",
+                "size": "3 KB",
+                "tag": ["password", "list", "500","top500", "security"],
+                "fileType": "TXT"
+            },
+            {
+                "id": "W90BSGDAC",
+                "title": "List of all 4 digit PINs",
+                "description": "This dataset contains all the possible 4 digit PINs that can be used to test your PIN strength. It contains 10000 PINs.",
+                "githubPath": "https://github.com/neokd/DataBucket/blob/Website/Bucket/Cyber%20Security/passwords/4_digit_pin.txt",
+                "contributor": "neokd",
+                "added": "2023/06/14",
+                "updated": "2023/06/14",
+                "size": "54 KB",
+                "tag": ["password", "list", "4 digit", "security", "dataset"],
+                "fileType": "TXT"
+            }
+        ]
+    },
+    {
+        "domain": "Multi Lingual NLP",
+        "datasets": [
+            {
+                "id": "IsRviWxtbh",
+                "title": "Hindi Word and English Meaning",
+                "description": "This dataset contains all the hindi words and their meanings. It contains 1,000 words and their meanings.",
+                "githubPath": "https://github.com/neokd/DataBucket/blob/Website/Bucket/Multilingual%20NLP/Hindi/hindi_dict.json",
+                "contributor": "Priyamakeshwari",
+                "added": "2023/06/15",
+                "updated": "2023/06/15",
+                "size": "62 KB",
+                "tag": ["hindi", "dictionary", "words", "dataset"],
+                "fileType": "JSON"
+            },
+            {
+                "id": "0uVp1qX342",
+                "title": "Hindi Dictionary (CSV)",
+                "description": "This dataset contains all the hindi words and their meanings. It contains 1,000 words and their meanings.",
+                "githubPath": "https://github.com/neokd/DataBucket/blob/Website/Bucket/Multilingual%20NLP/Hindi/hindi_dict.csv",
+                "contributor": "Priyamakeshwari",
+                "added": "2023/06/15",
+                "updated": "2023/06/15",
+                "size": "25 KB",
+                "tag": ["hindi", "dictionary", "words", "dataset","CSV"],
+                "fileType": "CSV"
+            },
+            {
+                "id": "5TadpWkukr",
+                "title": "Tamil Dictionary (CSV)",
+                "description": "This dataset contains all the tamil words and their meanings. It contains 1,000 words and their meanings.",
+                "githubPath": "https://github.com/neokd/DataBucket/blob/Website/Bucket/Multilingual%20NLP/Tamil/tamil_dict.csv",
+                "contributor": "Priyamakeshwari",
+                "added": "2023/06/16",
+                "updated": "2023/06/16",
+                "size": "27 KB",
+                "tag": ["tamil", "dictionary", "words", "dataset","CSV"],
+                "fileType": "CSV"
+            },
+            {
+                "id": "hNfVPZFPPE",
+                "title": "Tamil Dictionary",
+                "description": "This dataset contains all the tamil words and their meanings. It contains 1,000 words and their meanings.",
+                "githubPath": "https://github.com/neokd/DataBucket/blob/Website/Bucket/Multilingual%20NLP/Tamil/tamil_dict.json",
+                "contributor": "Priyamakeshwari",
+                "added": "2023/06/16",
+                "updated": "2023/06/16",
+                "size": "67 KB",
+                "tag": ["tamil", "dictionary", "words", "dataset","JSON"],
+                "fileType": "JSON"
+            }
+        ]
+    },
+    {
         "domain": "Wikipedia",
         "datasets": [
             {
@@ -74,7 +192,7 @@
                 "id": "fbonlmn7QU",
                 "title": "Bengali Stop Words",
                 "description": "This dataset is collection of all the stop words in bengali That can be used to remove stop words from the text in your ML projects.",
-                "githubPath": "https://github.com/neokd/DataBucket/blob/Website/Bucket/StopWords/Bengali_stopwords.txt",
+                "githubPath": "https://github.com/neokd/DataBucket/blob/Website/Bucket/StopWords/Bengali_stopwords.csv",
                 "contributor": "neokd",
                 "added": "2023/06/12",
                 "updated": "2023/06/12",
@@ -86,7 +204,7 @@
                 "id": "gzDGq_Op8a",
                 "title": "Hindi Stop Words",
                 "description": "This dataset is collection of all the stop words in hindi That can be used to remove stop words from the text in your ML projects.",
-                "githubPath": "https://github.com/neokd/DataBucket/blob/Website/Bucket/StopWords/Hindi_stopwords.txt",
+                "githubPath": "https://github.com/neokd/DataBucket/blob/Website/Bucket/StopWords/Hindi_stopwords.csv",
                 "contributor": "neokd",
                 "added": "2023/06/12",
                 "updated": "2023/06/12",
@@ -98,7 +216,7 @@
                 "id": "iIYue8zeCF",
                 "title": "Gujrati Stop Words",
                 "description": "This dataset is collection of all the stop words in gujrati That can be used to remove stop words from the text in your ML projects.",
-                "githubPath": "https://github.com/neokd/DataBucket/blob/Website/Bucket/StopWords/Gujarati_stopwords.txt",
+                "githubPath": "https://github.com/neokd/DataBucket/blob/Website/Bucket/StopWords/Gujarati_stopwords.csv",
                 "contributor": "neokd",
                 "added": "2023/06/12",
                 "updated": "2023/06/12",
@@ -110,7 +228,7 @@
                 "id": "lJIHIop_ea",
                 "title": "Marathi Stop Words",
                 "description": "This dataset is collection of all the stop words in marathi That can be used to remove stop words from the text in your ML projects.",
-                "githubPath": "https://github.com/neokd/DataBucket/blob/Website/Bucket/StopWords/Gujarati_stopwords.txt",
+                "githubPath": "https://github.com/neokd/DataBucket/blob/Website/Bucket/StopWords/Gujarati_stopwords.csv",
                 "contributor": "neokd",
                 "added": "2023/06/12",
                 "updated": "2023/06/12",

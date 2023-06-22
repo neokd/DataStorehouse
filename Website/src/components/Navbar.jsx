@@ -47,7 +47,6 @@ function Navbar() {
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 stroke-2">
                                 <path strokeLinecap="round" strokeLinejoin="round" d="M14.25 9.75L16.5 12l-2.25 2.25m-4.5 0L7.5 12l2.25-2.25M6 20.25h12A2.25 2.25 0 0020.25 18V6A2.25 2.25 0 0018 3.75H6A2.25 2.25 0 003.75 6v12A2.25 2.25 0 006 20.25z" />
                             </svg>
-
                         </Link>
                     </div>
                     <div className={`lg:p-3 p-2 border-amber-500 hover:scale-105 duration-100 mx-2 rounded-lg ${isActiveRoute('/docs') ? 'bg-amber-500 duration-100' : 'hover:shadow-lg hover:shadow-amber-500'}`}>

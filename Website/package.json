@@ -14,6 +14,7 @@
     "@react-spring/web": "^9.7.2",
     "@supabase/supabase-js": "^2.24.0",
     "aos": "^2.3.4",
+    "appwrite": "^11.0.0",
     "framer-motion": "^10.12.16",
     "fuse.js": "^6.6.2",
     "octokit": "^2.0.19",
@@ -21,7 +22,8 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.9.0",
-    "react-router-dom": "^6.11.2"
+    "react-router-dom": "^6.11.2",
+    "typewriter-effect": "^2.20.1"
   },
   "devDependencies": {
     "@types/react": "^18.0.28",
