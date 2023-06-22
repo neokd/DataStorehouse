@@ -13,7 +13,7 @@ def file_size(filename):
         return str(round(file_size / 1024, 2)) + " KB"
 
 def get_file_metadata(filename):
-    file_type = os.path.splitext(filename)[1]
+    file_type = os.path.splitext(filename)[1] 
     modified_time = os.path.getmtime(filename)
     modified_time = datetime.datetime.fromtimestamp(modified_time).strftime("%Y/%m/%d")
     creation_time = os.path.getctime(filename)

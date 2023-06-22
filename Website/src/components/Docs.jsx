@@ -5,7 +5,6 @@ function Docs() {
   return (
     <div>
       <Navbar />
-      
       <div className='dark:bg-customGray bg-gray-200 h-screen'>
         <div className="container mx-96 mt-28 fixed ">
           <Sidebar />

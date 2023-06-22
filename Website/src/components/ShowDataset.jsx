@@ -211,10 +211,11 @@ function ShowDataset() {
             <div>
               <PageNavigation />
             </div>
+            <Footer />
           </div>
           <OnThisPage filteredData={filteredData} />
         </div>
-        <Footer />
+        
       </div>
     </div>
   );
