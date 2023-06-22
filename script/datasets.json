@@ -1,11 +1,10 @@
 [
     {
-        "domain":"Getting Started 🚀",
-        "datasets":[]
-
+        "domain": "Getting Started \ud83d\ude80",
+        "datasets": []
     },
     {
-        "domain": "Marketing and Customer Analytics",
+        "domain": "Marketing and Advertising",
         "datasets": [
             {
                 "id": "lI7Q3bFi8t",
@@ -16,7 +15,16 @@
                 "added": "2023/06/07",
                 "updated": "2023/06/07",
                 "size": "1.5 MB",
-                "tag": ["marketing", "campaign", "bank", "term", "deposit", "predict", "customer", "subscribe"],
+                "tag": [
+                    "marketing",
+                    "campaign",
+                    "bank",
+                    "term",
+                    "deposit",
+                    "predict",
+                    "customer",
+                    "subscribe"
+                ],
                 "fileType": "JSON"
             },
             {
@@ -28,13 +36,22 @@
                 "added": "2023/06/07",
                 "updated": "2023/06/07",
                 "size": "215.03 KB",
-                "tag": ["marketing", "campaign", "bank", "term", "deposit", "predict", "customer", "subscribe"],
+                "tag": [
+                    "marketing",
+                    "campaign",
+                    "bank",
+                    "term",
+                    "deposit",
+                    "predict",
+                    "customer",
+                    "subscribe"
+                ],
                 "fileType": "CSV"
             }
         ]
     },
     {
-        "domain": "AI Tools",
+        "domain": "Tools & Technology",
         "datasets": [
             {
                 "id": "WO9SQHABCD",
@@ -45,13 +62,19 @@
                 "added": "2023/06/13",
                 "updated": "2023/06/13",
                 "size": "1.3 MB",
-                "tag": ["AI", "tools", "list", "ML", "projects"],
+                "tag": [
+                    "AI",
+                    "tools",
+                    "list",
+                    "ML",
+                    "projects"
+                ],
                 "fileType": "JSON"
             }
         ]
     },
     {
-        "domain": "Cyber Security",
+        "domain": "Cybersecurity",
         "datasets": [
             {
                 "id": "8KGYbPL7KV",
@@ -62,7 +85,13 @@
                 "added": "2023/06/14",
                 "updated": "2023/06/14",
                 "size": "1.1 MB",
-                "tag": ["password", "list", "jwt", "security", "dataset"],
+                "tag": [
+                    "password",
+                    "list",
+                    "jwt",
+                    "security",
+                    "dataset"
+                ],
                 "fileType": "TXT"
             },
             {
@@ -74,7 +103,13 @@
                 "added": "2023/06/14",
                 "updated": "2023/06/14",
                 "size": "4.5 MB",
-                "tag": ["javascript", "vulnerabilities", "security", "code", "dataset"],
+                "tag": [
+                    "javascript",
+                    "vulnerabilities",
+                    "security",
+                    "code",
+                    "dataset"
+                ],
                 "fileType": "CSV"
             },
             {
@@ -86,7 +121,13 @@
                 "added": "2023/06/14",
                 "updated": "2023/06/14",
                 "size": "90 MB",
-                "tag": ["password", "list", "security", "strength", "dataset"],
+                "tag": [
+                    "password",
+                    "list",
+                    "security",
+                    "strength",
+                    "dataset"
+                ],
                 "fileType": "TXT"
             },
             {
@@ -98,7 +139,13 @@
                 "added": "2023/06/14",
                 "updated": "2023/06/14",
                 "size": "3 KB",
-                "tag": ["password", "list", "500","top500", "security"],
+                "tag": [
+                    "password",
+                    "list",
+                    "500",
+                    "top500",
+                    "security"
+                ],
                 "fileType": "TXT"
             },
             {
@@ -110,13 +157,19 @@
                 "added": "2023/06/14",
                 "updated": "2023/06/14",
                 "size": "54 KB",
-                "tag": ["password", "list", "4 digit", "security", "dataset"],
+                "tag": [
+                    "password",
+                    "list",
+                    "4 digit",
+                    "security",
+                    "dataset"
+                ],
                 "fileType": "TXT"
             }
         ]
     },
     {
-        "domain": "Multi Lingual NLP",
+        "domain": "Language and Linguistics",
         "datasets": [
             {
                 "id": "IsRviWxtbh",
@@ -127,7 +180,12 @@
                 "added": "2023/06/15",
                 "updated": "2023/06/15",
                 "size": "62 KB",
-                "tag": ["hindi", "dictionary", "words", "dataset"],
+                "tag": [
+                    "hindi",
+                    "dictionary",
+                    "words",
+                    "dataset"
+                ],
                 "fileType": "JSON"
             },
             {
@@ -139,7 +197,13 @@
                 "added": "2023/06/15",
                 "updated": "2023/06/15",
                 "size": "25 KB",
-                "tag": ["hindi", "dictionary", "words", "dataset","CSV"],
+                "tag": [
+                    "hindi",
+                    "dictionary",
+                    "words",
+                    "dataset",
+                    "CSV"
+                ],
                 "fileType": "CSV"
             },
             {
@@ -151,7 +215,13 @@
                 "added": "2023/06/16",
                 "updated": "2023/06/16",
                 "size": "27 KB",
-                "tag": ["tamil", "dictionary", "words", "dataset","CSV"],
+                "tag": [
+                    "tamil",
+                    "dictionary",
+                    "words",
+                    "dataset",
+                    "CSV"
+                ],
                 "fileType": "CSV"
             },
             {
@@ -163,13 +233,19 @@
                 "added": "2023/06/16",
                 "updated": "2023/06/16",
                 "size": "67 KB",
-                "tag": ["tamil", "dictionary", "words", "dataset","JSON"],
+                "tag": [
+                    "tamil",
+                    "dictionary",
+                    "words",
+                    "dataset",
+                    "JSON"
+                ],
                 "fileType": "JSON"
             }
         ]
     },
     {
-        "domain": "Wikipedia",
+        "domain": "NLP and Text Analysis",
         "datasets": [
             {
                 "id": "WO9SQHIMLQ",
@@ -180,13 +256,21 @@
                 "added": "2023/06/12",
                 "updated": "2023/06/12",
                 "size": "1.1 GB",
-                "tag": ["raw", "data","wikipedia","hindi","corpus","dump","extracted"],
+                "tag": [
+                    "raw",
+                    "data",
+                    "wikipedia",
+                    "hindi",
+                    "corpus",
+                    "dump",
+                    "extracted"
+                ],
                 "fileType": "JSON"
             }
         ]
     },
     {
-        "domain": "Stop Words",
+        "domain": "NLP and Text Analysis",
         "datasets": [
             {
                 "id": "fbonlmn7QU",
@@ -197,7 +281,14 @@
                 "added": "2023/06/12",
                 "updated": "2023/06/12",
                 "size": "32 KB",
-                "tag": ["stop words", "hindi", "remove", "text", "ml", "projects"],
+                "tag": [
+                    "stop words",
+                    "hindi",
+                    "remove",
+                    "text",
+                    "ml",
+                    "projects"
+                ],
                 "fileType": "TXT"
             },
             {
@@ -209,7 +300,14 @@
                 "added": "2023/06/12",
                 "updated": "2023/06/12",
                 "size": "32 KB",
-                "tag": ["stop words", "hindi", "remove", "text", "ml", "projects"],
+                "tag": [
+                    "stop words",
+                    "hindi",
+                    "remove",
+                    "text",
+                    "ml",
+                    "projects"
+                ],
                 "fileType": "TXT"
             },
             {
@@ -221,7 +319,13 @@
                 "added": "2023/06/12",
                 "updated": "2023/06/12",
                 "size": "32 KB",
-                "tag": ["stop words", "gujrati", "text", "ml", "projects"],
+                "tag": [
+                    "stop words",
+                    "gujrati",
+                    "text",
+                    "ml",
+                    "projects"
+                ],
                 "fileType": "TXT"
             },
             {
@@ -233,7 +337,13 @@
                 "added": "2023/06/12",
                 "updated": "2023/06/12",
                 "size": "32 KB",
-                "tag": ["stop words", "marathi", "text", "ml", "projects"],
+                "tag": [
+                    "stop words",
+                    "marathi",
+                    "text",
+                    "ml",
+                    "projects"
+                ],
                 "fileType": "TXT"
             },
             {
@@ -245,13 +355,19 @@
                 "added": "2023/06/12",
                 "updated": "2023/06/12",
                 "size": "32 KB",
-                "tag": ["stop words", "urdu", "text", "ml", "projects"],
+                "tag": [
+                    "stop words",
+                    "urdu",
+                    "text",
+                    "ml",
+                    "projects"
+                ],
                 "fileType": "TXT"
             }
         ]
     },
     {
-        "domain": "Hindi Stories",
+        "domain": "NLP and Text Analysis",
         "datasets": [
             {
                 "id": "nv3b_MikH6",
@@ -262,13 +378,21 @@
                 "added": "2023/06/09",
                 "updated": "2023/06/09",
                 "size": "99.5 MB",
-                "tag": ["hindi", "stories", "corpus", "novels", "short", "raw", "data"],
+                "tag": [
+                    "hindi",
+                    "stories",
+                    "corpus",
+                    "novels",
+                    "short",
+                    "raw",
+                    "data"
+                ],
                 "fileType": "JSON"
             }
         ]
     },
     {
-        "domain": "Natural Language Processing (NLP)",
+        "domain": "Business and E-commerce",
         "datasets": [
             {
                 "id": "Pe9txtTzH3",
@@ -279,7 +403,13 @@
                 "added": "2023/06/07",
                 "updated": "2023/06/07",
                 "size": "863.69 KB",
-                "tag": ["bank", "faq", "question", "answer", "predict"],
+                "tag": [
+                    "bank",
+                    "faq",
+                    "question",
+                    "answer",
+                    "predict"
+                ],
                 "fileType": "JSON"
             },
             {
@@ -291,7 +421,13 @@
                 "added": "2023/06/07",
                 "updated": "2023/06/07",
                 "size": "761.32 KB",
-                "tag": ["bank", "faq", "question", "answer", "predict"],
+                "tag": [
+                    "bank",
+                    "faq",
+                    "question",
+                    "answer",
+                    "predict"
+                ],
                 "fileType": "CSV"
             },
             {
@@ -303,7 +439,13 @@
                 "added": "2023/06/08",
                 "updated": "2023/06/08",
                 "size": "761.32 KB",
-                "tag": ["udemy", "buisness", "course", "rating", "predict"],
+                "tag": [
+                    "udemy",
+                    "buisness",
+                    "course",
+                    "rating",
+                    "predict"
+                ],
                 "fileType": "CSV"
             },
             {
@@ -315,13 +457,19 @@
                 "added": "2023/06/08",
                 "updated": "2023/06/08",
                 "size": "761.32 KB",
-                "tag": ["udemy", "buisness", "course", "rating", "predict"],
+                "tag": [
+                    "udemy",
+                    "buisness",
+                    "course",
+                    "rating",
+                    "predict"
+                ],
                 "fileType": "JSON"
             }
         ]
     },
     {
-        "domain": "Twitter",
+        "domain": "Social Media Analysis",
         "datasets": [
             {
                 "id": "7XRCa49UtB",
@@ -332,7 +480,12 @@
                 "added": "2023/06/07",
                 "updated": "2023/06/07",
                 "size": "5.49 MB",
-                "tag": ["hate", "speech", "tweet", "predict"],
+                "tag": [
+                    "hate",
+                    "speech",
+                    "tweet",
+                    "predict"
+                ],
                 "fileType": "JSON"
             },
             {
@@ -344,13 +497,18 @@
                 "added": "2023/06/07",
                 "updated": "2023/06/07",
                 "size": "2.43 MB",
-                "tag": ["hate", "speech", "tweet", "predict"],
+                "tag": [
+                    "hate",
+                    "speech",
+                    "tweet",
+                    "predict"
+                ],
                 "fileType": "CSV"
             }
         ]
     },
     {
-        "domain": "Population Analysis",
+        "domain": "Demographics and Population",
         "datasets": [
             {
                 "id": "TjgiTxaszL",
@@ -361,7 +519,12 @@
                 "added": "2023/06/03",
                 "updated": "2023/06/03",
                 "size": "103.22 KB",
-                "tag": ["population", "countries", "world", "2023"],
+                "tag": [
+                    "population",
+                    "countries",
+                    "world",
+                    "2023"
+                ],
                 "fileType": "JSON"
             },
             {
@@ -373,13 +536,18 @@
                 "added": "2023/06/03",
                 "updated": "2023/06/03",
                 "size": "29.56 KB",
-                "tag": ["population", "countries", "world", "2023"],
+                "tag": [
+                    "population",
+                    "countries",
+                    "world",
+                    "2023"
+                ],
                 "fileType": "CSV"
             }
         ]
     },
     {
-        "domain": "Music",
+        "domain": "Music Analysis",
         "datasets": [
             {
                 "id": "eiGyQtioWp",
@@ -390,7 +558,14 @@
                 "added": "2023/06/07",
                 "updated": "2023/06/07",
                 "size": "2.8 MB",
-                "tag": ["music", "caption", "text", "sentiment", "analysis", "research"],
+                "tag": [
+                    "music",
+                    "caption",
+                    "text",
+                    "sentiment",
+                    "analysis",
+                    "research"
+                ],
                 "fileType": "CSV"
             },
             {
@@ -402,13 +577,20 @@
                 "added": "2023/06/07",
                 "updated": "2023/06/07",
                 "size": "3.81 MB",
-                "tag": ["music", "caption", "text", "sentiment", "analysis", "research"],
+                "tag": [
+                    "music",
+                    "caption",
+                    "text",
+                    "sentiment",
+                    "analysis",
+                    "research"
+                ],
                 "fileType": "JSON"
             }
         ]
     },
     {
-        "domain": "Financial Data Analysis",
+        "domain": "Finance and Stock Market",
         "datasets": [
             {
                 "id": "8KlqrZNyOX",
@@ -419,7 +601,14 @@
                 "added": "2023/06/03",
                 "updated": "2023/06/03",
                 "size": "1.97 MB",
-                "tag": ["stock", "market", "data", "predict", "investment", "strategies"],
+                "tag": [
+                    "stock",
+                    "market",
+                    "data",
+                    "predict",
+                    "investment",
+                    "strategies"
+                ],
                 "fileType": "JSON"
             },
             {
@@ -431,13 +620,20 @@
                 "added": "2023/06/03",
                 "updated": "2023/06/03",
                 "size": "812.66 KB",
-                "tag": ["stock", "market", "data", "predict", "investment", "strategies"],
+                "tag": [
+                    "stock",
+                    "market",
+                    "data",
+                    "predict",
+                    "investment",
+                    "strategies"
+                ],
                 "fileType": "CSV"
             }
         ]
     },
     {
-        "domain": "Computer Vision",
+        "domain": "Computer Vision and Image Processing",
         "datasets": [
             {
                 "id": "7JJixaqDRY",
@@ -448,7 +644,13 @@
                 "added": "2023/06/07",
                 "updated": "2023/06/07",
                 "size": "273.59 KB",
-                "tag": ["image", "text", "caption", "image caption", "image text caption"],
+                "tag": [
+                    "image",
+                    "text",
+                    "caption",
+                    "image caption",
+                    "image text caption"
+                ],
                 "fileType": "CSV"
             },
             {
@@ -460,13 +662,19 @@
                 "added": "2023/06/07",
                 "updated": "2023/06/07",
                 "size": "467.31 KB",
-                "tag": ["image", "text", "caption", "image caption", "image text caption"],
+                "tag": [
+                    "image",
+                    "text",
+                    "caption",
+                    "image caption",
+                    "image text caption"
+                ],
                 "fileType": "JSON"
             }
         ]
     },
     {
-        "domain": "Abbreviations",
+        "domain": "Language and Communication",
         "datasets": [
             {
                 "id": "43WzWnzuNi",
@@ -477,7 +685,12 @@
                 "added": "2023/06/05",
                 "updated": "2023/06/05",
                 "size": "3.41 KB",
-                "tag": ["abbreviations", "computer science", "engineering", "technical terms"],
+                "tag": [
+                    "abbreviations",
+                    "computer science",
+                    "engineering",
+                    "technical terms"
+                ],
                 "fileType": "JSON"
             },
             {
@@ -489,13 +702,18 @@
                 "added": "2023/06/05",
                 "updated": "2023/06/05",
                 "size": "8.67 KB",
-                "tag": ["chat", "abbreviations", "slang", "shorthand"],
+                "tag": [
+                    "chat",
+                    "abbreviations",
+                    "slang",
+                    "shorthand"
+                ],
                 "fileType": "JSON"
             }
         ]
     },
     {
-        "domain": "GitHub Repository Analysis",
+        "domain": "Github Data",
         "datasets": [
             {
                 "id": "UIdvmir27r",
@@ -506,7 +724,12 @@
                 "added": "2023/06/07",
                 "updated": "2023/06/07",
                 "size": "205.55 KB",
-                "tag": ["Github", "Repository", "Analysis", "Data"],
+                "tag": [
+                    "Github",
+                    "Repository",
+                    "Analysis",
+                    "Data"
+                ],
                 "fileType": "JSON"
             },
             {
@@ -518,13 +741,18 @@
                 "added": "2023/06/07",
                 "updated": "2023/06/07",
                 "size": "48.73 KB",
-                "tag": ["Github", "Repository", "Analysis", "Data"],
+                "tag": [
+                    "Github",
+                    "Repository",
+                    "Analysis",
+                    "Data"
+                ],
                 "fileType": "CSV"
             }
         ]
     },
     {
-        "domain": "Color and Flavors",
+        "domain": "Food and Culinary",
         "datasets": [
             {
                 "id": "oOMA5mUjoz",
@@ -535,7 +763,11 @@
                 "added": "2023/06/07",
                 "updated": "2023/06/07",
                 "size": "104.51 KB",
-                "tag": ["color", "color names", "single color names"],
+                "tag": [
+                    "color",
+                    "color names",
+                    "single color names"
+                ],
                 "fileType": "JSON"
             },
             {
@@ -547,7 +779,11 @@
                 "added": "2023/06/07",
                 "updated": "2023/06/07",
                 "size": "11.5 KB",
-                "tag": ["color", "color names", "single color names"],
+                "tag": [
+                    "color",
+                    "color names",
+                    "single color names"
+                ],
                 "fileType": "CSV"
             },
             {
@@ -559,7 +795,11 @@
                 "added": "2023/06/07",
                 "updated": "2023/06/07",
                 "size": "47.88 KB",
-                "tag": ["flavors", "ingredients", "dataset"],
+                "tag": [
+                    "flavors",
+                    "ingredients",
+                    "dataset"
+                ],
                 "fileType": "JSON"
             },
             {
@@ -571,13 +811,17 @@
                 "added": "2023/06/07",
                 "updated": "2023/06/07",
                 "size": "12.61 KB",
-                "tag": ["flavors", "ingredients", "dataset"],
+                "tag": [
+                    "flavors",
+                    "ingredients",
+                    "dataset"
+                ],
                 "fileType": "CSV"
             }
         ]
     },
     {
-        "domain": "Tamil Movies",
+        "domain": "Entertainment and Film Industry",
         "datasets": [
             {
                 "id": "4Q4Q4Q4Q4Q",
@@ -588,7 +832,13 @@
                 "added": "2023/06/13",
                 "updated": "2023/06/13",
                 "size": "18 KB",
-                "tag": ["Tamil", "Movies", "Analysis", "Data","CSV"],
+                "tag": [
+                    "Tamil",
+                    "Movies",
+                    "Analysis",
+                    "Data",
+                    "CSV"
+                ],
                 "fileType": "CSV"
             },
             {
@@ -600,10 +850,14 @@
                 "added": "2023/06/13",
                 "updated": "2023/06/14",
                 "size": "67 KB",
-                "tag": ["Github", "Repository", "Analysis", "Data"],
+                "tag": [
+                    "Github",
+                    "Repository",
+                    "Analysis",
+                    "Data"
+                ],
                 "fileType": "JSON"
             }
         ]
     }
-   
 ]
