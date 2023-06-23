@@ -61,8 +61,8 @@ def tsvToCSV(tsvFilePath,csvFilePath):
 
 # Driver Code
 if __name__ == '__main__':
-    txtFilePath = ''
+    txtFilePath = '/Users/kuldeep/Downloads/quora.tsv'
     csvFilePath = ''
-    csvToJSON(txtFilePath,'data.json')
+    tsvToCSV(txtFilePath,'quora.csv')
     
 

@@ -307,6 +307,42 @@
         "domain": "GitHub Data",
         "datasets": [
             {
+                "id": "ZP2I6zRDPj",
+                "title": "Github Gist Collection",
+                "description": "This dataset contains a collection of GitHub gists. Each entry represents a unique gist along with its associated information, such as description, tags, or any other relevant details. The dataset is stored in JSON format.",
+                "githubPath": "https://github.com/neokd/DataBucket/blob/Website/Bucket/Github%20Data/gist.json",
+                "contributor": "neokd",
+                "added": "2023/06/23",
+                "updated": "2023/06/23",
+                "size": "211.55 KB",
+                "tag": ["Github", "Gist", "Collection", "Data"],
+                "fileType": "JSON"
+            },
+            {
+                "id": "bWkAeOQ07A",
+                "title": "Github Emoji Collection",
+                "description": "This dataset contains a collection of GitHub emojis. Each entry represents a unique emoji along with its associated information, such as links. The dataset is stored in JSON format.",
+                "githubPath": "https://github.com/neokd/DataBucket/blob/Website/Bucket/Github%20Data/github_emoji.json",
+                "contributor": "neokd",
+                "added": "2023/06/23",
+                "updated": "2023/06/23",
+                "size": "178.55 KB",
+                "tag": ["Github", "Emoji", "Collection", "Data"],
+                "fileType": "JSON"
+            },
+            {
+                "id": "srgiMOGxam",
+                "title": "Github Events Data",
+                "description": "This dataset contains data scraped from GitHub and is stored in JSON format. It provides information about events that occur on GitHub, including details such as event type, actor, repository, and other relevant metadata. This dataset is useful for conducting analysis and gaining insights into the GitHub ",
+                "githubPath": "https://github.com/neokd/DataBucket/blob/Website/Bucket/Github%20Data/github_events.json",
+                "contributor": "neokd",
+                "added": "2023/06/23",
+                "updated": "2023/06/23",
+                "size": "185.05 KB",
+                "tag": ["Github", "Events", "Analysis", "Data"],
+                "fileType": "JSON"
+            },
+            {
                 "id": "UIdvmir27r",
                 "title": "Github Repo Data",
                 "description": "This dataset contains data scraped from GitHub and is stored in JSON format. It provides information about repositories hosted on GitHub, including details such as repository names, contributors, commit history, and other relevant metadata. This dataset is useful for conducting analysis and gaining insights into the GitHub ",
@@ -563,19 +599,55 @@
                 "id": "d1M8zkqe2a",
                 "title": "Quora Question Pairs",
                 "description": "This dataset consist of question pairs from Quora and the goal is to predict if the questions are duplicate or not.",
-                "githubPath": "https://github.com/neokd/DataBucket/blob/Website/Bucket/Social%20Media%20Analysis/Quora/quora.tsv",
+                "githubPath": "https://github.com/neokd/DataBucket/blob/Website/Bucket/Q&A/quora.csv.7z",
                 "contributor": "neokd",
                 "added": "2023/06/23",
                 "updated": "2023/06/23",
                 "size": "58.32 MB",
                 "tag": ["quora", "question", "duplicate", "predict"],
-                "fileType": "TSV"
+                "fileType": "CSV"
             }
         ]
     },
     {
         "domain": "Social Media Analysis",
         "datasets": [
+            {
+                "id": "rxGYoctSkZ",
+                "title": "Reddit AskReddit Data",
+                "description": "This dataset is based on the AskReddit subreddit of Reddit and it consist of all the posts from the subreddit. The dataset is in JSON format.",
+                "githubPath": "https://github.com/neokd/DataBucket/blob/2cf1979ec76a51e226bf9a38f67aa606d11b7641/Bucket/Social%20Media%20Analysis/Reddit/askReddit.json",
+                "contributor": "neokd",
+                "added": "2023/06/23",
+                "updated": "2023/06/23",
+                "size": "219 KB",
+                "tag": ["reddit", "askreddit", "post", "predict"],
+                "fileType": "JSON"
+            },
+            {
+                "id": "4GlAoKj6g2",
+                "title": "Reddit r/all Data",
+                "description": "This dataset is based on the r/all subreddit of Reddit and it consist of all the posts from the subreddit. The dataset is in JSON format.",
+                "githubPath": "https://github.com/neokd/DataBucket/blob/2cf1979ec76a51e226bf9a38f67aa606d11b7641/Bucket/Social%20Media%20Analysis/Reddit/r_all.json",
+                "contributor": "neokd",
+                "added": "2023/06/23",
+                "updated": "2023/06/23",
+                "size": "353 KB",
+                "tag": ["reddit", "r/all", "post", "predict"],
+                "fileType": "JSON"
+            },
+            {
+                "id": "WUJKxTd-Am",
+                "title": "Reddit r/worldnews Data",
+                "description": "This dataset is based on the r/worldnews subreddit of Reddit and it consist of all the posts from the subreddit. The dataset is in JSON format.",
+                "githubPath": "https://github.com/neokd/DataBucket/blob/2cf1979ec76a51e226bf9a38f67aa606d11b7641/Bucket/Social%20Media%20Analysis/Reddit/worldnews.json",
+                "contributor": "neokd",
+                "added": "2023/06/23",
+                "updated": "2023/06/23",
+                "size": "186 KB",
+                "tag": ["reddit", "r/worldnews", "post", "predict"],
+                "fileType": "JSON"
+            },
             {
                 "id": "7XRCa49UtB",
                 "title": "Hate Speech Data",
