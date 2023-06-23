@@ -558,6 +558,18 @@
                 "size": "761.32 KB",
                 "tag": ["bank", "faq", "question", "answer", "predict"],
                 "fileType": "CSV"
+            },
+            {
+                "id": "d1M8zkqe2a",
+                "title": "Quora Question Pairs",
+                "description": "This dataset consist of question pairs from Quora and the goal is to predict if the questions are duplicate or not.",
+                "githubPath": "https://github.com/neokd/DataBucket/blob/Website/Bucket/Social%20Media%20Analysis/Quora/quora.tsv",
+                "contributor": "neokd",
+                "added": "2023/06/23",
+                "updated": "2023/06/23",
+                "size": "58.32 MB",
+                "tag": ["quora", "question", "duplicate", "predict"],
+                "fileType": "TSV"
             }
         ]
     },
