@@ -219,6 +219,18 @@
         "domain": "Entertainment and Film Industry",
         "datasets": [
             {
+                "id": "Uq1KQRLguW",
+                "title": "Top 1k Bollywood Movies ",
+                "description": "This dataset contains a collection of top 1k Bollywood movies. Each entry represents a unique movie along with its associated information, such as title, year, director, cast, genre, etc. The dataset is stored in CSV format.",
+                "githubPath": "https://github.com/neokd/DataBucket/blob/Website/Bucket/Entertainment%20and%20Film%20Industry/Top_1k_Bollywood_Movies.csv",
+                "contributor": "neokd",
+                "added": "2023/06/13",
+                "updated": "2023/06/13",
+                "size": "78 KB",
+                "tag": ["Bollywood", "Movies", "Analysis", "Data","CSV"],
+                "fileType": "CSV"
+            },
+            {
                 "id": "4Q4Q4Q4Q4Q",
                 "title": "Tamil Movies (CSV)",
                 "description": "This datasets is currated from year 2011 to 2023 and contains information about Tamil movies. Each entry represents a unique movie along with its associated information, such as title,year. The dataset is stored in CSV format.",
@@ -306,6 +318,18 @@
     {
         "domain": "GitHub Data",
         "datasets": [
+            {
+                "id": "o7C6uWgixo",
+                "title": "Github 5k Repositories Data",
+                "description": "This dataset contains a collection of GitHub repositories. Each entry represents a unique repository along with its associated information, such as description, tags, or any other relevant details. The dataset is stored in CSV format.",
+                "githubPath": "https://github.com/neokd/DataBucket/blob/Website/Bucket/Github%20Data/gist.json",
+                "contributor": "neokd",
+                "added": "2023/06/23",
+                "updated": "2023/06/23",
+                "size": "855.00 KB",
+                "tag": ["Github", "Repository", "Collection", "Data"],
+                "fileType": "CSV"
+            },
             {
                 "id": "ZP2I6zRDPj",
                 "title": "Github Gist Collection",
@@ -599,7 +623,7 @@
                 "id": "d1M8zkqe2a",
                 "title": "Quora Question Pairs",
                 "description": "This dataset consist of question pairs from Quora and the goal is to predict if the questions are duplicate or not.",
-                "githubPath": "https://github.com/neokd/DataBucket/blob/Website/Bucket/Q&A/quora.csv.7z",
+                "githubPath": "https://github.com/neokd/DataBucket/blob/Website/Bucket/Q&A/Quora/quora.csv.7z",
                 "contributor": "neokd",
                 "added": "2023/06/23",
                 "updated": "2023/06/23",
@@ -613,10 +637,23 @@
         "domain": "Social Media Analysis",
         "datasets": [
             {
+                "id": "pi9_SfqIr7",
+                "title": "Leet Code Problems and Solutions (CSV)",
+                "description": "Title: LeetCode Problem and Solution Dataset
+                Description: This comprehensive dataset contains a collection of problems and their corresponding solutions from the popular coding platform, LeetCode. It encompasses a wide range of algorithmic and data structure challenges, covering topics such as arrays, strings, linked lists, trees, graphs, dynamic programming, and more. The dataset includes problem descriptions, input-output examples, and solution implementations in various programming languages. It serves as a valuable resource for studying, practicing, and benchmarking coding skills, as well as for exploring different problem-solving approaches.",
+                "githubPath": "https://github.com/neokd/DataBucket/blob/Website/Bucket/Social%20Media%20Analysis/LeetCode/leetcode_problem_dataset.csv",
+                "contributor": "neokd",
+                "added": "2023/06/23",
+                "updated": "2023/06/23",
+                "size": "2.2 MB",
+                "tag": ["leetcode", "problem", "solution", "code"],
+                "fileType": "JSON"
+            },
+            {
                 "id": "rxGYoctSkZ",
                 "title": "Reddit AskReddit Data",
                 "description": "This dataset is based on the AskReddit subreddit of Reddit and it consist of all the posts from the subreddit. The dataset is in JSON format.",
-                "githubPath": "https://github.com/neokd/DataBucket/blob/2cf1979ec76a51e226bf9a38f67aa606d11b7641/Bucket/Social%20Media%20Analysis/Reddit/askReddit.json",
+                "githubPath": "https://github.com/neokd/DataBucket/blob/main/Bucket/Social%20Media%20Analysis/Reddit/askReddit.json",
                 "contributor": "neokd",
                 "added": "2023/06/23",
                 "updated": "2023/06/23",
@@ -628,7 +665,7 @@
                 "id": "4GlAoKj6g2",
                 "title": "Reddit r/all Data",
                 "description": "This dataset is based on the r/all subreddit of Reddit and it consist of all the posts from the subreddit. The dataset is in JSON format.",
-                "githubPath": "https://github.com/neokd/DataBucket/blob/2cf1979ec76a51e226bf9a38f67aa606d11b7641/Bucket/Social%20Media%20Analysis/Reddit/r_all.json",
+                "githubPath": "https://github.com/neokd/DataBucket/blob/main/Bucket/Social%20Media%20Analysis/Reddit/r_all.json",
                 "contributor": "neokd",
                 "added": "2023/06/23",
                 "updated": "2023/06/23",
@@ -640,7 +677,7 @@
                 "id": "WUJKxTd-Am",
                 "title": "Reddit r/worldnews Data",
                 "description": "This dataset is based on the r/worldnews subreddit of Reddit and it consist of all the posts from the subreddit. The dataset is in JSON format.",
-                "githubPath": "https://github.com/neokd/DataBucket/blob/2cf1979ec76a51e226bf9a38f67aa606d11b7641/Bucket/Social%20Media%20Analysis/Reddit/worldnews.json",
+                "githubPath": "https://github.com/neokd/DataBucket/blob/main/Bucket/Social%20Media%20Analysis/Reddit/worldnews.json",
                 "contributor": "neokd",
                 "added": "2023/06/23",
                 "updated": "2023/06/23",
