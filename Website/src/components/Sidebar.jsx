@@ -184,14 +184,14 @@ function Sidebar() {
                   </svg>
                 </button>
               </div>
-              <div className="mt-4 text-gray-500 dark:text-white/70 ">
+              <div className="mt-4 ml-2 text-gray-500 dark:text-white/70 ">
                 {datasets.map((domain, index) => (
                   <div className="" key={domain.domain}>
                     <div className={`text-left text-gray-700 dark:text-white/80 my-1 text-lg`}>
                       {
                         index === 0 && (
                           <Link to='/datasets'>
-                            <button className='mx-6 text-xl my-1 py-1 w-full text-left rounded-lg hover:text-amber-500 inline-flex justify-between transistion duration-200'>{domain.domain}</button>
+                            <button className='mx-2 text-xl my-1 py-1 w-full text-left rounded-lg hover:text-amber-500 inline-flex justify-between transistion duration-200'>{domain.domain}</button>
 
                           </Link>
                         )
@@ -204,7 +204,7 @@ function Sidebar() {
                             toggleDomain(domain.domain, null);
                           }}
                         >
-                          <span className="mx-4 text-xl my-1 w-36 truncate">{domain.domain}</span>
+                          <span className="text-xl my-1 w-52 truncate ">{domain.domain}</span>
                           {activeDropDown.includes(domain.domain) ||
                             (sidebarElement || activeId) ? (
                             <svg
