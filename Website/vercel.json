@@ -1,9 +1,8 @@
 {
+  "redirects": [
+    { "source": "/files/:path*", "destination": "https://databucket.loca.lt/:path*", "statusCode": 302 }
+  ],
   "rewrites": [
-    { "source": "/(.*)", "destination": "/" },
-    {
-      "source": "/files/(.*)",
-      "destination": "https://databucket.loca.lt/$1"
-    }
+    { "source": "/(.*)", "destination": "/" }
   ]
 }
