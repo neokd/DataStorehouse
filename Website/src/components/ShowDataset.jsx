@@ -17,7 +17,6 @@ function ShowDataset() {
   const [copySuccessDomain, setCopySuccessDomain] = useState(false);
   const [copySuccessTitle, setCopySuccessTitle] = useState(false);
   const [selectedTitle, setSelectedTitle] = useState('');
-  const [activeCard, setActiveCard] = useState('');
 
   useEffect(() => {
     AOS.init({
@@ -83,11 +82,11 @@ function ShowDataset() {
         window.URL.revokeObjectURL(url);
       }).catch((error) => {
         console.log('Failed to download file');
+        console.log(error);
       })
   }
 
   const activateCard = (title,id) => {
-    console.log(title)
     navivateTo (`/datasets/${title}#${id}`)
   };
 
