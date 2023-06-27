@@ -1,3 +1,4 @@
+# In Progress
 import os
 import json
 import datetime
@@ -35,7 +36,7 @@ def get_dataset_info(directory):
             else:
                 filenames[file] = [file_type]
             
-            github_path = "https://github.com/neokd/DataBucket/blob/Website" + directory.strip('.') + "/" + file
+            github_path = "https://github.com/neokd/DataBucket/blob/Website" + directory.strip('.') + "/" + file.replace(' ', '%20')
             dataset = {
                 "id": generate(size=10),
                 "title": os.path.splitext(file)[0],
@@ -64,7 +65,7 @@ def generate_dataset_json(directory):
     return domains
 
 if __name__ == '__main__':
-    directory = "./Bucket"  # Replace with the actual directory path
+    directory = "../Bucket"  # Replace with the actual directory path
     dataset_json = generate_dataset_json(directory)
     json_output = json.dumps(dataset_json, indent=4)
     print(json_output)

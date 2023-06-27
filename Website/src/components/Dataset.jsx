@@ -38,7 +38,7 @@ function Dataset() {
       <div className="dark:bg-customGray flex flex-col min-h-screen overflow-x-clip">
         <Navbar />
         <Sidebar />
-        <div className="container dark:text-white lg:mx-24 relative  md:pt-28 lg:pt-36 nunito w-fit mx-4 lg:w-[64rem] lg:ml-84">
+        <div className="container dark:text-white lg:mx-24 relative  md:pt-28 lg:pt-36 nunito mx-4 w-11/12 lg:w-8/12 lg:ml-84">
           <div className='mx-4'>
             <h2 className="text-4xl lg:text-5xl font-bold my-6">
               Getting <span className="text-amber-500">Started</span> 🚀

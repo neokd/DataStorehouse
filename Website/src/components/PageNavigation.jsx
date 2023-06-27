@@ -28,12 +28,12 @@ function PageNavigation() {
   
   return (
     <div className="my-16">
-      <div className="flex text-white justify-between">
+      <div className="flex text-white justify-between mx-4">
         {previousDomain && (
           <Link
             to={currentDomainIndex === 1 ? '/datasets' : `/datasets/${previousDomain}`}
             rel="noopener noreferrer"
-            className="bg-amber-500 text-white font-bold py-3 px-6 mr-4 lg:mr-0 rounded-full hover:scale-105 duration-300 shadow-lg inline-flex">
+            className="dark:bg-amber-500 border-2 border-amber-500 text-gray-900 font-bold py-3 px-3 lg:px-6 mr-4 lg:mr-0 rounded-full hover:scale-105 duration-300 shadow-lg inline-flex">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 stroke-2">
               <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
             </svg>
@@ -44,7 +44,7 @@ function PageNavigation() {
           <Link
             to={`/datasets/${nextDomain}`}
             rel="noopener noreferrer"
-            className="bg-amber-500 text-white font-bold py-3 px-6 rounded-full hover:scale-105 duration-300 shadow-lg inline-flex">
+            className="dark:bg-amber-500 border-2 border-amber-500 text-gray-900 font-bold py-3 px-3 lg:px-6 rounded-full hover:scale-105 duration-300 shadow-lg inline-flex">
             {nextDomain}
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 stroke-2">
               <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />

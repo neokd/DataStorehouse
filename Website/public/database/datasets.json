@@ -5,7 +5,460 @@
 
     },
     {
-        "domain": "Marketing and Customer Analytics",
+        "domain": "Abbreviations",
+        "datasets": [
+            {
+                "id": "43WzWnzuNi",
+                "title": "CSE Abbreviations",
+                "description": "This dataset contains a collection of abbreviations commonly used in the field of Computer Science and Engineering (CSE). It provides the full forms or meanings of these abbreviations, helping users understand and decode technical terms in the CSE domain.",
+                "githubPath": "https://github.com/neokd/DataBucket/blob/main/Bucket/Abbreviations/CSE_ABBV.json",
+                "contributor": "neokd",
+                "added": "2023/06/05",
+                "updated": "2023/06/05",
+                "size": "3.41 KB",
+                "tag": ["abbreviations", "computer science", "engineering", "technical terms"],
+                "fileType": "JSON"
+            },
+            {
+                "id": "yA3-h_ifsP",
+                "title": "Chat Abbreviations",
+                "description": "This dataset comprises a collection of abbreviations commonly used in online chats and messaging platforms. It provides the expanded forms or meanings of these abbreviations, helping users decipher and understand the slang or shorthand used in chat conversations.",
+                "githubPath": "https://github.com/neokd/DataBucket/blob/main/Bucket/Abbreviations/Chat_ABBV.json",
+                "contributor": "neokd",
+                "added": "2023/06/05",
+                "updated": "2023/06/05",
+                "size": "8.67 KB",
+                "tag": ["chat", "abbreviations", "slang", "shorthand"],
+                "fileType": "JSON"
+            }
+        ]
+    },
+    {
+        "domain":"Busineess and E-Commerce",
+        "datasets":[
+            {
+                "id": "gnB6AYruZw",
+                "title": "Lego Product Data",
+                "description": "This dataset contains product details of lego. The goal is to predict the product rating, in stock , price and number of reviews. The dataset is in JSON format.",
+                "githubPath": "/files/lego.json",
+                "contributor": "neokd",
+                "added": "2023/06/26",
+                "updated": "2023/06/26",
+                "size": "399.1 KB",
+                "tag": ["lego", "product", "rating", "stock", "price", "reviews"],
+                "fileType": "JSON"
+            },
+            {
+                "id": "gnB6AYruwZ",
+                "title": "Udemy Buisness Data (CSV)",
+                "description": "This dataset contains course related details of udemy buisness. The goal is to predict the course rating. The dataset is in CSV format.",
+                "githubPath": "https://github.com/neokd/DataBucket/blob/main/Bucket/Business%20and%20E-commerce/UdemyBuisnessCourse.csv",
+                "contributor": "Priyamakeshwari",
+                "added": "2023/06/08",
+                "updated": "2023/06/08",
+                "size": "761.32 KB",
+                "tag": ["udemy", "buisness", "course", "rating", "predict"],
+                "fileType": "CSV"
+            },
+            {
+                "id": "PqtkbrQ7CK",
+                "title": "Udemy Buisness Data",
+                "description": "This dataset contains course related details of udemy buisness. The goal is to predict the course rating. The dataset is in JSON format.",
+                "githubPath": "https://github.com/neokd/DataBucket/blob/main/Business%20and%20E-commerce/UdemyBuisnessCourse.csv",
+                "contributor": "Priyamakeshwari",
+                "added": "2023/06/08",
+                "updated": "2023/06/08",
+                "size": "761.32 KB",
+                "tag": ["udemy", "buisness", "course", "rating", "predict"],
+                "fileType": "JSON"
+            }
+        ]
+
+    },
+    {
+        "domain": "Computer Vision",
+        "datasets": [
+            {
+                "id": "7JJixaqDRY",
+                "title": "Image Text Caption (CSV)",
+                "description": "The Image Text Caption dataset contains a collection of images along with their corresponding textual captions. The dataset is designed for tasks related to image captioning, where the goal is to generate a descriptive caption that accurately describes the content of an image.",
+                "githubPath": "https://github.com/neokd/DataBucket/blob/Website/Bucket/Computer%20Vision/image_textcaption.csv",
+                "contributor": "Priyamakeshwari",
+                "added": "2023/06/07",
+                "updated": "2023/06/07",
+                "size": "273.59 KB",
+                "tag": ["image", "text", "caption", "image caption", "image text caption"],
+                "fileType": "CSV"
+            },
+            {
+                "id": "m6_ODPGAX3",
+                "title": "Image Text Caption",
+                "description": "The Image Text Caption dataset contains a collection of images along with their corresponding textual captions. The dataset is designed for tasks related to image captioning, where the goal is to generate a descriptive caption that accurately describes the content of an image.",
+                "githubPath": "https://github.com/neokd/DataBucket/blob/Website/Bucket/Computer%20Vision/image_textcaption.json",
+                "contributor": "Priyamakeshwari",
+                "added": "2023/06/07",
+                "updated": "2023/06/07",
+                "size": "467.31 KB",
+                "tag": ["image", "text", "caption", "image caption", "image text caption"],
+                "fileType": "JSON"
+            }
+        ]
+    },
+    {
+        "domain": "Cyber Security",
+        "datasets": [
+            {
+                "id": "8KGYbPL7KV",
+                "title": "JWT Secrets",
+                "description": "This dataset contains JWT secrets that can be used. These hashes are scraped from github and are commonly used. ",
+                "githubPath": "https://github.com/neokd/DataBucket/blob/main/Bucket/Cyber%20Security/passwords/jwt-secrets.txt",
+                "contributor": "neokd",
+                "added": "2023/06/14",
+                "updated": "2023/06/14",
+                "size": "1.1 MB",
+                "tag": ["password", "list", "jwt", "security", "dataset"],
+                "fileType": "TXT"
+            },
+            {
+                "id": "WO9SQ17686",
+                "title": "JavaScript Vulnerabilities",
+                "description": "This dataset contains vulnerabilites in javascript till 2019 and can be used to find vulnerabilities in your javascript code. It includes all the vulnerabilites and meta data about them.",
+                "githubPath": "https://github.com/neokd/DataBucket/blob/main/Bucket/Cyber%20Security/JSVulnerabilityDataSet-1.0.csv",
+                "contributor": "neokd",
+                "added": "2023/06/14",
+                "updated": "2023/06/14",
+                "size": "4.5 MB",
+                "tag": ["javascript", "vulnerabilities", "security", "code", "dataset"],
+                "fileType": "CSV"
+            },
+            {
+                "id": "WO9SBCADG",
+                "title": "Password List (8 Char)",
+                "description": "This dataset contains 8 character long passwords that can be used to test your password strength. It contains 10000000 passwords.",
+                "githubPath": "https://github.com/neokd/DataBucket/blob/main/Bucket/Cyber%20Security/passwords/keyboard_combination.txt",
+                "contributor": "neokd",
+                "added": "2023/06/14",
+                "updated": "2023/06/14",
+                "size": "90 MB",
+                "tag": ["password", "list", "security", "strength", "dataset"],
+                "fileType": "TXT"
+            },
+            {
+                "id": "WO9SBGDAC",
+                "title": "Top 500 Worst Passwords",
+                "description": "This dataset contains top 500 worst common passwords that are used by people. These passwords are common and are not recommended to use.Check if yours is there in it!",
+                "githubPath": "https://github.com/neokd/DataBucket/blob/main/Bucket/Cyber%20Security/passwords/500-worst-passwords.txt",
+                "contributor": "neokd",
+                "added": "2023/06/14",
+                "updated": "2023/06/14",
+                "size": "3 KB",
+                "tag": ["password", "list", "500","top500", "security"],
+                "fileType": "TXT"
+            },
+            {
+                "id": "W90BSGDAC",
+                "title": "List of all 4 digit PINs",
+                "description": "This dataset contains all the possible 4 digit PINs that can be used to test your PIN strength. It contains 10000 PINs.",
+                "githubPath": "https://github.com/neokd/DataBucket/blob/main/Bucket/Cyber%20Security/passwords/4_digit_pin.txt",
+                "contributor": "neokd",
+                "added": "2023/06/14",
+                "updated": "2023/06/14",
+                "size": "54 KB",
+                "tag": ["password", "list", "4 digit", "security", "dataset"],
+                "fileType": "TXT"
+            }
+        ]
+    },
+    {
+        "domain": "Demographics and Population",
+        "datasets": [
+            {
+                "id": "TjgiTxaszL",
+                "title": "Population Dataset 2023",
+                "description": "This dataset is about population of countries. The goal is to show world wide population of countries.",
+                "githubPath": "https://github.com/neokd/DataBucket/blob/main/Bucket/Demographics%20and%20Population/countries-table.json",
+                "contributor": "neokd",
+                "added": "2023/06/03",
+                "updated": "2023/06/03",
+                "size": "103.22 KB",
+                "tag": ["population", "countries", "world", "2023"],
+                "fileType": "JSON"
+            },
+            {
+                "id": "tPSpa1ZxVm",
+                "title": "Population Dataset 2023 (CSV)",
+                "description": "This dataset is about population of countries. The goal is to show world wide population of countries. The dataset is in CSV format.",
+                "githubPath": "https://github.com/neokd/DataBucket/blob/main/Bucket/Demographics%20and%20Population/countries-table.csv",
+                "contributor": "neokd",
+                "added": "2023/06/03",
+                "updated": "2023/06/03",
+                "size": "29.56 KB",
+                "tag": ["population", "countries", "world", "2023"],
+                "fileType": "CSV"
+            }
+        ]
+    },
+    {
+        "domain": "Design and Color",
+        "datasets": [
+            {
+                "id": "oOMA5mUjoz",
+                "title": "Single Color Names",
+                "description": "This dataset contains a collection of single color names. Each entry represents a unique color name along with its corresponding color code or representation. The dataset is stored in JSON format.",
+                "githubPath": "https://github.com/neokd/DataBucket/blob/main/Bucket/Design%20and%20Color/single-color-names.json",
+                "contributor": "Priyamakeshwari",
+                "added": "2023/06/07",
+                "updated": "2023/06/07",
+                "size": "104.51 KB",
+                "tag": ["color", "color names", "single color names"],
+                "fileType": "JSON"
+            },
+            {
+                "id": "Ba4FbrbE4t",
+                "title": "Single Color Names (CSV)",
+                "description": "This dataset contains a collection of single color names. Each entry represents a unique color name along with its corresponding color code or representation. The dataset is stored in CSV format.",
+                "githubPath": "https://github.com/neokd/DataBucket/blob/main/Bucket/Design%20and%20Color/single-color-names.csv",
+                "contributor": "Priyamakeshwari",
+                "added": "2023/06/07",
+                "updated": "2023/06/07",
+                "size": "11.5 KB",
+                "tag": ["color", "color names", "single color names"],
+                "fileType": "CSV"
+            }
+        ]
+    },
+    {
+        "domain": "Entertainment and Film Industry",
+        "datasets": [
+            {
+                "id": "Uq1KQRLguW",
+                "title": "Top 1k Bollywood Movies ",
+                "description": "This dataset contains a collection of top 1k Bollywood movies. Each entry represents a unique movie along with its associated information, such as title, year, director, cast, genre, etc. The dataset is stored in CSV format.",
+                "githubPath": "https://github.com/neokd/DataBucket/blob/Website/Bucket/Entertainment%20and%20Film%20Industry/Top_1k_Bollywood_Movies.csv",
+                "contributor": "neokd",
+                "added": "2023/06/13",
+                "updated": "2023/06/13",
+                "size": "78 KB",
+                "tag": ["Bollywood", "Movies", "Analysis", "Data","CSV"],
+                "fileType": "CSV"
+            },
+            {
+                "id": "4Q4Q4Q4Q4Q",
+                "title": "Tamil Movies (CSV)",
+                "description": "This datasets is currated from year 2011 to 2023 and contains information about Tamil movies. Each entry represents a unique movie along with its associated information, such as title,year. The dataset is stored in CSV format.",
+                "githubPath": "https://github.com/neokd/DataBucket/blob/main/Bucket/Entertainment%20and%20Film%20Industry/Tamilmovie_data.csv",
+                "contributor": "Priyamakeshwari",
+                "added": "2023/06/13",
+                "updated": "2023/06/13",
+                "size": "18 KB",
+                "tag": ["Tamil", "Movies", "Analysis", "Data","CSV"],
+                "fileType": "CSV"
+            },
+            {
+                "id": "1Q1Q1Q1Q2Q",
+                "title": "Tamil Movies",
+                "description": "This datasets is currated from year 2011 to 2023 and contains information about Tamil movies. Each entry represents a unique movie along with its associated information, such as title,year. The dataset is stored in JSON format.",
+                "githubPath": "https://github.com/neokd/DataBucket/blob/main/Bucket/Entertainment%20and%20Film%20Industry/Tamilmovie_data.json",
+                "contributor": "Priyamakeshwari",
+                "added": "2023/06/13",
+                "updated": "2023/06/14",
+                "size": "67 KB",
+                "tag": ["Github", "Repository", "Analysis", "Data"],
+                "fileType": "JSON"
+            }
+        ]
+    },
+    {
+        "domain": "Financial Data Analysis",
+        "datasets": [
+            {
+                "id": "8KlqrZNyOX",
+                "title": "BSE Companies data",
+                "description": "This dataset provides historical stock market data, including the opening and closing prices, trading volume, and other relevant information for various stocks. It is commonly used for analyzing stock trends, building predictive models, and evaluating investment strategies.",
+                "githubPath": "https://github.com/neokd/DataBucket/blob/main/Bucket/Finance%20and%20Stock%20Market/BSE%20Companies%20data.json",
+                "contributor": "Gladwin001",
+                "added": "2023/06/03",
+                "updated": "2023/06/03",
+                "size": "1.97 MB",
+                "tag": ["stock", "market", "data", "predict", "investment", "strategies"],
+                "fileType": "JSON"
+            },
+            {
+                "id": "nP4oa88P4p",
+                "title": "BSE Companies data (CSV)",
+                "description": "This dataset provides historical stock market data, including the opening and closing prices, trading volume, and other relevant information for various stocks. It is commonly used for analyzing stock trends, building predictive models, and evaluating investment strategies.",
+                "githubPath": "https://github.com/neokd/DataBucket/blob/main/Bucket/Finance%20and%20Stock%20Market/BSE_Companies.csv",
+                "contributor": "Gladwin001",
+                "added": "2023/06/03",
+                "updated": "2023/06/03",
+                "size": "812.66 KB",
+                "tag": ["stock", "market", "data", "predict", "investment", "strategies"],
+                "fileType": "CSV"
+            }
+        ]
+    },
+    {
+        "domain":"Food and Culinary",
+        "datasets":[
+            {
+                "id": "EslQx7VU_g",
+                "title": "flavors",
+                "description": "This dataset contains a collection of flavors. Each entry represents a unique flavor along with its associated information, such as description, ingredients, or any other relevant details. The dataset is stored in JSON format.",
+                "githubPath": "https://github.com/neokd/DataBucket/blob/main/Bucket/Food%20and%20Culinary/flavors.json",
+                "contributor": "Priyamakeshwari",
+                "added": "2023/06/07",
+                "updated": "2023/06/07",
+                "size": "47.88 KB",
+                "tag": ["flavors", "ingredients", "dataset"],
+                "fileType": "JSON"
+            },
+            {
+                "id": "5TQ2IFFoCd",
+                "title": "flavors (CSV)",
+                "description": "This dataset contains a collection of flavors. Each entry represents a unique flavor along with its associated information, such as description, ingredients, or any other relevant details. The dataset is stored in CSV format.",
+                "githubPath": "https://github.com/neokd/DataBucket/blob/main/Bucket/Food%20and%20Culinary/flavors.csv",
+                "contributor": "Priyamakeshwari",
+                "added": "2023/06/07",
+                "updated": "2023/06/07",
+                "size": "12.61 KB",
+                "tag": ["flavors", "ingredients", "dataset"],
+                "fileType": "CSV"
+            }
+        ]
+
+    },
+    {
+        "domain": "GitHub Data",
+        "datasets": [
+            {
+                "id": "o7C6uWgixo",
+                "title": "Github 5k Repositories Data",
+                "description": "This dataset contains a collection of GitHub repositories. Each entry represents a unique repository along with its associated information, such as description, tags, or any other relevant details. The dataset is stored in CSV format.",
+                "githubPath": "https://github.com/neokd/DataBucket/blob/Website/Bucket/Github%20Data/gist.json",
+                "contributor": "neokd",
+                "added": "2023/06/23",
+                "updated": "2023/06/23",
+                "size": "855.00 KB",
+                "tag": ["Github", "Repository", "Collection", "Data"],
+                "fileType": "CSV"
+            },
+            {
+                "id": "ZP2I6zRDPj",
+                "title": "Github Gist Collection",
+                "description": "This dataset contains a collection of GitHub gists. Each entry represents a unique gist along with its associated information, such as description, tags, or any other relevant details. The dataset is stored in JSON format.",
+                "githubPath": "https://github.com/neokd/DataBucket/blob/Website/Bucket/Github%20Data/gist.json",
+                "contributor": "neokd",
+                "added": "2023/06/23",
+                "updated": "2023/06/23",
+                "size": "211.55 KB",
+                "tag": ["Github", "Gist", "Collection", "Data"],
+                "fileType": "JSON"
+            },
+            {
+                "id": "bWkAeOQ07A",
+                "title": "Github Emoji Collection",
+                "description": "This dataset contains a collection of GitHub emojis. Each entry represents a unique emoji along with its associated information, such as links. The dataset is stored in JSON format.",
+                "githubPath": "https://github.com/neokd/DataBucket/blob/Website/Bucket/Github%20Data/github_emoji.json",
+                "contributor": "neokd",
+                "added": "2023/06/23",
+                "updated": "2023/06/23",
+                "size": "178.55 KB",
+                "tag": ["Github", "Emoji", "Collection", "Data"],
+                "fileType": "JSON"
+            },
+            {
+                "id": "srgiMOGxam",
+                "title": "Github Events Data",
+                "description": "This dataset contains data scraped from GitHub and is stored in JSON format. It provides information about events that occur on GitHub, including details such as event type, actor, repository, and other relevant metadata. This dataset is useful for conducting analysis and gaining insights into the GitHub ",
+                "githubPath": "https://github.com/neokd/DataBucket/blob/Website/Bucket/Github%20Data/github_events.json",
+                "contributor": "neokd",
+                "added": "2023/06/23",
+                "updated": "2023/06/23",
+                "size": "185.05 KB",
+                "tag": ["Github", "Events", "Analysis", "Data"],
+                "fileType": "JSON"
+            },
+            {
+                "id": "UIdvmir27r",
+                "title": "Github Repo Data",
+                "description": "This dataset contains data scraped from GitHub and is stored in JSON format. It provides information about repositories hosted on GitHub, including details such as repository names, contributors, commit history, and other relevant metadata. This dataset is useful for conducting analysis and gaining insights into the GitHub ",
+                "githubPath": "https://github.com/neokd/DataBucket/blob/main/Bucket/Github%20Data/github_dataset.json",
+                "contributor": "Priyamakeshwari",
+                "added": "2023/06/07",
+                "updated": "2023/06/07",
+                "size": "205.55 KB",
+                "tag": ["Github", "Repository", "Analysis", "Data"],
+                "fileType": "JSON"
+            },
+            {
+                "id": "7x0-Mch2u7",
+                "title": "Github Dataset",
+                "description": "This dataset contains data related to GitHub in CSV format. It may include information about repositories, contributors, commits, or other aspects of the GitHub platform. However, the specific details and structure of the dataset are not provided in the available information.",
+                "githubPath": "https://github.com/neokd/DataBucket/blob/main/Bucket/Github%20Data/github_dataset.csv",
+                "contributor": "Priyamakeshwari",
+                "added": "2023/06/07",
+                "updated": "2023/06/07",
+                "size": "48.73 KB",
+                "tag": ["Github", "Repository", "Analysis", "Data"],
+                "fileType": "CSV"
+            }
+        ]
+    },
+    {
+        "domain": "Language and Linguistics",
+        "datasets": [
+            {
+                "id": "IsRviWxtbh",
+                "title": "Hindi Word and English Meaning",
+                "description": "This dataset contains all the hindi words and their meanings. It contains 1,000 words and their meanings.",
+                "githubPath": "https://github.com/neokd/DataBucket/blob/main/Bucket/Language%20and%20Linguistics/Hindi/hindi_dict.json",
+                "contributor": "Priyamakeshwari",
+                "added": "2023/06/15",
+                "updated": "2023/06/15",
+                "size": "62 KB",
+                "tag": ["hindi", "dictionary", "words", "dataset"],
+                "fileType": "JSON"
+            },
+            {
+                "id": "0uVp1qX342",
+                "title": "Hindi Dictionary (CSV)",
+                "description": "This dataset contains all the hindi words and their meanings. It contains 1,000 words and their meanings.",
+                "githubPath": "https://github.com/neokd/DataBucket/blob/main/Bucket/Language%20and%20Linguistics/Hindi/hindi_dict.csv",
+                "contributor": "Priyamakeshwari",
+                "added": "2023/06/15",
+                "updated": "2023/06/15",
+                "size": "25 KB",
+                "tag": ["hindi", "dictionary", "words", "dataset","CSV"],
+                "fileType": "CSV"
+            },
+            {
+                "id": "5TadpWkukr",
+                "title": "Tamil Dictionary (CSV)",
+                "description": "This dataset contains all the tamil words and their meanings. It contains 1,000 words and their meanings.",
+                "githubPath": "https://github.com/neokd/DataBucket/blob/main/Bucket/Language%20and%20Linguistics/Tamil/tamil_dict.csv",
+                "contributor": "Priyamakeshwari",
+                "added": "2023/06/16",
+                "updated": "2023/06/16",
+                "size": "27 KB",
+                "tag": ["tamil", "dictionary", "words", "dataset","CSV"],
+                "fileType": "CSV"
+            },
+            {
+                "id": "hNfVPZFPPE",
+                "title": "Tamil Dictionary",
+                "description": "This dataset contains all the tamil words and their meanings. It contains 1,000 words and their meanings.",
+                "githubPath": "https://github.com/neokd/DataBucket/blob/main/Bucket/Language%20and%20Linguistics/Tamil/tamil_dict.json",
+                "contributor": "Priyamakeshwari",
+                "added": "2023/06/16",
+                "updated": "2023/06/16",
+                "size": "67 KB",
+                "tag": ["tamil", "dictionary", "words", "dataset","JSON"],
+                "fileType": "JSON"
+            }
+        ]
+    },
+    {
+        "domain": "Market Analysis",
         "datasets": [
             {
                 "id": "lI7Q3bFi8t",
@@ -23,7 +476,7 @@
                 "id": "FWjJPcDSTr",
                 "title": "Marketing Campaign (CSV)",
                 "description": "This dataset is about marketing campaign of a bank. The goal is to predict if the customer will subscribe a term deposit (variable y). The dataset is in CSV format.",
-                "githubPath": "https://github.com/neokd/DataBucket/blob/Website/Bucket/CustomerData/marketing_campaign.csv",
+                "githubPath": "https://github.com/neokd/DataBucket/blob/main/Bucket/Market%20Analysis/marketing_campaign.csv",
                 "contributor": "Priyamakeshwari",
                 "added": "2023/06/07",
                 "updated": "2023/06/07",
@@ -34,358 +487,13 @@
         ]
     },
     {
-        "domain": "AI Tools",
-        "datasets": [
-            {
-                "id": "WO9SQHABCD",
-                "title": "List of AI Tools",
-                "description": "This dataset is collection of all the AI tools that can be used in your ML projects.It consist of all the AI tools launched till june 2023 and will be updated every month.",
-                "githubPath": "https://github.com/neokd/DataBucket/blob/Website/Bucket/AI%20Tools/data.json",
-                "contributor": "neokd",
-                "added": "2023/06/13",
-                "updated": "2023/06/13",
-                "size": "1.3 MB",
-                "tag": ["AI", "tools", "list", "ML", "projects"],
-                "fileType": "JSON"
-            }
-        ]
-    },
-    {
-        "domain": "Cyber Security",
-        "datasets": [
-            {
-                "id": "8KGYbPL7KV",
-                "title": "JWT Secrets",
-                "description": "This dataset contains JWT secrets that can be used. These hashes are scraped from github and are commonly used. ",
-                "githubPath": "https://github.com/neokd/DataBucket/blob/Website/Bucket/Cyber%20Security/passwords/jwt-secrets.txt",
-                "contributor": "neokd",
-                "added": "2023/06/14",
-                "updated": "2023/06/14",
-                "size": "1.1 MB",
-                "tag": ["password", "list", "jwt", "security", "dataset"],
-                "fileType": "TXT"
-            },
-            {
-                "id": "WO9SQ17686",
-                "title": "JavaScript Vulnerabilities",
-                "description": "This dataset contains vulnerabilites in javascript till 2019 and can be used to find vulnerabilities in your javascript code. It includes all the vulnerabilites and meta data about them.",
-                "githubPath": "https://github.com/neokd/DataBucket/blob/Website/Bucket/Cyber%20Security/JSVulnerabilityDataSet-1.0.csv",
-                "contributor": "neokd",
-                "added": "2023/06/14",
-                "updated": "2023/06/14",
-                "size": "4.5 MB",
-                "tag": ["javascript", "vulnerabilities", "security", "code", "dataset"],
-                "fileType": "CSV"
-            },
-            {
-                "id": "WO9SBCADG",
-                "title": "Password List (8 Char)",
-                "description": "This dataset contains 8 character long passwords that can be used to test your password strength. It contains 10000000 passwords.",
-                "githubPath": "https://github.com/neokd/DataBucket/blob/Website/Bucket/Cyber%20Security/passwords/keyboard_combination.txt",
-                "contributor": "neokd",
-                "added": "2023/06/14",
-                "updated": "2023/06/14",
-                "size": "90 MB",
-                "tag": ["password", "list", "security", "strength", "dataset"],
-                "fileType": "TXT"
-            },
-            {
-                "id": "WO9SBGDAC",
-                "title": "Top 500 Worst Passwords",
-                "description": "This dataset contains top 500 worst common passwords that are used by people. These passwords are common and are not recommended to use.Check if yours is there in it!",
-                "githubPath": "https://github.com/neokd/DataBucket/blob/Website/Bucket/Cyber%20Security/passwords/500-worst-passwords.txt",
-                "contributor": "neokd",
-                "added": "2023/06/14",
-                "updated": "2023/06/14",
-                "size": "3 KB",
-                "tag": ["password", "list", "500","top500", "security"],
-                "fileType": "TXT"
-            },
-            {
-                "id": "W90BSGDAC",
-                "title": "List of all 4 digit PINs",
-                "description": "This dataset contains all the possible 4 digit PINs that can be used to test your PIN strength. It contains 10000 PINs.",
-                "githubPath": "https://github.com/neokd/DataBucket/blob/Website/Bucket/Cyber%20Security/passwords/4_digit_pin.txt",
-                "contributor": "neokd",
-                "added": "2023/06/14",
-                "updated": "2023/06/14",
-                "size": "54 KB",
-                "tag": ["password", "list", "4 digit", "security", "dataset"],
-                "fileType": "TXT"
-            }
-        ]
-    },
-    {
-        "domain": "Multi Lingual NLP",
-        "datasets": [
-            {
-                "id": "IsRviWxtbh",
-                "title": "Hindi Word and English Meaning",
-                "description": "This dataset contains all the hindi words and their meanings. It contains 1,000 words and their meanings.",
-                "githubPath": "https://github.com/neokd/DataBucket/blob/Website/Bucket/Multilingual%20NLP/Hindi/hindi_dict.json",
-                "contributor": "Priyamakeshwari",
-                "added": "2023/06/15",
-                "updated": "2023/06/15",
-                "size": "62 KB",
-                "tag": ["hindi", "dictionary", "words", "dataset"],
-                "fileType": "JSON"
-            },
-            {
-                "id": "0uVp1qX342",
-                "title": "Hindi Dictionary (CSV)",
-                "description": "This dataset contains all the hindi words and their meanings. It contains 1,000 words and their meanings.",
-                "githubPath": "https://github.com/neokd/DataBucket/blob/Website/Bucket/Multilingual%20NLP/Hindi/hindi_dict.csv",
-                "contributor": "Priyamakeshwari",
-                "added": "2023/06/15",
-                "updated": "2023/06/15",
-                "size": "25 KB",
-                "tag": ["hindi", "dictionary", "words", "dataset","CSV"],
-                "fileType": "CSV"
-            },
-            {
-                "id": "5TadpWkukr",
-                "title": "Tamil Dictionary (CSV)",
-                "description": "This dataset contains all the tamil words and their meanings. It contains 1,000 words and their meanings.",
-                "githubPath": "https://github.com/neokd/DataBucket/blob/Website/Bucket/Multilingual%20NLP/Tamil/tamil_dict.csv",
-                "contributor": "Priyamakeshwari",
-                "added": "2023/06/16",
-                "updated": "2023/06/16",
-                "size": "27 KB",
-                "tag": ["tamil", "dictionary", "words", "dataset","CSV"],
-                "fileType": "CSV"
-            },
-            {
-                "id": "hNfVPZFPPE",
-                "title": "Tamil Dictionary",
-                "description": "This dataset contains all the tamil words and their meanings. It contains 1,000 words and their meanings.",
-                "githubPath": "https://github.com/neokd/DataBucket/blob/Website/Bucket/Multilingual%20NLP/Tamil/tamil_dict.json",
-                "contributor": "Priyamakeshwari",
-                "added": "2023/06/16",
-                "updated": "2023/06/16",
-                "size": "67 KB",
-                "tag": ["tamil", "dictionary", "words", "dataset","JSON"],
-                "fileType": "JSON"
-            }
-        ]
-    },
-    {
-        "domain": "Wikipedia",
-        "datasets": [
-            {
-                "id": "WO9SQHIMLQ",
-                "title": "Hindi Wikipedia Corpus (June 2023)",
-                "description": "This dataset is collection of 3,00,000 hindi pages on wikipedia and their corresponding titles. The dataset is extracted from the wikipedia dump from xml and split into 2 files of 500MB each and is in JSON format. ",
-                "githubPath": "https://github.com/neokd/DataBucket/tree/Website/Bucket/Wikipedia/Hindi%20Wiki",
-                "contributor": "neokd",
-                "added": "2023/06/12",
-                "updated": "2023/06/12",
-                "size": "1.1 GB",
-                "tag": ["raw", "data","wikipedia","hindi","corpus","dump","extracted"],
-                "fileType": "JSON"
-            }
-        ]
-    },
-    {
-        "domain": "Stop Words",
-        "datasets": [
-            {
-                "id": "fbonlmn7QU",
-                "title": "Bengali Stop Words",
-                "description": "This dataset is collection of all the stop words in bengali That can be used to remove stop words from the text in your ML projects.",
-                "githubPath": "https://github.com/neokd/DataBucket/blob/Website/Bucket/StopWords/Bengali_stopwords.csv",
-                "contributor": "neokd",
-                "added": "2023/06/12",
-                "updated": "2023/06/12",
-                "size": "32 KB",
-                "tag": ["stop words", "hindi", "remove", "text", "ml", "projects"],
-                "fileType": "TXT"
-            },
-            {
-                "id": "gzDGq_Op8a",
-                "title": "Hindi Stop Words",
-                "description": "This dataset is collection of all the stop words in hindi That can be used to remove stop words from the text in your ML projects.",
-                "githubPath": "https://github.com/neokd/DataBucket/blob/Website/Bucket/StopWords/Hindi_stopwords.csv",
-                "contributor": "neokd",
-                "added": "2023/06/12",
-                "updated": "2023/06/12",
-                "size": "32 KB",
-                "tag": ["stop words", "hindi", "remove", "text", "ml", "projects"],
-                "fileType": "TXT"
-            },
-            {
-                "id": "iIYue8zeCF",
-                "title": "Gujrati Stop Words",
-                "description": "This dataset is collection of all the stop words in gujrati That can be used to remove stop words from the text in your ML projects.",
-                "githubPath": "https://github.com/neokd/DataBucket/blob/Website/Bucket/StopWords/Gujarati_stopwords.csv",
-                "contributor": "neokd",
-                "added": "2023/06/12",
-                "updated": "2023/06/12",
-                "size": "32 KB",
-                "tag": ["stop words", "gujrati", "text", "ml", "projects"],
-                "fileType": "TXT"
-            },
-            {
-                "id": "lJIHIop_ea",
-                "title": "Marathi Stop Words",
-                "description": "This dataset is collection of all the stop words in marathi That can be used to remove stop words from the text in your ML projects.",
-                "githubPath": "https://github.com/neokd/DataBucket/blob/Website/Bucket/StopWords/Gujarati_stopwords.csv",
-                "contributor": "neokd",
-                "added": "2023/06/12",
-                "updated": "2023/06/12",
-                "size": "32 KB",
-                "tag": ["stop words", "marathi", "text", "ml", "projects"],
-                "fileType": "TXT"
-            },
-            {
-                "id": "HJu2ZK7MvP",
-                "title": "Urdu Stop Words",
-                "description": "This dataset is collection of all the stop words in urdu That can be used to remove stop words from the text in your ML projects.",
-                "githubPath": "https://github.com/neokd/DataBucket/blob/Website/Bucket/StopWords/Urdu_stopwords.txt",
-                "contributor": "neokd",
-                "added": "2023/06/12",
-                "updated": "2023/06/12",
-                "size": "32 KB",
-                "tag": ["stop words", "urdu", "text", "ml", "projects"],
-                "fileType": "TXT"
-            }
-        ]
-    },
-    {
-        "domain": "Hindi Stories",
-        "datasets": [
-            {
-                "id": "nv3b_MikH6",
-                "title": "Hindi Stories Corpus",
-                "description": "This dataset is from Hindi Aesthetics Corpus.This corpus consists of novels and short stories written in Hindi language.Raw data is also available in the corpus.",
-                "githubPath": "https://github.com/neokd/DataBucket/blob/Website/Bucket/Hindi%20Stories",
-                "contributor": "neokd",
-                "added": "2023/06/09",
-                "updated": "2023/06/09",
-                "size": "99.5 MB",
-                "tag": ["hindi", "stories", "corpus", "novels", "short", "raw", "data"],
-                "fileType": "JSON"
-            }
-        ]
-    },
-    {
-        "domain": "Natural Language Processing (NLP)",
-        "datasets": [
-            {
-                "id": "Pe9txtTzH3",
-                "title": "BankFAQs",
-                "description": "This dataset is about frequently asked questions in bank. The goal is to predict the answer of the question.",
-                "githubPath": "https://github.com/neokd/DataBucket/blob/Website/Bucket/BankFaq%20Data/BankFAQs.json",
-                "contributor": "Priyamakeshwari",
-                "added": "2023/06/07",
-                "updated": "2023/06/07",
-                "size": "863.69 KB",
-                "tag": ["bank", "faq", "question", "answer", "predict"],
-                "fileType": "JSON"
-            },
-            {
-                "id": "d1M8zkqe3v",
-                "title": "BankFAQs (CSV)",
-                "description": "This dataset contains frequently asked questions in the banking domain. The goal is to predict the answers to these questions. The dataset is in CSV format.",
-                "githubPath": "https://github.com/neokd/DataBucket/blob/Website/Bucket/BankFaq%20Data/BankFAQs.csv",
-                "contributor": "Priyamakeshwari",
-                "added": "2023/06/07",
-                "updated": "2023/06/07",
-                "size": "761.32 KB",
-                "tag": ["bank", "faq", "question", "answer", "predict"],
-                "fileType": "CSV"
-            },
-            {
-                "id": "gnB6AYruwZ",
-                "title": "Udemy Buisness Data (CSV)",
-                "description": "This dataset contains course related details of udemy buisness. The goal is to predict the course rating. The dataset is in CSV format.",
-                "githubPath": "https://github.com/neokd/DataBucket/blob/Website/Bucket/Udemy%20Coursedata/UdemyBuisnessCourse.csv",
-                "contributor": "Priyamakeshwari",
-                "added": "2023/06/08",
-                "updated": "2023/06/08",
-                "size": "761.32 KB",
-                "tag": ["udemy", "buisness", "course", "rating", "predict"],
-                "fileType": "CSV"
-            },
-            {
-                "id": "PqtkbrQ7CK",
-                "title": "Udemy Buisness Data",
-                "description": "This dataset contains course related details of udemy buisness. The goal is to predict the course rating. The dataset is in JSON format.",
-                "githubPath": "https://github.com/neokd/DataBucket/blob/Website/Bucket/Udemy%20Coursedata/UdemyBuisnessCourse.json",
-                "contributor": "Priyamakeshwari",
-                "added": "2023/06/08",
-                "updated": "2023/06/08",
-                "size": "761.32 KB",
-                "tag": ["udemy", "buisness", "course", "rating", "predict"],
-                "fileType": "JSON"
-            }
-        ]
-    },
-    {
-        "domain": "Twitter",
-        "datasets": [
-            {
-                "id": "7XRCa49UtB",
-                "title": "Hate Speech Data",
-                "description": "This dataset is about hate speech on tweet. The goal is to predict if the tweet is hate speech or not.",
-                "githubPath": "https://github.com/neokd/DataBucket/blob/Website/Bucket/Hatewords%20on%20Tweet/hate_speechdata.json",
-                "contributor": "Priyamakeshwari",
-                "added": "2023/06/07",
-                "updated": "2023/06/07",
-                "size": "5.49 MB",
-                "tag": ["hate", "speech", "tweet", "predict"],
-                "fileType": "JSON"
-            },
-            {
-                "id": "P3yPqDqq1r",
-                "title": "Hate Speech Data (CSV)",
-                "description": "This dataset is about hate speech on tweet. The goal is to predict if the tweet is hate speech or not. The dataset is in CSV format. ",
-                "githubPath": "https://github.com/neokd/DataBucket/blob/Website/Bucket/Hatewords%20on%20Tweet/hate_speechdata.csv",
-                "contributor": "Priyamakeshwari",
-                "added": "2023/06/07",
-                "updated": "2023/06/07",
-                "size": "2.43 MB",
-                "tag": ["hate", "speech", "tweet", "predict"],
-                "fileType": "CSV"
-            }
-        ]
-    },
-    {
-        "domain": "Population Analysis",
-        "datasets": [
-            {
-                "id": "TjgiTxaszL",
-                "title": "Population Dataset 2023",
-                "description": "This dataset is about population of countries. The goal is to show world wide population of countries.",
-                "githubPath": "https://github.com/neokd/DataBucket/blob/Website/Bucket/Population/countries-table.json",
-                "contributor": "neokd",
-                "added": "2023/06/03",
-                "updated": "2023/06/03",
-                "size": "103.22 KB",
-                "tag": ["population", "countries", "world", "2023"],
-                "fileType": "JSON"
-            },
-            {
-                "id": "tPSpa1ZxVm",
-                "title": "Population Dataset 2023 (CSV)",
-                "description": "This dataset is about population of countries. The goal is to show world wide population of countries. The dataset is in CSV format.",
-                "githubPath": "https://github.com/neokd/DataBucket/blob/Website/Bucket/Population/countries-table.csv",
-                "contributor": "neokd",
-                "added": "2023/06/03",
-                "updated": "2023/06/03",
-                "size": "29.56 KB",
-                "tag": ["population", "countries", "world", "2023"],
-                "fileType": "CSV"
-            }
-        ]
-    },
-    {
-        "domain": "Music",
+        "domain": "Music Analysis",
         "datasets": [
             {
                 "id": "eiGyQtioWp",
                 "title": "Music Caption Dataset (CSV)",
                 "description": "This dataset contains music captions. It can be used for various natural language processing tasks such as text generation, sentiment analysis, or music-related research.",
-                "githubPath": "https://github.com/neokd/DataBucket/blob/Website/Bucket/MusicCaptionData/musiccaps-public.csv",
+                "githubPath": "https://github.com/neokd/DataBucket/blob/main/Bucket/Music%20Analysis/musiccaps-public.csv",
                 "contributor": "Priyamakeshwari",
                 "added": "2023/06/07",
                 "updated": "2023/06/07",
@@ -397,7 +505,7 @@
                 "id": "39HKXjA6qi",
                 "title": "Music Caption Dataset ",
                 "description": "This dataset contains music captions. It can be used for various natural language processing tasks such as text generation, sentiment analysis, or music-related research.",
-                "githubPath": "https://github.com/neokd/DataBucket/blob/Website/Bucket/MusicCaptionData/musiccaps-public.json",
+                "githubPath": "https://github.com/neokd/DataBucket/blob/main/Bucket/Music%20Analysis/musiccaps-public.json",
                 "contributor": "Priyamakeshwari",
                 "added": "2023/06/07",
                 "updated": "2023/06/07",
@@ -408,202 +516,251 @@
         ]
     },
     {
-        "domain": "Financial Data Analysis",
+        "domain": "NLP & Text Analysis",
         "datasets": [
             {
-                "id": "8KlqrZNyOX",
-                "title": "BSE Companies data",
-                "description": "This dataset provides historical stock market data, including the opening and closing prices, trading volume, and other relevant information for various stocks. It is commonly used for analyzing stock trends, building predictive models, and evaluating investment strategies.",
-                "githubPath": "https://github.com/neokd/DataBucket/blob/Website/Bucket/BSE Companies Data/BSE Companies data.json",
-                "contributor": "Gladwin001",
-                "added": "2023/06/03",
-                "updated": "2023/06/03",
-                "size": "1.97 MB",
-                "tag": ["stock", "market", "data", "predict", "investment", "strategies"],
-                "fileType": "JSON"
-            },
-            {
-                "id": "nP4oa88P4p",
-                "title": "BSE Companies data (CSV)",
-                "description": "This dataset provides historical stock market data, including the opening and closing prices, trading volume, and other relevant information for various stocks. It is commonly used for analyzing stock trends, building predictive models, and evaluating investment strategies.",
-                "githubPath": "https://github.com/neokd/DataBucket/blob/Website/Bucket/BSE Companies Data/BSE_Companies.csv",
-                "contributor": "Gladwin001",
-                "added": "2023/06/03",
-                "updated": "2023/06/03",
-                "size": "812.66 KB",
-                "tag": ["stock", "market", "data", "predict", "investment", "strategies"],
-                "fileType": "CSV"
-            }
-        ]
-    },
-    {
-        "domain": "Computer Vision",
-        "datasets": [
-            {
-                "id": "7JJixaqDRY",
-                "title": "Image Text Caption (CSV)",
-                "description": "The Image Text Caption dataset contains a collection of images along with their corresponding textual captions. The dataset is designed for tasks related to image captioning, where the goal is to generate a descriptive caption that accurately describes the content of an image.",
-                "githubPath": "https://github.com/neokd/DataBucket/blob/Website/Bucket/Text/image_textcaption.csv",
-                "contributor": "Priyamakeshwari",
-                "added": "2023/06/07",
-                "updated": "2023/06/07",
-                "size": "273.59 KB",
-                "tag": ["image", "text", "caption", "image caption", "image text caption"],
-                "fileType": "CSV"
-            },
-            {
-                "id": "m6_ODPGAX3",
-                "title": "Image Text Caption",
-                "description": "The Image Text Caption dataset contains a collection of images along with their corresponding textual captions. The dataset is designed for tasks related to image captioning, where the goal is to generate a descriptive caption that accurately describes the content of an image.",
-                "githubPath": "https://github.com/neokd/DataBucket/blob/Website/Bucket/Text/image_textcaption.json",
-                "contributor": "Priyamakeshwari",
-                "added": "2023/06/07",
-                "updated": "2023/06/07",
-                "size": "467.31 KB",
-                "tag": ["image", "text", "caption", "image caption", "image text caption"],
-                "fileType": "JSON"
-            }
-        ]
-    },
-    {
-        "domain": "Abbreviations",
-        "datasets": [
-            {
-                "id": "43WzWnzuNi",
-                "title": "CSE Abbreviations",
-                "description": "This dataset contains a collection of abbreviations commonly used in the field of Computer Science and Engineering (CSE). It provides the full forms or meanings of these abbreviations, helping users understand and decode technical terms in the CSE domain.",
-                "githubPath": "https://github.com/neokd/DataBucket/blob/Website/Bucket/Abbreviations/CSE_ABBV.json",
+                "id": "WO9SQHIMLQ",
+                "title": "Hindi Wikipedia Corpus (June 2023)",
+                "description": "This dataset is collection of 3,00,000 hindi pages on wikipedia and their corresponding titles. The dataset is extracted from the wikipedia dump from xml and split into 2 files of 500MB each and is in JSON format. ",
+                "githubPath": "https://github.com/neokd/DataBucket/blob/main/Bucket/NLP%20and%20Text%20Analysis/Wikipedia/Hindi%20Wiki",
                 "contributor": "neokd",
-                "added": "2023/06/05",
-                "updated": "2023/06/05",
-                "size": "3.41 KB",
-                "tag": ["abbreviations", "computer science", "engineering", "technical terms"],
+                "added": "2023/06/12",
+                "updated": "2023/06/12",
+                "size": "1.1 GB",
+                "tag": ["raw", "data","wikipedia","hindi","corpus","dump","extracted"],
                 "fileType": "JSON"
             },
             {
-                "id": "yA3-h_ifsP",
-                "title": "Chat Abbreviations",
-                "description": "This dataset comprises a collection of abbreviations commonly used in online chats and messaging platforms. It provides the expanded forms or meanings of these abbreviations, helping users decipher and understand the slang or shorthand used in chat conversations.",
-                "githubPath": "https://github.com/neokd/DataBucket/blob/Website/Bucket/Abbreviations/Chat_ABBV.json",
+                "id": "nv3b_MikH6",
+                "title": "Hindi Stories Corpus",
+                "description": "This dataset is from Hindi Aesthetics Corpus.This corpus consists of novels and short stories written in Hindi language.Raw data is also available in the corpus.",
+                "githubPath": "https://github.com/neokd/DataBucket/blob/main/Bucket/NLP%20and%20Text%20Analysis/Hindi%20Stories",
                 "contributor": "neokd",
-                "added": "2023/06/05",
-                "updated": "2023/06/05",
-                "size": "8.67 KB",
-                "tag": ["chat", "abbreviations", "slang", "shorthand"],
+                "added": "2023/06/09",
+                "updated": "2023/06/09",
+                "size": "99.5 MB",
+                "tag": ["hindi", "stories", "corpus", "novels", "short", "raw", "data"],
                 "fileType": "JSON"
+            },
+            {
+                "id": "fbonlmn7QU",
+                "title": "Bengali Stop Words",
+                "description": "This dataset is collection of all the stop words in bengali That can be used to remove stop words from the text in your ML projects.",
+                "githubPath": "https://github.com/neokd/DataBucket/blob/main/Bucket/NLP%20and%20Text%20Analysis/Bengali_stopwords.csv",
+                "contributor": "neokd",
+                "added": "2023/06/12",
+                "updated": "2023/06/12",
+                "size": "32 KB",
+                "tag": ["stop words", "hindi", "remove", "text", "ml", "projects"],
+                "fileType": "TXT"
+            },
+            {
+                "id": "gzDGq_Op8a",
+                "title": "Hindi Stop Words",
+                "description": "This dataset is collection of all the stop words in hindi That can be used to remove stop words from the text in your ML projects.",
+                "githubPath": "https://github.com/neokd/DataBucket/blob/main/Bucket/NLP%20and%20Text%20Analysis/Hindi_stopwords.csv",
+                "contributor": "neokd",
+                "added": "2023/06/12",
+                "updated": "2023/06/12",
+                "size": "32 KB",
+                "tag": ["stop words", "hindi", "remove", "text", "ml", "projects"],
+                "fileType": "TXT"
+            },
+            {
+                "id": "iIYue8zeCF",
+                "title": "Gujrati Stop Words",
+                "description": "This dataset is collection of all the stop words in gujrati That can be used to remove stop words from the text in your ML projects.",
+                "githubPath": "https://github.com/neokd/DataBucket/blob/main/Bucket/NLP%20and%20Text%20Analysis/Gujarati_stopwords.csv",
+                "contributor": "neokd",
+                "added": "2023/06/12",
+                "updated": "2023/06/12",
+                "size": "32 KB",
+                "tag": ["stop words", "gujrati", "text", "ml", "projects"],
+                "fileType": "TXT"
+            },
+            {
+                "id": "lJIHIop_ea",
+                "title": "Marathi Stop Words",
+                "description": "This dataset is collection of all the stop words in marathi That can be used to remove stop words from the text in your ML projects.",
+                "githubPath": "https://github.com/neokd/DataBucket/blob/main/Bucket/NLP%20and%20Text%20Analysis/Marathi_stopwords.csv",
+                "contributor": "neokd",
+                "added": "2023/06/12",
+                "updated": "2023/06/12",
+                "size": "32 KB",
+                "tag": ["stop words", "marathi", "text", "ml", "projects"],
+                "fileType": "TXT"
+            },
+            {
+                "id": "HJu2ZK7MvP",
+                "title": "Urdu Stop Words",
+                "description": "This dataset is collection of all the stop words in urdu That can be used to remove stop words from the text in your ML projects.",
+                "githubPath": "https://github.com/neokd/DataBucket/blob/main/Bucket/NLP%20and%20Text%20Analysis/Urdu_stopwords.csv",
+                "contributor": "neokd",
+                "added": "2023/06/12",
+                "updated": "2023/06/12",
+                "size": "32 KB",
+                "tag": ["stop words", "urdu", "text", "ml", "projects"],
+                "fileType": "TXT"
             }
         ]
     },
     {
-        "domain": "GitHub Repository Analysis",
+        "domain": "Question & Answering",
         "datasets": [
             {
-                "id": "UIdvmir27r",
-                "title": "Github Repo Data",
-                "description": "This dataset contains data scraped from GitHub and is stored in JSON format. It provides information about repositories hosted on GitHub, including details such as repository names, contributors, commit history, and other relevant metadata. This dataset is useful for conducting analysis and gaining insights into the GitHub ",
-                "githubPath": "https://github.com/neokd/DataBucket/blob/Website/Bucket/Githubdata/github_dataset.json",
+                "id": "Pe9txtTzH3",
+                "title": "BankFAQs",
+                "description": "This dataset is based on question and answering with classification of questions and its typecd in banking domain. The dataset is in JSON format.",
+                "githubPath": "https://github.com/neokd/DataBucket/blob/Website/Bucket/Q&A/Banking%20and%20Finance/BankFAQs.json",
                 "contributor": "Priyamakeshwari",
                 "added": "2023/06/07",
                 "updated": "2023/06/07",
-                "size": "205.55 KB",
-                "tag": ["Github", "Repository", "Analysis", "Data"],
+                "size": "863.69 KB",
+                "tag": ["bank", "faq", "question", "answer", "predict"],
                 "fileType": "JSON"
             },
             {
-                "id": "7x0-Mch2u7",
-                "title": "Github Dataset",
-                "description": "This dataset contains data related to GitHub in CSV format. It may include information about repositories, contributors, commits, or other aspects of the GitHub platform. However, the specific details and structure of the dataset are not provided in the available information.",
-                "githubPath": "https://github.com/neokd/DataBucket/blob/Website/Bucket/Githubdata/github_dataset.csv",
+                "id": "d1M8zkqe3v",
+                "title": "BankFAQs (CSV)",
+                "description": "This dataset is based on question and answering with classification of questions and its type in banking domain. The dataset is in CSV format.",
+                "githubPath": "https://github.com/neokd/DataBucket/blob/Website/Bucket/Q&A/Banking%20and%20Finance/BankFAQs.csv",
                 "contributor": "Priyamakeshwari",
                 "added": "2023/06/07",
                 "updated": "2023/06/07",
-                "size": "48.73 KB",
-                "tag": ["Github", "Repository", "Analysis", "Data"],
+                "size": "761.32 KB",
+                "tag": ["bank", "faq", "question", "answer", "predict"],
+                "fileType": "CSV"
+            },
+            {
+                "id": "d1M8zkqe2a",
+                "title": "Quora Question Pairs",
+                "description": "This dataset consist of question pairs from Quora and the goal is to predict if the questions are duplicate or not.",
+                "githubPath": "https://github.com/neokd/DataBucket/blob/Website/Bucket/Q&A/Quora/quora.csv.7z",
+                "contributor": "neokd",
+                "added": "2023/06/23",
+                "updated": "2023/06/23",
+                "size": "58.32 MB",
+                "tag": ["quora", "question", "duplicate", "predict"],
                 "fileType": "CSV"
             }
         ]
     },
     {
-        "domain": "Color and Flavors",
+        "domain": "Social Media Analysis",
         "datasets": [
             {
-                "id": "oOMA5mUjoz",
-                "title": "Single Color Names",
-                "description": "This dataset contains a collection of single color names. Each entry represents a unique color name along with its corresponding color code or representation. The dataset is stored in JSON format.",
-                "githubPath": "https://github.com/neokd/DataBucket/blob/Website/Bucket/ColornamesData/single-color-names.json",
-                "contributor": "Priyamakeshwari",
-                "added": "2023/06/07",
-                "updated": "2023/06/07",
-                "size": "104.51 KB",
-                "tag": ["color", "color names", "single color names"],
+                "id": "pi9_SfqIr7",
+                "title": "Leet Code Problems and Solutions (CSV)",
+                "description": "This comprehensive dataset contains a collection of problems and their corresponding solutions from the popular coding platform, LeetCode. It encompasses a wide range of algorithmic and data structure challenges, covering topics such as arrays, strings, linked lists, trees, graphs, dynamic programming, and more. The dataset includes problem descriptions, input-output examples, and solution implementations in various programming languages. It serves as a valuable resource for studying, practicing, and benchmarking coding skills, as well as for exploring different problem-solving approaches.",
+                "githubPath": "https://github.com/neokd/DataBucket/blob/Website/Bucket/Social%20Media%20Analysis/LeetCode/leetcode_problem_dataset.csv",
+                "contributor": "neokd",
+                "added": "2023/06/23",
+                "updated": "2023/06/23",
+                "size": "2.2 MB",
+                "tag": ["leetcode", "problem", "solution", "code"],
                 "fileType": "JSON"
             },
             {
-                "id": "Ba4FbrbE4t",
-                "title": "Single Color Names (CSV)",
-                "description": "This dataset contains a collection of single color names. Each entry represents a unique color name along with its corresponding color code or representation. The dataset is stored in CSV format.",
-                "githubPath": "https://github.com/neokd/DataBucket/blob/Website/Bucket/ColornamesData/single-color-names.csv",
-                "contributor": "Priyamakeshwari",
-                "added": "2023/06/07",
-                "updated": "2023/06/07",
-                "size": "11.5 KB",
-                "tag": ["color", "color names", "single color names"],
-                "fileType": "CSV"
-            },
-            {
-                "id": "EslQx7VU_g",
-                "title": "flavors",
-                "description": "This dataset contains a collection of flavors. Each entry represents a unique flavor along with its associated information, such as description, ingredients, or any other relevant details. The dataset is stored in JSON format.",
-                "githubPath": "https://github.com/neokd/DataBucket/blob/Website/Bucket/FlavoursData/flavors.json",
-                "contributor": "Priyamakeshwari",
-                "added": "2023/06/07",
-                "updated": "2023/06/07",
-                "size": "47.88 KB",
-                "tag": ["flavors", "ingredients", "dataset"],
+                "id": "rxGYoctSkZ",
+                "title": "Reddit AskReddit Data",
+                "description": "This dataset is based on the AskReddit subreddit of Reddit and it consist of all the posts from the subreddit. The dataset is in JSON format.",
+                "githubPath": "https://github.com/neokd/DataBucket/blob/main/Bucket/Social%20Media%20Analysis/Reddit/askReddit.json",
+                "contributor": "neokd",
+                "added": "2023/06/23",
+                "updated": "2023/06/23",
+                "size": "219 KB",
+                "tag": ["reddit", "askreddit", "post", "predict"],
                 "fileType": "JSON"
             },
             {
-                "id": "5TQ2IFFoCd",
-                "title": "flavors (CSV)",
-                "description": "This dataset contains a collection of flavors. Each entry represents a unique flavor along with its associated information, such as description, ingredients, or any other relevant details. The dataset is stored in CSV format.",
-                "githubPath": "https://github.com/neokd/DataBucket/blob/Website/Bucket/FlavoursData/flavors.csv",
+                "id": "4GlAoKj6g2",
+                "title": "Reddit r/all Data",
+                "description": "This dataset is based on the r/all subreddit of Reddit and it consist of all the posts from the subreddit. The dataset is in JSON format.",
+                "githubPath": "https://github.com/neokd/DataBucket/blob/main/Bucket/Social%20Media%20Analysis/Reddit/r_all.json",
+                "contributor": "neokd",
+                "added": "2023/06/23",
+                "updated": "2023/06/23",
+                "size": "353 KB",
+                "tag": ["reddit", "r/all", "post", "predict"],
+                "fileType": "JSON"
+            },
+            {
+                "id": "WUJKxTd-Am",
+                "title": "Reddit r/worldnews Data",
+                "description": "This dataset is based on the r/worldnews subreddit of Reddit and it consist of all the posts from the subreddit. The dataset is in JSON format.",
+                "githubPath": "https://github.com/neokd/DataBucket/blob/main/Bucket/Social%20Media%20Analysis/Reddit/worldnews.json",
+                "contributor": "neokd",
+                "added": "2023/06/23",
+                "updated": "2023/06/23",
+                "size": "186 KB",
+                "tag": ["reddit", "r/worldnews", "post", "predict"],
+                "fileType": "JSON"
+            },
+            {
+                "id": "7XRCa49UtB",
+                "title": "Twitter Hate Speech Data",
+                "description": "This dataset is about hate speech on tweet. The goal is to predict if the tweet is hate speech or not.",
+                "githubPath": "https://github.com/neokd/DataBucket/blob/Website/Bucket/Social%20Media%20Analysis/Twitter/hate_speechdata.json",
                 "contributor": "Priyamakeshwari",
                 "added": "2023/06/07",
                 "updated": "2023/06/07",
-                "size": "12.61 KB",
-                "tag": ["flavors", "ingredients", "dataset"],
+                "size": "5.49 MB",
+                "tag": ["hate", "speech", "tweet", "predict"],
+                "fileType": "JSON"
+            },
+            {
+                "id": "P3yPqDqq1r",
+                "title": "Twitter Hate Speech Data (CSV)",
+                "description": "This dataset is about hate speech on tweet. The goal is to predict if the tweet is hate speech or not. The dataset is in CSV format. ",
+                "githubPath": "https://github.com/neokd/DataBucket/blob/Website/Bucket/Social%20Media%20Analysis/Twitter/hate_speechdata.csv",
+                "contributor": "Priyamakeshwari",
+                "added": "2023/06/07",
+                "updated": "2023/06/07",
+                "size": "2.43 MB",
+                "tag": ["hate", "speech", "tweet", "predict"],
                 "fileType": "CSV"
+            },
+            {
+                "id": "yRsgwIpTAmr",
+                "title": "Elon Musk Tweets (CSV)",
+                "description": "This dataset consist of all the tweets of Elon Musk or mentioning elon musk on twitter. The dataset is in CSV format. ",
+                "githubPath": "https://github.com/neokd/DataBucket/blob/Website/Bucket/Social%20Media%20Analysis/Twitter/elonmusk.json",
+                "contributor": "Priyamakeshwari",
+                "added": "2023/06/08",
+                "updated": "2023/06/08",
+                "size": "3.23 MB",
+                "tag": ["elon", "musk", "tweet", "predict","csv"],
+                "fileType": "CSV"
+            },
+            {
+                "id": "rxGYoctSZk",
+                "title": "Elon Musk Tweets (JSON)",
+                "description": "This dataset consist of all the tweets of Elon Musk or mentioning elon musk on twitter. The dataset is in JSON format. ",
+                "githubPath": "https://github.com/neokd/DataBucket/blob/Website/Bucket/Social%20Media%20Analysis/Twitter/elonmusk.json",
+                "contributor": "Priyamakeshwari",
+                "added": "2023/06/08",
+                "updated": "2023/06/08",
+                "size": "5.19 MB",
+                "tag": ["elon", "musk", "tweet", "predict"],
+                "fileType": "JSON"
             }
         ]
     },
     {
-        "domain": "Tamil Movies",
+        "domain": "Tools & Technologies",
         "datasets": [
             {
-                "id": "4Q4Q4Q4Q4Q",
-                "title": "Tamil Movies (CSV)",
-                "description": "This datasets is currated from year 2011 to 2023 and contains information about Tamil movies. Each entry represents a unique movie along with its associated information, such as title,year. The dataset is stored in CSV format.",
-                "githubPath": "https://github.com/neokd/DataBucket/blob/Bucket/Tamil%20Movie%20years/Tamilmovie_data.csv",
-                "contributor": "Priyamakeshwari",
+                "id": "WO9SQHABCD",
+                "title": "List of AI Tools",
+                "description": "This dataset is collection of all the AI tools that can be used in your ML projects.It consist of all the AI tools launched till june 2023 and will be updated every month.",
+                "githubPath": "https://github.com/neokd/DataBucket/blob/Website/Bucket/Tools%20&%20Technology/topAITools.json",
+                "contributor": "neokd",
                 "added": "2023/06/13",
                 "updated": "2023/06/13",
-                "size": "18 KB",
-                "tag": ["Tamil", "Movies", "Analysis", "Data","CSV"],
-                "fileType": "CSV"
-            },
-            {
-                "id": "1Q1Q1Q1Q2Q",
-                "title": "Tamil Movies",
-                "description": "This datasets is currated from year 2011 to 2023 and contains information about Tamil movies. Each entry represents a unique movie along with its associated information, such as title,year. The dataset is stored in JSON format.",
-                "githubPath": "https://github.com/neokd/DataBucket/blob/Bucket/Tamil%20Movie%20years/Tamilmovie_data.json",
-                "contributor": "Priyamakeshwari",
-                "added": "2023/06/13",
-                "updated": "2023/06/14",
-                "size": "67 KB",
-                "tag": ["Github", "Repository", "Analysis", "Data"],
+                "size": "1.3 MB",
+                "tag": ["AI", "tools", "list", "ML", "projects"],
                 "fileType": "JSON"
             }
         ]
     }
-   
 ]

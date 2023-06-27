@@ -52,9 +52,9 @@ function OnThisPage({ filteredData }) {
     };
     
     return (
-        <div className="hidden lg:block">
-            <div className="border-l border-amber-500/80 p-4  rounded-lg shadow-amber-500/10 drop-shadow-lg shadow-lg flex fixed justify-end items-end mt-36 max-w-fit ml-8">
-                <div className=" flex flex-col justify-start container ">
+        <div className="hidden lg:block ">
+            <div className="border-l border-amber-500/80 p-4  rounded-lg shadow-amber-500/10 drop-shadow-lg shadow-lg flex fixed justify-end items-end max-w-fit ">
+                <div className=" flex flex-col justify-start  ">
                     <div className="dark:text-white text-xl font-semibold">
                         On this page
                     </div>
@@ -65,7 +65,7 @@ function OnThisPage({ filteredData }) {
                                     {
                                         item.datasets.map((subitem) => (
                                             <li key={subitem.id} className="py-2 flex justify-start truncate">
-                                                <button onClick={() => toggleDomain(item.domain, subitem.id)} className={`text-lg ${(activeSection === subitem.id) ? 'text-amber-500 font-semibold' : 'dark:text-white/80 dark:hover:text-white/90'}`}>
+                                                <button onClick={() => toggleDomain(item.domain, subitem.id)} className={`text-lg w-64 truncate text-start ${(activeSection === subitem.id) ? 'text-amber-500 font-semibold' : 'dark:text-white/80 dark:hover:text-white/90'}`}>
                                                     {subitem.title}
                                                 </button>
                                             </li>
