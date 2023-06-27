@@ -127,7 +127,15 @@ function Sidebar() {
       return;
     }
   };
-
+  
+  useEffect(() => {
+    if (location.hash.startsWith('#')) {
+      const element = document.getElementById(location.hash.substr(1));
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }
+    }
+  })
   useEffect(() => {
     showSideBarMobileView();
     window.addEventListener('resize', showSideBarMobileView);
@@ -142,13 +150,13 @@ function Sidebar() {
         sidebarVisible && (
           <aside
             id="logo-sidebar"
-            className="fixed inset-0 top-20 left-0 pb-8  transition-all duration-300 lg:translate-x-0 dark:bg-opacity-10 bg-opacity-30 backdrop-blur-md z-10 bg-white/30 dark:bg-customGray/80 drop-shadow-lg dark:shadow-lg dark:lg:shadow-amber-500 lg:w-72 md:min-w-fit max-h-screen border-r border-r-gray-600 "
+            className="fixed inset-0 lg:top-20 left-0 pb-8  transition-all duration-300 lg:translate-x-0 dark:bg-opacity-10 bg-opacity-30 backdrop-blur-md z-10 bg-white/30 dark:bg-customGray/80 drop-shadow-lg dark:shadow-lg dark:lg:shadow-amber-500 lg:w-72 md:min-w-fit max-h-screen border-r border-r-gray-600"
           >
 
-            <div className="h-full px-3 pt-4 inset-0 dark:bg-customGray/80 overflow-y-auto">
+            <div className="h-full px-3  pt-4 inset-0 dark:bg-customGray/80 overflow-y-auto overflow-x-hidden ">
               <div className='flex flex-row'>
 
-                <button className="lg:mt-4 w-full lg:w-64" onClick={handleInputClick}>
+                <button className="lg:mt-4 w-full ml-4 lg:w-64" onClick={handleInputClick}>
                   <div className="relative">
                     <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
                       <svg
@@ -178,7 +186,7 @@ function Sidebar() {
                     </div>
                   </div>
                 </button>
-                <button className="md:hidden right-0 mx-4 lg:mt-2 bg-transparent backdrop-blur-lg rounded-lg p-2 lg:top-28 md:left-[18.5rem] z-10" onClick={() => setSidebarVisible(false)}>
+                <button className="lg:hidden right-0 mx-4 lg:mt-2 bg-transparent backdrop-blur-lg rounded-lg p-2 lg:top-28 md:left-[18.5rem] z-10" onClick={() => setSidebarVisible(false)}>
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 stroke-2 dark:stroke-white">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
                   </svg>
@@ -265,9 +273,9 @@ function Sidebar() {
         )
       }
 
-      <div className='block md:hidden'>
+      <div className='block '>
         {!sidebarVisible && (
-          <div className='fixed md:hidden flex flex-col  top-[5.1rem] bg-transparent backdrop-blur-lg rounded-lg lg:top-28 md:left-[18.5rem] z-10'>
+          <div className='fixed  flex flex-col  top-[4rem] bg-transparent backdrop-blur-lg rounded-lg lg:top-28 z-10'>
             <button className="p-1" onClick={() => setSidebarVisible(true)}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"

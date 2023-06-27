@@ -15,6 +15,8 @@
     "@supabase/supabase-js": "^2.24.0",
     "aos": "^2.3.4",
     "appwrite": "^11.0.0",
+    "cors": "^2.8.5",
+    "file-saver": "^2.0.5",
     "framer-motion": "^10.12.16",
     "fuse.js": "^6.6.2",
     "octokit": "^2.0.19",

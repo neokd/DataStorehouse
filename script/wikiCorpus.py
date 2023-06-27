@@ -4,7 +4,7 @@ import json
 import re
 
 # Specify the path to your XML corpus file
-xml_file = "/Users/kuldeep/Downloads/hiwiki-20230601-pages-articles-multistream.xml"
+xml_file = "path to xml file"
 
 # Read the XML file
 with open(xml_file, "r", encoding="utf-8") as f:
@@ -35,6 +35,8 @@ for page in soup.find_all("page"):
             data.append({"title": title, "text": text.strip()})
             count += 1
             print(f"Processed {count} pages.")
+
+# Convert data to JSON format
 json_data = json.dumps(data, ensure_ascii=False, indent=4)
 
 # Maximum file size in bytes (500 MB)
@@ -46,6 +48,8 @@ max_pages_per_file = max_file_size // (len(json_data.encode("utf-8")) // len(dat
 # Create a directory to store the output files
 output_directory = "output"
 os.makedirs(output_directory, exist_ok=True)
+
+# Split data into chunks of maximum pages per file
 chunks = [data[i:i+max_pages_per_file] for i in range(0, len(data), max_pages_per_file)]
 
 for i, chunk in enumerate(chunks):

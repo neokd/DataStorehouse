@@ -6,7 +6,14 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+ 
     extend: {
+      width: {
+        '84':'28.5rem',
+        '128': '44rem',
+        '144': '54rem',
+        '180':'64rem',
+      },
       colors: {
         'customGray': '#070712',
         // #070712
@@ -41,7 +48,7 @@ export default {
         },
       },
       margin: {
-        '84': '22rem',
+        '84': '24rem',
       },
     },
   },

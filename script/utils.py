@@ -1,68 +1,100 @@
-# This file consiste of 2 functions:
-# csvToJSON(csvFilePath,jsonFilePath) - This function converts a CSV file to JSON file.
-# combineCSVToJSON(csvFilePath1,csvFilePath2,jsonFilePath) - This function combines 2 CSV files into 1 JSON file.
-# txtToCSV(textFilePath, csvFilePath) - This function converts a TXT file to CSV file.
-
 import csv
 import json
 
-# Function to convert a CSV to JSON
-def csvToJSON(csvFilePath,jsonFilePath):
-    data = []
-    with open(csvFilePath, 'r', encoding= 'unicode_escape') as csvfile:
-        reader = csv.DictReader(csvfile)
-        for row in reader:
-            data.append(row)
+class Utils:
+    """
+    Converts files between different formats.
+    """
 
-    with open(jsonFilePath, 'w') as jsonfile:
-        json.dump(data, jsonfile, indent=4)
+    @staticmethod
+    def csv_to_json(csv_file_path, json_file_path):
+        """
+        Converts a CSV file to a JSON file.
 
-    print('CSV to JSON conversion completed successfully.')
+        Args:
+            csv_file_path (str): The path to the CSV file.
+            json_file_path (str): The path to the JSON file.
+        """
+        data = []
+        with open(csv_file_path, 'r', encoding='unicode_escape') as csvfile:
+            reader = csv.DictReader(csvfile)
+            for row in reader:
+                data.append(row)
 
-# Function to combine 2 CSV into 1 JSON
-def combineCSVToJSON(csvFilePath1,csvFilePath2,jsonFilePath):
-    data = []
-    with open(csvFilePath1, 'r',encoding= 'unicode_escape') as csvfile1:
-        reader1 = csv.DictReader(csvfile1)
-        for row in reader1:
-            data.append(row)
+        with open(json_file_path, 'w') as jsonfile:
+            json.dump(data, jsonfile, indent=4)
 
-    with open(csvFilePath2, 'r',encoding= 'unicode_escape') as csvfile2:
-        reader2 = csv.DictReader(csvfile2)
-        for row in reader2:
-            data.append(row)
+        print('CSV to JSON conversion completed successfully.')
 
-    data = list({tuple(row.items()) for row in data})
+    @staticmethod
+    def combine_csv_to_json(csv_file_path1, csv_file_path2, json_file_path):
+        """
+        Combines two CSV files into one JSON file.
 
-    with open(jsonFilePath, 'w') as jsonfile:
-        json.dump(data, jsonfile, indent=4)
-    print('CSV to JSON conversion completed successfully.')
+        Args:
+            csv_file_path1 (str): The path to the first CSV file.
+            csv_file_path2 (str): The path to the second CSV file.
+            json_file_path (str): The path to the JSON file.
+        """
+        data = []
+        with open(csv_file_path1, 'r', encoding='unicode_escape') as csvfile1:
+            reader1 = csv.DictReader(csvfile1)
+            for row in reader1:
+                data.append(row)
 
-# Function to convert a TXT to CSV
-def txtToCSV(textFilePath, csvFilePath):
-    with open(textFilePath, encoding='utf-8') as f:
-        lines = f.readlines()
-    lines = [line.strip().split() for line in lines]
+        with open(csv_file_path2, 'r', encoding='unicode_escape') as csvfile2:
+            reader2 = csv.DictReader(csvfile2)
+            for row in reader2:
+                data.append(row)
 
-    with open(csvFilePath, 'w', newline='') as f:
-        writer = csv.writer(f, delimiter=',', quoting=csv.QUOTE_MINIMAL)
-        writer.writerows(lines)
+        data = list({tuple(row.items()) for row in data})
 
-    print("TXT to CSV conversion completed successfully.")
+        with open(json_file_path, 'w') as jsonfile:
+            json.dump(data, jsonfile, indent=4)
+        
+        print('CSV to JSON conversion completed successfully.')
 
-def tsvToCSV(tsvFilePath,csvFilePath):
-    with open(tsvFilePath,'r+' ) as tsvFile , open(csvFilePath,'w+') as csvFile:
-        tsvreader = csv.reader(tsvFile, delimiter='\t')
-        csvwriter = csv.writer(csvFile, delimiter=',')
-        for line in tsvreader:
-            csvwriter.writerow(line)
-    print("TSV to CSV conversion completed successfully.")
+    @staticmethod
+    def txt_to_csv(text_file_path, csv_file_path):
+        """
+        Converts a TXT file to a CSV file.
 
+        Args:
+            text_file_path (str): The path to the TXT file.
+            csv_file_path (str): The path to the CSV file.
+        """
+        with open(text_file_path, encoding='utf-8') as f:
+            lines = f.readlines()
+        lines = [line.strip().split() for line in lines]
+
+        with open(csv_file_path, 'w', newline='') as f:
+            writer = csv.writer(f, delimiter=',', quoting=csv.QUOTE_MINIMAL)
+            writer.writerows(lines)
+
+        print("TXT to CSV conversion completed successfully.")
+
+    @staticmethod
+    def tsv_to_csv(tsv_file_path, csv_file_path):
+        """
+        Converts a TSV file to a CSV file.
+
+        Args:
+            tsv_file_path (str): The path to the TSV file.
+            csv_file_path (str): The path to the CSV file.
+        """
+        with open(tsv_file_path, 'r+') as tsv_file, open(csv_file_path, 'w+') as csv_file:
+            tsv_reader = csv.reader(tsv_file, delimiter='\t')
+            csv_writer = csv.writer(csv_file, delimiter=',')
+            for line in tsv_reader:
+                csv_writer.writerow(line)
+
+        print("TSV to CSV conversion completed successfully.")
+
+    
 
 # Driver Code
 if __name__ == '__main__':
-    txtFilePath = '/Users/kuldeep/Downloads/quora.tsv'
-    csvFilePath = ''
-    tsvToCSV(txtFilePath,'quora.csv')
-    
-
+    file_converter = Utils()
+    txt_file_path = '/Users/kuldeep/Project/DataBucket/Bucket/NLP and Text Analysis/News Aggregator/newsCorpora.csv'
+    csv_file_path = 'newsCorpus.csv'
+    file_converter.tsv_to_csv(txt_file_path, csv_file_path)
