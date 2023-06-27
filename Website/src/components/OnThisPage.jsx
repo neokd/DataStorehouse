@@ -52,7 +52,7 @@ function OnThisPage({ filteredData }) {
     };
     
     return (
-        <div className="hidden lg:block ">
+        <div className="hidden lg:block">
             <div className="border-l border-amber-500/80 p-4  rounded-lg shadow-amber-500/10 drop-shadow-lg shadow-lg flex fixed justify-end items-end max-w-fit ">
                 <div className=" flex flex-col justify-start  ">
                     <div className="dark:text-white text-xl font-semibold">

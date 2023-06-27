@@ -1,3 +1,4 @@
+// Import necessary dependencies and components
 import { useEffect, useState } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import Navbar from './Navbar';
@@ -9,21 +10,35 @@ import Footer from './Footer';
 import PageNavigation from './PageNavigation';
 import OnThisPage from './OnThisPage';
 
-
+/**
+ * Component for displaying a dataset.
+ */
 function ShowDataset() {
+  // Get the current location using the useLocation() hook
   const location = useLocation();
-  const navivateTo = useNavigate();
+  // Get the navigation function using the useNavigate() hook
+  const navigateTo = useNavigate();
+  // 🗃️ Store the dataset data using the useState() hook
   const [data, setData] = useState([]);
+  // State for copy success of domain URL
   const [copySuccessDomain, setCopySuccessDomain] = useState(false);
+  // State for copy success of title
   const [copySuccessTitle, setCopySuccessTitle] = useState(false);
+  // State for the selected title
   const [selectedTitle, setSelectedTitle] = useState('');
 
+  /**
+   * 🚀 Perform initialization on component mount using the useEffect() hook.
+   */
+
+  // Initialize AOS
   useEffect(() => {
     AOS.init({
       easing: 'ease-in-out'
     });
   }, []);
 
+  // Scroll to the selected title
   useEffect(() => {
     if (location.hash.startsWith('#')) {
       const element = document.getElementById(location.hash.substr(1));
@@ -31,8 +46,9 @@ function ShowDataset() {
         element.scrollIntoView({ behavior: 'smooth', block: 'center' });
       }
     }
-  })
+  }, [location.hash])
 
+  // Fetch the dataset data from the JSON file
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -49,6 +65,16 @@ function ShowDataset() {
     fetchData();
   }, []);
 
+  /**
+   * 📝 Implement the following functions:
+   * - handleCopyURL
+   * - handleCopyTitle
+   * - handleDownload
+   * - activateCard
+   * - getCurrentDomain
+   **/
+
+  // Copy the domain URL to the clipboard
   const handleCopyURL = () => {
     const currentURL = window.location.href;
     navigator.clipboard.writeText(currentURL);
@@ -58,6 +84,7 @@ function ShowDataset() {
     }, 2000);
   };
 
+  // Copy the title to the clipboard
   const handleCopyTitle = (title) => {
     const currentURL = window.location.href.split('#')[0] + '#' + title;
     navigator.clipboard.writeText(currentURL);
@@ -68,16 +95,15 @@ function ShowDataset() {
     }, 2000);
   };
 
+  // Download the large dataset from external links
   const handleDownload = async (path, title) => {
-    console.log(path)
     await fetch(path)
       .then((response) => response.blob())
       .then((blob) => {
         const url = window.URL.createObjectURL(blob);
         const link = document.createElement('a');
         link.href = url;
-        link.download = title; // Specify the filename here
-        console.log(title)
+        link.download = title;
         link.click();
         window.URL.revokeObjectURL(url);
       }).catch((error) => {
@@ -86,10 +112,12 @@ function ShowDataset() {
       })
   }
 
-  const activateCard = (title,id) => {
-    navivateTo (`/datasets/${title}#${id}`)
+  // Activate the card when the title is clicked
+  const activateCard = (title, id) => {
+    navigateTo(`/datasets/${title}#${id}`)
   };
 
+  // Get the current domain from the URL
   const getCurrentDomain = () => {
     const currentPath = location.pathname;
     const pathSegments = currentPath.split('/');
@@ -103,6 +131,7 @@ function ShowDataset() {
     (domain) => domain.domain.toLowerCase() === getCurrentDomain().toLowerCase()
   );
 
+  // Render the JSX element
   return (
     <div>
       <div className='bg-gray-100 dark:bg-customGray  min-h-screen overflow-x-clip '>
@@ -114,7 +143,7 @@ function ShowDataset() {
               <ol className="inline-flex items-center text-xl font-semibold">
                 {pathSegments.map((segment, index) => (
                   <li key={index}>
-                    <Link to={`/${pathSegments.slice(0, index + 1).join('/')}`} className="">
+                    <Link to={`/${pathSegments.slice(0, index + 1).join('/')}`} className="capitalize">
                       {segment.charAt(0).toUpperCase() + segment.slice(1).replace(/%20/g, ' ')}
                     </Link>
                     {index !== pathSegments.length - 1 && <span className="mx-1">/</span>}
@@ -154,9 +183,8 @@ function ShowDataset() {
                     </button>
                   </div>
                   <div className="">
-                    {domain.datasets.map((item) => (
-                      <div  onClick={() => activateCard(domain.domain,item.id)} key={item.id} id={item.id} data-aos='fade-up' data-aos-easing='linear' data-aos-duration='250'
-                        className={`scrollspy-section w-full lg:w-128 xl:w-144 2xl:w-180 drop-shadow-lg bg-white/75 dark:drop-shadow-none shadow-md dark:bg-white/10   my-4 hover:border-amber-200 rounded-2xl p-8 leading-10 ${getIdFromUrl === item.id ? 'shdaow-2xl  shadow-amber-500' : 'block'}`}>
+                    {domain.datasets.map((item, index) => (
+                      <div onClick={() => activateCard(domain.domain, item.id)} key={item.id} id={item.id} data-aos={index > 0 ? 'fade-up' : ''} data-aos-easing='linear' data-aos-duration='250' className={`scrollspy-section w-full lg:w-128 xl:w-144 2xl:w-180 drop-shadow-lg bg-white/75 dark:drop-shadow-none  dark:bg-white/10   my-4 hover:border-amber-200 rounded-2xl p-8 leading-10 ${getIdFromUrl === item.id ? 'shadow-md shadow-amber-500' : ''}`}>
                         <div className='flex justify-between'>
                           <Link to={`${item.githubPath}`} target='_blank' className='inline-flex'>
                             <h1 className='dark:text-white/90 text-3xl font-semibold mr-2'>{item.title}</h1>
@@ -217,8 +245,9 @@ function ShowDataset() {
                               <button className='' onClick={() => handleDownload(item.githubPath, item.title)}>
                                 <div className='p-3 border-amber-500 rounded-full bg-amber-500 '>
                                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
-                                    <path strokeLinecap="round" strokeLinejoin="round" d="M12 9.75v6.75m0 0l-3-3m3 3l3-3m-8.25 6a4.5 4.5 0 01-1.41-8.775 5.25 5.25 0 0110.233-2.33 3 3 0 013.758 3.848A3.752 3.752 0 0118 19.5H6.75z" />
+                                    <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75l3 3m0 0l3-3m-3 3v-7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                                   </svg>
+
                                 </div>
                               </button>
                             )
