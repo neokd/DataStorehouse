@@ -57,7 +57,7 @@ Please note that by contributing to DataBucket, you are expected to follow the [
 
 We appreciate your contributions and look forward to building a comprehensive repository of high-quality datasets together!
 
-If you have any questions or need further assistance, feel free to reach out to us.
+If you have any questions or need further assistance, feel free to reach out to us at databucketcontribution@gmail.com .
 
 Happy contributing!
 

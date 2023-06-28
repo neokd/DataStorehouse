@@ -1,0 +1,167 @@
+[
+    {
+        "id": "0",
+        "shortForm": "AI",
+        "fullForm": "Artificial Intelligence"
+    },
+    {
+        "id": "1",
+        "shortForm": "ML",
+        "fullForm": "Machine Learning"
+    },
+    {
+        "id": "2",
+        "shortForm": "DL",
+        "fullForm": "Deep Learning"
+    },
+    {
+        "id": "3",
+        "shortForm": "NLP",
+        "fullForm": "Natural Language Processing"
+    },
+    {
+        "id": "4",
+        "shortForm": "CV",
+        "fullForm": "Computer Vision"
+    },
+    {
+        "id": "5",
+        "shortForm": "IoT",
+        "fullForm": "Internet of Things"
+    },
+    {
+        "id": "6",
+        "shortForm": "AR",
+        "fullForm": "Augmented Reality"
+    },
+    {
+        "id": "7",
+        "shortForm": "VR",
+        "fullForm": "Virtual Reality"
+    },
+    {
+        "id": "8",
+        "shortForm": "CSP",
+        "fullForm": "Cloud Service Provider"
+    },
+    {
+        "id": "9",
+        "shortForm": "API",
+        "fullForm": "Application Programming Interface"
+    },
+    {
+        "id": "10",
+        "shortForm": "HTML",
+        "fullForm": "HyperText Markup Language"
+    },
+    {
+        "id": "11",
+        "shortForm": "CSS",
+        "fullForm": "Cascading Style Sheets"
+    },
+    {
+        "id": "12",
+        "shortForm": "JS",
+        "fullForm": "JavaScript"
+    },
+    {
+        "id": "13",
+        "shortForm": "DBMS",
+        "fullForm": "Database Management System"
+    },
+    {
+        "id": "14",
+        "shortForm": "OS",
+        "fullForm": "Operating System"
+    },
+    {
+        "id": "15",
+        "shortForm": "UI",
+        "fullForm": "User Interface"
+    },
+    {
+        "id": "16",
+        "shortForm": "UX",
+        "fullForm": "User Experience"
+    },
+    {
+        "id": "17",
+        "shortForm": "TCP/IP",
+        "fullForm": "Transmission Control Protocol/Internet Protocol"
+    },
+    {
+        "id": "18",
+        "shortForm": "DNS",
+        "fullForm": "Domain Name System"
+    },
+    {
+        "id": "19",
+        "shortForm": "FTP",
+        "fullForm": "File Transfer Protocol"
+    },
+    {
+        "id": "20",
+        "shortForm": "HTTP",
+        "fullForm": "Hypertext Transfer Protocol"
+    },
+    {
+        "id": "21",
+        "shortForm": "SMTP",
+        "fullForm": "Simple Mail Transfer Protocol"
+    },
+    {
+        "id": "22",
+        "shortForm": "LAN",
+        "fullForm": "Local Area Network"
+    },
+    {
+        "id": "23",
+        "shortForm": "WAN",
+        "fullForm": "Wide Area Network"
+    },
+    {
+        "id": "24",
+        "shortForm": "VPN",
+        "fullForm": "Virtual Private Network"
+    },
+    {
+        "id": "25",
+        "shortForm": "URL",
+        "fullForm": "Uniform Resource Locator"
+    },
+    {
+        "id": "26",
+        "shortForm": "XML",
+        "fullForm": "eXtensible Markup Language"
+    },
+    {
+        "id": "27",
+        "shortForm": "JSON",
+        "fullForm": "JavaScript Object Notation"
+    },
+    {
+        "id": "28",
+        "shortForm": "SQL",
+        "fullForm": "Structured Query Language"
+    },
+    {
+        "id": "29",
+        "shortForm": "IDE",
+        "fullForm": "Integrated Development Environment"
+    },
+    {
+        "id": "30",
+        "shortForm": "OOP",
+        "fullForm": "Object-Oriented Programming"
+    },
+    {
+        "id": "31",
+        "shortForm": "GUI",
+        "fullForm": "Graphical User Interface"
+    },
+    {
+        "id": "32",
+        "shortForm": "SSH",
+        "fullForm": "Secure Shell"
+    }
+]
