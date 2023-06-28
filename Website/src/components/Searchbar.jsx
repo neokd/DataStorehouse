@@ -1,15 +1,32 @@
+// Import necessary components and libraries
 import { useState, useEffect, useRef } from 'react';
 import Fuse from 'fuse.js';
 import { Link, useNavigate } from 'react-router-dom';
 
+/**
+ * @function Searchbar
+ * @description This component is the searchbar component of the website.
+ * @param {Object} visible - The visible object
+ * @param {Object} onClose - The onClose object
+ * @returns Searchbar component
+ */
+
 function Searchbar({ visible, onClose }) {
+    // State to hold the search query
     const [searchQuery, setSearchQuery] = useState('');
+    // State to hold the search results
     const [searchResults, setSearchResults] = useState([]);
+    // State to hold the recent searches
     const [recentSearches, setRecentSearches] = useState([]);
+    // State to hold the recommendations
     const [recommendations, setRecommendations] = useState([]);
+    // State to hold the error message
     const [showErrorMessage, setShowErrorMessage] = useState(false);
+    // State to hold the datasets
     const [datasets, setDatasets] = useState([]);
+    // State to hold the selected result index
     const [selectedResultIndex, setSelectedResultIndex] = useState(0);
+    // Navigate hook for redirection
     const navigateTo = useNavigate();
 
     // let storedSearches = localStorage.getItem('recentSearches');
@@ -17,6 +34,7 @@ function Searchbar({ visible, onClose }) {
     //     storedSearches = '[]';
     // }
 
+    // fetch the datasets from the json file
     useEffect(() => {
         const fetchData = async () => {
             try {
@@ -34,17 +52,20 @@ function Searchbar({ visible, onClose }) {
         fetchData();
     }, []);
 
+    // Variable to hold the title of the dataset i.e the topic from the datasets json file
     const topics = datasets.flatMap((dataset) =>
         dataset.datasets.map((data) => data.title)
     );
+    // Variable to hold the abbreviation mapping
     const abbreviationMapping = generateAbbreviationMapping(topics);
-
+    // Fuse options for the search functionality includes the score, threshold and keys to be searched.
     const fuseOptions = {
         includeScore: true,
         threshold: 0.4,
         keys: ['title', 'tag', 'description', 'contributor', 'domain'],
     };
 
+    // Fuse object to search the topics using the fuse options and the topics array
     const fuse = new Fuse(
         datasets.flatMap((dataset) =>
             dataset.datasets.map((data) => ({
@@ -57,20 +78,35 @@ function Searchbar({ visible, onClose }) {
         ),
         fuseOptions
     );
-
+    // Reference to the search input
     const searchInputRef = useRef(null);
-
+    // Reference to the search results amd get recent searches   
     useEffect(() => {
         const storedSearches = getRecentSearches();
         setRecentSearches(storedSearches);
     }, []);
-
+    // focus on the search input when the searchbar is visible
     useEffect(() => {
         if (visible && searchInputRef.current) {
             searchInputRef.current.focus();
         }
     }, [visible]);
+    //Use emoji 
+    /** 
+     * List of functions to implement 📝 :
+     *  - handleSearchQueryChange
+     * - handleSearch
+     * - redirectToDataset
+     * - searchTopics
+     * - getRecentSearches
+     * - handleRecentSearchClick
+     * - handleRecommendationClick
+     * - getRecommendations
+     * - generateAbbreviationMapping
+     * - handleKeyDown
+     */
 
+    // Function to handle the search query change from the search input and update the search results, recommendations and error message
     const handleSearchQueryChange = (event) => {
         const query = event.target.value;
         setSearchQuery(query);
@@ -85,7 +121,7 @@ function Searchbar({ visible, onClose }) {
             handleSearch();
         }
     };
-
+    // Function to handle the search and update the recent searches and recommendations
     const handleSearch = () => {
         if (!recentSearches.includes(searchQuery)) {
             const updatedRecentSearches = [
@@ -116,7 +152,7 @@ function Searchbar({ visible, onClose }) {
         }
     };
 
-
+    // Function to redirect to the dataset based on the domain and dataset id
     const redirectToDataset = (domain, datasetId) => {
         const dataset = datasets.find((data) =>
             data.datasets.some((dataset) => dataset.id === datasetId)
@@ -128,8 +164,8 @@ function Searchbar({ visible, onClose }) {
             console.error('Dataset not found');
         }
     };
-
-
+    
+    // Function to search the topics based on the query and return the filtered topics
     const searchTopics = (query) => {
         if (!query) return [];
         const fullForm = abbreviationMapping[query.toUpperCase()];
@@ -142,12 +178,13 @@ function Searchbar({ visible, onClose }) {
         return filteredTopics.slice(0, 10);
     };
 
-
+    // Function to get the recent searches from the local storage
     const getRecentSearches = () => {
         const storedSearches = localStorage.getItem('recentSearches');
         return storedSearches ? JSON.parse(storedSearches) : [];
     };
 
+    // Function to handle the click on the recent search and update the search query, search results and recommendations
     const handleRecentSearchClick = (search) => {
         setSearchQuery(search);
         setSearchResults(searchTopics(search));
@@ -155,6 +192,7 @@ function Searchbar({ visible, onClose }) {
         setRecommendations(updatedRecommendations);
     };
 
+    // Function to handle the click on the recommendation and update the search query, search results and recommendations
     const handleRecommendationClick = (recommendation) => {
         setSearchQuery(recommendation);
         setSearchResults(searchTopics(recommendation));
@@ -165,6 +203,7 @@ function Searchbar({ visible, onClose }) {
         setRecommendations(updatedRecommendations);
     };
 
+    // Function to get the recommendations based on the recent searches and query
     const getRecommendations = (searches, query) => {
         const recommendations = datasets
             .flatMap((domain) => domain.datasets.map((dataset) => dataset.title))
@@ -172,6 +211,8 @@ function Searchbar({ visible, onClose }) {
         return recommendations.slice(0, 3);
     };
 
+    // Function to generate the abbreviation mapping for the topics using the first letter of each word 
+    // Example: "Covid-19" -> "C19"
     function generateAbbreviationMapping(topics) {
         const mapping = {};
         topics.forEach((topic) => {
@@ -186,6 +227,7 @@ function Searchbar({ visible, onClose }) {
         return mapping;
     }
 
+    // Function to handle the key down event on the search input and update the selected result index
     const handleKeyDown = (event) => {
         if (event.key === 'Enter') {
             handleSearch();
@@ -202,6 +244,7 @@ function Searchbar({ visible, onClose }) {
         }
     };
 
+    // Render the JSX Component
     return (
         <div className='fixed inset-0 -top-[32rem] z-10 dark:bg-opacity-10 bg-opacity-30 backdrop-blur-md flex justify-center items-center'>
             <div className='flex flex-row fixed'>

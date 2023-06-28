@@ -1,10 +1,18 @@
+// Import necessary components and libraries
 import { useEffect, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 
+/**
+ * @function PageNavigation
+ * @description This component is the page navigation component of the website.
+ * @returns PageNavigation component
+ * */
 function PageNavigation() {
+  // To get the current location
   const location = useLocation();
+  // State to hold the datasets
   const [datasets, setDatasets] = useState([]);
-
+  // Using useEffect to fetch the datasets from the database
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -20,12 +28,15 @@ function PageNavigation() {
     };
     fetchData();
   }, []);
-  
+  // To get the current domain from the URL
   const currentDomain = location.pathname.split('/')[2]?.replace(/%20/g, ' ');
+  // To get the index of the current domain
   const currentDomainIndex = datasets.findIndex(dataset => currentDomain !== undefined ? dataset.domain.toLowerCase() === currentDomain.toLowerCase() : 0);
+  // To get the previous and next domain
   const previousDomain = datasets[currentDomainIndex - 1]?.domain;
+  // To get the next domain
   const nextDomain = currentDomainIndex === -1 ?  datasets[currentDomainIndex + 2]?.domain : datasets[currentDomainIndex + 1]?.domain
-  
+  // Return the JSX component
   return (
     <div className="my-16">
       <div className="flex text-white justify-between mx-4">

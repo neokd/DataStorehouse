@@ -1,38 +1,52 @@
+// Import necessary components and libraries
 import Navbar from './Navbar';
 import { useState, useEffect } from 'react';
 import Searchbar from './Searchbar';
 import Footer from './Footer';
 
+/**
+ * @function Home
+ * @description This component is the home page of the website.
+ * @returns Home component
+ */
 function Home() {
-    const [showModal, setShowModal] = useState(false);
+  // State for modal visibility
+  const [showModal, setShowModal] = useState(false);
 
-    const handleOnClose = () => {
+  // Function to handle closing the modal
+  const handleOnClose = () => {
+    setShowModal(false);
+  };
+
+  useEffect(() => {
+    // Event listener for key presses
+    const handleKeyPress = (event) => {
+      // Open modal with CMD/WIN + K
+      if (event.keyCode === 75 && event.metaKey) {
+        if (showModal) {
+          setShowModal(false);
+        } else {
+          setShowModal(true);
+        }
+      }
+      // Close modal with ESC key
+      if (event.keyCode === 27) {
         setShowModal(false);
+      }
     };
 
-    useEffect(() => {
-        const handleKeyPress = (event) => {
-            if (event.keyCode === 75 && event.metaKey) {
-                if(showModal){
-                    setShowModal(false);
-                }
-                else {
-                    setShowModal(true);
-                }
-            }
-            if (event.keyCode === 27) {
-                setShowModal(false);
-            }
-        };
-        window.addEventListener('keydown', handleKeyPress);
-        return () => {
-            window.removeEventListener('keydown', handleKeyPress);
-        };
-    }, [showModal]);
+    window.addEventListener('keydown', handleKeyPress);
 
-    const handleInputClick = () => {
-        setShowModal(true);
+    // Cleanup event listener
+    return () => {
+      window.removeEventListener('keydown', handleKeyPress);
     };
+  }, [showModal]);
+
+  // Function to handle input click and open the modal
+  const handleInputClick = () => {
+    setShowModal(true);
+  };
 
     return (
         <div className='scroll-smooth min-h-screen  dark:bg-customGray'>

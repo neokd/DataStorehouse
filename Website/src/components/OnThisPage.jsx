@@ -1,13 +1,25 @@
+// Import necessary components and libraries
 import { useEffect, useState } from "react"
 import { useLocation, useNavigate, Link } from "react-router-dom";
 
+/**
+ * @function OnThisPage
+ * @description This component is the on this page component of the website.
+ * @param {Object} filteredData - The filtered data
+ * @returns OnThisPage component
+*/
 function OnThisPage({ filteredData }) {
+    // To get the current location
     const location = useLocation();
+    // Navigate hook for redirection
     const navigateTo = useNavigate()
+    // To get the path segments from the URL
     const pathSegments = location.pathname.split('/').filter(segment => segment !== '')[1];
+    // To get the id from the URL
     const getIdFromUrl = location.hash.startsWith('#') ? location.hash.substring(1) : '';
+    // State to hold the active section
     const [activeSection, setActiveSection] = useState("");
-
+    // Using useEffect to handle the scrollspy functionality using IntersectionObserver
     useEffect(() => {
         const handleIntersection = (entries) => {
             entries.forEach((entry) => {
@@ -39,6 +51,11 @@ function OnThisPage({ filteredData }) {
         };
     }, [location]);
 
+    /* Implement the following function:
+        * To toggle the domain 🌐
+    */
+
+    // Function to toggle the domain using the id and domain name from the URL and scroll to the section with the id
     const toggleDomain = (domain, id) => {
         const domainUrl = domain.replace(/\s+/g, " ").toLowerCase();
         navigateTo(`/datasets/${domainUrl}#${id}`);
@@ -50,11 +67,11 @@ function OnThisPage({ filteredData }) {
             element.scrollIntoView({ behavior: "smooth", block: "center" });
         }
     };
-    
+    // Render the JSX element
     return (
         <div className="hidden lg:block">
-            <div className="border-l border-amber-500/80 p-4  rounded-lg shadow-amber-500/10 drop-shadow-lg shadow-lg flex fixed justify-end items-end max-w-fit ">
-                <div className=" flex flex-col justify-start  ">
+            <div className="border-l border-amber-500/80 p-4 lg:ml-8 rounded-lg shadow-amber-500/10 drop-shadow-lg shadow-lg flex fixed justify-end items-end max-w-fit">
+                <div className=" flex flex-col justify-start">
                     <div className="dark:text-white text-xl font-semibold">
                         On this page
                     </div>

@@ -1,22 +1,36 @@
+// Import necessary components and libraries
 import { useState } from 'react';
 
-const ScrollToTopButton = () => {
-  const [isVisible, setIsVisible] = useState(false);
+/**
+ * @function ScrollToTopButton
+ * @description This component is the scroll to top button component of the website.
+ * @returns ScrollToTopButton component
+*/
 
+const ScrollToTopButton = () => {
+  // State for button visibility
+  const [isVisible, setIsVisible] = useState(false);
+  /* Implement the following functions: 
+    * handleScroll 📜
+    * scrollToTop 😉
+  */
+
+  // Function to handle scroll
   const handleScroll = () => {
     const scrollTop = document.documentElement.scrollTop;
     setIsVisible(scrollTop > 0);
   };
 
+  // Function to scroll to top
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
       behavior: 'smooth',
     });
   };
-
+  // Add event listener to handle scroll
   window.addEventListener('scroll', handleScroll);
-
+  // Return the button
   return (
     <button
       className={`${

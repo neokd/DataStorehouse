@@ -1,27 +1,42 @@
+// Import necessary components and libraries
 import { useState, useEffect } from 'react';
 import Searchbar from './Searchbar';
 import { useNavigate, useLocation, Link } from 'react-router-dom';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-function Sidebar() {
-  const [showModal, setShowModal] = useState(false);
-  const [sidebarVisible, setSidebarVisible] = useState(false);
-  const [activeDropDown, setActiveDropDown] = useState([]);
-  const [activeDomain, setActiveDomain] = useState('');
-  const [datasets, setDatasets] = useState([]);
-  const navigateTo = useNavigate();
-  const [sidebarElement, setSidebarElement] = useState(0);
-  const activeId = useLocation().hash.substr(1);
-  const getIdFromUrl = location.hash.startsWith('#') ? location.hash.substring(1) : '';
-  const handleOnClose = () => {
-    setShowModal(false);
-  };
+/**
+ * @function Sidebar
+ * @description This component is the sidebar component of the website.
+ * @returns Sidebar component
+*/
 
+function Sidebar() {
+  // To show or hide the modal
+  const [showModal, setShowModal] = useState(false);
+  // Visibility of the sidebar on mobile devices
+  const [sidebarVisible, setSidebarVisible] = useState(false);
+  // State to hold the active dropdown items for the domain
+  const [activeDropDown, setActiveDropDown] = useState([]);
+  // State to hold the active domain
+  const [activeDomain, setActiveDomain] = useState('');
+  // State to hold the datasets
+  const [datasets, setDatasets] = useState([]);
+  // Navigate hook for redirection
+  const navigateTo = useNavigate();
+  // State to hold the active sidebar element
+  const [sidebarElement, setSidebarElement] = useState(0);
+  // To use the current location of the page
+  const activeId = useLocation().hash.substr(1);
+  // To get the id from the URL
+  const getIdFromUrl = location.hash.startsWith('#') ? location.hash.substring(1) : '';
+  
+  // AOS library for animations on scroll
   useEffect(() => {
     AOS.init();
   }, []);
 
+  // Using useEffect to fetch the data from the JSON file
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -39,6 +54,7 @@ function Sidebar() {
     fetchData();
   }, []);
 
+  // Using useffect to handle keyboard shortcuts
   useEffect(() => {
     const handleKeyPress = (event) => {
       if (event.keyCode === 75 && event.metaKey) {
@@ -59,6 +75,7 @@ function Sidebar() {
     };
   }, [showModal]);
 
+  // using useeffect to store to store the active dropdown items for the domain
   useEffect(() => {
     if (activeId) {
       const domain = datasets.find((domain) =>
@@ -70,12 +87,14 @@ function Sidebar() {
     }
   }, [activeId, datasets]);
 
+  // Navigate to the active domain
   useEffect(() => {
     if (activeDomain && !sidebarElement) {
       navigateTo(`/datasets/${activeDomain}`);
     }
   }, [activeDomain, sidebarElement, navigateTo]);
 
+  // To set the active sidebar element from id 
   useEffect(() => {
     setSidebarElement(activeId);
     const domain = datasets.find((domain) =>
@@ -91,6 +110,35 @@ function Sidebar() {
     }
   }, [activeId, datasets, getIdFromUrl]);
 
+  // To scroll to the active element 
+  useEffect(() => {
+    if (location.hash.startsWith('#')) {
+      const element = document.getElementById(location.hash.substr(1));
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }
+    }
+  })
+
+  // To show or hide the sidebar on mobile devices
+  useEffect(() => {
+    showSideBarMobileView();
+    window.addEventListener('resize', showSideBarMobileView);
+    return () => {
+      window.removeEventListener('resize', showSideBarMobileView);
+    };
+  }, []);
+
+  /**
+   * List of functions to implement
+   *  - toggleDomain
+   * - handleInputClick
+   * - toggleDropDown
+   * - showSideBarMobileView
+   * - handleOnClose
+   */
+
+  // Function to toggle the domain and navigate to the domain
   const toggleDomain = (domain, id) => {
     const domainUrl = domain.replace(/\s+/g, ' ').toLowerCase();
     if (id === null && domainUrl) {
@@ -105,13 +153,15 @@ function Sidebar() {
     setShowModal(false);
   };
 
+  // Function to handle the input click
   const handleInputClick = () => {
     setShowModal(true);
     if (window.innerHeight < 768) {
       setSidebarVisible(false);
     }
   };
-
+ 
+  // Function to toggle the dropdown
   const toggleDropDown = (id) => {
     if (activeDropDown.includes(id)) {
       setActiveDropDown(activeDropDown.filter((dropDownId) => dropDownId !== id));
@@ -121,29 +171,20 @@ function Sidebar() {
     setActiveDomain();
   };
 
+  // Function to show the sidebar on mobile devices
   const showSideBarMobileView = () => {
     if (window.innerWidth > 768) {
       setSidebarVisible(true);
       return;
     }
   };
-  
-  useEffect(() => {
-    if (location.hash.startsWith('#')) {
-      const element = document.getElementById(location.hash.substr(1));
-      if (element) {
-        element.scrollIntoView({ behavior: 'smooth', block: 'center' });
-      }
-    }
-  })
-  useEffect(() => {
-    showSideBarMobileView();
-    window.addEventListener('resize', showSideBarMobileView);
-    return () => {
-      window.removeEventListener('resize', showSideBarMobileView);
-    };
-  }, []);
 
+  // Function to handle the close of the modal
+  const handleOnClose = () => {
+    setShowModal(false);
+  };
+
+  // Render the JSX Component
   return (
     <div className='flex'>
       {

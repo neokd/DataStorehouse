@@ -1,21 +1,36 @@
+// Import necessary components and libraries
 import { Link } from "react-router-dom";
 import useTheme from "../hooks/useTheme";
 import Searchbar from "./Searchbar";
 import { useState, useEffect } from "react";
 
+/**
+ * @function Navbar
+ * @description This component is the navbar of the website. 🚀
+ * @returns Navbar component
+*/
 function Navbar() {
+    // Function to check if the current route is active ✨
     const isActiveRoute = (route) => {
         const regex = new RegExp(`^${route}(\/.*)?$`);
         return regex.test(window.location.pathname);
     };
+
+    // Custom hook to get and set theme 🌞🌙
     const [nextTheme, setTheme] = useTheme();
+
+    // State for modal visibility 🔍
     const [showModal, setShowModal] = useState(false);
+
+    // State for mobile view 📱
     const [isMobileView, setIsMobileView] = useState(window.innerWidth < 768);
 
+    // Function to handle closing the modal
     const handleOnClose = () => {
         setShowModal(false);
     };
 
+    // Function to handle input click and open the modal based on window size 🔍
     useEffect(() => {
         const handleResize = () => {
             setIsMobileView(window.innerWidth < 768);
@@ -27,7 +42,7 @@ function Navbar() {
             window.removeEventListener("resize", handleResize);
         };
     }, []);
-
+    // Render the JSX component 
     return (
         <div>
             <nav className="flex items-center md:justify-between flex-wrap lg:fixed top-0 lg:h-24 z-40 w-full backdrop-blur flex-none bg-blur py-4 drop-shadow-lg dark:bg-customGray/80 dark:text-white border-b border-gray-700 text-black ">

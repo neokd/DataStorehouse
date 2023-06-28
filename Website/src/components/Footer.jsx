@@ -1,7 +1,13 @@
 import { Link } from "react-router-dom"
 
+/**
+ * @function Footer
+ * @description Footer component for the website
+ * @returns Footer component
+ */
 
 function Footer() {
+  // Render the JSX element
   return (
     <div className="bottom-0 text-center ">
       <div className='dark:bg-customGray/5 dark:text-white/50 border-t border-white/40 

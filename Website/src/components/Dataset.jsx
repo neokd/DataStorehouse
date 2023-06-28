@@ -1,10 +1,17 @@
+// Import necessary components and libraries
 import Footer from './Footer';
 import Navbar from './Navbar';
 import PageNavigation from './PageNavigation';
 import Sidebar from './Sidebar';
 import { Link } from 'react-router-dom';
 
+/**
+ * @function Dataset
+ * @description This component is the dataset/intial page of the website.
+ * @returns Dataset component
+ */
 function Dataset() {
+  // Data for features section
   const data = [
     {
       feature: "Contributing",
@@ -32,7 +39,8 @@ function Dataset() {
       description: "Categorize and organize datasets using tags.",
     },
   ];
-  
+
+  // Render the JSX element
   return (
     <div>
       <div className="dark:bg-customGray flex flex-col min-h-screen overflow-x-clip">
