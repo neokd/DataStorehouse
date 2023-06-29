@@ -1,6 +1,6 @@
 {
   "redirects": [
-    { "source": "/files/:path*", "destination": "https://DataStorehouse.loca.lt/:path*", "statusCode": 302 }
+    { "source": "/files/:path*", "destination": "https://datastore.loca.lt/:path*", "statusCode": 302 }
   ],
   "rewrites": [
     { "source": "/(.*)", "destination": "/" }
