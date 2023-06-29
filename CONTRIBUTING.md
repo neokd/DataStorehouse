@@ -57,7 +57,7 @@ Please note that by contributing to DataStoreHouse, you are expected to follow t
 
 We appreciate your contributions and look forward to building a comprehensive repository of high-quality datasets together!
 
-If you have any questions or need further assistance, feel free to reach out to us at DataStoreHousecontribution@gmail.com .
+If you have any questions or need further assistance, feel free to reach out to us at datashcontribution@gmail.com .
 
 Happy contributing!
 
