@@ -1,14 +1,14 @@
-# DataStoreHouse Contribution Guidelines
+# DataStorehouse Contribution Guidelines
 
-Thank you for your interest in contributing to DataStoreHouse! We welcome contributions from the community to help grow and improve the dataset repository. Please take a moment to review the guidelines below before making a contribution.
+Thank you for your interest in contributing to DataStorehouse! We welcome contributions from the community to help grow and improve the dataset repository. Please take a moment to review the guidelines below before making a contribution.
 
 ## How to Contribute
 
-1. Fork the DataStoreHouse repository on GitHub.
+1. Fork the DataStorehouse repository on GitHub.
 
 2. Clone your forked repository to your local machine:
 ```shell
-git clone https://github.com/your-username/DataStoreHouse.git
+git clone https://github.com/your-username/DataStorehouse.git
 ```
 3. Create a new branch for your contribution:
 ```shell
@@ -27,11 +27,11 @@ git commit -m "Add datasets for <domain>"
 git push origin your-branch-name
 ```
 
-7. Open a pull request from your branch to the main DataStoreHouse repository.
+7. Open a pull request from your branch to the main DataStorehouse repository.
 
 8. Wait for the repository maintainers to review your contribution. They may provide feedback or request changes before merging your pull request.
 
-9. Once your pull request is approved and merged, your datasets will be added to the DataStoreHouse repository!
+9. Once your pull request is approved and merged, your datasets will be added to the DataStorehouse repository!
 
 ## Guidelines for Dataset Contribution
 
@@ -53,11 +53,13 @@ git push origin your-branch-name
 
 ## Code of Conduct
 
-Please note that by contributing to DataStoreHouse, you are expected to follow the [Code of Conduct](https://github.com/neokd/DataStoreHouse/blob/main/CODE_OF_CONDUCT.md) to ensure a respectful and inclusive environment for all contributors.
+Please note that by contributing to DataStorehouse, you are expected to follow the [Code of Conduct](https://github.com/neokd/DataStorehouse/blob/main/CODE_OF_CONDUCT.md) to ensure a respectful and inclusive environment for all contributors.
 
 We appreciate your contributions and look forward to building a comprehensive repository of high-quality datasets together!
 
+
 If you have any questions or need further assistance, feel free to reach out to us at datashcontribution@gmail.com .
+
 
 Happy contributing!
 

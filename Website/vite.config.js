@@ -5,7 +5,7 @@ export default defineConfig({
   server: {
     proxy: {
       '/files': {
-        target: 'https://DataStoreHouse.loca.lt',
+        target: 'https://DataStorehouse.loca.lt',
         changeOrigin: true,
         rewrite: (path) => path.replace(/^\/files/, ''),
       },

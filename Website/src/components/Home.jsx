@@ -61,7 +61,7 @@ function Home() {
         </div>
         <div className="dark:text-white text-center lg:w-7/12 container">
           <h1 className='text-4xl lg:text-6xl mb-6 font-bold'>Unleash Your <span className='text-amber-500'>Project's Potential</span>, Rapidly Build Modern Applications without Leaving Your Development Zone! </h1>
-          <h2 className='text-md lg:text-3xl text-gray-700 dark:text-gray-400 lg:mx-24'>Ignite Collaboration. Empower Projects. Shape Data-driven Designs. Build, Collaborate, and Innovate with DataStoreHouse.</h2>
+          <h2 className='text-md lg:text-3xl text-gray-700 dark:text-gray-400 lg:mx-24'>Ignite Collaboration. Empower Projects. Shape Data-driven Designs. Build, Collaborate, and Innovate with DataStorehouse.</h2>
           <div className='lg:mt-12 mt-6'>
             <button className='mt-4 p-2.5 mr-4 rounded-lg text-xl bg-amber-500'>
               <Link to='/datasets'>Getting started</Link>
