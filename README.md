@@ -1,14 +1,14 @@
 <div align="center">
 
-# DataBucket 🚀
+# DataStoreHouse 🚀
 
-DataBucket is an open-source project that aims to create a collaborative platform for gathering and sharing a wide variety of datasets. It provides a centralized repository where individuals and organizations can contribute, discover, and collaborate on diverse datasets for various domains. 📊📚
+DataStoreHouse is an open-source project that aims to create a collaborative platform for gathering and sharing a wide variety of datasets. It provides a centralized repository where individuals and organizations can contribute, discover, and collaborate on diverse datasets for various domains. 📊📚
 
 </div>
 
 ## Features ✨
 
-- **Contributing**: Easily contribute your own datasets to the DataBucket repository. ✅
+- **Contributing**: Easily contribute your own datasets to the DataStoreHouse repository. ✅
 - **Discover**: Explore a wide range of datasets across different domains. 🔍🌐
 - **Collaborate**: Connect with other users and collaborate on dataset projects. 🤝💡
 - **Search**: Quickly find datasets using the powerful search functionality. 🔎
@@ -16,14 +16,14 @@ DataBucket is an open-source project that aims to create a collaborative platfor
 
 ## Installation 🛠️
 
-To get started with DataBucket, follow these steps:
+To get started with DataStoreHouse, follow these steps:
 
-1. Clone the repository: `git clone https://github.com/neokd/DataBucket.git`
-2. Navigate to the project directory: `cd DataBucket`
+1. Clone the repository: `git clone https://github.com/neokd/DataStoreHouse.git`
+2. Navigate to the project directory: `cd DataStoreHouse`
 
 ## Contributing 👥
 
-Contributions are welcome! If you have a dataset that you would like to add to DataBucket, please follow these steps:
+Contributions are welcome! If you have a dataset that you would like to add to DataStoreHouse, please follow these steps:
 
 1. Fork the repository.
 2. Create a new branch: `git checkout -b add-dataset`
@@ -37,6 +37,6 @@ Please ensure that your dataset adheres to the guidelines and standards defined 
 
 ## License 📝
 
-DataBucket is released under the [MIT License](./LICENSE.md). 📄
+DataStoreHouse is released under the [MIT License](./LICENSE.md). 📄
 
-Feel free to contribute and make use of the DataBucket platform to collaborate and explore diverse datasets for your projects! 🌟
+Feel free to contribute and make use of the DataStoreHouse platform to collaborate and explore diverse datasets for your projects! 🌟

@@ -1,20 +1,20 @@
-# DataBucket Contribution Guidelines
+# DataStoreHouse Contribution Guidelines
 
-Thank you for your interest in contributing to DataBucket! We welcome contributions from the community to help grow and improve the dataset repository. Please take a moment to review the guidelines below before making a contribution.
+Thank you for your interest in contributing to DataStoreHouse! We welcome contributions from the community to help grow and improve the dataset repository. Please take a moment to review the guidelines below before making a contribution.
 
 ## How to Contribute
 
-1. Fork the DataBucket repository on GitHub.
+1. Fork the DataStoreHouse repository on GitHub.
 
 2. Clone your forked repository to your local machine:
 ```shell
-git clone https://github.com/your-username/DataBucket.git
+git clone https://github.com/your-username/DataStoreHouse.git
 ```
 3. Create a new branch for your contribution:
 ```shell
 git checkout -b your-branch-name
 ```
-4. Add your datasets to the appropriate domain folder under the `Bucket` directory. Make sure to follow the naming conventions and provide a descriptive README file for each dataset.
+4. Add your datasets to the appropriate domain folder under the `StoreHouse` directory. Make sure to follow the naming conventions and provide a descriptive README file for each dataset.
 
 5. Commit your changes with a meaningful commit message:
 ```shell
@@ -27,11 +27,11 @@ git commit -m "Add datasets for <domain>"
 git push origin your-branch-name
 ```
 
-7. Open a pull request from your branch to the main DataBucket repository.
+7. Open a pull request from your branch to the main DataStoreHouse repository.
 
 8. Wait for the repository maintainers to review your contribution. They may provide feedback or request changes before merging your pull request.
 
-9. Once your pull request is approved and merged, your datasets will be added to the DataBucket repository!
+9. Once your pull request is approved and merged, your datasets will be added to the DataStoreHouse repository!
 
 ## Guidelines for Dataset Contribution
 
@@ -53,11 +53,11 @@ git push origin your-branch-name
 
 ## Code of Conduct
 
-Please note that by contributing to DataBucket, you are expected to follow the [Code of Conduct](https://github.com/neokd/DataBucket/blob/main/CODE_OF_CONDUCT.md) to ensure a respectful and inclusive environment for all contributors.
+Please note that by contributing to DataStoreHouse, you are expected to follow the [Code of Conduct](https://github.com/neokd/DataStoreHouse/blob/main/CODE_OF_CONDUCT.md) to ensure a respectful and inclusive environment for all contributors.
 
 We appreciate your contributions and look forward to building a comprehensive repository of high-quality datasets together!
 
-If you have any questions or need further assistance, feel free to reach out to us at databucketcontribution@gmail.com .
+If you have any questions or need further assistance, feel free to reach out to us at DataStoreHousecontribution@gmail.com .
 
 Happy contributing!
 
