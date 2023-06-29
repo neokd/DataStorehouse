@@ -1,14 +1,14 @@
 <div align="center">
 
-# DataStoreHouse 🚀
+# DataStorehouse 🚀
 
-DataStoreHouse is an open-source project that aims to create a collaborative platform for gathering and sharing a wide variety of datasets. It provides a centralized repository where individuals and organizations can contribute, discover, and collaborate on diverse datasets for various domains. 📊📚
+DataStorehouse is an open-source project that aims to create a collaborative platform for gathering and sharing a wide variety of datasets. It provides a centralized repository where individuals and organizations can contribute, discover, and collaborate on diverse datasets for various domains. 📊📚
 
 </div>
 
 ## Features ✨
 
-- **Contributing**: Easily contribute your own datasets to the DataStoreHouse repository. ✅
+- **Contributing**: Easily contribute your own datasets to the DataStorehouse repository. ✅
 - **Discover**: Explore a wide range of datasets across different domains. 🔍🌐
 - **Collaborate**: Connect with other users and collaborate on dataset projects. 🤝💡
 - **Search**: Quickly find datasets using the powerful search functionality. 🔎
@@ -16,14 +16,14 @@ DataStoreHouse is an open-source project that aims to create a collaborative pla
 
 ## Installation 🛠️
 
-To get started with DataStoreHouse, follow these steps:
+To get started with DataStorehouse, follow these steps:
 
-1. Clone the repository: `git clone https://github.com/neokd/DataStoreHouse.git`
-2. Navigate to the project directory: `cd DataStoreHouse`
+1. Clone the repository: `git clone https://github.com/neokd/DataStorehouse.git`
+2. Navigate to the project directory: `cd DataStorehouse`
 
 ## Contributing 👥
 
-Contributions are welcome! If you have a dataset that you would like to add to DataStoreHouse, please follow these steps:
+Contributions are welcome! If you have a dataset that you would like to add to DataStorehouse, please follow these steps:
 
 1. Fork the repository.
 2. Create a new branch: `git checkout -b add-dataset`
@@ -37,6 +37,6 @@ Please ensure that your dataset adheres to the guidelines and standards defined 
 
 ## License 📝
 
-DataStoreHouse is released under the [MIT License](./LICENSE.md). 📄
+DataStorehouse is released under the [MIT License](./LICENSE.md). 📄
 
-Feel free to contribute and make use of the DataStoreHouse platform to collaborate and explore diverse datasets for your projects! 🌟
+Feel free to contribute and make use of the DataStorehouse platform to collaborate and explore diverse datasets for your projects! 🌟

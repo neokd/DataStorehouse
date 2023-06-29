@@ -16,7 +16,7 @@ function Dataset() {
     {
       feature: "Contributing",
       icon: "✅",
-      description: "Easily contribute your own datasets to the DataStoreHouse repository.",
+      description: "Easily contribute your own datasets to the DataStorehouse repository.",
     },
     {
       feature: "Discover",
@@ -53,7 +53,7 @@ function Dataset() {
             </h2>
             <div className="h-[1px] mb-8 bg-white"></div>
             <p className="text-2xl">
-              DataStoreHouse is an open-source project that aims to create a collaborative platform for gathering and sharing a wide variety of datasets. It provides a centralized repository where individuals and organizations can contribute, discover, and collaborate on diverse datasets for various domains.
+              DataStorehouse is an open-source project that aims to create a collaborative platform for gathering and sharing a wide variety of datasets. It provides a centralized repository where individuals and organizations can contribute, discover, and collaborate on diverse datasets for various domains.
             </p>
             <h2 className="text-4xl font-bold my-6">Features</h2>
             <ul className="text-xl ml-4">
@@ -71,7 +71,7 @@ function Dataset() {
               <div className="flex items-start justify-start">
                 <div className="flex flex-cols">
                   <a
-                    href="https://github.com/neokd/DataStoreHouse/blob/main/CONTRIBUTING.md"
+                    href="https://github.com/neokd/DataStorehouse/blob/main/CONTRIBUTING.md"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="bg-amber-500 text-white font-bold py-3 px-6 rounded-full shadow-lg"
@@ -84,7 +84,7 @@ function Dataset() {
             <div className="mt-8">
               <h2 className="text-4xl font-bold my-6">License</h2>
               <p className="text-2xl">
-                DataStoreHouse is released under the <Link className='border-b-2 border-amber-500' target='_blank' to="https://github.com/neokd/DataStoreHouse/blob/Website/LICENSE.md">MIT license.</Link>
+                DataStorehouse is released under the <Link className='border-b-2 border-amber-500' target='_blank' to="https://github.com/neokd/DataStorehouse/blob/Website/LICENSE.md">MIT license.</Link>
               </p>
             </div>
             <div>

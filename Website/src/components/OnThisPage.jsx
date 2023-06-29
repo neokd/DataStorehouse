@@ -94,7 +94,7 @@ function OnThisPage({ filteredData }) {
                         <div className="border-t dark:border-white/30 text-md mt-6">
                             <button className="mt-3 inline-flex flex-row">
                                
-                                <Link to={`https://github.com/neokd/DataStoreHouse/issues/new?title=Feedback%20for%20${ decodeURIComponent(pathSegments)}&body=Feedback%20for%20${decodeURIComponent(pathSegments)}&labels=feedback `} className="mr-2" target="_blank" rel="noopener noreferrer">Give us feedback </Link>
+                                <Link to={`https://github.com/neokd/DataStorehouse/issues/new?title=Feedback%20for%20${ decodeURIComponent(pathSegments)}&body=Feedback%20for%20${decodeURIComponent(pathSegments)}&labels=feedback `} className="mr-2" target="_blank" rel="noopener noreferrer">Give us feedback </Link>
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4 mt-1">
                                     <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
 

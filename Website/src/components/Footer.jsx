@@ -14,7 +14,7 @@ function Footer() {
                py-8 flex flex-col justify-center items-center'>
         <div className="mb-4 text-white">
           <button className="mx-2">
-            <Link to='https://github.com/neokd/DataStoreHouse/' className='bg-amber-500 ' target='_blank'>
+            <Link to='https://github.com/neokd/DataStorehouse/' className='bg-amber-500 ' target='_blank'>
               <div className='p-3 border-amber-500 rounded-full bg-amber-500 '>
                 <svg
                   xmlns='http://www.w3.org/2000/svg'
@@ -43,7 +43,7 @@ function Footer() {
           </button>
         </div>
         <div>
-          &copy;<Link to='https://github.com/neokd/DataStoreHouse'>DataStoreHouse</Link>  2023 | Developed by Coders for Coders 👩‍💻🧑‍💻</div>
+          &copy;<Link to='https://github.com/neokd/DataStorehouse'>DataStorehouse</Link>  2023 | Developed by Coders for Coders 👩‍💻🧑‍💻</div>
       </div>
     </div>
   )
