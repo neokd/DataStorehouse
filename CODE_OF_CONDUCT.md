@@ -1,6 +1,6 @@
-# DataBucket Code of Conduct
+# DataStoreHouse Code of Conduct
 
-DataBucket is an open and inclusive project that values collaboration, respect, and a positive community. We strive to provide a safe and welcoming environment for all participants.
+DataStoreHouse is an open and inclusive project that values collaboration, respect, and a positive community. We strive to provide a safe and welcoming environment for all participants.
 
 ## Expected Behavior
 
@@ -34,7 +34,7 @@ This Code of Conduct is inspired by the Contributor Covenant (https://www.contri
 
 ## Scope
 
-This Code of Conduct applies to all project spaces, including GitHub repositories, issue trackers, and communication channels associated with the DataBucket project.
+This Code of Conduct applies to all project spaces, including GitHub repositories, issue trackers, and communication channels associated with the DataStoreHouse project.
 
-By participating in the DataBucket project, you are expected to adhere to this Code of Conduct and help create a positive and inclusive community.
+By participating in the DataStoreHouse project, you are expected to adhere to this Code of Conduct and help create a positive and inclusive community.
 

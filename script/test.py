@@ -1,4 +1,4 @@
-# In Progress
+# ---- Under Development ----
 import os
 import json
 import datetime
@@ -36,7 +36,7 @@ def get_dataset_info(directory):
             else:
                 filenames[file] = [file_type]
             
-            github_path = "https://github.com/neokd/DataBucket/blob/Website" + directory.strip('.') + "/" + file.replace(' ', '%20')
+            github_path = "https://github.com/neokd/DataStoreHouse/blob/Website" + directory.strip('.') + "/" + file.replace(' ', '%20')
             dataset = {
                 "id": generate(size=10),
                 "title": os.path.splitext(file)[0],

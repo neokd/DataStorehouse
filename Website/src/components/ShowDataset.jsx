@@ -9,11 +9,14 @@ import ScrollToTopButton from './ScrollToTopButton';
 import Footer from './Footer';
 import PageNavigation from './PageNavigation';
 import OnThisPage from './OnThisPage';
+import ReactGA from 'react-ga4';
 
 /**
  * Component for displaying a dataset.
  */
 function ShowDataset() {
+  // Initialize Google Analytics
+  ReactGA.initialize('G-HHN11Y3807');
   // Get the current location using the useLocation() hook
   const location = useLocation();
   // Get the navigation function using the useNavigate() hook
@@ -72,6 +75,7 @@ function ShowDataset() {
    * - handleDownload
    * - activateCard
    * - getCurrentDomain
+   * - getButtonAnalytics
    **/
 
   // Copy the domain URL to the clipboard
@@ -125,6 +129,15 @@ function ShowDataset() {
     return domain;
   };
 
+  // Get the button analytics
+  const getButtonAnalytics = () => {
+    ReactGA.event({
+      category: 'Button',
+      action: 'Click',
+      label: 'Download Dataset'
+    });
+  };
+
   const pathSegments = location.pathname.split('/').filter(segment => segment !== '');
   const getIdFromUrl = location.hash.startsWith('#') ? location.hash.substring(1) : '';
   const filteredData = data.filter(
@@ -138,7 +151,7 @@ function ShowDataset() {
         <Navbar />
         <Sidebar />
         <div className='container flex lg:flex-row flex-col relative lg:ml-72 dark:text-white pt-8 lg:pt-36 nunito lg:mx-4'>
-          <div className=' mx-4 md:mx-8 lg:mx-16 xl:mx-32'>
+          <div className='mx-4 md:mx-8 lg:mx-16 xl:mx-32'>
             <nav className='hidden md:block'>
               <ol className="inline-flex items-center text-xl font-semibold">
                 {pathSegments.map((segment, index) => (
@@ -161,7 +174,7 @@ function ShowDataset() {
                 )}
               </ol>
             </nav>
-            <div className='flex flex-col lg:flex-row '>
+            <div className='flex flex-col lg:flex-row'>
               {filteredData.map((domain) => (
                 <div key={domain.domain}>
                   <div className='inline-flex'>
@@ -184,7 +197,7 @@ function ShowDataset() {
                   </div>
                   <div className="">
                     {domain.datasets.map((item, index) => (
-                      <div onClick={() => activateCard(domain.domain, item.id)} key={item.id} id={item.id} data-aos={index > 0 ? 'fade-up' : ''} data-aos-easing='linear' data-aos-duration='250' className={`scrollspy-section w-full lg:w-128 xl:w-144 2xl:w-180 drop-shadow-lg bg-white/75 dark:drop-shadow-none  dark:bg-white/10   my-4 hover:border-amber-200 rounded-2xl p-8 leading-10 ${getIdFromUrl === item.id ? 'shadow-md shadow-amber-500' : ''}`}>
+                      <div onClick={() => activateCard(domain.domain, item.id)} key={item.id} id={item.id} data-aos={index > 0 ? 'fade-up' : ''} data-aos-easing='linear' data-aos-duration='250' className={`scrollspy-section w-full lg:w-84 xl:w-144 2xl:w-180 drop-shadow-lg bg-white/75 dark:drop-shadow-none  dark:bg-white/10   my-4 hover:border-amber-200 rounded-2xl p-8 leading-10 ${getIdFromUrl === item.id ? 'shadow-md shadow-amber-500' : ''}`}>
                         <div className='flex justify-between'>
                           <Link to={`${item.githubPath}`} target='_blank' className='inline-flex'>
                             <h1 className='dark:text-white/90 text-3xl font-semibold mr-2'>{item.title}</h1>
@@ -222,7 +235,7 @@ function ShowDataset() {
                           </span>
                           {
                             item.githubPath.match(/github.com/g) ? (
-                              <button>
+                              <button onClick={getButtonAnalytics}>
                                 <Link to={item.githubPath} className=' ' target='_blank'>
                                   <div className='p-3 border-amber-500 rounded-full bg-amber-500 '>
                                     <svg
@@ -242,7 +255,10 @@ function ShowDataset() {
                                 </Link>
                               </button>
                             ) : (
-                              <button className='' onClick={() => handleDownload(item.githubPath, item.title)}>
+                              <button className='' onClick={() => {
+                                getButtonAnalytics()
+                                handleDownload(item.githubPath, item.title)
+                                }}>
                                 <div className='p-3 border-amber-500 rounded-full bg-amber-500 '>
                                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
                                     <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75l3 3m0 0l3-3m-3 3v-7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />

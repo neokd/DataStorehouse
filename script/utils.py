@@ -95,6 +95,6 @@ class Utils:
 # Driver Code
 if __name__ == '__main__':
     file_converter = Utils()
-    txt_file_path = '/Users/kuldeep/Project/DataBucket/Bucket/NLP and Text Analysis/News Aggregator/newsCorpora.csv'
+    txt_file_path = '/Users/kuldeep/Project/DataStoreHouse/Bucket/NLP and Text Analysis/News Aggregator/newsCorpora.csv'
     csv_file_path = 'newsCorpus.csv'
     file_converter.tsv_to_csv(txt_file_path, csv_file_path)

@@ -5,7 +5,7 @@ export default defineConfig({
   server: {
     proxy: {
       '/files': {
-        target: 'https://databucket.loca.lt',
+        target: 'https://DataStoreHouse.loca.lt',
         changeOrigin: true,
         rewrite: (path) => path.replace(/^\/files/, ''),
       },

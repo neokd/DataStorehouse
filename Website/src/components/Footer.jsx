@@ -1,14 +1,20 @@
 import { Link } from "react-router-dom"
 
+/**
+ * @function Footer
+ * @description Footer component for the website
+ * @returns Footer component
+ */
 
 function Footer() {
+  // Render the JSX element
   return (
     <div className="bottom-0 text-center ">
       <div className='dark:bg-customGray/5 dark:text-white/50 border-t border-white/40 
                py-8 flex flex-col justify-center items-center'>
         <div className="mb-4 text-white">
           <button className="mx-2">
-            <Link to='https://github.com/neokd/DataBucket/' className='bg-amber-500 ' target='_blank'>
+            <Link to='https://github.com/neokd/DataStoreHouse/' className='bg-amber-500 ' target='_blank'>
               <div className='p-3 border-amber-500 rounded-full bg-amber-500 '>
                 <svg
                   xmlns='http://www.w3.org/2000/svg'
@@ -27,7 +33,7 @@ function Footer() {
             </Link>
           </button>
           <button className="mx-2">
-            <Link to='mailto:databucketcontribution@gmail.com' className='bg-amber-500 ' target='_blank'>
+            <Link to='mailto:datashcontribution@gmail.com' className='bg-amber-500 ' target='_blank'>
               <div className='p-3 border-amber-500 rounded-full bg-amber-500 '>
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
@@ -37,7 +43,7 @@ function Footer() {
           </button>
         </div>
         <div>
-          &copy;<Link to='https://github.com/neokd/DataBucket'>DataBucket</Link>  2023 | Developed by Coders for Coders 👩‍💻🧑‍💻</div>
+          &copy;<Link to='https://github.com/neokd/DataStoreHouse'>DataStoreHouse</Link>  2023 | Developed by Coders for Coders 👩‍💻🧑‍💻</div>
       </div>
     </div>
   )

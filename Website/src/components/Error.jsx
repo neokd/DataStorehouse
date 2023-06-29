@@ -1,12 +1,22 @@
-import React, { useState, useEffect } from 'react';
+// Import necessary components and libraries
+import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import useTheme from '../hooks/useTheme';
 import Typewriter from 'typewriter-effect';
 
-const Error = () => {
+/**
+ * @function Error  
+ * @description This component is the error page of the website.
+ * @returns Error component
+ */
+function Error() {
+  // Custom hook to handle theme
   useTheme();
+  
+  // Navigate hook for redirection
   const navigateTo = useNavigate();
-
+  
+  // Array of error messages
   const errorMessages = [
     "Oops! The data went for a walk and forgot to leave a trail. We're on the case!",
     "Access Denied! You've stumbled upon a classified dataset. Let's explore the public ones!",
@@ -15,17 +25,21 @@ const Error = () => {
     "Uh-oh! Our algorithms are playing hide-and-seek with the datasets. We'll bring them out soon!"
   ];
 
+  // State to hold the current error message
   const [errorMessage, setErrorMessage] = useState('');
 
+  // Function to handle redirection to the home page
   const handleRedirect = () => {
     navigateTo('/');
   };
 
   useEffect(() => {
+    // Choose a random error message when the component mounts
     const randomIndex = Math.floor(Math.random() * errorMessages.length);
     setErrorMessage(errorMessages[randomIndex]);
   }, []);
 
+  // Render the JSX element
   return (
     <div className="bg-gray-100 dark:bg-customGray flex justify-center items-center flex-col dark:text-white min-h-screen overflow-x-clip">
       <h1 className="text-8xl font-bold nunito">
