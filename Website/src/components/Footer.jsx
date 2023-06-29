@@ -10,7 +10,7 @@ function Footer() {
   // Render the JSX element
   return (
     <div className="bottom-0 text-center ">
-      <div className='dark:bg-customGray/5 dark:text-white/50 border-t border-white/40 
+      <div className='dark:bg-customGray/5 dark:text-white/50 border-t border-black dark:border-white/40 
                py-8 flex flex-col justify-center items-center'>
         <div className="mb-4 text-white">
           <button className="mx-2">

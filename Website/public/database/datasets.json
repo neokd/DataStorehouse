@@ -40,7 +40,7 @@
                 "id": "gnB6AYruZw",
                 "title": "Lego Product Data",
                 "description": "This dataset contains product details of lego. The goal is to predict the product rating, in stock , price and number of reviews. The dataset is in JSON format.",
-                "githubPath": "/files/lego.json",
+                "githubPath": "https://github.com/neokd/DataStorehouse/blob/main/StoreHouse/Business%20and%20E-commerce/LegoProduct.json",
                 "contributor": "neokd",
                 "added": "2023/06/26",
                 "updated": "2023/06/26",
