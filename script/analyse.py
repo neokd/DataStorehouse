@@ -7,7 +7,7 @@ def main():
     # Make sure there are two command-line arguments
     if len(sys.argv) != 2:
         raise ValueError("Usage: python analyse.py file_name")
-    
+
     file_name = sys.argv[1]
 
     # Read a CSV file
@@ -22,7 +22,8 @@ def main():
     else:
         raise ValueError("Only CSV and JSON file format are currently supported")
 
-    # Data is a list of dictionaries, where each dictionary is a row. It represents the file we're analysing
+    # Data is a list of dictionaries, where each dictionary is a row.
+    # It represents the file we're analysing.
 
     # Find the columns on which we'll be working because they contain exclusively numbers
     numerical_columns = find_numerical_columns(data)
@@ -41,8 +42,12 @@ def main():
             values_minus_mean.append((row[column] - mean)**2)
         standard_deviation = sum(values_minus_mean) / len(data)
         standard_deviation = math.sqrt(standard_deviation)
-        print(standard_deviation)
-        
+        outliers = []
+        for row in data:
+            z_score = (row[column] - mean) / standard_deviation
+            if z_score > 3 or z_score < -3:
+                outliers.append((column, row, row[column]))
+
 
 
 def csv_to_dict(filename):
@@ -105,10 +110,10 @@ def find_numerical_columns(data):
         for key in numerical_keys:
             if not isinstance(row[key], int) and not isinstance(row[key], float):
                 to_be_removed.add(key)
-    
+
     for key in to_be_removed:
         numerical_keys.remove(key)
 
     return numerical_keys
-        
+
 main()
