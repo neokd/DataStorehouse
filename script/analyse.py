@@ -35,12 +35,25 @@ def csv_to_dict(filename):
     Was originally published on Stack Overflow
     (https://stackoverflow.com/questions/29432912/convert-a-csv-dictreader-object-to-a-list-of-dictionaries)
     by Exebit
+    I modified it to include type change for numbers
     """
     result_list=[]
     with open(filename) as file_obj:
         reader = csv.DictReader(file_obj)
         for row in reader:
             result_list.append(dict(row))
+
+    # Since all values are considered strings, We must manually change all
+    # values that contain only numbers to int or float type
+    for row in result_list:
+        for item in row:
+            if row[item].isdigit():
+                row[item] = int(row[item])
+            else:
+                try:
+                    row[item] = float(row[item])
+                except:
+                    continue
     return result_list
 
 def json_to_dict(filename):
@@ -81,6 +94,5 @@ def find_numerical_columns(data):
 
     return numerical_keys
         
-
 
 main()
