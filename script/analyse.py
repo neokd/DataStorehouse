@@ -20,7 +20,7 @@ def main():
 
     else:
         raise ValueError("Only CSV and JSON file format are currently supported")
-    
+
     # Data is a list of dictionaries, where each dictionary is a row. It represents the file we're analysing
 
 # This function comes from Stack Overflow: 
