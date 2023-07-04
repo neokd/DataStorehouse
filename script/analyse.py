@@ -2,6 +2,7 @@ import csv
 import sys
 import json
 import math
+import termcolor
 
 def main():
     # Make sure there are two command-line arguments
@@ -27,27 +28,10 @@ def main():
 
     # Find the columns on which we'll be working because they contain exclusively numbers
     numerical_columns = find_numerical_columns(data)
-
-    # Find data outliers for each of the numerical values
-    # A value is considered an outlier if it's Z-score is superior to 3
-    for column in numerical_columns:
-        # Calculate mean of data set
-        mean = 0
-        for row in data:
-            mean += row[column]
-        mean /= len(data)
-        # Calculate standard deviation of data set
-        values_minus_mean = []
-        for row in data:
-            values_minus_mean.append((row[column] - mean)**2)
-        standard_deviation = sum(values_minus_mean) / len(data)
-        standard_deviation = math.sqrt(standard_deviation)
-        outliers = []
-        for row in data:
-            z_score = (row[column] - mean) / standard_deviation
-            if z_score > 3 or z_score < -3:
-                outliers.append((column, row, row[column]))
-
+    # Find outliers in the data
+    outliers = find_outliers(data, numerical_columns)
+    # Neatly output the outliers to the user via the terminal
+    output_outliers(outliers)
 
 
 def csv_to_dict(filename):
@@ -115,5 +99,67 @@ def find_numerical_columns(data):
         numerical_keys.remove(key)
 
     return numerical_keys
+
+def find_outliers(data, numerical_columns):
+    """
+    Given a data set, this function looks at all numerical columns and for each one
+    measures the Z-score of all the values. If the value is above three, the value and
+    additional data about it are added to a list that is then returned 
+
+    Output: list of tuples, all structured this way:
+    tuple[0] : the category in which this sample is an outlier (column)
+    tuple[1] : the actual sample (row)
+    tuple[2] : the value in the sample that is an outlier in its category
+    tuple[3] : the actual Z-score that makes said value an outsider
+    """
+    outliers = []
+    for column in numerical_columns:
+        # Calculate mean of data set
+        mean = 0
+        standard_deviation = 0
+        values_minus_mean = []
+        for row in data:
+            mean += row[column]
+        mean /= len(data)
+        # Calculate standard deviation of data set
+        for row in data:
+            values_minus_mean.append((row[column] - mean)**2)
+        standard_deviation = sum(values_minus_mean) / len(data)
+        standard_deviation = math.sqrt(standard_deviation)
+        
+        for row in data:
+            z_score = (row[column] - mean) / standard_deviation
+            if abs(z_score) > 3:
+                outliers.append((column, row, row[column], z_score))
+        return outliers
+
+def output_outliers(outliers):
+    """
+    This function takes in outliers as implemented in
+    find_outliers (list of tuples) and neatly prints them
+    and other information on the terminal 
+    """
+    if outliers != []:
+        termcolor.cprint("Outliers", 'red')
+    else:
+        termcolor.cprint("No outliers", 'red')
+
+    # Find all columns that have outliers
+    columns_with_outliers = set()
+    for sample in outliers:
+        columns_with_outliers.add(sample[0])
+
+    for column in columns_with_outliers:
+        print("\n")
+        termcolor.cprint(column, 'green')
+        for sample in outliers:
+            if sample[0] == column:
+                name = next(iter(sample[1].values()))
+                termcolor.cprint(name, end=" |", attrs=["bold"])
+                print("Value: ", end="")
+                print(sample[3], end=" |")
+                print(" Z-score = ", sample[3])
+                print("-------------------------")
+
 
 main()
