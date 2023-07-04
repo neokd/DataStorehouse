@@ -1,6 +1,7 @@
 import csv
 import sys
 import json
+import math
 
 def main():
     # Make sure there are two command-line arguments
@@ -25,7 +26,23 @@ def main():
 
     # Find the columns on which we'll be working because they contain exclusively numbers
     numerical_columns = find_numerical_columns(data)
-    print(numerical_columns)
+
+    # Find data outliers for each of the numerical values
+    # A value is considered an outlier if it's Z-score is superior to 3
+    for column in numerical_columns:
+        # Calculate mean of data set
+        mean = 0
+        for row in data:
+            mean += row[column]
+        mean /= len(data)
+        # Calculate standard deviation of data set
+        values_minus_mean = []
+        for row in data:
+            values_minus_mean.append((row[column] - mean)**2)
+        standard_deviation = sum(values_minus_mean) / len(data)
+        standard_deviation = math.sqrt(standard_deviation)
+        print(standard_deviation)
+        
 
 
 def csv_to_dict(filename):
@@ -94,5 +111,4 @@ def find_numerical_columns(data):
 
     return numerical_keys
         
-
 main()
