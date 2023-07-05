@@ -5,9 +5,19 @@ import math
 import termcolor
 
 def main():
+    """
+    The script must be called with a path
+    to a json or csv file, which is then read into the memory.
+    The function find_outliers then mathematically find the
+    outliers (Z-score > 3) and they are then printed to the terminal
+    Note 1 : The program can easily be modified to be a module that can
+    be called from another program for use somewhere else.
+    Note 2: Apart from CSV and JSON, the program could easily support
+    other file types, creating a some_file_type_to_dict function
+    """
     # Make sure there are two command-line arguments
     if len(sys.argv) != 2:
-        raise ValueError("Usage: python analyse.py file_name")
+        raise ValueError("Usage: python find_outliers.py file_name")
 
     file_name = sys.argv[1]
 
@@ -28,6 +38,8 @@ def main():
 
     # Find the columns on which we'll be working because they contain exclusively numbers
     numerical_columns = find_numerical_columns(data)
+    if not numerical_columns:
+        print("No numerical columns")
     # Find outliers in the data
     outliers = find_outliers(data, numerical_columns)
     # Neatly output the outliers to the user via the terminal
