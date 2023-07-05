@@ -227,7 +227,7 @@ function ShowDataset() {
                             {item.tag.map((tag) => (
                               <span
                                 key={tag}
-                                className='text-md font-semibold bg-amber-500 rounded-full text-gray-900 px-2 py-1 lg:mr-2'
+                                className='text-md font-bold bg-amber-500 rounded-full text-gray-900 px-2 py-1 lg:mr-2'
                               >
                                 {tag}
                               </span>
