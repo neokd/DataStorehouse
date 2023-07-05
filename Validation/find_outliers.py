@@ -39,7 +39,7 @@ def main():
     # Find the columns on which we'll be working because they contain exclusively numbers
     numerical_columns = find_numerical_columns(data)
     if not numerical_columns:
-        print("No numerical columns")
+        raise ValueError("No numerical columns")
     # Find outliers in the data
     outliers = find_outliers(data, numerical_columns)
     # Neatly output the outliers to the user via the terminal
