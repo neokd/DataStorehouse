@@ -45,7 +45,6 @@ def main():
     # Neatly output the outliers to the user via the terminal
     output_outliers(outliers)
 
-
 def csv_to_dict(filename):
     """
     This function accepts a path to a CSV file and
@@ -138,7 +137,7 @@ def find_outliers(data, numerical_columns):
             values_minus_mean.append((row[column] - mean)**2)
         standard_deviation = sum(values_minus_mean) / len(data)
         standard_deviation = math.sqrt(standard_deviation)
-        
+
         for row in data:
             z_score = (row[column] - mean) / standard_deviation
             if abs(z_score) > 3:
@@ -162,12 +161,19 @@ def output_outliers(outliers):
         columns_with_outliers.add(sample[0])
 
     for column in columns_with_outliers:
+        count = 0
         print("\n")
-        termcolor.cprint(column, 'green')
+        termcolor.cprint(column, 'green', end='')
+        # Count how many samples are outliers in this column
+        for sample in outliers:
+            if sample[0] == column:
+                count += 1
+        termcolor.cprint(" | Number of outliers = ", color='green', end="")
+        termcolor.cprint(count, color='green')
         for sample in outliers:
             if sample[0] == column:
                 name = next(iter(sample[1].values()))
-                termcolor.cprint(name, end=" |", attrs=["bold"])
+                termcolor.cprint(name, end=" | ", attrs=["bold"])
                 print("Value: ", end="")
                 print(sample[3], end=" |")
                 print(" Z-score = ", sample[3])
