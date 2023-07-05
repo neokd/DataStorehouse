@@ -35,12 +35,11 @@ Contributions are welcome! If you have a dataset that you would like to add to D
 
 Please ensure that your dataset adheres to the guidelines and standards defined in the [CONTRIBUTING.md](./CONTRIBUTING.md) file.
 
-## Contributors 🧑‍💻
+## Project Contributors 🧑‍💻
 <a href="https://github.com/neokd/DataStorehouse/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=neokd/DataStorehouse" />
 </a>
 
-Made with [contrib.rocks](https://contrib.rocks).
 
 ## License 📝
 
