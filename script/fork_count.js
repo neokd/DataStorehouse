@@ -1,6 +1,8 @@
-// This won't expand well, at some point, if there's too 
+// This won't scale well, at some point, if there's too 
 // much traffic on the website Github is going to
-// require
+// require authentification to access the API
+// Documentation:
+// https://docs.github.com/en/rest/repos/forks?apiVersion=2022-11-28
 
 async function getForksCount(owner, repo) {
   try {

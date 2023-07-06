@@ -4,7 +4,6 @@
   "version": "0.0.1",
   "type": "module",
   "scripts": {
-    "start": "react-scripts start",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
@@ -27,8 +26,7 @@
     "react-ga4": "^2.1.0",
     "react-icons": "^4.9.0",
     "react-router-dom": "^6.11.2",
-    "typewriter-effect": "^2.20.1",
-    "react-scripts" : "^5.0.1"
+    "typewriter-effect": "^2.20.1"
   },
   "devDependencies": {
     "@types/react": "^18.0.28",
@@ -42,7 +40,6 @@
     "postcss": "^8.4.23",
     "tailwind-scrollbar": "^3.0.4",
     "tailwindcss": "^3.3.2",
-    "vite": "^4.3.2",
-    "react-scripts" : "^5.0.1"
+    "vite": "^4.3.2"
   }
 }

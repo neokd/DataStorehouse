@@ -23,6 +23,3 @@ dist-ssr
 *.sln
 *.sw?
 .vercel
-
-# React Component Preview
-previewConfig.json
