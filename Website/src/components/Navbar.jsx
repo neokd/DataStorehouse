@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import useTheme from "../hooks/useTheme";
 import Searchbar from "./Searchbar";
 import { useState, useEffect } from "react";
-import { getForksCount } from "../../../script/fork_count"
+import { Octokit, App } from "octokit";
 
 /**
  * @function Navbar
@@ -21,6 +21,7 @@ function Navbar() {
     const [nextTheme, setTheme] = useTheme();
 
     // Find the number of forks of the repository
+    const octokit = new Octokit();
     try {
         // Make a GET request to the GitHub API to fetch the repository information
         const { data } = octokit.repos.get({ owner, repo });
