@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import useTheme from "../hooks/useTheme";
 import Searchbar from "./Searchbar";
 import { useState, useEffect } from "react";
-import { find_number_of_forks } from "../../../script/number_of_forks.js"
+import { getForksCount } from "../../../script/fork_count"
 
 /**
  * @function Navbar
@@ -21,7 +21,7 @@ function Navbar() {
     const [nextTheme, setTheme] = useTheme();
 
     // Find the number of forks of the repository
-    const fork_count = 
+    const fork_count = getForksCount("neokd", "DataStorehouse")
 
     // State for modal visibility 🔍
     const [showModal, setShowModal] = useState(false);
