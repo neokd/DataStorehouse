@@ -9,7 +9,6 @@ async function getForksCount(owner, repo) {
     const forksCount = data.forks_count;
     return forksCount;
   } catch (error) {
-    console.log("Error while fetching the number of forks of the repository")
-    console.error('Error:', error);
+    return "Unknown";
   }
 }
