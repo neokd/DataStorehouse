@@ -21,7 +21,16 @@ function Navbar() {
     const [nextTheme, setTheme] = useTheme();
 
     // Find the number of forks of the repository
-    const fork_count = getForksCount("neokd", "DataStorehouse")
+    try {
+        // Make a GET request to the GitHub API to fetch the repository information
+        const { data } = octokit.repos.get({ owner, repo });
+    
+        // Retrieve the fork count from the response data
+        const forkCount = data.forks_count;
+      } catch (error) {
+        const forkCount = "Unknown";
+        throw error;
+      }
 
     // State for modal visibility 🔍
     const [showModal, setShowModal] = useState(false);
@@ -107,7 +116,7 @@ function Navbar() {
                 </div>
                 <div className="border-amber-500 hidden md:block flex-rows mx-8 duration-100 rounded-lg hover:shadow-lg hover:shadow-amber-500  lg:visible hover:scale-105">
                     <button disabled className="border border-gray-600 rounded-lg p-3">
-                        Fork Count: {fork_count}
+                        Fork Count: { forkCount }
                     </button>
                 </div>
             </nav>
