@@ -35,12 +35,11 @@ Contributions are welcome! If you have a dataset that you would like to add to D
 
 Please ensure that your dataset adheres to the guidelines and standards defined in the [CONTRIBUTING.md](./CONTRIBUTING.md) file.
 
-## Contributors 🧑‍💻
-<img src="https://avatars.githubusercontent.com/u/71772185?s=64&v=4" alt="Kuldeep's profile picture" width="40" align=""> Kuldeep  \
-<img src="https://avatars.githubusercontent.com/u/88505434?s=64&v=4" alt="Priyadharshini's profile picture" width="40"/> Priyadharshini  \
-<img src="https://avatars.githubusercontent.com/u/88589755?s=64&v=4" alt="drawing" width="40"/> GLADWIN.I  \
-<img src="https://avatars.githubusercontent.com/u/101009997?v=4" alt="Emilio's profile picture" width="40"/> Emilio  \
-<img src="https://avatars.githubusercontent.com/u/53504460?s=64&v=4" alt="Anubhav Adhikari's profile picture" width="40"/> Anubhav Adhikari 
+## Project Contributors 🧑‍💻
+<a href="https://github.com/neokd/DataStorehouse/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=neokd/DataStorehouse" />
+</a>
+
 
 ## License 📝
 

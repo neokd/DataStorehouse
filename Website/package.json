@@ -19,7 +19,7 @@
     "file-saver": "^2.0.5",
     "framer-motion": "^10.12.16",
     "fuse.js": "^6.6.2",
-    "octokit": "^2.0.19",
+    "octokit": "^2.1.0",
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
