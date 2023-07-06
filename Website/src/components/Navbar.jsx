@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import useTheme from "../hooks/useTheme";
 import Searchbar from "./Searchbar";
 import { useState, useEffect } from "react";
+import { find_number_of_forks } from "../../../script/number_of_forks.js"
 
 /**
  * @function Navbar
@@ -18,6 +19,9 @@ function Navbar() {
 
     // Custom hook to get and set theme 🌞🌙
     const [nextTheme, setTheme] = useTheme();
+
+    // Find the number of forks of the repository
+    const fork_count = 
 
     // State for modal visibility 🔍
     const [showModal, setShowModal] = useState(false);
@@ -103,7 +107,7 @@ function Navbar() {
                 </div>
                 <div className="border-amber-500 hidden md:block flex-rows mx-8 duration-100 rounded-lg hover:shadow-lg hover:shadow-amber-500  lg:visible hover:scale-105">
                     <button disabled className="border border-gray-600 rounded-lg p-3">
-                        Fork Count: 1
+                        Fork Count: {fork_count}
                     </button>
                 </div>
             </nav>
