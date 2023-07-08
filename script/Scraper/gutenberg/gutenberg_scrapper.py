@@ -13,7 +13,7 @@ class GutenbergScraper:
         Loads the last processed book number from the progress file.
         """
         self.proxy_list = self.load_proxy_list()
-        self.progress_file = "script\progress.txt"
+        self.progress_file = r"script\Scraper\gutenberg\progress.txt"
         self.last_book_number = self.load_progress()
 
     def load_proxy_list(self):
@@ -138,10 +138,10 @@ class GutenbergScraper:
             # Save progress every 100 books
             if book_number % 10 == 0:
                 self.save_progress(book_number)
-                with open("gutenberg_bibliographic_records.json", "w", encoding="utf-8") as file:
+                with open("StoreHouse\Literature\gutenberg_bibliographic_records.json", "a", encoding="utf-8") as file:
                     json.dump(book_list, file, ensure_ascii=False, indent=4)
 
-        with open("gutenberg_bibliographic_records.json", "w", encoding="utf-8") as file:
+        with open("StoreHouse\Literature\gutenberg_bibliographic_records.json", "a", encoding="utf-8") as file:
             json.dump(book_list, file, ensure_ascii=False, indent=4)
 
         print("Scraping complete. Data stored in gutenberg_bibliographic_records.json.")
