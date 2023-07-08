@@ -1,4 +1,7 @@
 # ---- Under Development ----
+# This file is used to scan the StoreHouse directory and generate the dataset.json file
+# The dataset.json file is used to populate the website with the dataset information
+
 import os
 import json
 import datetime
