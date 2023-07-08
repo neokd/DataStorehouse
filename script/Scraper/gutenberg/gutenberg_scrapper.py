@@ -36,10 +36,21 @@ class GutenbergScraper:
         except FileNotFoundError:
             return 1
 
-    def save_progress(self, book_number):
+    def save_progress(self, book_number, book_list):
         """
         Saves the last processed book number to the progress file.
         """
+        #read existing data
+        json_file_path = "StoreHouse\Literature\gutenberg_bibliographic_records.json"
+        with open(json_file_path, "r") as file:
+            json_data = json.load(file)
+        
+        json_data["data"].extend(book_list)
+        #add new data to existing
+        with open(json_file_path, "w", encoding="utf-8") as file:
+            json.dump(json_data, file, ensure_ascii=False, indent=4)
+
+        #save the last book_number
         with open(self.progress_file, "w") as file:
             file.write(str(book_number))
 
@@ -136,13 +147,12 @@ class GutenbergScraper:
             book_number += 1
 
             # Save progress every 100 books
-            if book_number % 10 == 0:
-                self.save_progress(book_number)
-                with open("StoreHouse\Literature\gutenberg_bibliographic_records.json", "a", encoding="utf-8") as file:
-                    json.dump(book_list, file, ensure_ascii=False, indent=4)
+            if book_number % 1 == 0:
+                self.save_progress(book_number, book_list)
+                book_list = []  # to avoid duplicates 
+                
 
-        with open("StoreHouse\Literature\gutenberg_bibliographic_records.json", "a", encoding="utf-8") as file:
-            json.dump(book_list, file, ensure_ascii=False, indent=4)
+        self.save_progress(book_number, book_list)
 
         print("Scraping complete. Data stored in gutenberg_bibliographic_records.json.")
 

@@ -1,0 +1,85 @@
+{
+    "data": [
+        {
+            "book_number": 1,
+            "title": "The Declaration of Independence of the United States of America",
+            "author": "Jefferson, Thomas, 1743-1826",
+            "language": "English",
+            "category": "Text",
+            "release_date": "Dec 1, 1971",
+            "url": "https://www.gutenberg.org/ebooks/1"
+        },
+        {
+            "book_number": 2,
+            "title": "The United States Bill of RightsThe Ten Original Amendments to the Constitution of the United States",
+            "author": "United States",
+            "language": "English",
+            "category": "Text",
+            "release_date": "Dec 1, 1972",
+            "url": "https://www.gutenberg.org/ebooks/2"
+        },
+        {
+            "book_number": 3,
+            "title": "John F. Kennedy's Inaugural Address",
+            "author": "Kennedy, John F. (John Fitzgerald), 1917-1963",
+            "language": "English",
+            "category": "Text",
+            "release_date": "Nov 1, 1973",
+            "url": "https://www.gutenberg.org/ebooks/3"
+        },
+        {
+            "book_number": 4,
+            "title": "Lincoln's Gettysburg AddressGiven November 19, 1863 on the battlefield near Gettysburg, Pennsylvania, USA",
+            "author": "Lincoln, Abraham, 1809-1865",
+            "language": "English",
+            "category": "Text",
+            "release_date": "Nov 1, 1973",
+            "url": "https://www.gutenberg.org/ebooks/4"
+        },
+        {
+            "book_number": 5,
+            "title": "The United States Constitution",
+            "author": "United States",
+            "language": "English",
+            "category": "Text",
+            "release_date": "Dec 1, 1975",
+            "url": "https://www.gutenberg.org/ebooks/5"
+        },
+        {
+            "book_number": 6,
+            "title": "Give Me Liberty or Give Me Death",
+            "author": "Henry, Patrick, 1736-1799",
+            "language": "English",
+            "category": "Text",
+            "release_date": "Dec 1, 1976",
+            "url": "https://www.gutenberg.org/ebooks/6"
+        },
+        {
+            "book_number": 7,
+            "title": "The Mayflower Compact",
+            "author": null,
+            "language": "English",
+            "category": "Text",
+            "release_date": "Dec 1, 1977",
+            "url": "https://www.gutenberg.org/ebooks/7"
+        },
+        {
+            "book_number": 8,
+            "title": "Abraham Lincoln's Second Inaugural Address",
+            "author": "Lincoln, Abraham, 1809-1865",
+            "language": "English",
+            "category": "Text",
+            "release_date": "Dec 1, 1978",
+            "url": "https://www.gutenberg.org/ebooks/8"
+        },
+        {
+            "book_number": 9,
+            "title": "Abraham Lincoln's First Inaugural Address",
+            "author": "Lincoln, Abraham, 1809-1865",
+            "language": "English",
+            "category": "Text",
+            "release_date": "Dec 1, 1979",
+            "url": "https://www.gutenberg.org/ebooks/9"
+        }
+    ]
+}
