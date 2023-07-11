@@ -5,7 +5,7 @@ import math
 import os
 import termcolor
 
-def find_outliers():
+def find_outliers(file_name):
     """
     The script must be called with a path
     to a json or csv file, which is then read into the memory.
@@ -17,8 +17,6 @@ def find_outliers():
     other file types, creating a some_file_type_to_dict function
     """
     # Make sure there are two command-line arguments
-    if len(sys.argv) != 2:
-        raise ValueError("Usage: python find_outliers.py file_path")
 
     file_name = sys.argv[1]
 
@@ -60,7 +58,7 @@ def csv_to_dict(filename):
     I modified it to include type change for numbers
     """
     result_list=[]
-    with open(filename) as file_obj:
+    with open(filename, encoding='UTF-8') as file_obj:
         reader = csv.DictReader(file_obj)
         for row in reader:
             result_list.append(dict(row))
@@ -83,7 +81,7 @@ def json_to_dict(filename):
     This function accepts a path to a JSON file and
     creates a list of dictionaries representing it
     """
-    with open(filename) as file:
+    with open(filename, encoding='UTF-8') as file:
         data = json.load(file)
     return data
 
