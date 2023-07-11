@@ -72,7 +72,7 @@ def csv_to_dict(filename):
             else:
                 try:
                     row[item] = float(row[item])
-                except:
+                except ValueError:
                     continue
     return result_list
 
