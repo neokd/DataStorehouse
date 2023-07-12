@@ -46,12 +46,22 @@ class Github:
         except Exception as ex:
             print(ex)
             return "Error: Failed to retrieve the Github page"
+    
+    def user_readme(self) -> str:
+        try:
+            url=f"https://raw.githubusercontent.com/{self.username}/{self.username}/master/README.md"
+            response = requests.get(url)
+            response = BeautifulSoup(response.text, "html.parser")    
+            readme_text=response.get_text()
+            readme_text='\n'.join([line for line in readme_text.splitlines() if line.strip()])        
+            return readme_text
+        except Exception as ex:
+            print(ex)
+            return "Error: Failed to fetch readme."
 
 
 
         
 if __name__ == '__main__':
     github = Github('neokd')
-    print(github.get_user_name())
-    print(github.get_profile_pic_url())
-    print(github.get_bio())
+    print(github.user_readme())
