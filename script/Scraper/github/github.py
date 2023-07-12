@@ -34,6 +34,19 @@ class Github:
             return img_tag['src'] if img_tag.has_attr('src') else f"Invalid image tag: {img_tag}"
         except Exception as e:
             return f"Exception got raised while extracting profile pic for user: {self.username}: {e}"
+    
+    def get_bio(self) -> str:
+        user_profile=self.scrape_profile()
+        try:
+            bio_element=user_profile.find("div", class_="user-profile-bio")
+            if bio_element:
+                return bio_element.get_text().strip()
+            else:
+                return "Bio not found."
+        except Exception as ex:
+            print(ex)
+            return "Error: Failed to retrieve the Github page"
+
 
 
         
@@ -41,3 +54,4 @@ if __name__ == '__main__':
     github = Github('neokd')
     print(github.get_user_name())
     print(github.get_profile_pic_url())
+    print(github.get_bio())
