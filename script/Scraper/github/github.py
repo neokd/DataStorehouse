@@ -1,5 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
+import re
 
 class Github:
     def __init__(self,username : str):
@@ -59,9 +60,28 @@ class Github:
             print(ex)
             return "Error: Failed to fetch readme."
 
+    def get_socials(self) -> str:
+        user_profile=self.scrape_profile()
+        try:
+            social_li_elements = user_profile.select('ul.vcard-details li')
+            social_media_urls = {}
+
+            for li_element in social_li_elements:
+                link_element = li_element.find('a')
+                if link_element is not None:
+                    social_media_url = link_element['href']
+                    social_media_platform_match = re.search(r'(?<=://)(.*?)(?=/|$)', social_media_url)
+                    if social_media_platform_match:
+                        social_media_platform = social_media_platform_match.group().split('.')[-2] 
+                        social_media_urls[social_media_platform] = social_media_url
+
+            return social_media_urls
+        except Exception as ex:
+            print(ex)
+            return "Error: Failed to fetch socials."
 
 
         
 if __name__ == '__main__':
     github = Github('neokd')
-    print(github.user_readme())
+    print(github.get_socials())
