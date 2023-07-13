@@ -2,7 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 import re
 
-class Github:
+class GithubScraper:
     def __init__(self,username : str):
         self.username = username
 
@@ -60,7 +60,7 @@ class Github:
             print(ex)
             return "Error: Failed to fetch readme."
 
-    def get_socials(self) -> str:
+    def get_socials(self) -> dict:
         user_profile=self.scrape_profile()
         try:
             social_li_elements = user_profile.select('ul.vcard-details li')

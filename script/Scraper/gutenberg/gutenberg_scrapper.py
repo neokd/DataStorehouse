@@ -117,10 +117,6 @@ class GutenbergScraper:
             category_element = soup.find("td", property="dcterms:type").text.strip() if soup.find("td", property="dcterms:type") else None
             release_date_element = soup.find("td", itemprop="datePublished").text.strip() if soup.find("td", itemprop="datePublished") else None
 
-
-
-
-
             book_data = {
                 "book_number": book_number,
                 "title": title_element,
