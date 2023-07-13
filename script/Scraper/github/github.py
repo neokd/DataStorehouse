@@ -58,10 +58,21 @@ class Github:
         except Exception as ex:
             print(ex)
             return "Error: Failed to fetch readme."
+        
+    def get_location(self) -> str:
+        user_profile=self.scrape_profile()
+        try:
+            location_element = user_profile.select('ul.vcard-details li[itemprop="homeLocation"]')
+            if location_element is not None:
+                return location_element[0].find('span',class_='p-label').get_text().strip()
+            
+        except Exception as ex:
+            print(ex)
+            print("Error: Failed to fetch location.")
 
 
 
         
 if __name__ == '__main__':
     github = Github('neokd')
-    print(github.user_readme())
+    print(github.get_location())
