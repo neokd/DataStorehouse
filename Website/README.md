@@ -1,4 +1,4 @@
-<div align="center">
+<div style="text-align:center">
 
 # DataStorehouse 🚀
 
@@ -7,7 +7,7 @@ DataStorehouse is an open-source project that aims to create a collaborative pla
 </div>
 
 ## Table of contents
-* [Requirements](#requiements)
+* [Requirements](#requirements)
 * [Setup](#setup)
 * [Configuration](#configuration)
 * [Usage](#usage)
@@ -25,7 +25,7 @@ To run this project locally, you need to have the following software installed o
 
 
 ## Setup
-To setup this project follow these steps:
+To set up this project follow these steps:
 1. Clone the repository from GitHub: `git clone https://github.com/neokd/DataStorehouse.git`
 
 2. Navigate to the project's directory: `cd DataStorehouse`
@@ -40,7 +40,7 @@ To setup this project follow these steps:
 
 >For macOS/Linux:` source venv/bin/activate`
 
-6. Install the Python dependencies: ` pip install -r requirements.txt`
+6.Install the Python dependencies: ` pip install -r requirements.txt`
 
 
 
@@ -72,4 +72,4 @@ To start the application, follow these steps:
 
 
 ## License 📝
-This project is licensed under the [MIT License](./LICENSE.md).
+This project is licensed under the [MIT License] (./LICENSE.md).
