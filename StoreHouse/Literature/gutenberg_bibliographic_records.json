@@ -1,85 +1,813 @@
-{
-    "data": [
-        {
-            "book_number": 1,
-            "title": "The Declaration of Independence of the United States of America",
-            "author": "Jefferson, Thomas, 1743-1826",
-            "language": "English",
-            "category": "Text",
-            "release_date": "Dec 1, 1971",
-            "url": "https://www.gutenberg.org/ebooks/1"
-        },
-        {
-            "book_number": 2,
-            "title": "The United States Bill of RightsThe Ten Original Amendments to the Constitution of the United States",
-            "author": "United States",
-            "language": "English",
-            "category": "Text",
-            "release_date": "Dec 1, 1972",
-            "url": "https://www.gutenberg.org/ebooks/2"
-        },
-        {
-            "book_number": 3,
-            "title": "John F. Kennedy's Inaugural Address",
-            "author": "Kennedy, John F. (John Fitzgerald), 1917-1963",
-            "language": "English",
-            "category": "Text",
-            "release_date": "Nov 1, 1973",
-            "url": "https://www.gutenberg.org/ebooks/3"
-        },
-        {
-            "book_number": 4,
-            "title": "Lincoln's Gettysburg AddressGiven November 19, 1863 on the battlefield near Gettysburg, Pennsylvania, USA",
-            "author": "Lincoln, Abraham, 1809-1865",
-            "language": "English",
-            "category": "Text",
-            "release_date": "Nov 1, 1973",
-            "url": "https://www.gutenberg.org/ebooks/4"
-        },
-        {
-            "book_number": 5,
-            "title": "The United States Constitution",
-            "author": "United States",
-            "language": "English",
-            "category": "Text",
-            "release_date": "Dec 1, 1975",
-            "url": "https://www.gutenberg.org/ebooks/5"
-        },
-        {
-            "book_number": 6,
-            "title": "Give Me Liberty or Give Me Death",
-            "author": "Henry, Patrick, 1736-1799",
-            "language": "English",
-            "category": "Text",
-            "release_date": "Dec 1, 1976",
-            "url": "https://www.gutenberg.org/ebooks/6"
-        },
-        {
-            "book_number": 7,
-            "title": "The Mayflower Compact",
-            "author": null,
-            "language": "English",
-            "category": "Text",
-            "release_date": "Dec 1, 1977",
-            "url": "https://www.gutenberg.org/ebooks/7"
-        },
-        {
-            "book_number": 8,
-            "title": "Abraham Lincoln's Second Inaugural Address",
-            "author": "Lincoln, Abraham, 1809-1865",
-            "language": "English",
-            "category": "Text",
-            "release_date": "Dec 1, 1978",
-            "url": "https://www.gutenberg.org/ebooks/8"
-        },
-        {
-            "book_number": 9,
-            "title": "Abraham Lincoln's First Inaugural Address",
-            "author": "Lincoln, Abraham, 1809-1865",
-            "language": "English",
-            "category": "Text",
-            "release_date": "Dec 1, 1979",
-            "url": "https://www.gutenberg.org/ebooks/9"
-        }
-    ]
-}
+[
+    
+][
+    {
+        "book_number": 1,
+        "title": "The Declaration of Independence of the United States of America",
+        "author": "Jefferson, Thomas, 1743-1826",
+        "language": "English",
+        "category": "Text",
+        "release_date": "Dec 1, 1971",
+        "url": "https://www.gutenberg.org/ebooks/1"
+    },
+    {
+        "book_number": 2,
+        "title": "The United States Bill of RightsThe Ten Original Amendments to the Constitution of the United States",
+        "author": "United States",
+        "language": "English",
+        "category": "Text",
+        "release_date": "Dec 1, 1972",
+        "url": "https://www.gutenberg.org/ebooks/2"
+    },
+    {
+        "book_number": 3,
+        "title": "John F. Kennedy's Inaugural Address",
+        "author": "Kennedy, John F. (John Fitzgerald), 1917-1963",
+        "language": "English",
+        "category": "Text",
+        "release_date": "Nov 1, 1973",
+        "url": "https://www.gutenberg.org/ebooks/3"
+    },
+    {
+        "book_number": 4,
+        "title": "Lincoln's Gettysburg AddressGiven November 19, 1863 on the battlefield near Gettysburg, Pennsylvania, USA",
+        "author": "Lincoln, Abraham, 1809-1865",
+        "language": "English",
+        "category": "Text",
+        "release_date": "Nov 1, 1973",
+        "url": "https://www.gutenberg.org/ebooks/4"
+    },
+    {
+        "book_number": 5,
+        "title": "The United States Constitution",
+        "author": "United States",
+        "language": "English",
+        "category": "Text",
+        "release_date": "Dec 1, 1975",
+        "url": "https://www.gutenberg.org/ebooks/5"
+    },
+    {
+        "book_number": 6,
+        "title": "Give Me Liberty or Give Me Death",
+        "author": "Henry, Patrick, 1736-1799",
+        "language": "English",
+        "category": "Text",
+        "release_date": "Dec 1, 1976",
+        "url": "https://www.gutenberg.org/ebooks/6"
+    },
+    {
+        "book_number": 7,
+        "title": "The Mayflower Compact",
+        "author": null,
+        "language": "English",
+        "category": "Text",
+        "release_date": "Dec 1, 1977",
+        "url": "https://www.gutenberg.org/ebooks/7"
+    },
+    {
+        "book_number": 8,
+        "title": "Abraham Lincoln's Second Inaugural Address",
+        "author": "Lincoln, Abraham, 1809-1865",
+        "language": "English",
+        "category": "Text",
+        "release_date": "Dec 1, 1978",
+        "url": "https://www.gutenberg.org/ebooks/8"
+    },
+    {
+        "book_number": 9,
+        "title": "Abraham Lincoln's First Inaugural Address",
+        "author": "Lincoln, Abraham, 1809-1865",
+        "language": "English",
+        "category": "Text",
+        "release_date": "Dec 1, 1979",
+        "url": "https://www.gutenberg.org/ebooks/9"
+    }
+][
+    {
+        "book_number": 10,
+        "title": "The King James Version of the Bible",
+        "author": null,
+        "language": "English",
+        "category": "Text",
+        "release_date": "Aug 1, 1989",
+        "url": "https://www.gutenberg.org/ebooks/10"
+    },
+    {
+        "book_number": 11,
+        "title": "Alice's Adventures in Wonderland",
+        "author": "Carroll, Lewis, 1832-1898",
+        "language": "English",
+        "category": "Text",
+        "release_date": "Jun 27, 2008",
+        "url": "https://www.gutenberg.org/ebooks/11"
+    },
+    {
+        "book_number": 12,
+        "title": "Through the Looking-Glass",
+        "author": "Carroll, Lewis, 1832-1898",
+        "language": "English",
+        "category": "Text",
+        "release_date": "Jun 25, 2008",
+        "url": "https://www.gutenberg.org/ebooks/12"
+    },
+    {
+        "book_number": 13,
+        "title": "The Hunting of the Snark: An Agony in Eight Fits",
+        "author": "Carroll, Lewis, 1832-1898",
+        "language": "English",
+        "category": "Text",
+        "release_date": "Jun 25, 2008",
+        "url": "https://www.gutenberg.org/ebooks/13"
+    },
+    {
+        "book_number": 14,
+        "title": "The 1990 CIA World Factbook",
+        "author": "United States. Central Intelligence Agency",
+        "language": "English",
+        "category": "Text",
+        "release_date": "Apr 1, 1991",
+        "url": "https://www.gutenberg.org/ebooks/14"
+    },
+    {
+        "book_number": 15,
+        "title": "Moby-Dick; or, The Whale",
+        "author": "Melville, Herman, 1819-1891",
+        "language": "English",
+        "category": "Text",
+        "release_date": "May 1, 1991",
+        "url": "https://www.gutenberg.org/ebooks/15"
+    },
+    {
+        "book_number": 16,
+        "title": "Peter Pan",
+        "author": "Barrie, J. M. (James Matthew), 1860-1937",
+        "language": "English",
+        "category": "Text",
+        "release_date": "Jun 25, 2008",
+        "url": "https://www.gutenberg.org/ebooks/16"
+    },
+    {
+        "book_number": 17,
+        "title": "The Book of MormonAn Account Written by the Hand of Mormon, Upon Plates Taken from the Plates of Nephi",
+        "author": "Church of Jesus Christ of Latter-day Saints",
+        "language": "English",
+        "category": "Text",
+        "release_date": "Jun 25, 2008",
+        "url": "https://www.gutenberg.org/ebooks/17"
+    },
+    {
+        "book_number": 18,
+        "title": "The Federalist Papers",
+        "author": "Hamilton, Alexander, 1757-1804",
+        "language": "English",
+        "category": "Text",
+        "release_date": "Aug 1, 1991",
+        "url": "https://www.gutenberg.org/ebooks/18"
+    },
+    {
+        "book_number": 19,
+        "title": "The Song of Hiawatha",
+        "author": "Longfellow, Henry Wadsworth, 1807-1882",
+        "language": "English",
+        "category": "Text",
+        "release_date": "Jun 1, 2004",
+        "url": "https://www.gutenberg.org/ebooks/19"
+    }
+][
+    {
+        "book_number": 20,
+        "title": "Paradise Lost",
+        "author": "Milton, John, 1608-1674",
+        "language": "English",
+        "category": "Text",
+        "release_date": "Oct 1, 1991",
+        "url": "https://www.gutenberg.org/ebooks/20"
+    },
+    {
+        "book_number": 21,
+        "title": "Aesop's FablesTranslated by George Fyler Townsend",
+        "author": "Aesop, 620? BCE-564? BCE",
+        "language": "English",
+        "category": "Text",
+        "release_date": "Jun 25, 2008",
+        "url": "https://www.gutenberg.org/ebooks/21"
+    },
+    {
+        "book_number": 22,
+        "title": "Roget's Thesaurus",
+        "author": "Roget, Peter Mark, 1779-1869",
+        "language": "English",
+        "category": "Text",
+        "release_date": "Dec 1, 1991",
+        "url": "https://www.gutenberg.org/ebooks/22"
+    },
+    {
+        "book_number": 23,
+        "title": "Narrative of the Life of Frederick Douglass, an American Slave",
+        "author": "Douglass, Frederick, 1818-1895",
+        "language": "English",
+        "category": "Text",
+        "release_date": "Jan 12, 2006",
+        "url": "https://www.gutenberg.org/ebooks/23"
+    },
+    {
+        "book_number": 24,
+        "title": "O Pioneers!",
+        "author": "Cather, Willa, 1873-1947",
+        "language": "English",
+        "category": "Text",
+        "release_date": "Jun 27, 2008",
+        "url": "https://www.gutenberg.org/ebooks/24"
+    },
+    {
+        "book_number": 25,
+        "title": "The 1991 CIA World Factbook",
+        "author": "United States. Central Intelligence Agency",
+        "language": "English",
+        "category": "Text",
+        "release_date": "Feb 1, 1992",
+        "url": "https://www.gutenberg.org/ebooks/25"
+    },
+    {
+        "book_number": 26,
+        "title": "Paradise Lost",
+        "author": "Milton, John, 1608-1674",
+        "language": "English",
+        "category": "Text",
+        "release_date": "Feb 1, 1992",
+        "url": "https://www.gutenberg.org/ebooks/26"
+    },
+    {
+        "book_number": 27,
+        "title": "Far from the Madding Crowd",
+        "author": "Hardy, Thomas, 1840-1928",
+        "language": "English",
+        "category": "Text",
+        "release_date": "Mar 1, 1992",
+        "url": "https://www.gutenberg.org/ebooks/27"
+    },
+    {
+        "book_number": 28,
+        "title": "The Fables of AesopSelected, Told Anew, and Their History Traced",
+        "author": "Aesop, 620? BCE-564? BCE",
+        "language": "English",
+        "category": "Text",
+        "release_date": "Mar 1, 1992",
+        "url": "https://www.gutenberg.org/ebooks/28"
+    },
+    {
+        "book_number": 29,
+        "title": "The 1990 United States Census",
+        "author": "United States. Bureau of the Census",
+        "language": "English",
+        "category": "Text",
+        "release_date": "Apr 1, 1992",
+        "url": "https://www.gutenberg.org/ebooks/29"
+    }
+][
+    {
+        "book_number": 30,
+        "title": "The Bible, King James Version, Complete",
+        "author": null,
+        "language": "English",
+        "category": "Text",
+        "release_date": "Apr 1, 1992",
+        "url": "https://www.gutenberg.org/ebooks/30"
+    },
+    {
+        "book_number": 31,
+        "title": "Plays of Sophocles: Oedipus the King; Oedipus at Colonus; Antigone",
+        "author": "Sophocles, 495? BCE-406 BCE",
+        "language": "English",
+        "category": "Text",
+        "release_date": "Mar 8, 2006",
+        "url": "https://www.gutenberg.org/ebooks/31"
+    },
+    {
+        "book_number": 32,
+        "title": "Herland",
+        "author": "Gilman, Charlotte Perkins, 1860-1935",
+        "language": "English",
+        "category": "Text",
+        "release_date": "Jun 27, 2008",
+        "url": "https://www.gutenberg.org/ebooks/32"
+    },
+    {
+        "book_number": 33,
+        "title": "The Scarlet Letter",
+        "author": "Hawthorne, Nathaniel, 1804-1864",
+        "language": "English",
+        "category": "Text",
+        "release_date": "Jun 1, 1992",
+        "url": "https://www.gutenberg.org/ebooks/33"
+    },
+    {
+        "book_number": 34,
+        "title": "Zen and the Art of the Internet",
+        "author": "Kehoe, Brendan P., 1970-2011",
+        "language": "English",
+        "category": "Text",
+        "release_date": "Jun 1, 1992",
+        "url": "https://www.gutenberg.org/ebooks/34"
+    },
+    {
+        "book_number": 35,
+        "title": "The Time Machine",
+        "author": "Wells, H. G. (Herbert George), 1866-1946",
+        "language": "English",
+        "category": "Text",
+        "release_date": "Oct 2, 2004",
+        "url": "https://www.gutenberg.org/ebooks/35"
+    },
+    {
+        "book_number": 36,
+        "title": "The War of the Worlds",
+        "author": "Wells, H. G. (Herbert George), 1866-1946",
+        "language": "English",
+        "category": "Text",
+        "release_date": "Oct 1, 2004",
+        "url": "https://www.gutenberg.org/ebooks/36"
+    },
+    {
+        "book_number": 37,
+        "title": "The 1990 United States Census [2nd]",
+        "author": "United States. Bureau of the Census",
+        "language": "English",
+        "category": "Text",
+        "release_date": "Aug 1, 1992",
+        "url": "https://www.gutenberg.org/ebooks/37"
+    },
+    {
+        "book_number": 38,
+        "title": "The Jargon File, Version 2.9.10, 01 Jul 1992",
+        "author": "Raymond, Eric S., 1957-",
+        "language": "English",
+        "category": "Text",
+        "release_date": "Aug 1, 1992",
+        "url": "https://www.gutenberg.org/ebooks/38"
+    },
+    {
+        "book_number": 39,
+        "title": "Hitchhiker's Guide to the Internet",
+        "author": "Krol, Ed, 1951-",
+        "language": "English",
+        "category": "Text",
+        "release_date": "Sep 1, 1992",
+        "url": "https://www.gutenberg.org/ebooks/39"
+    }
+][
+    {
+        "book_number": 40,
+        "title": "NorthWestNet User Services Internet Resource Guide (NUSIRG)",
+        "author": "Kochmer, Jonathan",
+        "language": "English",
+        "category": "Text",
+        "release_date": "Sep 1, 1992",
+        "url": "https://www.gutenberg.org/ebooks/40"
+    },
+    {
+        "book_number": 41,
+        "title": "The Legend of Sleepy Hollow",
+        "author": "Irving, Washington, 1783-1859",
+        "language": "English",
+        "category": "Text",
+        "release_date": "Jun 27, 2008",
+        "url": "https://www.gutenberg.org/ebooks/41"
+    },
+    {
+        "book_number": 42,
+        "title": "The Strange Case of Dr. Jekyll and Mr. Hyde",
+        "author": "Stevenson, Robert Louis, 1850-1894",
+        "language": "English",
+        "category": "Text",
+        "release_date": "Oct 1, 1992",
+        "url": "https://www.gutenberg.org/ebooks/42"
+    },
+    {
+        "book_number": 43,
+        "title": "The Strange Case of Dr. Jekyll and Mr. Hyde",
+        "author": "Stevenson, Robert Louis, 1850-1894",
+        "language": "English",
+        "category": "Text",
+        "release_date": "Jun 27, 2008",
+        "url": "https://www.gutenberg.org/ebooks/43"
+    },
+    {
+        "book_number": 44,
+        "title": "The Song of the Lark",
+        "author": "Cather, Willa, 1873-1947",
+        "language": "English",
+        "category": "Text",
+        "release_date": "Jun 27, 2008",
+        "url": "https://www.gutenberg.org/ebooks/44"
+    },
+    {
+        "book_number": 45,
+        "title": "Anne of Green Gables",
+        "author": "Montgomery, L. M. (Lucy Maud), 1874-1942",
+        "language": "English",
+        "category": "Text",
+        "release_date": "Jun 27, 2008",
+        "url": "https://www.gutenberg.org/ebooks/45"
+    },
+    {
+        "book_number": 46,
+        "title": "A Christmas Carol in Prose; Being a Ghost Story of Christmas",
+        "author": "Dickens, Charles, 1812-1870",
+        "language": "English",
+        "category": "Text",
+        "release_date": "Aug 11, 2004",
+        "url": "https://www.gutenberg.org/ebooks/46"
+    },
+    {
+        "book_number": 47,
+        "title": "Anne of Avonlea",
+        "author": "Montgomery, L. M. (Lucy Maud), 1874-1942",
+        "language": "English",
+        "category": "Text",
+        "release_date": "Mar 8, 2006",
+        "url": "https://www.gutenberg.org/ebooks/47"
+    },
+    {
+        "book_number": 48,
+        "title": "The 1992 CIA World Factbook",
+        "author": "United States. Central Intelligence Agency",
+        "language": "English",
+        "category": "Text",
+        "release_date": "Jan 1, 1993",
+        "url": "https://www.gutenberg.org/ebooks/48"
+    },
+    {
+        "book_number": 49,
+        "title": "Surfing the Internet: An IntroductionVersion 2.0.2",
+        "author": "Polly, Jean Armour",
+        "language": "English",
+        "category": "Text",
+        "release_date": "Jan 1, 1993",
+        "url": "https://www.gutenberg.org/ebooks/49"
+    }
+][
+    {
+        "book_number": 50,
+        "title": "Pi",
+        "author": "Hemphill, Scott",
+        "language": "English",
+        "category": "Data Set",
+        "release_date": "Jan 1, 1993",
+        "url": "https://www.gutenberg.org/ebooks/50"
+    },
+    {
+        "book_number": 51,
+        "title": "Anne of the Island",
+        "author": "Montgomery, L. M. (Lucy Maud), 1874-1942",
+        "language": "English",
+        "category": "Text",
+        "release_date": "Mar 8, 2006",
+        "url": "https://www.gutenberg.org/ebooks/51"
+    },
+    {
+        "book_number": 52,
+        "title": "The Square Root of 2",
+        "author": "Kerr, Stan",
+        "language": "English",
+        "category": "Data Set",
+        "release_date": "Feb 1, 1993",
+        "url": "https://www.gutenberg.org/ebooks/52"
+    },
+    {
+        "book_number": 53,
+        "title": "Workshop on Electronic Texts: Proceedings, 9-10 June 1992",
+        "author": "Library of Congress",
+        "language": "English",
+        "category": "Text",
+        "release_date": "Feb 1, 1993",
+        "url": "https://www.gutenberg.org/ebooks/53"
+    },
+    {
+        "book_number": 54,
+        "title": "The Marvelous Land of Oz",
+        "author": "Baum, L. Frank (Lyman Frank), 1856-1919",
+        "language": "English",
+        "category": "Text",
+        "release_date": "Feb 1, 1993",
+        "url": "https://www.gutenberg.org/ebooks/54"
+    },
+    {
+        "book_number": 55,
+        "title": "The Wonderful Wizard of Oz",
+        "author": "Baum, L. Frank (Lyman Frank), 1856-1919",
+        "language": "English",
+        "category": "Text",
+        "release_date": "Feb 1, 1993",
+        "url": "https://www.gutenberg.org/ebooks/55"
+    },
+    {
+        "book_number": 56,
+        "title": "NREN for All: Insurmountable Opportunity",
+        "author": "Polly, Jean Armour",
+        "language": "English",
+        "category": "Text",
+        "release_date": "Mar 1, 1993",
+        "url": "https://www.gutenberg.org/ebooks/56"
+    },
+    {
+        "book_number": 57,
+        "title": "Aladdin and the Magic Lamp",
+        "author": "Unknown",
+        "language": "English",
+        "category": "Text",
+        "release_date": "Mar 1, 1993",
+        "url": "https://www.gutenberg.org/ebooks/57"
+    },
+    {
+        "book_number": 58,
+        "title": "Paradise Regained",
+        "author": "Milton, John, 1608-1674",
+        "language": "English",
+        "category": "Text",
+        "release_date": "Mar 1, 1993",
+        "url": "https://www.gutenberg.org/ebooks/58"
+    },
+    {
+        "book_number": 59,
+        "title": "Discourse on the Method of Rightly Conducting One's Reason and of Seeking Truth in the Sciences",
+        "author": "Descartes, René, 1596-1650",
+        "language": "English",
+        "category": "Text",
+        "release_date": "Mar 1, 1993",
+        "url": "https://www.gutenberg.org/ebooks/59"
+    }
+][
+    {
+        "book_number": 60,
+        "title": "The Scarlet Pimpernel",
+        "author": "Orczy, Emmuska Orczy, Baroness, 1865-1947",
+        "language": "English",
+        "category": "Text",
+        "release_date": "Mar 8, 2006",
+        "url": "https://www.gutenberg.org/ebooks/60"
+    },
+    {
+        "book_number": 61,
+        "title": "The Communist Manifesto",
+        "author": "Engels, Friedrich, 1820-1895",
+        "language": "English",
+        "category": "Text",
+        "release_date": "Jan 25, 2005",
+        "url": "https://www.gutenberg.org/ebooks/61"
+    },
+    {
+        "book_number": 62,
+        "title": "A Princess of Mars",
+        "author": "Burroughs, Edgar Rice, 1875-1950",
+        "language": "English",
+        "category": "Text",
+        "release_date": "Apr 1, 1993",
+        "url": "https://www.gutenberg.org/ebooks/62"
+    },
+    {
+        "book_number": 63,
+        "title": "The Number \"e\"",
+        "author": "Unknown",
+        "language": "English",
+        "category": "Text",
+        "release_date": "Apr 1, 1993",
+        "url": "https://www.gutenberg.org/ebooks/63"
+    },
+    {
+        "book_number": 64,
+        "title": "The Gods of Mars",
+        "author": "Burroughs, Edgar Rice, 1875-1950",
+        "language": "English",
+        "category": "Text",
+        "release_date": "May 1, 1993",
+        "url": "https://www.gutenberg.org/ebooks/64"
+    },
+    {
+        "book_number": 65,
+        "title": "The First 100,000 Prime Numbers",
+        "author": "Unknown",
+        "language": "English",
+        "category": "Data Set",
+        "release_date": "May 1, 1993",
+        "url": "https://www.gutenberg.org/ebooks/65"
+    },
+    {
+        "book_number": 66,
+        "title": "The Dawn of Amateur Radio in the U.K. and Greece: A Personal View",
+        "author": "Joly, Norman F.",
+        "language": "English",
+        "category": "Text",
+        "release_date": "May 1, 1993",
+        "url": "https://www.gutenberg.org/ebooks/66"
+    },
+    {
+        "book_number": 67,
+        "title": "The Black Experience in America",
+        "author": "Coombs, Norman, 1932-",
+        "language": "English",
+        "category": "Text",
+        "release_date": "May 1, 1993",
+        "url": "https://www.gutenberg.org/ebooks/67"
+    },
+    {
+        "book_number": 68,
+        "title": "The warlord of Mars",
+        "author": "Burroughs, Edgar Rice, 1875-1950",
+        "language": "English",
+        "category": "Text",
+        "release_date": "Jun 1, 1993",
+        "url": "https://www.gutenberg.org/ebooks/68"
+    },
+    {
+        "book_number": 69,
+        "title": "The 32nd Mersenne PrimePredicted by Mersenne",
+        "author": "Slowinski, David",
+        "language": "English",
+        "category": "Text",
+        "release_date": "Jun 1, 1993",
+        "url": "https://www.gutenberg.org/ebooks/69"
+    }
+][
+    {
+        "book_number": 70,
+        "title": "What Is Man? and Other Essays",
+        "author": "Twain, Mark, 1835-1910",
+        "language": "English",
+        "category": "Text",
+        "release_date": "Sep 13, 2004",
+        "url": "https://www.gutenberg.org/ebooks/70"
+    },
+    {
+        "book_number": 71,
+        "title": "On the Duty of Civil Disobedience",
+        "author": "Thoreau, Henry David, 1817-1862",
+        "language": "English",
+        "category": "Text",
+        "release_date": "Jun 1, 1993",
+        "url": "https://www.gutenberg.org/ebooks/71"
+    },
+    {
+        "book_number": 72,
+        "title": "Thuvia, Maid of Mars",
+        "author": "Burroughs, Edgar Rice, 1875-1950",
+        "language": "English",
+        "category": "Text",
+        "release_date": "Jul 1, 1993",
+        "url": "https://www.gutenberg.org/ebooks/72"
+    },
+    {
+        "book_number": 73,
+        "title": "The Red Badge of Courage: An Episode of the American Civil War",
+        "author": "Crane, Stephen, 1871-1900",
+        "language": "English",
+        "category": "Text",
+        "release_date": "Jul 1, 1993",
+        "url": "https://www.gutenberg.org/ebooks/73"
+    },
+    {
+        "book_number": 74,
+        "title": "The Adventures of Tom Sawyer, Complete",
+        "author": "Twain, Mark, 1835-1910",
+        "language": "English",
+        "category": "Text",
+        "release_date": "Jul 1, 2004",
+        "url": "https://www.gutenberg.org/ebooks/74"
+    },
+    {
+        "book_number": 75,
+        "title": "E-mail 101",
+        "author": "Goodwin, John E.",
+        "language": "English",
+        "category": "Text",
+        "release_date": "Jul 1, 1993",
+        "url": "https://www.gutenberg.org/ebooks/75"
+    },
+    {
+        "book_number": 76,
+        "title": "Adventures of Huckleberry Finn",
+        "author": "Twain, Mark, 1835-1910",
+        "language": "English",
+        "category": "Text",
+        "release_date": "Jun 29, 2004",
+        "url": "https://www.gutenberg.org/ebooks/76"
+    },
+    {
+        "book_number": 77,
+        "title": "The House of the Seven Gables",
+        "author": "Hawthorne, Nathaniel, 1804-1864",
+        "language": "English",
+        "category": "Text",
+        "release_date": "Aug 1, 1993",
+        "url": "https://www.gutenberg.org/ebooks/77"
+    },
+    {
+        "book_number": 78,
+        "title": "Tarzan of the Apes",
+        "author": "Burroughs, Edgar Rice, 1875-1950",
+        "language": "English",
+        "category": "Text",
+        "release_date": "Aug 1, 1993",
+        "url": "https://www.gutenberg.org/ebooks/78"
+    },
+    {
+        "book_number": 79,
+        "title": "Terminal Compromise",
+        "author": "Schwartau, Winn, 1952-",
+        "language": "English",
+        "category": "Text",
+        "release_date": "Aug 1, 1993",
+        "url": "https://www.gutenberg.org/ebooks/79"
+    }
+][
+    {
+        "book_number": 80,
+        "title": "The Online World",
+        "author": "De Presno, Odd, 1944-",
+        "language": "English",
+        "category": "Text",
+        "release_date": "Sep 1, 1993",
+        "url": "https://www.gutenberg.org/ebooks/80"
+    },
+    {
+        "book_number": 81,
+        "title": "The Return of Tarzan",
+        "author": "Burroughs, Edgar Rice, 1875-1950",
+        "language": "English",
+        "category": "Text",
+        "release_date": "Sep 1, 1993",
+        "url": "https://www.gutenberg.org/ebooks/81"
+    },
+    {
+        "book_number": 82,
+        "title": "Ivanhoe: A Romance",
+        "author": "Scott, Walter, 1771-1832",
+        "language": "English",
+        "category": "Text",
+        "release_date": "Jun 25, 2008",
+        "url": "https://www.gutenberg.org/ebooks/82"
+    },
+    {
+        "book_number": 83,
+        "title": "From the Earth to the Moon; and, Round the Moon",
+        "author": "Verne, Jules, 1828-1905",
+        "language": "English",
+        "category": "Text",
+        "release_date": "Sep 1, 1993",
+        "url": "https://www.gutenberg.org/ebooks/83"
+    },
+    {
+        "book_number": 84,
+        "title": "Frankenstein; Or, The Modern Prometheus",
+        "author": "Shelley, Mary Wollstonecraft, 1797-1851",
+        "language": "English",
+        "category": "Text",
+        "release_date": "Oct 1, 1993",
+        "url": "https://www.gutenberg.org/ebooks/84"
+    },
+    {
+        "book_number": 85,
+        "title": "The Beasts of Tarzan",
+        "author": "Burroughs, Edgar Rice, 1875-1950",
+        "language": "English",
+        "category": "Text",
+        "release_date": "Oct 1, 1993",
+        "url": "https://www.gutenberg.org/ebooks/85"
+    },
+    {
+        "book_number": 86,
+        "title": "A Connecticut Yankee in King Arthur's Court",
+        "author": "Twain, Mark, 1835-1910",
+        "language": "English",
+        "category": "Text",
+        "release_date": "Jul 7, 2004",
+        "url": "https://www.gutenberg.org/ebooks/86"
+    },
+    {
+        "book_number": 87,
+        "title": "The 1993 CIA World Factbook",
+        "author": "United States. Central Intelligence Agency",
+        "language": "English",
+        "category": "Text",
+        "release_date": "Oct 1, 1993",
+        "url": "https://www.gutenberg.org/ebooks/87"
+    },
+    {
+        "book_number": 88,
+        "title": "Price/Cost Indexes from 1875 to 1989; Estimated to 2010",
+        "author": "Hart, Michael, 1947-2011",
+        "language": "English",
+        "category": "Text",
+        "release_date": "Nov 1, 1993",
+        "url": "https://www.gutenberg.org/ebooks/88"
+    },
+    {
+        "book_number": 89,
+        "title": "North American Free Trade Agreement, 1992 Oct. 7 Tariff Phasing Descriptions",
+        "author": "Canada",
+        "language": "English",
+        "category": "Text",
+        "release_date": "Nov 1, 1993",
+        "url": "https://www.gutenberg.org/ebooks/89"
+    }
+]
