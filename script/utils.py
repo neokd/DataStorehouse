@@ -1,5 +1,8 @@
 import csv
 import json
+import os
+import pickle
+
 
 class Utils:
     """
@@ -51,7 +54,7 @@ class Utils:
 
         with open(json_file_path, 'w') as jsonfile:
             json.dump(data, jsonfile, indent=4)
-        
+
         print('CSV to JSON conversion completed successfully.')
 
     @staticmethod
@@ -90,7 +93,30 @@ class Utils:
 
         print("TSV to CSV conversion completed successfully.")
 
-    
+    @staticmethod
+    def create_pickle_file(file_path: str) -> None:
+        """
+        This method checks if the file format is valid. It accepts either CSV or JSON formats.
+        If the file format is valid, load the file into memory. After loading the file,
+        the code proceeds to create a pickle file.
+
+        Args:
+            file_path (str): The path to the CSV/JSON file.
+        """
+        filename, file_ext = os.path.splitext(file_path)
+        print(f"File type: {file_ext}")
+        if file_ext == '.csv':
+            with open(file_path) as csv_file:
+                data = csv_file.readlines()
+        elif file_ext == '.json':
+            with open(file_path) as json_file:
+                data = json.load(json_file)
+        else:
+            raise ValueError(f"Invalid file format: {file_ext}. Only CSV and JSON are supported.")
+        print(f"Converting file with extension: {file_ext}  to a pickle file")
+        with open(f'{filename}.pickle', 'wb') as handle:
+            pickle.dump(data, handle)
+
 
 # Driver Code
 if __name__ == '__main__':

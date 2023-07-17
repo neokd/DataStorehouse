@@ -25,6 +25,12 @@ function Navbar() {
     // State for mobile view 📱
     const [isMobileView, setIsMobileView] = useState(window.innerWidth < 768);
 
+    // State to get fork count from GitHub API 🍴
+    const [forkCount, setForkCount] = useState(0);
+
+    // State to get star count from GitHub API ⭐
+    const [starCount, setStarCount] = useState(0);
+
     // Function to handle closing the modal
     const handleOnClose = () => {
         setShowModal(false);
@@ -42,6 +48,17 @@ function Navbar() {
             window.removeEventListener("resize", handleResize);
         };
     }, []);
+
+    // Function to get fork count and star count from GitHub API 🍴
+    useEffect(() => {
+        fetch('https://api.github.com/repos/neokd/DataStorehouse')
+            .then(response => response.json())
+            .then(data => {
+                setForkCount(data.forks_count);
+                setStarCount(data.stargazers_count);
+            });
+    }, []);
+
     // Render the JSX component 
     return (
         <div>
@@ -101,11 +118,19 @@ function Navbar() {
                         </button>
                     </div>
                 </div>
-                <div className="border-amber-500 hidden md:block flex-rows mx-8 duration-100 rounded-lg hover:shadow-lg hover:shadow-amber-500  lg:visible hover:scale-105">
-                    <button disabled className="border border-gray-600 rounded-lg p-3">
-                        Fork Count: 1
+                <div className="border-amber-500 hidden md:block flex-rows mx-8 ">
+                    <button className="border mx-2 border-gray-600 rounded-lg p-3 duration-100 hover:shadow-lg hover:shadow-amber-500  lg:visible hover:scale-105">
+                        <Link to="https://github.com/neokd/DataStorehouse/forks">
+                            Fork Count: {forkCount}
+                        </Link>
+                    </button>
+                    <button className="border mx-2 border-gray-600 p-3 duration-100 rounded-lg hover:shadow-lg hover:shadow-amber-500  lg:visible hover:scale-105">
+                        <Link to="https://github.com/neokd/DataStorehouse/stargazers">
+                            Star Count: {starCount}
+                        </Link>
                     </button>
                 </div>
+
             </nav>
             {isMobileView && showModal && <Searchbar onClose={handleOnClose} visible={showModal} />}
         </div>
