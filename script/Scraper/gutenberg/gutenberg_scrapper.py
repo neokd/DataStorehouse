@@ -14,7 +14,9 @@ class GutenbergScraper:
         """
         self.proxy_list = self.load_proxy_list()
         self.progress_file = r"script\Scraper\gutenberg\progress.txt"
+        self.json_file_path = r"StoreHouse\Literature\gutenberg_bibliographic_records.json"
         self.last_book_number = self.load_progress()
+        
 
     def load_proxy_list(self):
         """
@@ -30,20 +32,33 @@ class GutenbergScraper:
         Loads the last processed book number from the progress file.
         Returns the last book number or 1 if the progress file does not exist.
         """
+        if os.path.exists(self.json_file_path):
+            print("File exists")
+        else:
+            # Create a new file
+            with open(self.json_file_path, "w") as file:
+                file.write("{\n")
+            print("New JSON file created")
+
         try:
             with open(self.progress_file, "r") as file:
                 return int(file.read().strip())
         except FileNotFoundError:
+            # create a new file
+            with open(self.progress_file, "w") as file:
+                pass
+            print("New Progress file created")
             return 1
+        
 
-    def save_progress(self, book_number, book_list):
+    def save_progress(self, book_number, book_data):
         """
         Saves the last processed book number to the progress file.
         """
         #read existing data
-        json_file_path = "StoreHouse\Literature\gutenberg_bibliographic_records.json"
-        with open(json_file_path, "a", encoding="utf-8") as file:
-            json.dump(book_list, file, ensure_ascii=False, indent=4)
+        with open(self.json_file_path, "a", encoding="utf-8") as file:
+            json.dump(book_data, file, ensure_ascii=False, indent=4)
+            file.write(",\n")
 
         #save the last book_number
         with open(self.progress_file, "w") as file:
@@ -97,7 +112,6 @@ class GutenbergScraper:
         Fetches the data for each book using consecutive book numbers.
         Stores the data in a JSON file.
         """
-        book_list = []
         book_number = self.last_book_number
         while True:
             url = f"https://www.gutenberg.org/ebooks/{book_number}"
@@ -133,19 +147,15 @@ class GutenbergScraper:
                 "url": url
             }
 
-            book_list.append(book_data)
+            self.save_progress(book_number,book_data)
 
             book_number += 1
 
-            # Save progress every 10 books
-            if book_number % 10 == 0:
-                self.save_progress(book_number, book_list)
-                book_list = []  # to avoid duplicates 
-                
-
-        self.save_progress(book_number, book_list)
-
         print("Scraping complete. Data stored in gutenberg_bibliographic_records.json.")
+        # add } ad the end
+        with open(self.json_file_path, "a", encoding="utf-8") as file:
+            file.write("}")
+
 
         # Remove progress file after scraping is complete
         if os.path.exists(self.progress_file):
