@@ -37,7 +37,7 @@ class GutenbergScraper:
         else:
             # Create a new file
             with open(self.json_file_path, "w") as file:
-                file.write("{\n")
+                file.write('{"data":[\n')
             print("New JSON file created")
 
         try:
