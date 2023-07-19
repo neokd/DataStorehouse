@@ -2,6 +2,7 @@ import requests
 import json
 import os
 from bs4 import BeautifulSoup
+import time
 
 PROXY_CONNECTION_TIMEOUT = 5  # Timeout value in seconds
 
@@ -14,7 +15,9 @@ class GutenbergScraper:
         """
         self.proxy_list = self.load_proxy_list()
         self.progress_file = r"script\Scraper\gutenberg\progress.txt"
+        self.json_file_path = r"StoreHouse\Literature\gutenberg_bibliographic_records.json"
         self.last_book_number = self.load_progress()
+        
 
     def load_proxy_list(self):
         """
@@ -30,16 +33,35 @@ class GutenbergScraper:
         Loads the last processed book number from the progress file.
         Returns the last book number or 1 if the progress file does not exist.
         """
+        if os.path.exists(self.json_file_path):
+            print("File exists")
+        else:
+            # Create a new file
+            with open(self.json_file_path, "w") as file:
+                file.write('{"data":[\n')
+            print("New JSON file created")
+
         try:
             with open(self.progress_file, "r") as file:
                 return int(file.read().strip())
         except FileNotFoundError:
+            # create a new file
+            with open(self.progress_file, "w") as file:
+                pass
+            print("New Progress file created")
             return 1
+        
 
-    def save_progress(self, book_number):
+    def save_progress(self, book_number, book_data):
         """
         Saves the last processed book number to the progress file.
         """
+        #read existing data
+        with open(self.json_file_path, "a", encoding="utf-8") as file:
+            json.dump(book_data, file, ensure_ascii=False, indent=4)
+            file.write(",\n")
+
+        #save the last book_number
         with open(self.progress_file, "w") as file:
             file.write(str(book_number))
 
@@ -67,22 +89,22 @@ class GutenbergScraper:
                     try:
                         response = requests.get(url, proxies=proxies, timeout=PROXY_CONNECTION_TIMEOUT)
                         if response.status_code == 404 : #if page doesn't exist
-                            print(f"URL not found: {url}. Skipping to next URL.")
+                            print(f"\nURL not found: {url}. Skipping to next URL.")
                             return 404
                         response.raise_for_status()
                         return response.content
                     except requests.RequestException:
-                        print(f"Failed to fetch URL: {url} with proxy: {proxy}. Retrying with next proxy.")
+                        print(f"\nFailed to fetch URL: {url} with proxy: {proxy}. Retrying with next proxy.")
                         self.rotate_proxy()
             else:
                 response = requests.get(url)
                 if response.status_code == 404 : #if page doesn't exist
-                    print(f"URL not found: {url}. Skipping to next URL.")
+                    print(f"\nURL not found: {url}. Skipping to next URL.")
                     return 404 #Skip URL and move to next iteration
                 response.raise_for_status()
                 return response.content
         except requests.RequestException:
-            print(f"Failed to fetch URL: {url}")
+            print(f"\nFailed to fetch URL: {url}")
         return None
 
     def scrape_gutenberg(self):
@@ -91,11 +113,11 @@ class GutenbergScraper:
         Fetches the data for each book using consecutive book numbers.
         Stores the data in a JSON file.
         """
-        book_list = []
         book_number = self.last_book_number
         while True:
+            start_time = time.time()
             url = f"https://www.gutenberg.org/ebooks/{book_number}"
-            print(url)
+            print(url, end ='')
             html_content = self.get_html_content(url)
             if html_content == 404:
                 book_number += 1
@@ -127,20 +149,16 @@ class GutenbergScraper:
                 "url": url
             }
 
-            book_list.append(book_data)
+            self.save_progress(book_number,book_data)
 
             book_number += 1
-
-            # Save progress every 100 books
-            if book_number % 10 == 0:
-                self.save_progress(book_number)
-                with open("StoreHouse\Literature\gutenberg_bibliographic_records.json", "a", encoding="utf-8") as file:
-                    json.dump(book_list, file, ensure_ascii=False, indent=4)
-
-        with open("StoreHouse\Literature\gutenberg_bibliographic_records.json", "a", encoding="utf-8") as file:
-            json.dump(book_list, file, ensure_ascii=False, indent=4)
+            print(f"     Time taken: {(time.time() - start_time):.2f}s")
 
         print("Scraping complete. Data stored in gutenberg_bibliographic_records.json.")
+        # add } ad the end
+        with open(self.json_file_path, "a", encoding="utf-8") as file:
+            file.write("}")
+
 
         # Remove progress file after scraping is complete
         if os.path.exists(self.progress_file):
