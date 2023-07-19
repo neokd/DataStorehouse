@@ -21,6 +21,16 @@ class GithubScraper:
         url = f"https://raw.githubusercontent.com/{self.username}/{self.username}/master/README.md"
         return self.scrape_data_by_url(url)
 
+    def get_total_repositores(self) -> BeautifulSoup:
+        url = f"https://api.github.com/users/{self.username}"
+        response = requests.get(url)
+        if response.status_code == 200:
+            user_data = response.json()
+            total_repos = user_data['public_repos']
+            return total_repos
+        else:
+            return "No repos found"
+
     def get_user_name(self) -> str:
         user_profile = self.scrape_profile()
         try:
@@ -99,4 +109,4 @@ class GithubScraper:
 
 if __name__ == '__main__':
     github = GithubScraper('neokd')
-    print(github.get_location())
+    print(github.get_total_repositores())
