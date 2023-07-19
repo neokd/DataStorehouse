@@ -20,16 +20,6 @@ class GithubScraper:
     def scrape_readme(self) -> BeautifulSoup:
         url = f"https://raw.githubusercontent.com/{self.username}/{self.username}/master/README.md"
         return self.scrape_data_by_url(url)
-
-    def get_total_repositores(self) -> BeautifulSoup:
-        url = f"https://api.github.com/users/{self.username}"
-        response = requests.get(url)
-        if response.status_code == 200:
-            user_data = response.json()
-            total_repos = user_data['public_repos']
-            return total_repos
-        else:
-            return "No repos found"
         
     def get_total_starred_repositories(self) -> BeautifulSoup:
         url = f"https://api.github.com/users/{self.username}/starred"
