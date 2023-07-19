@@ -2,6 +2,7 @@ import requests
 import json
 import os
 from bs4 import BeautifulSoup
+import time
 
 PROXY_CONNECTION_TIMEOUT = 5  # Timeout value in seconds
 
@@ -114,8 +115,9 @@ class GutenbergScraper:
         """
         book_number = self.last_book_number
         while True:
+            start_time = time.time()
             url = f"https://www.gutenberg.org/ebooks/{book_number}"
-            print(url)
+            print(url, end ='')
             html_content = self.get_html_content(url)
             if html_content == 404:
                 book_number += 1
@@ -150,6 +152,7 @@ class GutenbergScraper:
             self.save_progress(book_number,book_data)
 
             book_number += 1
+            print(f"     Time taken: {(time.time() - start_time):.2f}s")
 
         print("Scraping complete. Data stored in gutenberg_bibliographic_records.json.")
         # add } ad the end
