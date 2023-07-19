@@ -30,6 +30,16 @@ class GithubScraper:
             return total_repos
         else:
             return "No repos found"
+        
+    def get_total_starred_repositories(self) -> BeautifulSoup:
+        url = f"https://api.github.com/users/{self.username}/starred"
+        response = requests.get(url)
+        if response.status_code == 200:
+            starred_repos = response.json()
+            total_starred_repos = len(starred_repos)
+            return total_starred_repos
+        else:
+            return "No starred reposs"
 
     def get_user_name(self) -> str:
         user_profile = self.scrape_profile()
@@ -109,4 +119,4 @@ class GithubScraper:
 
 if __name__ == '__main__':
     github = GithubScraper('neokd')
-    print(github.get_total_repositores())
+    print(github.get_total_starred_repositories())
