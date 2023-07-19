@@ -6,78 +6,193 @@ Ratio for Text column to Numeric column is : 13 : 1
 
 							------ COLUMN WISE ANALYSIS ------
 
-Column Name: Security Code
-Number of Null Values: 0
-Number of Blank Values: 0
-Data type of column: object
+Column Name : Security Code
+Number of Null Values : 0
+Number of Blank Values : 0
+Data type of column : object
+Quartile 1 Value : 0
+Quartile 2 Value : 0
+Quartile 3 Value : 0
+InterQuartile Range : 0
+Bias : 0
+Skewness Value: 0
+Skew Result : 0
 ---
-Column Name: Issuer Name
-Number of Null Values: 0
-Number of Blank Values: 0
-Data type of column: object
+
+Column Name : Issuer Name
+Number of Null Values : 0
+Number of Blank Values : 0
+Data type of column : object
+Quartile 1 Value : 0
+Quartile 2 Value : 0
+Quartile 3 Value : 0
+InterQuartile Range : 0
+Bias : 0
+Skewness Value: 0
+Skew Result : 0
 ---
-Column Name: Security Id
-Number of Null Values: 0
-Number of Blank Values: 0
-Data type of column: object
+
+Column Name : Security Id
+Number of Null Values : 0
+Number of Blank Values : 0
+Data type of column : object
+Quartile 1 Value : 0
+Quartile 2 Value : 0
+Quartile 3 Value : 0
+InterQuartile Range : 0
+Bias : 0
+Skewness Value: 0
+Skew Result : 0
 ---
-Column Name: Security Name
-Number of Null Values: 0
-Number of Blank Values: 0
-Data type of column: object
+
+Column Name : Security Name
+Number of Null Values : 0
+Number of Blank Values : 0
+Data type of column : object
+Quartile 1 Value : 0
+Quartile 2 Value : 0
+Quartile 3 Value : 0
+InterQuartile Range : 0
+Bias : 0
+Skewness Value: 0
+Skew Result : 0
 ---
-Column Name: Status
-Number of Null Values: 0
-Number of Blank Values: 0
-Data type of column: object
+
+Column Name : Status
+Number of Null Values : 0
+Number of Blank Values : 0
+Data type of column : object
+Quartile 1 Value : 0
+Quartile 2 Value : 0
+Quartile 3 Value : 0
+InterQuartile Range : 0
+Bias : 0
+Skewness Value: 0
+Skew Result : 0
 ---
-Column Name: Group
-Number of Null Values: 0
-Number of Blank Values: 0
-Data type of column: float64
+
+Column Name : Group
+Number of Null Values : 0
+Number of Blank Values : 0
+Data type of column : float64
+Quartile 1 Value : 5.0
+Quartile 2 Value : 10.0
+Quartile 3 Value : 10.0
+InterQuartile Range : 5.0
+Bias : 0.3333333333333333
+Skewness Value: 0.16393423203778393
+Skew Result : Negative Skew
 ---
-Column Name: Face Value
-Number of Null Values: 0
-Number of Blank Values: 0
-Data type of column: object
+
+Column Name : Face Value
+Number of Null Values : 0
+Number of Blank Values : 0
+Data type of column : object
+Quartile 1 Value : 0
+Quartile 2 Value : 0
+Quartile 3 Value : 0
+InterQuartile Range : 0
+Bias : 0
+Skewness Value: 0
+Skew Result : 0
 ---
-Column Name: ISIN No
-Number of Null Values: 0
-Number of Blank Values: 161
-Data type of column: object
+
+Column Name : ISIN No
+Number of Null Values : 0
+Number of Blank Values : 161
+Data type of column : object
+Quartile 1 Value : 0
+Quartile 2 Value : 0
+Quartile 3 Value : 0
+InterQuartile Range : 0
+Bias : 0
+Skewness Value: 0
+Skew Result : 0
 ---
-Column Name: Industry
-Number of Null Values: 0
-Number of Blank Values: 0
-Data type of column: object
+
+Column Name : Industry
+Number of Null Values : 0
+Number of Blank Values : 0
+Data type of column : object
+Quartile 1 Value : 0
+Quartile 2 Value : 0
+Quartile 3 Value : 0
+InterQuartile Range : 0
+Bias : 0
+Skewness Value: 0
+Skew Result : 0
 ---
-Column Name: Instrument
-Number of Null Values: 0
-Number of Blank Values: 0
-Data type of column: object
+
+Column Name : Instrument
+Number of Null Values : 0
+Number of Blank Values : 0
+Data type of column : object
+Quartile 1 Value : 0
+Quartile 2 Value : 0
+Quartile 3 Value : 0
+InterQuartile Range : 0
+Bias : 0
+Skewness Value: 0
+Skew Result : 0
 ---
-Column Name: Sector Name
-Number of Null Values: 0
-Number of Blank Values: 0
-Data type of column: object
+
+Column Name : Sector Name
+Number of Null Values : 0
+Number of Blank Values : 0
+Data type of column : object
+Quartile 1 Value : 0
+Quartile 2 Value : 0
+Quartile 3 Value : 0
+InterQuartile Range : 0
+Bias : 0
+Skewness Value: 0
+Skew Result : 0
 ---
-Column Name: Industry New Name
-Number of Null Values: 0
-Number of Blank Values: 0
-Data type of column: object
+
+Column Name : Industry New Name
+Number of Null Values : 0
+Number of Blank Values : 0
+Data type of column : object
+Quartile 1 Value : 0
+Quartile 2 Value : 0
+Quartile 3 Value : 0
+InterQuartile Range : 0
+Bias : 0
+Skewness Value: 0
+Skew Result : 0
 ---
-Column Name: Igroup Name
-Number of Null Values: 0
-Number of Blank Values: 0
-Data type of column: object
+
+Column Name : Igroup Name
+Number of Null Values : 0
+Number of Blank Values : 0
+Data type of column : object
+Quartile 1 Value : 0
+Quartile 2 Value : 0
+Quartile 3 Value : 0
+InterQuartile Range : 0
+Bias : 0
+Skewness Value: 0
+Skew Result : 0
 ---
-Column Name: ISubgroup Name
-Number of Null Values: 4129
-Number of Blank Values: 0
-Data type of column: float64
+
+Column Name : ISubgroup Name
+Number of Null Values : 4129
+Number of Blank Values : 0
+Data type of column : float64
+Quartile 1 Value : 0
+Quartile 2 Value : 0
+Quartile 3 Value : 0
+InterQuartile Range : 0
+Bias : 0
+Skewness Value: 0
+Skew Result : 0
 ---
 
 
+
+
+REMARKS : 
+		The Quartile, Bias and Skewness are only calculated for Numeric Columns and No Null and No Blank Columns.
 
 NOTE : *This is an AutoGenerated Analysis Report the Values Maybe Differ by the method of calculation and file neatness 
 									@ DATA STOREHOUSE
