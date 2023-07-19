@@ -89,22 +89,22 @@ class GutenbergScraper:
                     try:
                         response = requests.get(url, proxies=proxies, timeout=PROXY_CONNECTION_TIMEOUT)
                         if response.status_code == 404 : #if page doesn't exist
-                            print(f"URL not found: {url}. Skipping to next URL.")
+                            print(f"\nURL not found: {url}. Skipping to next URL.")
                             return 404
                         response.raise_for_status()
                         return response.content
                     except requests.RequestException:
-                        print(f"Failed to fetch URL: {url} with proxy: {proxy}. Retrying with next proxy.")
+                        print(f"\nFailed to fetch URL: {url} with proxy: {proxy}. Retrying with next proxy.")
                         self.rotate_proxy()
             else:
                 response = requests.get(url)
                 if response.status_code == 404 : #if page doesn't exist
-                    print(f"URL not found: {url}. Skipping to next URL.")
+                    print(f"\nURL not found: {url}. Skipping to next URL.")
                     return 404 #Skip URL and move to next iteration
                 response.raise_for_status()
                 return response.content
         except requests.RequestException:
-            print(f"Failed to fetch URL: {url}")
+            print(f"\nFailed to fetch URL: {url}")
         return None
 
     def scrape_gutenberg(self):
