@@ -28,8 +28,7 @@ class GithubScraper:
             user_data = response.json()
             total_repos = user_data['public_repos']
             return total_repos
-        else:
-            return "No repos found"
+        return "No repos found"
 
     def get_user_name(self) -> str:
         user_profile = self.scrape_profile()
