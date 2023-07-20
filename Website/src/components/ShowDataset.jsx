@@ -278,7 +278,7 @@ function ShowDataset() {
             <PageNavigation />
             <Footer />
           </div>
-          <OnThisPage filteredData={filteredData} />
+        //  <OnThisPage filteredData={filteredData} />
           <ScrollToTopButton />
         </div>
 
