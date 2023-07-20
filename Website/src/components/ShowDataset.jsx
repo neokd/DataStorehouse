@@ -277,7 +277,7 @@ function ShowDataset() {
             </div>
             <PageNavigation />
             <Footer />
-  
+          </div>
           <ScrollToTopButton />
         </div>
 
