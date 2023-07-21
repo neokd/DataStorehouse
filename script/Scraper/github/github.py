@@ -2,6 +2,7 @@ import re
 
 import requests
 from bs4 import BeautifulSoup
+from typing import Optional
 
 
 class GithubScraper:
@@ -95,8 +96,29 @@ class GithubScraper:
         except Exception as ex:
             print(ex)
             return "Error: Failed to fetch socials."
-
+        
+    def get_user_organizations(self) -> dict:
+        url = f"https://api.github.com/users/{self.username}/orgs"
+        response = requests.get(url)
+        if response.status_code == 200:
+            orgs_data = response.json()
+            organizations = [org['login'] for org in orgs_data]
+        if organizations:
+            return organizations
+        return None
+        
+    def get_user_achievements(self) -> dict:
+        url = f"https://github.com/{self.username}?tab=achievements"
+        response = requests.get(url)
+        if response.status_code == 200:
+            achievements_data = BeautifulSoup(response.content, 'html.parser')
+            achievements = []
+            achievement_elements = achievements_data.find_all('h3', {'class': 'f4 ws-normal'})
+            for element in achievement_elements:
+                achievements.append(element.get_text().strip())
+            return achievements
+        return None
 
 if __name__ == '__main__':
     github = GithubScraper('neokd')
-    print(github.get_location())
+    print(github.get_user_achievements())
