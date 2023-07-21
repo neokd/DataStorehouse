@@ -2,7 +2,6 @@ import re
 
 import requests
 from bs4 import BeautifulSoup
-from typing import Optional
 
 
 class GithubScraper:
@@ -22,14 +21,14 @@ class GithubScraper:
         url = f"https://raw.githubusercontent.com/{self.username}/{self.username}/master/README.md"
         return self.scrape_data_by_url(url)
     
-    def get_total_starred_repositories(self) -> Optional[int]:
+    def get_total_starred_repositories(self) -> int:
         url = f"https://api.github.com/users/{self.username}/starred"
         response = requests.get(url)
         if response.status_code == 200:
             starred_repos = response.json()
             total_starred_repos = len(starred_repos)
             return int(total_starred_repos)
-        return "No starred repos"
+        return None
 
     def get_user_name(self) -> str:
         user_profile = self.scrape_profile()
