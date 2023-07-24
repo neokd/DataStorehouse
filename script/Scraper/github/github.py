@@ -105,7 +105,27 @@ class GithubScraper:
             print(ex)
             return "Error: Failed to fetch socials."
 
+    
+
+    def get_total_repositories(self) -> int:
+   
+        base_url = f"https://api.github.com/users/{self.username}"
+
+        try:
+            response = requests.get(base_url)
+            response.raise_for_status()
+            user_data = response.json()
+
+            total_repositories = user_data.get("public_repos", 0)
+            return total_repositories
+
+        except requests.exceptions.RequestException as e:
+            print(f"Error: {e}")
+            return None
+
+
 
 if __name__ == '__main__':
     github = GithubScraper('neokd')
     print(github.get_total_starred_repositories())
+    
