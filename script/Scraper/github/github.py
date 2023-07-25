@@ -2,7 +2,6 @@ import re
 
 import requests
 from bs4 import BeautifulSoup
-from typing import Optional
 
 
 class GithubScraper:
