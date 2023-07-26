@@ -96,28 +96,38 @@ class GithubScraper:
             print(ex)
             return "Error: Failed to fetch socials."
         
-    def get_user_organizations(self) -> dict:
-        url = f"https://api.github.com/users/{self.username}/orgs"
-        response = requests.get(url)
-        if response.status_code == 200:
-            orgs_data = response.json()
-            organizations = [org['login'] for org in orgs_data]
-        if organizations:
+    def get_user_organizations(self) -> list:
+        user_profile = self.scrape_profile()
+        try:
+            org_elements = user_profile.select('a.avatar-group-item')
+            organizations = []
+            for org_element in org_elements:
+                href_value = org_element.get('href', '').strip()
+                if href_value.startswith('/'):
+                    href_value = href_value[1:]
+                if href_value:
+                    organizations.append(href_value)
             return organizations
-        return None
-        
-    def get_user_achievements(self) -> dict:
-        url = f"https://github.com/{self.username}?tab=achievements"
-        response = requests.get(url)
-        if response.status_code == 200:
-            achievements_data = BeautifulSoup(response.content, 'html.parser')
-            achievements = []
-            achievement_elements = achievements_data.find_all('h3', {'class': 'f4 ws-normal'})
-            for element in achievement_elements:
-                achievements.append(element.get_text().strip())
-            return achievements
-        return None
+        except Exception as ex:
+            print(ex)
+            return "Error: Failed to fetch organizations"
+
+    def get_user_achievements(self) -> str:
+        user_profile = self.scrape_profile()
+        try:
+            achievement_elements = user_profile.select('img.achievement-badge-sidebar')
+            achievements = set()
+            for achievement_element in achievement_elements:
+                alt_value = achievement_element.get('alt', '').strip()
+                if alt_value.startswith('Achievement'):
+                    alt_value = alt_value[len('Achievement: '):]
+                if alt_value:
+                    achievements.add(alt_value)
+            return list(achievements)
+        except Exception as ex:
+            print(ex)
+            return "Error: Failed to fetch achievements"
 
 if __name__ == '__main__':
     github = GithubScraper('neokd')
-    print(github.get_user_achievements())
+    print(github.get_user_organizations())
