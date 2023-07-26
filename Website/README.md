@@ -1,25 +1,25 @@
 
 ## Run Locally 🛠️
 
-Clone the project
+#### 1. Clone the project
 
 ```bash
   git clone https://github.com/neokd/DataStorehouse.git
 ```
 
-Go to the projects website directory
+#### 2. Go to the projects website directory
 
 ```bash
   cd DataStorehouse/Website
 ```
 
-Install dependencies
+#### 3. Install dependencies
 
 ```bash
   npm i
 ```
 
-Start the server
+#### 4. Start the server
 
 ```bash
   npm run dev
