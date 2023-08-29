@@ -8,7 +8,6 @@ class GithubScraper:
     def __init__(self, username: str):
         self.username = username
 
-    @staticmethod
     def scrape_data_by_url(url: str) -> BeautifulSoup:
         response = requests.get(url)
         return BeautifulSoup(response.text, "html.parser")
