@@ -1,0 +1,112 @@
+[
+    {
+        "label": "Question 1",
+        "question": "Which one of the following is an application of Stack Data Structure?",
+        "options": [
+            "Managing function calls",
+            "The stock span problem",
+            "Arithmetic expression evaluation",
+            "All of the above"
+        ],
+        "stamp": ""
+    },
+    {
+        "label": "Question 2",
+        "question": "Which one of the following is an application of Queue Data Structure?",
+        "options": [
+            "When a resource is shared among multiple consumers.",
+            "When data is transferred asynchronously (data not necessarily received at same rate as sent) between two processes",
+            "Load Balancing",
+            "All of the above"
+        ],
+        "stamp": ""
+    },
+    {
+        "label": "Question 3",
+        "question": "Which of the following sorting algorithms can be used to sort a random linked list with minimum time complexity?",
+        "options": [
+            "Insertion Sort",
+            "Quick Sort",
+            "Heap Sort",
+            "Merge Sort"
+        ],
+        "stamp": ""
+    },
+    {
+        "label": "Question 4",
+        "question": "Which of the following is true about linked list implementation of stack?",
+        "options": [
+            "In push operation, if new nodes are inserted at the beginning of linked list, then in pop operation, nodes must be removed from end.",
+            "In push operation, if new nodes are inserted at the end, then in pop operation, nodes must be removed from the beginning.",
+            "Both of the above",
+            "None of the above"
+        ],
+        "stamp": ""
+    },
+    {
+        "label": "Question 5",
+        "question": "Which of the following is an advantage of adjacency list representation over adjacency matrix representation of a graph?",
+        "options": [
+            "In adjacency list representation, space is saved for sparse graphs.",
+            "DFS and BSF can be done in O(V + E) time for adjacency list representation. These operations take O(V^2) time in adjacency matrix representation. Here is V and E are number of vertices and edges respectively.",
+            "Adding a vertex in adjacency list representation is easier than adjacency matrix representation.",
+            "All of the above"
+        ],
+        "stamp": ""
+    },
+    {
+        "label": "Question 6",
+        "question": "Suppose a circular queue of capacity (n \u2013 1) elements is implemented with an array of n elements. Assume that the insertion and deletion operation are carried out using REAR and FRONT as array index variables, respectively. Initially, REAR = FRONT = 0. The conditions to detect queue full and queue empty are",
+        "options": [
+            "Full: (REAR+1) mod n == FRONT, empty: REAR == FRONT",
+            "Full: (REAR+1) mod n == FRONT, empty: (FRONT+1) mod n == REAR",
+            "Full: REAR == FRONT, empty: (REAR+1) mod n == FRONT",
+            "Full: (FRONT+1) mod n == REAR, empty: REAR == FRONT"
+        ],
+        "stamp": ""
+    },
+    {
+        "label": "Question 7",
+        "question": "A hash table of length 10 uses open addressing with hash function h(k)=k mod 10, and linear probing. After inserting 6 values into an empty hash table, the table is as shown below.\u00a0\u00a0Which one of the following choices gives a possible order in which the key values could have been inserted in the table?",
+        "options": [
+            "46, 42, 34, 52, 23, 33",
+            "34, 42, 23, 52, 33, 46",
+            "46, 34, 42, 23, 52, 33",
+            "42, 46, 33, 23, 34, 52"
+        ],
+        "stamp": ""
+    },
+    {
+        "label": "Question 8",
+        "question": "A program P reads in 500 integers in the range [0..100] representing the scores of 500 students. It then prints the frequency of each score above 50. What would be the best way for P to store the frequencies?",
+        "options": [
+            "An array of 50 numbers",
+            "An array of 100 numbers",
+            "An array of 500 numbers",
+            "A dynamically allocated array of 550 numbers"
+        ],
+        "stamp": ""
+    },
+    {
+        "label": "Question 9",
+        "question": "The keys 12, 18, 13, 2, 3, 23, 5 and 15 are inserted into an initially empty hash table of length 10 using open addressing with hash function h(k) = k mod 10 and linear probing. What is the resultant hash table?",
+        "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+        ],
+        "stamp": ""
+    },
+    {
+        "label": "Question 10",
+        "question": "Suppose the numbers 7, 5, 1, 8, 3, 6, 0, 9, 4, 2 are inserted in that order into an initially empty binary search tree. The binary search tree uses the usual ordering on natural numbers. What is the in-order traversal sequence of the resultant tree?",
+        "options": [
+            "7 5 1 0 3 2 4 6 8 9",
+            "0 2 4 3 1 6 5 9 8 7",
+            "0 1 2 3 4 5 6 7 8 9",
+            "9 8 6 4 2 3 0 1 5 7"
+        ],
+        "stamp": ""
+    }
+]
