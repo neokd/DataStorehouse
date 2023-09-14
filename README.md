@@ -33,6 +33,8 @@ Contributions are welcome! If you have a dataset that you would like to add to D
 6. Push the changes to your branch: `git push origin add-dataset`
 7. Submit a pull request.
 
+<p> <b> Added a dataset sexual_and_gender_based_violence_cases_from_january_2014_to_september_2016_in_nakuru_county that shows gender related violence cases within Nakuru County in Kenya.</b></p>
+
 Please ensure that your dataset adheres to the guidelines and standards defined in the [CONTRIBUTING.md](./CONTRIBUTING.md) file.
 
 ## Project Contributors 🧑‍💻
