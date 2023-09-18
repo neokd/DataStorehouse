@@ -175,10 +175,10 @@ function Sidebar() {
   const showSideBarMobileView = () => {
     if (window.innerWidth > 768) {
       setSidebarVisible(true);
-      return;
+    } else {
+      setSidebarVisible(false);
     }
   };
-
   // Function to handle the close of the modal
   const handleOnClose = () => {
     setShowModal(false);
