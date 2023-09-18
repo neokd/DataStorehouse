@@ -104,6 +104,40 @@ class GithubScraper:
         except Exception as ex:
             print(ex)
             return "Error: Failed to fetch socials."
+        
+    def get_user_organizations(self) -> list:
+        user_profile = self.scrape_profile()
+        try:
+            org_elements = user_profile.select('a.avatar-group-item')
+            organizations = []
+            for org_element in org_elements:
+                href_value = org_element.get('href', '').strip()
+                if href_value.startswith('/'):
+                    href_value = href_value[1:]
+                if href_value:
+                    organizations.append(href_value)
+            return organizations
+        except Exception as ex:
+            print(ex)
+            return "Error: Failed to fetch organizations"
+
+
+    def get_user_achievements(self) -> str:
+        user_profile = self.scrape_profile()
+        try:
+            achievement_elements = user_profile.select('img.achievement-badge-sidebar')
+            achievements = set()
+            for achievement_element in achievement_elements:
+                alt_value = achievement_element.get('alt', '').strip()
+                if alt_value.startswith('Achievement'):
+                    alt_value = alt_value[len('Achievement: '):]
+                if alt_value:
+                    achievements.add(alt_value)
+            return list(achievements)
+        except Exception as ex:
+            print(ex)
+            return "Error: Failed to fetch achievements"
+
 
     
 
