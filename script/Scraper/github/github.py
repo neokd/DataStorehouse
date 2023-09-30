@@ -3,7 +3,6 @@ import re
 import requests
 from bs4 import BeautifulSoup
 
-
 class GithubScraper:
     def __init__(self, username: str):
         self.username = username
@@ -136,12 +135,9 @@ class GithubScraper:
         except Exception as ex:
             print(ex)
             return "Error: Failed to fetch achievements"
+        
 
-
-    
-
-    def get_total_repositories(self) -> int:
-   
+    def get_total_repositories(self) -> int:   
         base_url = f"https://api.github.com/users/{self.username}"
 
         try:

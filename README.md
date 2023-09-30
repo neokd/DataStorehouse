@@ -6,6 +6,9 @@ DataStorehouse is an open-source project that aims to create a collaborative pla
 
 </div>
 
+## We are on Hacktoberfest 2023! 🎉
+<img src="readme.png"/>
+
 ## Features ✨
 
 - **Contributing**: Easily contribute your own datasets to the DataStorehouse repository. ✅
