@@ -1,0 +1,45 @@
+{
+  "name": "DataStorehouse",
+  "private": true,
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@popperjs/core": "^2.11.8",
+    "@react-spring/web": "^9.7.2",
+    "@supabase/supabase-js": "^2.24.0",
+    "aos": "^2.3.4",
+    "appwrite": "^11.0.0",
+    "cors": "^2.8.5",
+    "file-saver": "^2.0.5",
+    "framer-motion": "^10.12.16",
+    "fuse.js": "^6.6.2",
+    "octokit": "^2.1.0",
+    "prop-types": "^15.8.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-ga4": "^2.1.0",
+    "react-icons": "^4.9.0",
+    "react-router-dom": "^6.11.2",
+    "typewriter-effect": "^2.20.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.28",
+    "@types/react-dom": "^18.0.11",
+    "@vitejs/plugin-react": "^4.0.0",
+    "autoprefixer": "^10.4.14",
+    "eslint": "^8.38.0",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.3.4",
+    "postcss": "^8.4.23",
+    "tailwind-scrollbar": "^3.0.4",
+    "tailwindcss": "^3.3.2",
+    "vite": "^4.3.9"
+  }
+}
