@@ -5,7 +5,7 @@ import { ThemeProvider } from './theme/theme-provider';
 import { ThemeSwitcher } from './theme/ThemeSwitcher';
 import { switchThemeDuration } from './theme/switch-theme';
 
-const nunitoNormal = Nunito({weight: ['400'], subsets: ['latin']})
+const nunitoNormal = Nunito({weight: ['800'], subsets: ['latin']})
 
 export const metadata: Metadata = {
   title: 'DataStoreHouse',
