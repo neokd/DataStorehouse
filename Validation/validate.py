@@ -152,7 +152,8 @@ def main():
         file_list = os.listdir(current_directory)
 
         valid_extensions = ('.csv', '.json', '.txt')
-        valid_files = [file for file in file_list if file.endswith(valid_extensions)]
+        ignore_files = ('Report.txt', 'requirements.txt')
+        valid_files = [file for file in file_list if file.endswith(valid_extensions)and file not in ignore_files]
 
         print ("""\n
             ########     ###    ########    ###     ######  ########  #######  ########  ######## ##     ##  #######  ##     ##  ######  ######## 
@@ -179,7 +180,7 @@ def main():
                 print("Exiting prompt.")
                 return
             elif selection == 'p':  # Allow the user to enter a custom file path with 'p'
-                custom_file_path = click.prompt("Enter the custom file path:")
+                custom_file_path = click.prompt("Enter the custom file path")
                 if os.path.isfile(custom_file_path):
                     file_path = custom_file_path
                 else:
