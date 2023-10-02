@@ -160,12 +160,22 @@ def main():
         valid_extensions = ('.csv', '.json')
         valid_files = [file for file in file_list if file.endswith(valid_extensions)]
 
+        print ("""\n
+            ########     ###    ########    ###     ######  ########  #######  ########  ######## ##     ##  #######  ##     ##  ######  ######## 
+            ##     ##   ## ##      ##      ## ##   ##    ##    ##    ##     ## ##     ## ##       ##     ## ##     ## ##     ## ##    ## ##       
+            ##     ##  ##   ##     ##     ##   ##  ##          ##    ##     ## ##     ## ##       ##     ## ##     ## ##     ## ##       ##       
+            ##     ## ##     ##    ##    ##     ##  ######     ##    ##     ## ########  ######   ######### ##     ## ##     ##  ######  ######   
+            ##     ## #########    ##    #########       ##    ##    ##     ## ##   ##   ##       ##     ## ##     ## ##     ##       ## ##       
+            ##     ## ##     ##    ##    ##     ## ##    ##    ##    ##     ## ##    ##  ##       ##     ## ##     ## ##     ## ##    ## ##       
+            ########  ##     ##    ##    ##     ##  ######     ##     #######  ##     ## ######## ##     ##  #######   #######   ######  ######## 
+                """)
+
         if valid_files:
-            print("Available CSV and JSON files in the current directory:")
+            print("Available CSV and JSON files in the current directory:\n")
             for i, file_name in enumerate(valid_files, start=1):
                 print(f"{i}. {file_name}")
 
-            print("0. Exit")  # Add an option to exit
+            print("0. Exit\n")  # Add an option to exit
 
             selection = click.prompt("Enter the number of the file to analyze or 0 to exit", type=int)
 
