@@ -1,8 +1,8 @@
 import Image from "next/image";
 import { Nunito, Roboto } from "next/font/google";
 import Link from "next/link";
+import Footer from "@/components/Footer/Footer";
 
-const nunitoBold = Nunito({ weight: ["700"], subsets: ["latin"] });
 export default function Home() {
   return (
       <div className="h-screen flex flex-col justify-center items-center mx-4">
@@ -12,8 +12,8 @@ export default function Home() {
           <div className="w-16 h-16 blur rounded-full animate-bounce transition delay-500 absolute bottom-28 bg-amber-500 right-28"></div>
           <div className="w-16 h-16 blur rounded-full animate-bounce transition delay-500 absolute bottom-24 bg-white right-24"></div>
         </div>
-        <div className="dark:text-white text-center lg:w-7/12 container">
-          <h1 className="text-4xl lg:text-6xl mb-6">
+        <div className="dark:text-white text-center lg:w-8/12 container">
+          <h1 className="text-4xl lg:text-6xl mb-6 font-semibold">
             Unleash Your
             <span className="text-amber-500"> Project's Potential</span>,
             Rapidly Build Modern Applications without Leaving Your Development
@@ -55,7 +55,9 @@ export default function Home() {
               </div>
             </button>
           </div>
+          
         </div>
+        <Footer/>
       </div>
   );
 }
