@@ -2,6 +2,7 @@ import requests
 import json
 import os
 from bs4 import BeautifulSoup
+from collections import deque
 import time
 
 PROXY_CONNECTION_TIMEOUT = 5  # Timeout value in seconds
@@ -13,7 +14,7 @@ class GutenbergScraper:
         Loads the proxy list from the local file.
         Loads the last processed book number from the progress file.
         """
-        self.proxy_list = self.load_proxy_list()
+        self.proxy_list = deque(self.load_proxy_list())
         self.progress_file = r"script\Scraper\gutenberg\progress.txt"
         self.json_file_path = r"StoreHouse\Literature\gutenberg_bibliographic_records.json"
         self.last_book_number = self.load_progress()
@@ -24,9 +25,17 @@ class GutenbergScraper:
         Loads the proxy list from the local file.
         Returns a list of proxies.
         """
-        with open(r"script\proxy\validProxyList.txt", "r") as file:
-            proxy_list = file.read().splitlines()
-        return proxy_list
+        # Provide path and file name to be read in
+        directory_path = "/script/proxy/validProxyList.txt"
+        file_name = "validProxyList.txt"
+        file_path = os.path.join(directory_path, file_name)
+
+        if os.path.exists(file_path):
+            with open(file_path, "r") as file:
+                proxy_list = file.read().splitlines()
+            return proxy_list
+        else:
+            return [] # Return an empty list if the file doesn't exist
 
     def load_progress(self):
         """
@@ -69,9 +78,11 @@ class GutenbergScraper:
         """
         Rotates the proxy list by moving the first proxy to the end.
         """
-        if self.proxy_list:
-            proxy = self.proxy_list.pop(0)  # Get the first proxy from the list
-            self.proxy_list.append(proxy)
+        try:
+            if self.proxy_list:
+                self.proxy_list.rotate(-1)  # Rotate the deque for better efficiency
+        except IndexError:
+            pass
 
     def get_html_content(self, url, use_proxy=False):
         """
