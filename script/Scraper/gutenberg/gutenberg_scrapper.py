@@ -11,7 +11,7 @@ class GutenbergScraper:
     def __init__(self):
         """
         Initializes the GutenbergScraper class.
-        Loads the proxy list from the local file.
+        Initializes the proxy list to be handled with a deque
         Loads the last processed book number from the progress file.
         """
         self.proxy_list = deque(self.load_proxy_list())
@@ -22,20 +22,23 @@ class GutenbergScraper:
 
     def load_proxy_list(self):
         """
-        Loads the proxy list from the local file.
-        Returns a list of proxies.
+        Prompts the user for a path to a proxy list.
+        Returns a deque of proxies.
         """
-        # Provide path and file name to be read in
-        directory_path = "/script/proxy/validProxyList.txt"
-        file_name = "validProxyList.txt"
-        file_path = os.path.join(directory_path, file_name)
+        user_input = input("Enter the path for a proxy list (or press Enter to skip without using a proxy list):\n")
+        
+        # Check if the user provided a path
+        if not user_input:
+            print("Skipping proxy list, loading...")
+            return []
 
-        if os.path.exists(file_path):
-            with open(file_path, "r") as file:
-                proxy_list = file.read().splitlines()
-            return proxy_list
-        else:
-            return [] # Return an empty list if the file doesn't exist
+        file_path = os.path.join(user_input)
+
+        with open(file_path, "r") as file:
+            proxy_list = file.read().splitlines()
+            print("Confirming proxy list was loaded:", proxy_list[1])
+        return proxy_list
+
 
     def load_progress(self):
         """
@@ -76,13 +79,14 @@ class GutenbergScraper:
 
     def rotate_proxy(self):
         """
-        Rotates the proxy list by moving the first proxy to the end.
+        Rotates the deque by moving the first proxy to the end.
         """
         try:
             if self.proxy_list:
                 self.proxy_list.rotate(-1)  # Rotate the deque for better efficiency
         except IndexError:
             pass
+
 
     def get_html_content(self, url, use_proxy=False):
         """
@@ -117,6 +121,7 @@ class GutenbergScraper:
         except requests.RequestException:
             print(f"\nFailed to fetch URL: {url}")
         return None
+
 
     def scrape_gutenberg(self):
         """
@@ -169,7 +174,6 @@ class GutenbergScraper:
         # add } ad the end
         with open(self.json_file_path, "a", encoding="utf-8") as file:
             file.write("}")
-
 
         # Remove progress file after scraping is complete
         if os.path.exists(self.progress_file):
