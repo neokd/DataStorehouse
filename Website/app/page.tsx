@@ -15,7 +15,7 @@ export default function Home() {
         <div className="dark:text-white text-center lg:w-8/12 container">
           <h1 className="text-4xl lg:text-6xl mb-6 font-semibold">
             Unleash Your
-            <span className="text-amber-500"> Project's Potential</span>,
+            <span className="text-amber-500"> Project &pos s Potential</span>,
             Rapidly Build Modern Applications without Leaving Your Development
             Zone!
           </h1>
