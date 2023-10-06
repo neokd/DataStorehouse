@@ -80,7 +80,7 @@ def main():
         return
 
     # Read the dataset into a DataFrame (modify the read_csv options as needed)
-    df = pd.read_csv(os.path.join(dataset_path, 'homeprices_banglore.csv'))
+    df = pd.read_csv(os.path.join(dataset_path, 'your_dataset.csv'))
 
     # Perform statistical analysis and create plots on columns
     column_stats = analyze_and_visualize_columns(df)
