@@ -21,7 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`bg-slate-50 dark:bg-[#0d1117] ${switchThemeDuration}`}>
+        className={`bg-gradient-to-br from-white/60 via-violet-200 to-white dark:from-black dark:via-violet-800/25 dark:to-gray-950/60 duration-1000 ${switchThemeDuration}`}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <ThemeSwitcher />
           <main>{children}</main>
