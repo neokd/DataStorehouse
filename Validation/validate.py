@@ -6,6 +6,7 @@ import pandas as pd
 import numpy as np
 import json
 import platform
+from art import *
 
 REPORT_FILE = 'Report.txt'
 
@@ -155,15 +156,7 @@ def main():
         ignore_files = ('Report.txt', 'requirements.txt')
         valid_files = [file for file in file_list if file.endswith(valid_extensions)and file not in ignore_files]
 
-        print ("""\n
-            ########     ###    ########    ###     ######  ########  #######  ########  ######## ##     ##  #######  ##     ##  ######  ######## 
-            ##     ##   ## ##      ##      ## ##   ##    ##    ##    ##     ## ##     ## ##       ##     ## ##     ## ##     ## ##    ## ##       
-            ##     ##  ##   ##     ##     ##   ##  ##          ##    ##     ## ##     ## ##       ##     ## ##     ## ##     ## ##       ##       
-            ##     ## ##     ##    ##    ##     ##  ######     ##    ##     ## ########  ######   ######### ##     ## ##     ##  ######  ######   
-            ##     ## #########    ##    #########       ##    ##    ##     ## ##   ##   ##       ##     ## ##     ## ##     ##       ## ##       
-            ##     ## ##     ##    ##    ##     ## ##    ##    ##    ##     ## ##    ##  ##       ##     ## ##     ## ##     ## ##    ## ##       
-            ########  ##     ##    ##    ##     ##  ######     ##     #######  ##     ## ######## ##     ##  #######   #######   ######  ######## 
-                """)
+        tprint("DataStoreHouse") 
 
         if valid_files:
             print("Available files in the current directory:\n")
